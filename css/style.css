@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.admin_container {
+  width: 100%;
+  height: 100vh;
+  background-color: #F3F3F3;
+}
+.admin_container .sidebar {
+  height: 100%;
+  width: 19%;
+  background-color: #FFFFFF;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  text-align: left;
+  padding: 1rem;
+  box-shadow: -5px 0px 25px 0px rgba(206, 206, 206, 0.7960784314);
+  position: fixed;
+}
+.admin_container .sidebar--restaurant-logo {
+  height: 5.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.admin_container .sidebar--navigations {
+  display: inline-block;
+  list-style-type: none;
+}
+.admin_container .sidebar--navigations-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  gap: 3rem;
+}
+.admin_container .sidebar--navigations-link-text {
+  font-size: 16px;
+}
+.admin_container .sidebar--icon {
+  display: flex;
+  line-height: 24px;
+  gap: 0.65rem;
+}
+.admin_container .sidebar--icon.active, .admin_container .sidebar--icon.active path {
+  color: #FF4747;
+  fill: #FF4747;
+  stroke: #FF4747;
+}
+.admin_container--dashboard {
+  background-color: transparent;
+  height: 100%;
+  width: 81%;
+  margin-left: 19%;
+}
+
+@media (min-width: 1564px) {
+  .admin_container .sidebar {
+    width: 16% !important;
+  }
+  .admin_container .sidebar--navigations-link {
+    gap: 4.75rem;
+  }
+  .admin_container--dashboard {
+    width: 84% !important;
+    margin-left: 16% !important;
+  }
+}
+@media (max-width: 1365px) and (min-width: 1240px) {
+  .admin_container .sidebar {
+    width: 20% !important;
+  }
+  .admin_container .sidebar--navigations-link {
+    gap: 2rem;
+  }
+  .admin_container--dashboard {
+    width: 80% !important;
+    margin-left: 20% !important;
+  }
+}
+@media (max-width: 1239px) and (min-width: 1000px) {
+  .admin_container .sidebar {
+    width: 24% !important;
+  }
+  .admin_container .sidebar--navigations-link {
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+  .admin_container--dashboard {
+    width: 76% !important;
+    margin-left: 24% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

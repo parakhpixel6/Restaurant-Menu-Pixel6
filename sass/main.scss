@@ -1,0 +1,167 @@
+@import "./abstracts/variables";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.admin_container {
+    width: 100%;
+    height: 100vh;
+    background-color:  $primary-color-dashboard;
+    
+    & .sidebar {
+        height: 100%;
+        width: 19%;
+        background-color: $widget-white;
+        //background-color: yellow;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        text-align: left;
+        padding: 1rem;
+        box-shadow: -5px 0px 25px 0px #cecececb;
+        position: fixed;
+        
+        &--restaurant-logo {
+            height: 5.5rem;
+            width: 100%;
+            //background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+        
+        &--navigations {
+            display: inline-block;
+            list-style-type: none;
+
+            &-link {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2.5rem;
+                gap: 3rem;
+
+                &-text {
+                    font-size: 16px;
+                }
+
+                // &-text.active{
+                //     color: $active-link-color;
+                // }
+
+                // &-icon.active path, &-arrow.active path{
+                //     fill: $active-link-color;
+                //     stroke: $active-link-color;
+                // }
+            }
+            
+        }
+        
+        &--icon {
+            display: flex;
+            line-height: 24px;
+            gap: 0.65rem;
+
+            &.active,  &.active path{
+                color: $active-link-color;
+                fill: $active-link-color;
+                stroke: $active-link-color;
+            }
+        }
+    }
+
+    &--dashboard {
+        background-color: transparent;
+        height: 100%;
+        width: 81%;
+        margin-left: 19%;
+        //background-color: red;
+    }
+    
+}
+
+// for large screen desktop for min width 1564px
+@media (min-width: 1564px) {
+    .admin_container {
+        & .sidebar {
+            width: 16% !important;
+            
+            &--navigations {
+                &-link {
+                    gap: 4.75rem;
+                }
+            }
+        }
+        
+        &--dashboard {
+            width: 84% !important;
+            margin-left: 16% !important;
+        }
+    }
+    
+}
+
+// For Medium screen laptops or desktop
+@media (max-width: 1365px) and (min-width: 1240px) {
+    .admin_container {
+        & .sidebar {
+            width: 20% !important;
+            
+            &--navigations {
+                &-link {
+                    
+                    gap: 2rem;
+                }
+            }
+        }
+        
+        &--dashboard {
+            width: 80% !important;
+            margin-left: 20% !important;
+        }
+    }
+}
+
+
+// For device width less than 1240px & min width of 1000px 
+// (Ex: Land Escape mode for ipad ai5, ipad mini, ipad)
+@media (max-width: 1239px) and (min-width: 1000px) {
+    .admin_container {
+        & .sidebar {
+            width: 24% !important;
+            
+            &--navigations {
+                &-link {
+                    margin-bottom: 2rem;
+                    gap: 2rem;
+                }
+            }
+        }
+        
+        &--dashboard {
+            width: 76% !important;
+            margin-left: 24% !important;
+        }
+    }
+}
+
+// @media (min-width: 1281px) and (max-width: 1440px) {}
