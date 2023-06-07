@@ -62,7 +62,7 @@ li {
                 width: 5.5rem;
                 border-radius: 50%;
 
-                & > img {
+                &>img {
                     max-width: 100%;
                     height: auto;
                 }
@@ -70,7 +70,14 @@ li {
         }
 
         &--navigations {
-            
+
+            &-link.active {
+                a, span{
+                    color: $active-link-color;
+                }
+                //display: none;
+            }
+
             &-link {
                 display: flex;
                 justify-content: space-between;
@@ -95,10 +102,6 @@ li {
                     color: $color-icons-dark-grey;
                     font-weight: 300;
                     font-size: 25px;
-
-                    &.active {
-                        color: $active-link-color;
-                    }
                 }
             }
 
@@ -123,9 +126,9 @@ li {
             line-height: 24px;
             gap: 0.65rem;
 
-            &.active {
-                color: $active-link-color;
-            }
+            // &.active {
+            //     color: $active-link-color;
+            // }
         }
     }
 
@@ -204,4 +207,4 @@ li {
     }
 }
 
-// @media (min-width: 1281px) and (max-width: 1440px) {}
+//@media (min-width: 1281px) and (max-width: 1440px) {}

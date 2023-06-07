@@ -6,7 +6,8 @@
   box-sizing: inherit;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
@@ -18,6 +19,12 @@ a {
   color: #000;
 }
 
+ul,
+li {
+  list-style-type: none;
+  marker: none;
+}
+
 .admin_container {
   width: 100%;
   height: 100vh;
@@ -26,12 +33,13 @@ a {
 .admin_container .sidebar {
   height: 100%;
   width: 19%;
+  overflow-y: auto;
   background-color: #FFFFFF;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
   text-align: left;
   padding: 1rem;
-  box-shadow: -5px 0px 25px 0px rgba(206, 206, 206, 0.7960784314);
+  box-shadow: -5px 0px 25px 0px #DDDDDD;
   position: fixed;
 }
 .admin_container .sidebar--restaurant-logo {
@@ -43,9 +51,20 @@ a {
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
-.admin_container .sidebar--navigations {
-  display: inline-block;
-  list-style-type: none;
+.admin_container .sidebar--restaurant-logo-box {
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+}
+.admin_container .sidebar--restaurant-logo-box > img {
+  max-width: 100%;
+  height: auto;
+}
+.admin_container .sidebar--navigations-link.active a, .admin_container .sidebar--navigations-link.active span {
+  color: #FF4747;
 }
 .admin_container .sidebar--navigations-link {
   display: flex;
@@ -53,19 +72,37 @@ a {
   align-items: center;
   margin-bottom: 2.5rem;
   gap: 3rem;
+  cursor: pointer;
 }
 .admin_container .sidebar--navigations-link-text {
   font-size: 16px;
+}
+.admin_container .sidebar--navigations-link-arrow {
+  color: #555555;
+  font-weight: 200;
+  font-size: 24px;
+  transform: rotate(90deg);
+}
+.admin_container .sidebar--navigations-link-icon {
+  color: #555555;
+  font-weight: 300;
+  font-size: 25px;
+}
+.admin_container .sidebar--navigations-submenu {
+  margin-bottom: 1.75rem;
+}
+.admin_container .sidebar--navigations-submenu-link {
+  margin-top: -2rem;
+  display: none;
+}
+.admin_container .sidebar--navigations-subsubmenu {
+  margin-bottom: -0.75rem;
+  padding: 1rem;
 }
 .admin_container .sidebar--icon {
   display: flex;
   line-height: 24px;
   gap: 0.65rem;
-}
-.admin_container .sidebar--icon.active, .admin_container .sidebar--icon.active path {
-  color: #FF4747;
-  fill: #FF4747;
-  stroke: #FF4747;
 }
 .admin_container--dashboard {
   background-color: transparent;
@@ -91,6 +128,7 @@ a {
     width: 20% !important;
   }
   .admin_container .sidebar--navigations-link {
+    margin-bottom: 2rem;
     gap: 2rem;
   }
   .admin_container--dashboard {
