@@ -1,153 +1,210 @@
+@import "./abstracts/variables";
+
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html,
 body {
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 a {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 ul,
 li {
-  list-style-type: none;
-  marker: none;
+    list-style-type: none;
+    marker: none;
 }
+
 
 .admin_container {
-  width: 100%;
-  height: 100vh;
-  background-color: #F3F3F3;
-}
-.admin_container .sidebar {
-  height: 100%;
-  width: 19%;
-  overflow-y: auto;
-  background-color: #FFFFFF;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
-  text-align: left;
-  padding: 1rem;
-  box-shadow: -5px 0px 25px 0px #DDDDDD;
-  position: fixed;
-}
-.admin_container .sidebar--restaurant-logo {
-  height: 5.5rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
-.admin_container .sidebar--restaurant-logo-box {
-  display: contents;
-  justify-content: center;
-  align-items: center;
-  height: 5.5rem;
-  width: 5.5rem;
-  border-radius: 50%;
-}
-.admin_container .sidebar--restaurant-logo-box > img {
-  max-width: 100%;
-  height: auto;
-}
-.admin_container .sidebar--navigations-link.active a, .admin_container .sidebar--navigations-link.active span {
-  color: #FF4747;
-}
-.admin_container .sidebar--navigations-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2.5rem;
-  gap: 3rem;
-  cursor: pointer;
-}
-.admin_container .sidebar--navigations-link-text {
-  font-size: 16px;
-}
-.admin_container .sidebar--navigations-link-arrow {
-  color: #555555;
-  font-weight: 200;
-  font-size: 24px;
-  transform: rotate(90deg);
-}
-.admin_container .sidebar--navigations-link-icon {
-  color: #555555;
-  font-weight: 300;
-  font-size: 25px;
-}
-.admin_container .sidebar--navigations-submenu {
-  margin-bottom: 1.75rem;
-}
-.admin_container .sidebar--navigations-submenu-link {
-  margin-top: -2rem;
-  display: none;
-}
-.admin_container .sidebar--navigations-subsubmenu {
-  margin-bottom: -0.75rem;
-  padding: 1rem;
-}
-.admin_container .sidebar--icon {
-  display: flex;
-  line-height: 24px;
-  gap: 0.65rem;
-}
-.admin_container--dashboard {
-  background-color: transparent;
-  height: 100%;
-  width: 81%;
-  margin-left: 19%;
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-color-dashboard;
+
+    & .sidebar {
+        height: 100%;
+        width: 19%;
+        overflow-y: auto;
+        background-color: $widget-white;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        text-align: left;
+        padding: 1rem;
+        box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
+        position: fixed;
+
+        &--restaurant-logo {
+            height: 5.5rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+
+            &-box {
+                display: contents;
+                justify-content: center;
+                align-items: center;
+                height: 5.5rem;
+                width: 5.5rem;
+                border-radius: 50%;
+
+                & > img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        &--navigations {
+
+            &-link:nth-child(1).active {
+                a, span{
+                    color: $active-link-color;
+                }
+                //display: none;
+            }
+            
+            &-link {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2.5rem;
+                gap: 3rem;
+                cursor: pointer;
+
+                &-text {
+                    font-size: 16px;
+                }
+
+                &-arrow {
+                    color: $color-icons-dark-grey;
+                    font-weight: 200;
+                    font-size: 24px;
+                    transform: rotate(90deg);
+                }
+
+
+                &-icon {
+                    color: $color-icons-dark-grey;
+                    font-weight: 300;
+                    font-size: 25px;
+                }
+            }
+
+            &-submenu {
+                margin-bottom: 1.75rem;
+
+                &-link {
+                    margin-top: -2rem;
+                    display: none;
+                }
+
+            }
+
+            &-subsubmenu {
+                margin-bottom: -0.75rem;
+                padding: 1rem;
+            }
+        }
+
+        &--icon {
+            display: flex;
+            line-height: 24px;
+            gap: 0.65rem;
+
+            &.active {
+                color: $active-link-color;
+            }
+        }
+    }
+
+    &--dashboard {
+        background-color: transparent;
+        height: 100%;
+        width: 81%;
+        margin-left: 19%;
+        //background-color: red;
+    }
+
 }
 
+// for large screen desktop for min width 1564px
 @media (min-width: 1564px) {
-  .admin_container .sidebar {
-    width: 16% !important;
-  }
-  .admin_container .sidebar--navigations-link {
-    gap: 4.75rem;
-  }
-  .admin_container--dashboard {
-    width: 84% !important;
-    margin-left: 16% !important;
-  }
-}
-@media (max-width: 1365px) and (min-width: 1240px) {
-  .admin_container .sidebar {
-    width: 20% !important;
-  }
-  .admin_container .sidebar--navigations-link {
-    margin-bottom: 2rem;
-    gap: 2rem;
-  }
-  .admin_container--dashboard {
-    width: 80% !important;
-    margin-left: 20% !important;
-  }
-}
-@media (max-width: 1239px) and (min-width: 1000px) {
-  .admin_container .sidebar {
-    width: 24% !important;
-  }
-  .admin_container .sidebar--navigations-link {
-    margin-bottom: 2rem;
-    gap: 2rem;
-  }
-  .admin_container--dashboard {
-    width: 76% !important;
-    margin-left: 24% !important;
-  }
+    .admin_container {
+        & .sidebar {
+            width: 16% !important;
+
+            &--navigations {
+                &-link {
+                    gap: 4.75rem;
+                }
+            }
+        }
+
+        &--dashboard {
+            width: 84% !important;
+            margin-left: 16% !important;
+        }
+    }
+
 }
 
-/*# sourceMappingURL=style.css.map */
+// For Medium screen laptops or desktop
+@media (max-width: 1365px) and (min-width: 1240px) {
+    .admin_container {
+        & .sidebar {
+            width: 20% !important;
+
+            &--navigations {
+                &-link {
+                    margin-bottom: 2rem;
+                    gap: 2rem;
+                }
+            }
+        }
+
+        &--dashboard {
+            width: 80% !important;
+            margin-left: 20% !important;
+        }
+    }
+}
+
+
+// For device width less than 1240px & min width of 1000px 
+// (Ex: Land Escape mode for ipad ai5, ipad mini, ipad)
+@media (max-width: 1239px) and (min-width: 1000px) {
+    .admin_container {
+        & .sidebar {
+            width: 24% !important;
+
+            &--navigations {
+                &-link {
+                    margin-bottom: 2rem;
+                    gap: 2rem;
+                }
+            }
+        }
+
+        &--dashboard {
+            width: 76% !important;
+            margin-left: 24% !important;
+        }
+    }
+}
+
+//@media (min-width: 1281px) and (max-width: 1440px) {}
