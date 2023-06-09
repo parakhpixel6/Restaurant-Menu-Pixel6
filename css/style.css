@@ -74,7 +74,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   gap: 3rem;
   cursor: pointer;
 }
@@ -99,6 +99,8 @@ li {
 .admin_container .sidebar--navigations-submenu-link {
   margin-top: -2rem;
   display: none;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
 }
 .admin_container .sidebar--navigations-subsubmenu {
   margin-bottom: -0.75rem;
@@ -119,6 +121,17 @@ li {
   margin-left: 19%;
 }
 
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(0.8);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 @media (min-width: 1629px) {
   .admin_container .sidebar {
     width: 16% !important;
@@ -136,7 +149,7 @@ li {
     width: 20% !important;
   }
   .admin_container .sidebar--navigations-link {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
     gap: 2rem;
   }
   .admin_container--dashboard {
