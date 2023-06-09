@@ -45,13 +45,22 @@ li {
         box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
         position: fixed;
 
+        // &-container {
+        //     overflow-y: auto;
+        //     background-color: $widget-white;
+        //     border-top-right-radius: 7px;
+        //     border-bottom-right-radius: 7px;
+        //     text-align: left;
+        //     padding: 1rem;
+        // }
+
         &--restaurant-logo {
             height: 5.5rem;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             margin-top: 1rem;
 
             &-box {
@@ -78,7 +87,7 @@ li {
 
                 span.sidebar--navigations-link-arrow{
                     transform: rotate(-90deg);
-                    transition: all .5s ease-in-out;
+                    transition: all .2s ease-in-out;
                 }
                 //display: none;
             }
@@ -87,7 +96,7 @@ li {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-bottom: 2rem;
+                margin-bottom: 1.95rem;
                 gap: 3rem;
                 cursor: pointer;
 
@@ -100,7 +109,7 @@ li {
                     font-weight: 200;
                     font-size: 24px;
                     transform: rotate(90deg);
-                    transition: all .5s ease-in-out;
+                    transition: all .2s ease-in-out;
                 }
 
 
@@ -117,7 +126,7 @@ li {
                 &-link {
                     margin-top: -2rem;
                     display: none;
-                    animation: growDown 300ms ease-in-out forwards;
+                    animation: growDown .2s ease-in-out forwards;
                     transform-origin: top center;
                 }
 
@@ -177,6 +186,7 @@ li {
 
             &--navigations {
                 &-link {
+                    margin-bottom: 2.25rem;
                     gap: 4.75rem;
                 }
             }
@@ -198,7 +208,7 @@ li {
 
             &--navigations {
                 &-link {
-                    margin-bottom: 1.75rem;
+                    margin-bottom: 1.85rem;
                     gap: 2rem;
                 }
             }
@@ -221,7 +231,7 @@ li {
 
             &--navigations {
                 &-link {
-                    margin-bottom: 2rem;
+                    margin-bottom: 1.75rem;
                     gap: 2rem;
                 }
             }
