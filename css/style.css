@@ -66,6 +66,10 @@ li {
 .admin_container .sidebar--navigations-link.active a, .admin_container .sidebar--navigations-link.active span {
   color: #FF4747;
 }
+.admin_container .sidebar--navigations-link.active span.sidebar--navigations-link-arrow {
+  transform: rotate(-90deg);
+  transition: all 0.5s ease-in-out;
+}
 .admin_container .sidebar--navigations-link {
   display: flex;
   justify-content: space-between;
@@ -82,6 +86,7 @@ li {
   font-weight: 200;
   font-size: 24px;
   transform: rotate(90deg);
+  transition: all 0.5s ease-in-out;
 }
 .admin_container .sidebar--navigations-link-icon {
   color: #555555;
@@ -99,6 +104,9 @@ li {
   margin-bottom: -0.75rem;
   padding: 1rem;
 }
+.admin_container .sidebar--navigations-subsubmenu.active a, .admin_container .sidebar--navigations-subsubmenu.active span {
+  color: #FF4747;
+}
 .admin_container .sidebar--icon {
   display: flex;
   line-height: 24px;
@@ -111,7 +119,7 @@ li {
   margin-left: 19%;
 }
 
-@media (min-width: 1564px) {
+@media (min-width: 1629px) {
   .admin_container .sidebar {
     width: 16% !important;
   }
