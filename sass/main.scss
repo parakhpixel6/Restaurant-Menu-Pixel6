@@ -75,6 +75,11 @@ li {
                 a, span{
                     color: $active-link-color;
                 }
+
+                span.sidebar--navigations-link-arrow{
+                    transform: rotate(-90deg);
+                    transition: all .5s ease-in-out;
+                }
                 //display: none;
             }
 
@@ -95,6 +100,7 @@ li {
                     font-weight: 200;
                     font-size: 24px;
                     transform: rotate(90deg);
+                    transition: all .5s ease-in-out;
                 }
 
 
@@ -118,7 +124,14 @@ li {
             &-subsubmenu {
                 margin-bottom: -0.75rem;
                 padding: 1rem;
+
+                &.active {
+                    a, span {
+                        color: $active-link-color;
+                    }
+                }
             }
+
         }
 
         &--icon {
@@ -143,7 +156,7 @@ li {
 }
 
 // for large screen desktop for min width 1564px
-@media (min-width: 1564px) {
+@media (min-width: 1629px) {
     .admin_container {
         & .sidebar {
             width: 16% !important;
