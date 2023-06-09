@@ -85,5 +85,60 @@ navigationLinks.forEach(link => {
   });
 });
 
+function printTime() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+
+  // Add leading zeros if necessary
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+
+  var time = hours + ":" + minutes;
+
+  console.log(time); // Output to the console
+  // You can also update the time dynamically on your webpage
+  // by setting the value of an HTML element using JavaScript
+  // For example:
+  document.getElementById("time").innerHTML = time;
+}
+
+// Call the printTime function every second (1000 milliseconds)
+setInterval(printTime, 1000);
+
+
+
+// Function to get the short day name
+function getShortDayName(date) {
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[date.getDay()];
+}
+
+// Function to get the month name
+function getMonthName(date) {
+  const months = [
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+  ];
+  return months[date.getMonth()];
+}
+
+// Function to format the date
+function formatDate(date) {
+  const shortDayName = getShortDayName(date);
+  const monthName = getMonthName(date);
+  const day = date.getDate();
+  return `${shortDayName} ${day} ${monthName}`;
+}
+
+// Get the current date
+const currentDate = new Date();
+
+// Format the date
+const formattedDate = formatDate(currentDate);
+
+// Update the <h3> element with the formatted date
+document.getElementById("date").textContent = formattedDate;
+
 
 

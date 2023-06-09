@@ -10,14 +10,17 @@
     box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
     position: fixed;
 
-    // &-container {
-    //     overflow-y: auto;
-    //     background-color: $widget-white;
-    //     border-top-right-radius: 7px;
-    //     border-bottom-right-radius: 7px;
-    //     text-align: left;
-    //     padding: 1rem;
+    // &::-webkit-scrollbar {
+    //     width: 3px;
+    //     background-color: #F5F5F5;
     // }
+
+    // &::-webkit-scrollbar-thumb {
+    //     border-radius: 10px;
+    //    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    //     background-color: #888888;
+    // }
+
 
     &--restaurant-logo {
         height: 5.5rem;
