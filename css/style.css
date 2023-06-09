@@ -48,7 +48,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   margin-top: 1rem;
 }
 .admin_container .sidebar--restaurant-logo-box {
@@ -68,13 +68,13 @@ li {
 }
 .admin_container .sidebar--navigations-link.active span.sidebar--navigations-link-arrow {
   transform: rotate(-90deg);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .admin_container .sidebar--navigations-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.95rem;
   gap: 3rem;
   cursor: pointer;
 }
@@ -86,7 +86,7 @@ li {
   font-weight: 200;
   font-size: 24px;
   transform: rotate(90deg);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .admin_container .sidebar--navigations-link-icon {
   color: #555555;
@@ -99,7 +99,7 @@ li {
 .admin_container .sidebar--navigations-submenu-link {
   margin-top: -2rem;
   display: none;
-  animation: growDown 300ms ease-in-out forwards;
+  animation: growDown 0.2s ease-in-out forwards;
   transform-origin: top center;
 }
 .admin_container .sidebar--navigations-subsubmenu {
@@ -137,6 +137,7 @@ li {
     width: 16% !important;
   }
   .admin_container .sidebar--navigations-link {
+    margin-bottom: 2.25rem;
     gap: 4.75rem;
   }
   .admin_container--dashboard {
@@ -149,7 +150,7 @@ li {
     width: 20% !important;
   }
   .admin_container .sidebar--navigations-link {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.85rem;
     gap: 2rem;
   }
   .admin_container--dashboard {
@@ -162,7 +163,7 @@ li {
     width: 24% !important;
   }
   .admin_container .sidebar--navigations-link {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
     gap: 2rem;
   }
   .admin_container--dashboard {
