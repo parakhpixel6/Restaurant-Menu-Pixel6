@@ -1,0 +1,122 @@
+& .sidebar {
+    height: 100%;
+    width: 19%;
+    overflow-y: auto;
+    background-color: $widget-white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: left;
+    padding: 1rem;
+    box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
+    position: fixed;
+
+    // &-container {
+    //     overflow-y: auto;
+    //     background-color: $widget-white;
+    //     border-top-right-radius: 7px;
+    //     border-bottom-right-radius: 7px;
+    //     text-align: left;
+    //     padding: 1rem;
+    // }
+
+    &--restaurant-logo {
+        height: 5.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
+        margin-top: 1rem;
+
+        &-box {
+            display: contents;
+            justify-content: center;
+            align-items: center;
+            height: 5.5rem;
+            width: 5.5rem;
+            border-radius: 50%;
+
+            &>img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &--navigations {
+
+        &-link.active {
+            a, span{
+                color: $active-link-color;
+            }
+
+            span.sidebar--navigations-link-arrow{
+                transform: rotate(-90deg);
+                transition: all .2s ease-in-out;
+            }
+            //display: none;
+        }
+
+        &-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.95rem;
+            gap: 3rem;
+            cursor: pointer;
+
+            &-text {
+                font-size: 16px;
+            }
+
+            &-arrow {
+                color: $color-icons-dark-grey;
+                font-weight: 200;
+                font-size: 24px;
+                transform: rotate(90deg);
+                transition: all .2s ease-in-out;
+            }
+
+
+            &-icon {
+                color: $color-icons-dark-grey;
+                font-weight: 300;
+                font-size: 25px;
+            }
+        }
+
+        &-submenu {
+            margin-bottom: 1.75rem;
+
+            &-link {
+                margin-top: -2rem;
+                display: none;
+                animation: growDown .2s ease-in-out forwards;
+                transform-origin: top center;
+            }
+
+        }
+
+        &-subsubmenu {
+            margin-bottom: -0.75rem;
+            padding: 1rem;
+
+            &.active {
+                a, span {
+                    color: $active-link-color;
+                }
+            }
+        }
+
+    }
+
+    &--icon {
+        display: flex;
+        line-height: 24px;
+        gap: 0.65rem;
+
+        // &.active {
+        //     color: $active-link-color;
+        // }
+    }
+}
