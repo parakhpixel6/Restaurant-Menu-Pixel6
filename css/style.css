@@ -70,6 +70,10 @@ li {
   transform: rotate(-90deg);
   transition: all 0.5s ease-in-out;
 }
+.admin_container .sidebar--navigations-link.active span.sidebar--navigations-link-arrow {
+  transform: rotate(-90deg);
+  transition: all 0.5s ease-in-out;
+}
 .admin_container .sidebar--navigations-link {
   display: flex;
   justify-content: space-between;
@@ -86,6 +90,7 @@ li {
   font-weight: 200;
   font-size: 24px;
   transform: rotate(90deg);
+  transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .admin_container .sidebar--navigations-link-icon {
@@ -105,6 +110,9 @@ li {
 .admin_container .sidebar--navigations-subsubmenu {
   margin-bottom: -0.75rem;
   padding: 1rem;
+}
+.admin_container .sidebar--navigations-subsubmenu.active a, .admin_container .sidebar--navigations-subsubmenu.active span {
+  color: #FF4747;
 }
 .admin_container .sidebar--navigations-subsubmenu.active a, .admin_container .sidebar--navigations-subsubmenu.active span {
   color: #FF4747;
