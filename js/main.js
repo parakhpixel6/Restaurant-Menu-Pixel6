@@ -50,7 +50,7 @@ subMenus.forEach(subMenu => {
     });
 });
 
-// SIDEBAR NAVIGATIONS LINK COLOR SWITCHING
+//// SIDEBAR NAVIGATIONS LINK COLOR SWITCHING
 const navigationLinks = document.querySelectorAll('.sidebar--navigations-link');
 
 // Loop through the navigation links and add a click event listener
