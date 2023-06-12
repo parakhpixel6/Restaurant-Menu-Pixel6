@@ -10,154 +10,17 @@ head
   link(rel='stylesheet' href='../css/style.css')
   title Restaurant Digital Menu
 main.admin_container
-  nav.sidebar
-    .sidebar--restaurant-logo
-      .sidebar--restaurant-logo-box
-        img(src='../assets/images/img/company-logo.png' alt='Restaurant Logo')
-    .sidebar--navigations-container
-      ul.sidebar--navigations
-        li.sidebar--navigations-link.active
-          a.sidebar--icon(href='#')
-            // <img class="sidebar--navigations-link-icon" src="assets\images\icons\dashboard.svg" alt="Navigation Icons">
-            span.sidebar--navigations-link-icon.material-symbols-rounded grid_view
-            p.sidebar--navigations-link-text My Dashboard
-        ul.sidebar--navigations-submenu
-          li.sidebar--navigations-link
-            a.sidebar--icon(href='#')
-              span.sidebar--navigations-link-icon.material-symbols-rounded shopping_cart_checkout 
-              // <img class="sidebar--navigations-link-icon" src="assets\images\icons\manage-orders.svg" alt="Navigation Icons">
-              p.sidebar--navigations-link-text Manage Orders
-            span.sidebar--navigations-link-arrow.material-symbols-rounded arrow_forward_ios
-            // <img class="sidebar--navigations-link-arrow" src="assets\images\icons\arrow-down.svg" alt="Navigation Arrow">
-          ul.sidebar--navigations-submenu-link
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon cached
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\past-orders.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Running Orders
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon history
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\past-orders.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Past Orders
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon group
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\customers.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Customers
-        ul.sidebar--navigations-submenu
-          li.sidebar--navigations-link
-            a.sidebar--icon(href='#')
-              span.sidebar--navigations-link-icon.material-symbols-rounded fastfood
-              // <img class="sidebar--navigations-link-icon" src="assets\images\icons\manage-food.svg" alt="Navigation Icons">
-              p.sidebar--navigations-link-text Manage Food
-            span.sidebar--navigations-link-arrow.material-symbols-rounded arrow_forward_ios
-          ul.sidebar--navigations-submenu-link
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon category
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\category.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Categories
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon restaurant
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\fork-and-knife.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Food Items
-        li.sidebar--navigations-link
-          a.sidebar--icon(href='#')
-            span.sidebar--navigations-link-icon.material-symbols-rounded manage_accounts
-            // <img class="sidebar--navigations-link-icon" src="assets\images\icons\manage-devices.svg" alt="Navigation Icons">
-            p.sidebar--navigations-link-text Manage Staff
-        ul.sidebar--navigations-submenu
-          li.sidebar--navigations-link
-            a.sidebar--icon(href='#')
-              span.sidebar--navigations-link-icon.material-symbols-rounded link
-              // <img class="sidebar--navigations-link-icon" src="assets\images\icons\manage-food.svg" alt="Navigation Icons">
-              p.sidebar--navigations-link-text Manage Devices
-            span.sidebar--navigations-link-arrow.material-symbols-rounded arrow_forward_ios
-          ul.sidebar--navigations-submenu-link
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon tablet_mac
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\category.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Smart Devices
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon table_bar
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\fork-and-knife.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Tables
-        ul.sidebar--navigations-submenu
-          li.sidebar--navigations-link
-            a.sidebar--icon(href='#')
-              span.sidebar--navigations-link-icon.material-symbols-rounded insert_chart
-              // <img class="sidebar--navigations-link-icon" src="assets\images\icons\manage-food.svg" alt="Navigation Icons">
-              p.sidebar--navigations-link-text Manage Reports
-            span.sidebar--navigations-link-arrow.material-symbols-rounded arrow_forward_ios
-          ul.sidebar--navigations-submenu-link
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon monitoring
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\category.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Sales Report
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon kebab_dining
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\fork-and-knife.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Food Report
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon network_check
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\fork-and-knife.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Bandwidth
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon star
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\fork-and-knife.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Rating Report
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon table_bar
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\fork-and-knife.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Table Report
-        li.sidebar--navigations-link
-          a.sidebar--icon(href='#')
-            span.sidebar--navigations-link-icon.material-symbols-rounded inventory
-            // <img class="sidebar--navigations-link-icon" src="assets\images\icons\manage-inventory.svg" alt="Navigation Icons">
-            p.sidebar--navigations-link-text Manage Inventory
-        ul.sidebar--navigations-submenu
-          li.sidebar--navigations-link
-            a.sidebar--icon(href='#')
-              span.sidebar--navigations-link-icon.material-symbols-rounded settings
-              // <img class="sidebar--navigations-link-icon" src="assets\images\icons\manage-orders.svg" alt="Navigation Icons">
-              p.sidebar--navigations-link-text Manage Settings
-            span.sidebar--navigations-link-arrow.material-symbols-rounded arrow_forward_ios
-            // <img class="sidebar--navigations-link-arrow" src="assets\images\icons\arrow-down.svg" alt="Navigation Arrow">
-          ul.sidebar--navigations-submenu-link
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon storefront
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\past-orders.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Restaurant
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon window
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\past-orders.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text General
-            li.sidebar--navigations-subsubmenu
-              a.sidebar--icon(href='#')
-                span.material-symbols-rounded.sidebar--navigations-link-icon heap_snapshot_thumbnail
-                // <img class="sidebar--navigations-link-icon" src="assets\images\icons\customers.svg" alt="Navigation Icons">
-                p.sidebar--navigations-link-text Discount &amp; Coupon
+  include ./includes/sidebar.pug
   section.admin_container--dashboard
     header.admin_container--dashboard-header
       .admin_container--dashboard-header-title
-        h3 Hi, Raghav
+        h3#user-welcome Hi, Raghav
       .admin_container--dashboard-header-info
         .admin_container--dashboard-header-info-1
-          img.time-info(src='assets\images\img\time.svg' alt='clock')
+          img.time-info(src='../assets/images/img/time.svg' alt='clock')
           h5#time
         .admin_container--dashboard-header-info-2
-          img.date-info(src='assets\images\img\date.svg' alt='calender')
+          img.date-info(src='../assets/images/img/date.svg' alt='calender')
           h5#date
 script(src='../js/main.js')
 

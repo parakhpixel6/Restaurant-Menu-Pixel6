@@ -15,9 +15,66 @@
         height: 100%;
         width: 81%;
         margin-left: 19%;
+        padding: 1px;
         //background-color: red;
-    }
 
+        &-header {
+            width: 97%;
+            background-color: $widget-white;
+            height: 70px;
+            display: flex;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin: 24px 24px 24px 24px;
+
+            &-title  {
+                #user-welcome {
+                    font-family: Pacifico, serif;
+                    font-size: 28px;
+                    color: $primary-grey;
+                    font-weight: 400;
+                }
+            }
+
+            &-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // width: 26%;
+
+                &-1 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 0.5rem;
+                    margin-right: 1rem;       
+                    
+                    #time {
+                        font-family: Nunito, sans-serif;
+                        font-size: 16px;
+                        color: $primary-black;
+                        font-weight: 400;
+                    }
+                }
+                
+                &-2 {
+                    gap: 0.5rem;             
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    #date {
+                        font-family: Nunito, sans-serif;
+                        font-size: 16px;
+                        color: $primary-black;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @import "./base/animation";
@@ -56,7 +113,7 @@
 
             &--navigations {
                 &-link {
-                    margin-bottom: 1.85rem;
+                    margin-bottom: 2rem;
                     gap: 2rem;
                 }
             }
@@ -65,6 +122,10 @@
         &--dashboard {
             width: 80% !important;
             margin-left: 20% !important;
+
+            &-header {
+                width: 97% !important;
+            }
         }
     }
 }
@@ -87,7 +148,11 @@
 
         &--dashboard {
             width: 76% !important;
-            margin-left: 24% !important;
+            margin-left: 24% !important;  
+
+            &-header {
+                width: 94.5% !important;
+            }
         }
     }
 }
