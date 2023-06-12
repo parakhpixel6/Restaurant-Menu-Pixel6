@@ -47,7 +47,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   margin-top: 1rem;
 }
 .admin_container .sidebar--restaurant-logo-box {
@@ -87,7 +87,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.95rem;
+  margin-bottom: 2.5rem;
   gap: 3rem;
   cursor: pointer;
 }
@@ -135,6 +135,54 @@ li {
   height: 100%;
   width: 81%;
   margin-left: 19%;
+  padding: 1px;
+}
+.admin_container--dashboard-header {
+  width: 97%;
+  background-color: #FFFFFF;
+  height: 70px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 24px 24px 24px 24px;
+}
+.admin_container--dashboard-header-title #user-welcome {
+  font-family: Pacifico, serif;
+  font-size: 28px;
+  color: #888888;
+  font-weight: 400;
+}
+.admin_container--dashboard-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.admin_container--dashboard-header-info-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+.admin_container--dashboard-header-info-1 #time {
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  color: #222222;
+  font-weight: 400;
+}
+.admin_container--dashboard-header-info-2 {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.admin_container--dashboard-header-info-2 #date {
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  color: #222222;
+  font-weight: 400;
 }
 
 @keyframes growDown {
@@ -177,12 +225,15 @@ li {
     width: 20% !important;
   }
   .admin_container .sidebar--navigations-link {
-    margin-bottom: 1.85rem;
+    margin-bottom: 2rem;
     gap: 2rem;
   }
   .admin_container--dashboard {
     width: 80% !important;
     margin-left: 20% !important;
+  }
+  .admin_container--dashboard-header {
+    width: 97% !important;
   }
 }
 @media (max-width: 1239px) and (min-width: 1000px) {
@@ -196,6 +247,9 @@ li {
   .admin_container--dashboard {
     width: 76% !important;
     margin-left: 24% !important;
+  }
+  .admin_container--dashboard-header {
+    width: 94.5% !important;
   }
 }
 
