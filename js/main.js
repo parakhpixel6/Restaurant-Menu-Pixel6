@@ -81,16 +81,16 @@ navigationLinks.forEach(link => {
                 childLink.classList.remove('active');
             });
 
-            if (lastVisitedSubSubMenu) {
-                lastVisitedSubSubMenu.classList.add('active');
-                // Remove active class from other subsubmenus
-                const otherSubSubMenus = document.querySelectorAll('.sidebar--navigations-subsubmenu');
-                otherSubSubMenus.forEach(otherSubSubMenu => {
-                    if (otherSubSubMenu === lastVisitedSubSubMenu) {
-                    otherSubSubMenu.classList.remove('active');
-                    } 
-                });
-            }
+            // if (lastVisitedSubSubMenu) {
+            //     lastVisitedSubSubMenu.classList.add('active');
+            //     // Remove active class from other subsubmenus
+            //     const otherSubSubMenus = document.querySelectorAll('.sidebar--navigations-subsubmenu');
+            //     otherSubSubMenus.forEach(otherSubSubMenu => {
+            //         if (otherSubSubMenu === lastVisitedSubSubMenu) {
+            //         otherSubSubMenu.classList.remove('active');
+            //         } 
+            //     });
+            // }
         }
       });
     }
