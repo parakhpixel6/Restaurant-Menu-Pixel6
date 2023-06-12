@@ -69,12 +69,11 @@ li {
 }
 .admin_container .sidebar--navigations-container::-webkit-scrollbar {
   width: 3px;
-  height: 1px;
-  background-color: #F5F5F5;
+  max-height: 3px;
 }
 .admin_container .sidebar--navigations-container::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  height: 2%;
   background-color: rgba(189, 189, 189, 0.8509803922);
 }
 .admin_container .sidebar--navigations-link.active a, .admin_container .sidebar--navigations-link.active span {
