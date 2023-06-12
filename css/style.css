@@ -33,7 +33,6 @@ li {
 .admin_container .sidebar {
   height: 100%;
   width: 19%;
-  overflow-y: auto;
   background-color: #FFFFFF;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -42,13 +41,23 @@ li {
   box-shadow: -5px 0px 25px 0px #DDDDDD;
   position: fixed;
 }
+.admin_container .sidebar::-webkit-scrollbar {
+  width: 3px;
+  height: 1px;
+  background-color: #F5F5F5;
+}
+.admin_container .sidebar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(189, 189, 189, 0.8509803922);
+}
 .admin_container .sidebar--restaurant-logo {
   height: 5.5rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   margin-top: 1rem;
 }
 .admin_container .sidebar--restaurant-logo-box {
@@ -62,6 +71,11 @@ li {
 .admin_container .sidebar--restaurant-logo-box > img {
   max-width: 100%;
   height: auto;
+}
+.admin_container .sidebar--navigations-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 80%;
 }
 .admin_container .sidebar--navigations-link.active a, .admin_container .sidebar--navigations-link.active span {
   color: #FF4747;
@@ -102,6 +116,9 @@ li {
   animation: growDown 0.2s ease-in-out forwards;
   transform-origin: top center;
 }
+.admin_container .sidebar--navigations-submenu-link ::after {
+  animation: growUp 0.2s ease-in-out backwards;
+}
 .admin_container .sidebar--navigations-subsubmenu {
   margin-bottom: -0.75rem;
   padding: 1rem;
@@ -130,6 +147,17 @@ li {
   }
   100% {
     transform: scaleY(1);
+  }
+}
+@keyframes growUp {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.8);
+  }
+  100% {
+    transform: scaleY(0);
   }
 }
 @media (min-width: 1629px) {
