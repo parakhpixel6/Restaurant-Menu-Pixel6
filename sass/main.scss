@@ -19,7 +19,7 @@
         //background-color: red;
 
         &-header {
-            width: 97%;
+            width: 96%;
             background-color: $widget-white;
             height: 70px;
             display: flex;
@@ -87,7 +87,7 @@
 @media (min-width: 1629px) {
     .admin_container {
         & .sidebar {
-            width: 16% !important;
+            width: 16%;
 
             &--navigations {
                 &-link {
@@ -98,8 +98,12 @@
         }
 
         &--dashboard {
-            width: 84% !important;
-            margin-left: 16% !important;
+            width: 84%;
+            margin-left: 16%;
+
+            &-header {
+                width: 96%;
+            }
         }
     }
 
@@ -109,7 +113,7 @@
 @media (max-width: 1365px) and (min-width: 1240px) {
     .admin_container {
         & .sidebar {
-            width: 20% !important;
+            width: 20%;
 
             &--navigations {
                 &-link {
@@ -120,11 +124,11 @@
         }
 
         &--dashboard {
-            width: 80% !important;
-            margin-left: 20% !important;
+            width: 80%;
+            margin-left: 20%;
 
             &-header {
-                width: 97% !important;
+                width: 95.25%;
             }
         }
     }
@@ -136,7 +140,7 @@
 @media (max-width: 1239px) and (min-width: 1000px) {
     .admin_container {
         & .sidebar {
-            width: 24% !important;
+            width: 24%;
 
             &--navigations {
                 &-link {
@@ -147,11 +151,11 @@
         }
 
         &--dashboard {
-            width: 76% !important;
-            margin-left: 24% !important;  
+            width: 76%;
+            margin-left: 24%;  
 
             &-header {
-                width: 94.5% !important;
+                width: 94.5%;
             }
         }
     }
