@@ -1,6 +1,6 @@
 & .sidebar {
     height: 100%;
-    width: 19%;
+    width: 19.1%;
     //overflow-y: auto;
     background-color: $widget-white;
     border-top-right-radius: 7px;
@@ -11,6 +11,7 @@
     -webkit-box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
     -moz-box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
     position: fixed;
+    top: 0;
 
     &--restaurant-logo {
         height: 5.5rem;

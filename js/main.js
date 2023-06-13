@@ -205,30 +205,30 @@ navigationLinks.forEach(link => {
 
 
 
-  function printTime() {
-    var now = new Date();
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-  
-    // Determine whether it is AM or PM
-    var meridiem = hours >= 12 ? "PM" : "AM";
-  
-    // Convert hours to 12-hour format
-    hours = hours % 12;
-    hours = hours ? hours : 12; // Handle midnight (0 hours)
-  
-    // Add leading zeros if necessary
-    hours = hours < 10 ? "0" + hours : hours;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-  
-    var time = hours + ":" + minutes + " " + meridiem;
-  
-    // Output to the console
-    // You can also update the time dynamically on your webpage
-    // by setting the value of an HTML element using JavaScript
-    // For example:
-    document.getElementById("time").innerHTML = time;
-  }
+function printTime() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+
+  // Determine whether it is AM or PM
+  var meridiem = hours >= 12 ? "PM" : "AM";
+
+  // Convert hours to 12-hour format
+  hours = hours % 12;
+  hours = hours ? hours : 12; // Handle midnight (0 hours)
+
+  // Add leading zeros if necessary
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+
+  var time = hours + ":" + minutes + " " + meridiem;
+
+  // Output to the console
+  // You can also update the time dynamically on your webpage
+  // by setting the value of an HTML element using JavaScript
+  // For example:
+  document.getElementById("time").innerHTML = time;
+}
   
 // Call the printTime function every second (1000 milliseconds)
 setInterval(printTime, 1000);
@@ -269,3 +269,28 @@ document.getElementById("date").textContent = formattedDate;
 
 
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Your Chart.js code here
+  var config = {
+    type: 'pie',
+    data: {
+      datasets: [{
+        borderWidth: 1,
+        backgroundColor: [
+          '#54BA54',
+          '#DDDDDD',
+          '#B3D9E2'
+          
+        ],
+        data: [22, 60, 18]
+      }]
+    }
+  };
+  
+  var myPie = new Chart(document.getElementById('progress-chart'), config);
+  
+    // Add the legend in custom area to allow CSS theming.
+  document.querySelector('.tableStatus').innerHTML = myPie.generateLegend();
+});

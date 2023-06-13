@@ -9,6 +9,7 @@
   "author": "Pixel6",
   "license": "ISC",
   "devDependencies": {
+    "chart.js": "^4.3.0",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.62.1"
