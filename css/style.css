@@ -39,6 +39,8 @@ li {
   text-align: left;
   padding: 1rem;
   box-shadow: -5px 0px 25px 0px #DDDDDD;
+  -webkit-box-shadow: -5px 0px 25px 0px #DDDDDD;
+  -moz-box-shadow: -5px 0px 25px 0px #DDDDDD;
   position: fixed;
 }
 .admin_container .sidebar--restaurant-logo {
@@ -146,7 +148,10 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  margin: 24px 24px 24px 24px;
+  margin: 24px;
+  -webkit-box-shadow: 0px 0px 29px -4px #DDDDDD;
+  -moz-box-shadow: 0px 0px 29px -4px #DDDDDD;
+  box-shadow: 0px 0px 29px -4px #DDDDDD;
 }
 .admin_container--dashboard-header-title #user-welcome {
   font-family: Pacifico, serif;
