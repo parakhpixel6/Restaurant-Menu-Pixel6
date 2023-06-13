@@ -12,6 +12,7 @@ body {
   width: 100vw;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
 }
 
 a {
@@ -32,7 +33,7 @@ li {
 }
 .admin_container .sidebar {
   height: 100%;
-  width: 19%;
+  width: 19.1%;
   background-color: #FFFFFF;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -42,6 +43,7 @@ li {
   -webkit-box-shadow: -5px 0px 25px 0px #DDDDDD;
   -moz-box-shadow: -5px 0px 25px 0px #DDDDDD;
   position: fixed;
+  top: 0;
 }
 .admin_container .sidebar--restaurant-logo {
   height: 5.5rem;
@@ -137,27 +139,32 @@ li {
   height: 100%;
   width: 81%;
   margin-left: 19%;
-  padding: 1px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .admin_container--dashboard-header {
-  width: 96%;
+  width: 100%;
   background-color: #FFFFFF;
   height: 70px;
   display: flex;
   border-radius: 10px;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  margin: 24px;
-  -webkit-box-shadow: 0px 0px 29px -4px #DDDDDD;
-  -moz-box-shadow: 0px 0px 29px -4px #DDDDDD;
-  box-shadow: 0px 0px 29px -4px #DDDDDD;
+  padding: 10px 16px;
+  overflow: hidden;
 }
-.admin_container--dashboard-header-title #user-welcome {
+.admin_container--dashboard-header-title {
+  display: flex;
+}
+.admin_container--dashboard-header-title .user-welcome, .admin_container--dashboard-header-title #user-name {
   font-family: Pacifico, serif;
   font-size: 28px;
   color: #888888;
   font-weight: 400;
+}
+.admin_container--dashboard-header-title #user-name {
+  margin-left: -8px;
 }
 .admin_container--dashboard-header-info {
   display: flex;
@@ -172,7 +179,6 @@ li {
   margin-right: 1rem;
 }
 .admin_container--dashboard-header-info-1 #time {
-  font-family: Nunito, sans-serif;
   font-size: 16px;
   color: #222222;
   font-weight: 400;
@@ -184,10 +190,105 @@ li {
   align-items: center;
 }
 .admin_container--dashboard-header-info-2 #date {
-  font-family: Nunito, sans-serif;
   font-size: 16px;
   color: #222222;
   font-weight: 400;
+}
+.admin_container--dashboard-details {
+  width: 100%;
+  height: 348px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.admin_container--dashboard-details-graph {
+  width: calc(100% - 314px);
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 16px 0px;
+}
+.admin_container--dashboard-details-graph-pie {
+  width: calc(100% - 343px);
+  height: 100%;
+  border-right: 2px solid #DDDDDD;
+}
+.admin_container--dashboard-details-graph-column {
+  width: calc(100% - 283px);
+  height: 100%;
+}
+.admin_container--dashboard-details-notifications {
+  width: calc(100% - 628px);
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+.admin_container--dashboard-table-status {
+  padding: 0px 16px;
+}
+.admin_container--dashboard-table-status > h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.admin_container--dashboard-table-chart {
+  position: relative;
+  height: 180px;
+  width: 180px;
+  margin: 30px auto;
+}
+.admin_container--dashboard #progress-chart {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px !important;
+  width: 400px !important;
+}
+.admin_container--dashboard-table-reference {
+  height: 48px;
+  width: calc(100% - 48px);
+  margin: 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.admin_container--dashboard .table-reference-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.admin_container--dashboard .table-reference-status-marker {
+  height: 16px;
+  width: 8px;
+  background-color: yellow;
+  border-radius: 4px;
+}
+.admin_container--dashboard .table-reference-status-text {
+  font-size: 12px;
+  font-weight: 400;
+}
+.admin_container--dashboard .table-reference-occupied-marker {
+  background-color: #B3D9E2;
+}
+.admin_container--dashboard .table-reference-occupied-text {
+  color: #14809E;
+}
+.admin_container--dashboard .table-reference-available-marker {
+  background-color: #DDDDDD;
+}
+.admin_container--dashboard .table-reference-available-text {
+  color: #555555;
+}
+.admin_container--dashboard .table-reference-engaged-marker {
+  background-color: #54BA54;
+}
+.admin_container--dashboard .table-reference-engaged-text {
+  color: #54BA54;
 }
 
 @keyframes growDown {
@@ -224,9 +325,6 @@ li {
     width: 84%;
     margin-left: 16%;
   }
-  .admin_container--dashboard-header {
-    width: 96%;
-  }
 }
 @media (max-width: 1365px) and (min-width: 1240px) {
   .admin_container .sidebar {
@@ -239,9 +337,6 @@ li {
   .admin_container--dashboard {
     width: 80%;
     margin-left: 20%;
-  }
-  .admin_container--dashboard-header {
-    width: 95.25%;
   }
 }
 @media (max-width: 1239px) and (min-width: 1000px) {
@@ -256,8 +351,17 @@ li {
     width: 76%;
     margin-left: 24%;
   }
-  .admin_container--dashboard-header {
-    width: 94.5%;
+  .admin_container--dashboard-details-graph {
+    width: calc(100% - 258px);
+  }
+  .admin_container--dashboard-details-graph-pie {
+    width: calc(100% - 231px);
+  }
+  .admin_container--dashboard-details-graph-column {
+    width: calc(100% - 206px);
+  }
+  .admin_container--dashboard-details-notifications {
+    width: calc(100% - 490px);
   }
 }
 
