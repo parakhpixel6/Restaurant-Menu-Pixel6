@@ -8,6 +8,8 @@
     text-align: left;
     padding: 1rem;
     box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
+    -webkit-box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
+    -moz-box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
     position: fixed;
 
     &--restaurant-logo {
