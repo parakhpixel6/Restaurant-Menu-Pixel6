@@ -157,7 +157,7 @@ li {
 .admin_container--dashboard-header-title {
   display: flex;
 }
-.admin_container--dashboard-header-title .user-welcome, .admin_container--dashboard-header-title #user-name {
+.admin_container--dashboard-header-title .user-hii, .admin_container--dashboard-header-title .user-hey, .admin_container--dashboard-header-title .user-hello, .admin_container--dashboard-header-title #user-name {
   font-family: Pacifico, serif;
   font-size: 28px;
   color: #888888;
@@ -362,6 +362,9 @@ li {
   }
   .admin_container--dashboard-details-notifications {
     width: calc(100% - 490px);
+  }
+  .admin_container--dashboard-table-reference {
+    width: 96.5%;
   }
 }
 
