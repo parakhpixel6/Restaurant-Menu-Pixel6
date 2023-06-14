@@ -13,7 +13,6 @@
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <title>Restaurant Digital Menu</title>
 </head>
 
@@ -241,7 +240,7 @@
                 <div class="admin_container--dashboard-header-title">
                     <div id="user-welcome">
                         <h3 class="user-hii">Hii ,</h3>
-                        <h3 class="user-hey">Hey ,</h3>
+                        <h3 class="user-hey">Hey </h3>
                         <h3 class="user-hello">Hello</h3>
                     </div>
                     <h3 id="user-name">Raghav</h3>
@@ -264,7 +263,7 @@
                             <h5 class="table-status_heading">table Status</h5>
                         </div>
                         <div class="admin_container--dashboard-table-chart">
-                            <canvas id="progress-chart"></canvas>
+                            <canvas id="table-chart"></canvas>
                             <div class="tableStatus"></div>
                         </div>
                         <div class="admin_container--dashboard-table-reference">
@@ -286,20 +285,47 @@
                         </div>
                     </div>
                     <div class="admin_container--dashboard-details-graph-column">
-
+                        <div class="admin_container--dashboard-order-reference">
+                            <div class="order-reference-total order-reference-status">
+                                <div class="order-reference-status-marker order-reference-total-marker"></div>
+                                <p class="order-reference-status-text order-reference-total-text">orders - 15</p>
+                            </div>
+                            <div class="order-reference-customers order-reference-status">
+                                <div class="order-reference-status-marker order-reference-customers-marker"></div>
+                                <p class="order-reference-status-text order-reference-customers-text">customers - 43</p>
+                            </div>
+                            <div class="order-reference-sales order-reference-status">
+                                <div class="order-reference-status-marker order-reference-sales-marker"></div>
+                                <p class="order-reference-status-text order-reference-sales-text">sales - 55k</p>
+                            </div>
+                        </div>
+                        <div class="admin_container--dashboard-order-chart">
+                            <div class="order-chart-column-container">
+                                <!-- <canvas id="order-chart"></canvas> 
+                                <div class="orderStatus"></div> -->
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="admin_container--dashboard-details-notifications">
-
+                    
                 </div>
             </div>
         </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
         integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-        <script src="./js/main.js"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+    integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"
+    integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

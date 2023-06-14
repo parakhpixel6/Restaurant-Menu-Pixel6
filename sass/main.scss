@@ -153,8 +153,8 @@
             //background-color: green;
             margin: 30px auto;
         }
-
-        #progress-chart {
+        
+        #table-chart {
             position: absolute;
             top: 44%;
             left: 50%;
@@ -162,7 +162,6 @@
             height: 200px !important;
             width: 400px !important;
         }
-
 
         &-table-reference {
             height: 48px;
@@ -186,7 +185,6 @@
                 &-marker {
                     height: 16px;
                     width: 8px;
-                    background-color: yellow;
                     border-radius: 4px;
                 }
 
@@ -222,6 +220,88 @@
             }
 
         }
+
+        &-order-reference {
+            height: fit-content;
+            width: calc(100% - 25px);
+            margin: 4px auto;
+            //background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            //padding: 0px 25px;
+        }
+
+        .order-reference{
+            &-status {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+
+                &-marker {
+                    height: 16px;
+                    width: 8px;
+                    border-radius: 4px;
+                }
+
+                &-text {
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+
+            &-total-marker{
+                background-color: $blue;
+            }
+
+            &-total-text{
+                color: $dark-blue;
+            }
+            
+            &-customers-marker{
+                background-color: $lime-yellow;
+            }
+
+            &-customers-text{
+                color: $dark-yellow;
+            }
+
+            &-sales-marker{
+                background-color: $purpel;
+            }
+
+            &-sales-text{
+                color: $dark-purpel;
+            }
+
+        }
+
+        &-order-chart {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            margin: 0px auto;
+            padding: 16px 0px;
+            //background-color: rgb(221, 195, 140);
+        }
+
+        .order-chart {
+            width: calc(100% - 25px);
+            margin: 0px auto;
+            height: 100%;
+            //background-color: rgb(209, 238, 105);
+        }
+
+        // #order-chart {
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        //     height: 100%;
+        //     width: 700px;
+        // }
     }
 }
 
@@ -271,6 +351,10 @@
         &--dashboard {
             width: 80%;
             margin-left: 20%;
+
+            &-order-reference {
+                width: calc(100% - 25px);
+            }
         }
     }
 }
@@ -312,10 +396,18 @@
                     width: calc(100% - 490px);
                 }
             }
+
+
             &-table-reference {
                 // height: 48px;
                 width: 96.5%;
                 //background-color: red;
+            }
+
+
+            &-order-reference {
+                height: 48px;
+                width: calc(100% - 35px);
             }
         }
 

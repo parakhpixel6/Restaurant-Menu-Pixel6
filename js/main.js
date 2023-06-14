@@ -289,31 +289,67 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
   
-  var myPie = new Chart(document.getElementById('progress-chart'), config);
+  var myPie = new Chart(document.getElementById('table-chart'), config);
   
     // Add the legend in custom area to allow CSS theming.
   document.querySelector('.tableStatus').innerHTML = myPie.generateLegend();
+
+  // var ctx = document.getElementById("order-chart").getContext('2d');
+  // var barChart = new Chart(ctx, {
+  //   type: 'bar',
+  //   options: {
+      
+  //       scales: {
+  //         yAxes: [{
+  //           ticks: {
+  //             display: false,
+  //           },
+  //           gridLines: {
+  //             display: false
+  //           }
+  //         }],
+  //         xAxes: [{
+  //           barThickness: 24,
+  //           ticks: {
+  //             padding: 1,
+  //             fontSize: 12
+  //           },
+  //           gridLines: {
+  //             display: false
+  //           },
+            
+  //         }]
+  //     },
+  //     legend: {
+  //       display: false
+  //     },
+  //   },
+  //   data: {
+  //     labels: ["11am-12pm", "01pm-02pm", "02pm-03pm", "03pm-04pm", "04pm-05pm", "05pm-06pm", "06pm-07pm", "07pm-08pm", "08pm-09pm", "09pm-10pm", , "10pm-11pm"],
+  //     datasets: [{
+  //       data: [30, 69, 3, 17, 28, 24, 7, 30, 69, 3, 17, 28, {
+  //         display: false,
+  //       }],
+  //       backgroundColor: "rgba(255,0,0,1)"
+  //     }, {
+      
+  //       data: [30, 69, 3, 17, 28, 24, 7, 30, 69, 3, 17, 28, {
+  //         display: false,
+  //       }],
+  //       backgroundColor: "rgba(0,0,255,1)"
+  //     }, {
+        
+  //       data: [30, 69, 3, 17, 28, 24, 7, 30, 69, 3, 17, 28, {
+  //         display: false,
+  //       }],
+  //       backgroundColor: "green"
+  //     }]
+  //   }
+  // });
+  // document.querySelector('.orderStatus').innerHTML = barChart.generateLegend();
 });
 
-// gsap.to(".user-hii", {
-//   duration: 2,
-//   y: -200,
-//   ease: Power2.easeOut,
-// });
 
-// var tl = gsap.timeline({repeat: -1, repeatDelay: 1});
-// tl.to(".user-hii", {
-//   duration: 2,
-//   y: -50,
-//   ease:  CustomEase.create("custom", "M0,0 C0.03,0.648 0.707,0.309 0.836,0.43 0.88,0.471 0.822,0.914 1,1.01 "),
-// });
-// tl.to(".user-hey", {
-//   duration: 2,
-//   y: -150,
-//   ease:  CustomEase.create("custom", "M0,0 C0.03,0.648 0.707,0.309 0.836,0.43 0.88,0.471 0.822,0.914 1,1.01 "),
-// });
-// tl.to(".user-hello", {
-//   duration: 2,
-//   y: -200,
-//   ease:  CustomEase.create("custom", "M0,0 C0.03,0.648 0.707,0.309 0.836,0.43 0.88,0.471 0.822,0.914 1,1.01 "),
-// });
+
+
+
