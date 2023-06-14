@@ -294,3 +294,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add the legend in custom area to allow CSS theming.
   document.querySelector('.tableStatus').innerHTML = myPie.generateLegend();
 });
+
+gsap.to(".user-hii", {
+  duration: 2,
+  y: -200,
+  ease: Power2.easeOut,
+});

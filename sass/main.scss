@@ -39,7 +39,7 @@
             &-title  {
                 display: flex;
 
-                .user-welcome, #user-name {
+                .user-hii, .user-hey, .user-hello, #user-name {
                     font-family: Pacifico, serif;
                     font-size: 28px;
                     color: $primary-grey;
@@ -312,7 +312,13 @@
                     width: calc(100% - 490px);
                 }
             }
+            &-table-reference {
+                // height: 48px;
+                width: 96.5%;
+                //background-color: red;
+            }
         }
+
     }
 }
 
