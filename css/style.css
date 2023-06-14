@@ -239,7 +239,7 @@ li {
   width: 180px;
   margin: 30px auto;
 }
-.admin_container--dashboard #progress-chart {
+.admin_container--dashboard #table-chart {
   position: absolute;
   top: 44%;
   left: 50%;
@@ -265,7 +265,6 @@ li {
 .admin_container--dashboard .table-reference-status-marker {
   height: 16px;
   width: 8px;
-  background-color: yellow;
   border-radius: 4px;
 }
 .admin_container--dashboard .table-reference-status-text {
@@ -289,6 +288,60 @@ li {
 }
 .admin_container--dashboard .table-reference-engaged-text {
   color: #54BA54;
+}
+.admin_container--dashboard-order-reference {
+  height: fit-content;
+  width: calc(100% - 25px);
+  margin: 4px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.admin_container--dashboard .order-reference-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.admin_container--dashboard .order-reference-status-marker {
+  height: 16px;
+  width: 8px;
+  border-radius: 4px;
+}
+.admin_container--dashboard .order-reference-status-text {
+  font-size: 12px;
+  font-weight: 400;
+}
+.admin_container--dashboard .order-reference-total-marker {
+  background-color: #D3F5FF;
+}
+.admin_container--dashboard .order-reference-total-text {
+  color: #14809E;
+}
+.admin_container--dashboard .order-reference-customers-marker {
+  background-color: #FFF1B1;
+}
+.admin_container--dashboard .order-reference-customers-text {
+  color: #CBA703;
+}
+.admin_container--dashboard .order-reference-sales-marker {
+  background-color: #FFCAFD;
+}
+.admin_container--dashboard .order-reference-sales-text {
+  color: #994996;
+}
+.admin_container--dashboard-order-chart {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  padding: 16px 0px;
+}
+.admin_container--dashboard .order-chart {
+  width: calc(100% - 25px);
+  margin: 0px auto;
+  height: 100%;
 }
 
 @keyframes growDown {
@@ -338,6 +391,9 @@ li {
     width: 80%;
     margin-left: 20%;
   }
+  .admin_container--dashboard-order-reference {
+    width: calc(100% - 25px);
+  }
 }
 @media (max-width: 1239px) and (min-width: 1000px) {
   .admin_container .sidebar {
@@ -365,6 +421,10 @@ li {
   }
   .admin_container--dashboard-table-reference {
     width: 96.5%;
+  }
+  .admin_container--dashboard-order-reference {
+    height: 48px;
+    width: calc(100% - 35px);
   }
 }
 
