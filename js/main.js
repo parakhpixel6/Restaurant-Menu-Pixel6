@@ -295,8 +295,25 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.tableStatus').innerHTML = myPie.generateLegend();
 });
 
-gsap.to(".user-hii", {
-  duration: 2,
-  y: -200,
-  ease: Power2.easeOut,
-});
+// gsap.to(".user-hii", {
+//   duration: 2,
+//   y: -200,
+//   ease: Power2.easeOut,
+// });
+
+// var tl = gsap.timeline({repeat: -1, repeatDelay: 1});
+// tl.to(".user-hii", {
+//   duration: 2,
+//   y: -50,
+//   ease:  CustomEase.create("custom", "M0,0 C0.03,0.648 0.707,0.309 0.836,0.43 0.88,0.471 0.822,0.914 1,1.01 "),
+// });
+// tl.to(".user-hey", {
+//   duration: 2,
+//   y: -150,
+//   ease:  CustomEase.create("custom", "M0,0 C0.03,0.648 0.707,0.309 0.836,0.43 0.88,0.471 0.822,0.914 1,1.01 "),
+// });
+// tl.to(".user-hello", {
+//   duration: 2,
+//   y: -200,
+//   ease:  CustomEase.create("custom", "M0,0 C0.03,0.648 0.707,0.309 0.836,0.43 0.88,0.471 0.822,0.914 1,1.01 "),
+// });
