@@ -12,6 +12,7 @@ body {
   width: 100vw;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+  font-weight: 400;
   text-transform: capitalize;
 }
 
@@ -24,6 +25,29 @@ ul,
 li {
   list-style-type: none;
   marker: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container-wrap {
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.content-s-b {
+  justify-content: space-between;
+}
+
+.g-24 {
+  gap: 24px;
 }
 
 .admin_container {
@@ -366,6 +390,19 @@ li {
     transform: scaleY(0);
   }
 }
+.header-title {
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.table-status {
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 14px;
+  border: 1px solid black;
+  padding: 4px 12px;
+}
+
 @media (min-width: 1629px) {
   .admin_container .sidebar {
     width: 16%;
