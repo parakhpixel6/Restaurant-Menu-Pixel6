@@ -294,59 +294,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add the legend in custom area to allow CSS theming.
   document.querySelector('.tableStatus').innerHTML = myPie.generateLegend();
 
-  // var ctx = document.getElementById("order-chart").getContext('2d');
-  // var barChart = new Chart(ctx, {
-  //   type: 'bar',
-  //   options: {
-      
-  //       scales: {
-  //         yAxes: [{
-  //           ticks: {
-  //             display: false,
-  //           },
-  //           gridLines: {
-  //             display: false
-  //           }
-  //         }],
-  //         xAxes: [{
-  //           barThickness: 24,
-  //           ticks: {
-  //             padding: 1,
-  //             fontSize: 12
-  //           },
-  //           gridLines: {
-  //             display: false
-  //           },
-            
-  //         }]
-  //     },
-  //     legend: {
-  //       display: false
-  //     },
-  //   },
-  //   data: {
-  //     labels: ["11am-12pm", "01pm-02pm", "02pm-03pm", "03pm-04pm", "04pm-05pm", "05pm-06pm", "06pm-07pm", "07pm-08pm", "08pm-09pm", "09pm-10pm", , "10pm-11pm"],
-  //     datasets: [{
-  //       data: [30, 69, 3, 17, 28, 24, 7, 30, 69, 3, 17, 28, {
-  //         display: false,
-  //       }],
-  //       backgroundColor: "rgba(255,0,0,1)"
-  //     }, {
-      
-  //       data: [30, 69, 3, 17, 28, 24, 7, 30, 69, 3, 17, 28, {
-  //         display: false,
-  //       }],
-  //       backgroundColor: "rgba(0,0,255,1)"
-  //     }, {
-        
-  //       data: [30, 69, 3, 17, 28, 24, 7, 30, 69, 3, 17, 28, {
-  //         display: false,
-  //       }],
-  //       backgroundColor: "green"
-  //     }]
-  //   }
-  // });
-  // document.querySelector('.orderStatus').innerHTML = barChart.generateLegend();
 });
 
 
