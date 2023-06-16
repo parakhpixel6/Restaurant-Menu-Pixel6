@@ -2,7 +2,7 @@
 
 @import "./base/base";
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
@@ -21,20 +21,56 @@
     justify-content: space-between;
 }
 
-.g-24{
+.content-s-e{
+    justify-content: space-evenly;
+}
+
+.align-ic {
+    align-items: center;
+}
+
+.g-24 {
     gap: 24px;
+}
+
+.g-16 {
+    gap: 16px;
+}
+
+.g-6{
+    gap: 6px;
+}
+
+.g-4 {
+    gap: 4px;
+}
+
+.br-14 {
+    border-radius: 14px;
+}
+
+.br-12 {
+    border-radius: 12px;
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+
+.br-4 {
+    border-radius: 4px;
 }
 
 .admin_container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: $primary-color-dashboard;
 
     @import "./components/sidebar";
 
     &--dashboard {
         background-color: transparent;
-        height: 100%;
+        height: fit-content;
         width: 81%;
         margin-left: 19%;
         padding: 24px;
@@ -42,451 +78,134 @@
         flex-direction: column;
         gap: 16px;
 
-        &-header {
-            //width: calc(100% - 48px);
+        @import "./components/header";
+
+        @import "./layout/graph-notifications";
+
+        &-previous-performance {
             width: 100%;
-            background-color: $widget-white;
-            height: 70px;
-            display: flex;
-            border-radius: 10px;
-            justify-content: space-between;
-            //align-items: center;
-            padding: 10px 16px;
-            overflow: hidden;
-            // margin: 24px;
-            // -webkit-box-shadow: 0px 0px 29px -4px $color-shadow-off-white;
-            // -moz-box-shadow: 0px 0px 29px -4px $color-shadow-off-white;
-            // box-shadow: 0px 0px 29px -4px $color-shadow-off-white;
-
-            &-title {
-                display: flex;
-
-                .user-hii,
-                .user-hey,
-                .user-hello,
-                #user-name {
-                    font-family: Pacifico, serif;
-                    font-size: 28px;
-                    color: $primary-grey;
-                    font-weight: 400;
-                }
-
-                #user-name {
-                    margin-left: 4px;
-                }
-            }
-
-            &-info {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                //width: 26%;
-
-                &-1 {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 0.5rem;
-                    margin-right: 1rem;
-
-                    #time {
-                        font-size: 16px;
-                        color: $primary-black;
-                        font-weight: 400;
-                    }
-                }
-
-                &-2 {
-                    gap: 0.5rem;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-
-                    #date {
-                        font-size: 16px;
-                        color: $primary-black;
-                        font-weight: 400;
-                    }
-                }
-            }
-        }
-
-        &-details {
-            //width: calc(100% - 48px);
-            width: 100%;
-            height: 348px;
-            //background-color: red;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 16px;
-            //margin: 24px; 
-
-            &-graph {
-                width: calc(100% - 314px);
-                height: 100%;
-                background-color: $widget-white;
-                border-radius: 12px;
-                display: flex;
-                // justify-content: space-between;
-                align-items: center;
-                padding: 16px 0px;
-                // box-shadow: $primary-widget-shadow;
-                // -webkit-box-shadow: $primary-widget-shadow;
-                // -moz-box-shadow: $primary-widget-shadow;
-
-                &-pie {
-                    width: calc(100% - 343px);
-                    height: 100%;
-                    border-right: 2px solid $color-shadow-off-white;
-                    // background-color: aquamarine;
-                }
-
-                &-column {
-                    width: calc(100% - 283px);
-                    height: 100%;
-                    // background-color: yellow;
-                }
-            }
-
-            &-notifications {
-                width: calc(100% - 628px);
-                height: 100%;
-                background-color: $widget-white;
-                border-radius: 12px;
-                // box-shadow: $primary-widget-shadow;
-                // -webkit-box-shadow: $primary-widget-shadow;
-                // -moz-box-shadow: $primary-widget-shadow;
-            }
-
-
-        }
-
-        &-table-status {
-            padding: 0px 16px;
-
-            &>h5 {
-                font-size: 16px;
-                font-weight: 600;
-            }
-        }
-
-        &-table-chart {
-            position: relative;
-            height: 180px;
-            width: 180px;
-            //background-color: green;
-            margin: 30px auto;
-        }
-
-        #table-chart {
-            position: absolute;
-            top: 44%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 200px !important;
-            width: 400px !important;
-        }
-
-        &-table-reference {
-            height: 48px;
-            width: calc(100% - 48px);
-            //background-color: red;
-            margin: 16px auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 4px;
-        }
-
-        .table-reference {
-
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            gap: 6px;
-        
-            &-status {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 5px;
-
-
-                &-marker {
-                    height: 16px;
-                    width: 8px;
-                    border-radius: 4px;
-                }
-
-                &-text {
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-            }
-
-            &-occupied-marker {
-                background-color: $sky-blue;
-            }
-
-            &-occupied-text {
-                color: $dark-blue;
-            }
-
-            &-available-marker {
-                background-color: $color-shadow-off-white;
-            }
-
-            &-available-text {
-                color: $color-icons-dark-grey;
-            }
-
-
-            &-engaged-marker {
-                background-color: $green;
-            }
-
-            &-engaged-text {
-                color: $green;
-            }
-
-        }
-
-        &-order-reference {
             height: fit-content;
-            width: calc(100% - 25px);
-            margin: 4px auto;
-            //background-color: red;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            //padding: 0px 25px;
-        }
+            padding: 16px;
+            background-color: $widget-white;
+            border-radius: 12px;
 
-        .order-reference {
-            &-status {
+            .previous-performance-header {
                 display: flex;
-                align-items: center;
                 justify-content: space-between;
-                gap: 5px;
-
-                &-marker {
-                    height: 16px;
-                    width: 8px;
-                    border-radius: 4px;
-                }
+                align-items: center;
 
                 &-text {
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-            }
-
-            &-total-marker {
-                background-color: $blue;
-            }
-
-            &-total-text {
-                color: $dark-blue;
-            }
-
-            &-customers-marker {
-                background-color: $lime-yellow;
-            }
-
-            &-customers-text {
-                color: $dark-yellow;
-            }
-
-            &-sales-marker {
-                background-color: $purpel;
-            }
-
-            &-sales-text {
-                color: $dark-purpel;
-            }
-
-        }
-
-        &-order-chart {
-            position: relative;
-            height: 100%;
-            width: 100%;
-            margin: 0px auto;
-            padding: 16px 0px;
-            // background-color: rgb(221, 195, 140);
-        }
-
-        .orderStatus {
-            width: calc(100% - 35px);
-            margin: 0px auto;
-            height: 100%;
-            // background-color: rgb(209, 238, 105);
-            overflow-x: scroll;
-            //overflow: hidden;
-
-            &::-webkit-scrollbar {
-                width: 2px;
-                height: 3px;
-                cursor: pointer;
-                //border: 1px solid #d5d5d5;
-            }
-
-            &::-webkit-scrollbar-track {
-                border-radius: 0;
-                width: 12px;
-                height: 200px;
-                background: #eeeeee;
-            }
-
-            &::-webkit-scrollbar-thumb {
-                border-radius: 0;
-                background: #b0b0b0;
-            }
-
-            &-barchart {
-                width: 600px;
-                height: 100%;
-                //background-color: red;
-                display: flex;
-                align-items: center;
-                gap: 24px;
-
-                &-grouped {
-                    width: 80px;
-                    height: 100%;
-                    // background-color: rgb(255, 246, 229); 
-                    display: flex;
-                    gap: 4px;
-                    transform: scaleY(-1);
-                    padding-top: 5%;
-                    justify-content: baseline;
-
-                    &-orderBar {
-                        position: relative;
-                        height: 159px;
-                        width: 24px;
-                        border-radius: 4px;
-                        background-color: $blue;
-
-                        & .orderBar-data {
-                            font-size: 12px;
-                            font-weight: 400;
-                            position: absolute;
-                            top: 96%;
-                            left: 50%;
-                            transform: scaleY(-1) translate(-50%, -50%);
-                            color: $dark-blue;
-                        }
-                    }
-
-                    &-customersBar {
-                        position: relative;
-                        height: 124px;
-                        width: 24px;
-                        border-radius: 4px;
-                        background-color: $lime-yellow;
-
-                        & .customersBar-data {
-                            font-size: 12px;
-                            font-weight: 400;
-                            position: absolute;
-                            top: 96%;
-                            left: 50%;
-                            transform: scaleY(-1) translate(-50%, -50%);
-                            color: $dark-yellow;
-                        }
-                    }
-
-                    &-salesBar {
-                        position: relative;
-                        height: 176px;
-                        width: 24px;
-                        border-radius: 4px;
-                        background-color: $purpel;
-
-                        & .salesBar-data {
-                            font-size: 12px;
-                            font-weight: 400;
-                            position: absolute;
-                            top: 96%;
-                            left: 50%;
-                            transform: scaleY(-1) translate(-50%, -50%);
-                            color: $dark-purpel;
-                        }
-                    }
-
-                    &-nodataBar1 {
-                        height: 159px;
-                        width: 24px;
-                        border-radius: 4px;
-                        background-color: $color-shadow-off-white;
-                    }
-
-                    &-nodataBar2 {
-                        height: 124px;
-                        width: 24px;
-                        border-radius: 4px;
-                        background-color: $color-shadow-off-white;
-                    }
-
-                    &-nodataBar3 {
-                        height: 176px;
-                        width: 24px;
-                        border-radius: 4px;
-                        background-color: $color-shadow-off-white;
-                    }
-                }
-            }
-
-            &-xAxes {
-                height: 1px;
-                width: 1120px;
-                margin-top: -30px;
-                background-color: $color-shadow-off-white;
-            }
-
-            &-xAxes-time{
-                height: 16px;
-                width: fit-content;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 24px;
-
-                &-slot {
-                    height: 100%;
-                    width: 80px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin: 0px auto;
-    
-                    &-text {
-                        font-size: 12px;
-                        font-weight: 400;
-                        color: $light-grey;
+                    gap: 16px; 
+                }
+
+                &-heading {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                &-date {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $color-icons-dark-grey;
+                }
+            }
+
+            &-default, li, span {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            
+            .dropdown-wrapper {
+                position: relative;
+                width: 140px;
+                padding: 4px 6px;
+                background: #fff;
+                border-radius: 6px;
+                //box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                outline: none;
+                color: #FF4747;
+                transition: all 0.3s ease-out;
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    top: 50%;
+                    right: 15px;
+                    margin-top: -3px;
+                    border-width: 6px 6px 0 6px;
+                    border-style: solid;
+                    border-color: $active-link-color transparent;
+                }
+                &.is-active {
+                    
+                    background: $active-link-color;
+                    box-shadow: none;
+                    border-bottom: none;
+                    color: white;
+
+                    &:after {
+                        border-color: #ffffff transparent;
+                        transform: rotate(180deg);
+                    }
+                    & .dropdown-list {
+                        max-height: 400px;
                     }
                 }
             }
             
+            .dropdown-list {
+                /* Size & position */
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                /* Styles */
+                background: #fff;
+                border-radius: 0 0 12px 12px;
+                border-top: none;
+                border-bottom: none;
+                list-style: none;
+                transition: all 0.3s ease-out;
+                /* Hiding */
+                max-height: 0;
+                overflow: hidden;
+                & li {
+                    padding: 0 10px;
+                }
+                & li:hover a {
+                    color: $active-link-color;
+                }
+                & li:last-of-type a {
+                    border: none;
+                }
+                & a {
+                    display: block;
+                    text-decoration: none;
+                    color: #333;
+                    padding: 10px 0;
+                    transition: all 0.3s ease-out;
+                }
+            }
         }
 
-        // #order-chart {
-        //     position: absolute;
-        //     top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%, -50%);
-        //     height: 100%;
-        //     width: 700px;
-        // }
     }
 }
 
 @import "./base/animation";
+
+
+
+
+
+
+
+
 
 // Running Orders page css
 
@@ -607,6 +326,10 @@
                 gap: 8px;
                 width: calc(100% - 35px);
 
+            }
+
+            .notification-row-header {
+                width: 240px;
             }
         }
 

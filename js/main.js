@@ -235,37 +235,54 @@ setInterval(printTime, 1000);
 
 
 
-// Function to get the short day name
-function getShortDayName(date) {
-  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  return days[date.getDay()];
-}
-
-// Function to get the month name
-function getMonthName(date) {
-  const months = [
-    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
-  ];
-  return months[date.getMonth()];
-}
-
 // Function to format the date
 function formatDate(date) {
-  const shortDayName = getShortDayName(date);
-  const monthName = getMonthName(date);
-  const day = date.getDate();
+  const shortDayName = date.toLocaleString('default', { weekday: 'short' });
+  const day = String(date.getDate()).padStart(2, '0');
+  const monthName = date.toLocaleString('default', { month: 'short' });
   return `${shortDayName} ${day} ${monthName}`;
 }
 
 // Get the current date
-const currentDate = new Date();
+const today = new Date();
 
-// Format the date
-const formattedDate = formatDate(currentDate);
+// Format the current date
+const formattedDate = formatDate(today);
 
-// Update the <h3> element with the formatted date
+// Update the <h3> element with the formatted current date
 document.getElementById("date").textContent = formattedDate;
+
+// Function to format the date in the desired format
+function formatDateString(date) {
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = date.toLocaleString('default', { month: 'short' });
+  const year = date.getFullYear();
+  return `${day} ${month} ${year}`;
+}
+const todayDate = new Date(today);
+const todayDateFormatted = formatDateString(todayDate);
+console.log("One Day:", todayDateFormatted);
+
+// Calculate and format the last week's date
+const lastWeek = new Date(today);
+lastWeek.setDate(today.getDate() - 7);
+const lastWeekFormatted = formatDateString(lastWeek);
+console.log("Last Week:", lastWeekFormatted);
+
+// Calculate and format the last month's date
+const lastMonth = new Date(today);
+lastMonth.setMonth(today.getMonth() - 1);
+const lastMonthFormatted = formatDateString(lastMonth);
+console.log("Last Month:", lastMonthFormatted);
+
+// Calculate and format the last year's date
+const lastYear = new Date(today);
+lastYear.setFullYear(today.getFullYear() - 1);
+const lastYearFormatted = formatDateString(lastYear);
+console.log("Last Year:", lastYearFormatted);
+
+document.querySelector(".previous-performance-header-date").textContent = `${lastWeekFormatted} - ${todayDateFormatted}`;
+
 
 
 
@@ -295,6 +312,26 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.tableStatus').innerHTML = myPie.generateLegend();
 
 });
+
+
+
+const dd = document.querySelector('#dropdown-wrapper');
+const dl = document.querySelectorAll('.dropdown-list a');
+const ppDefault = document.querySelector('.previous-performance-default');
+
+dd.addEventListener('click', function() {
+  this.classList.toggle('is-active');
+});
+
+dl.forEach((element) => {
+  element.addEventListener('click', function(evt) {
+    ppDefault.innerHTML = evt.currentTarget.textContent;
+  })
+})
+
+
+
+
 
 
 
