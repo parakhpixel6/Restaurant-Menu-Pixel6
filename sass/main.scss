@@ -1,6 +1,9 @@
 @import "./includes/variables";
 @import "./base/base";
 
+.app-container{
+    max-width: 1242px;
+}
 .d-flex {
     display: flex;
 }
@@ -48,6 +51,8 @@
 
 .admin_container {
     width: 100%;
+    max-width: 1242px;
+    margin: 0px auto;
     height: 100vh;
     background-color: $primary-color-dashboard;
 
@@ -56,9 +61,9 @@
     &--dashboard {
         background-color: transparent;
         height: 100%;
-        // width: 80%;
-        // margin-left: 20%;
-        // padding: 24px;
+        width: calc(1242px - ((1242px*20)/100));
+        margin-left: calc(1242px - ((1242px*80)/100));
+        padding: 24px;
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -70,14 +75,14 @@
 // Running Orders page css
 
 .admin_container--dashboard-iframe {
-        background-color: transparent;
-        height: 100%;
-        width: 80%;
-        margin-left: 20%;
-        padding: 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+        // background-color: transparent;
+        // height: 100%;
+        // width: 80%;
+        // margin-left: 20%;
+        // padding: 24px;
+        // display: flex;
+        // flex-direction: column;
+        // gap: 16px;
 
         @import "./components/header";
         @import "./layout/graph-notifications";
@@ -246,132 +251,132 @@
 
 // for large screen desktop for min width 1564px
 
-@media (min-width: 1629px) {
-    .admin_container {
-        & .sidebar {
-            width: 16%;
+// @media (min-width: 1629px) {
+//     .admin_container {
+//         & .sidebar {
+//             width: 16%;
 
-            &--navigations {
-                &-link {
-                    margin-bottom: 2.5rem;
-                    //gap: 4.75rem;
-                }
-            }
-        }
-    }
-    .admin_container--dashboard-iframe {
-        width: 84%;
-        margin-left: 16%;
-    }
-}
+//             &--navigations {
+//                 &-link {
+//                     margin-bottom: 2.5rem;
+//                     //gap: 4.75rem;
+//                 }
+//             }
+//         }
+//     }
+//     .admin_container--dashboard-iframe {
+//         width: 84%;
+//         margin-left: 16%;
+//     }
+// }
 
-// For Medium screen laptops or desktop
-@media (max-width: 1365px) and (min-width: 1240px) {
-    .admin_container {
-        & .sidebar {
-            width: 20%;
+// // For Medium screen laptops or desktop
+// @media (max-width: 1365px) and (min-width: 1240px) {
+//     .admin_container {
+//         & .sidebar {
+//             width: 20%;
 
-            &--navigations {
-                &-link {
-                    margin-bottom: 2rem;
-                    //gap: 2rem;
-                }
-            }
-        }
+//             &--navigations {
+//                 &-link {
+//                     margin-bottom: 2rem;
+//                     //gap: 2rem;
+//                 }
+//             }
+//         }
 
         
-    }
-    .admin_container--dashboard-iframe {
-        width: 80%;
-        margin-left: 20%;
+//     }
+//     .admin_container--dashboard-iframe {
+//         width: 80%;
+//         margin-left: 20%;
 
-        &-order-reference {
-            width: calc(100% - 25px);
-        }
-    }
-}
+//         &-order-reference {
+//             width: calc(100% - 25px);
+//         }
+//     }
+// }
 
-// For device width less than 1240px & min width of 1000px
-// (Ex: Land Escape mode for ipad air, ipad mini, ipad)
-@media (max-width: 1239px) and (min-width: 1000px) {
-    .admin_container {
-        & .sidebar {
-            width: 24%;
+// // For device width less than 1240px & min width of 1000px
+// // (Ex: Land Escape mode for ipad air, ipad mini, ipad)
+// @media (max-width: 1239px) and (min-width: 1000px) {
+//     .admin_container {
+//         & .sidebar {
+//             width: 24%;
 
-            &--navigations {
-                &-link {
-                    margin-bottom: 1.75rem;
-                    //gap: 2rem;
-                }
-            }
-        }
+//             &--navigations {
+//                 &-link {
+//                     margin-bottom: 1.75rem;
+//                     //gap: 2rem;
+//                 }
+//             }
+//         }
 
-    }
-    .admin_container--dashboard-iframe {
-        width: 76%;
-        margin-left: 24%;
+//     }
+//     .admin_container--dashboard-iframe {
+//         width: 76%;
+//         margin-left: 24%;
 
-        &-details {
-            &-graph {
-                width: calc(100% - 258px);
+//         &-details {
+//             &-graph {
+//                 width: calc(100% - 258px);
 
-                &-pie {
-                    width: calc(100% - 231px);
-                }
+//                 &-pie {
+//                     width: calc(100% - 231px);
+//                 }
 
-                &-column {
-                    width: calc(100% - 206px);
-                }
-            }
+//                 &-column {
+//                     width: calc(100% - 206px);
+//                 }
+//             }
 
-            &-notifications {
-                width: calc(100% - 490px);
-            }
-        }
-
-
-        &-table-reference {
-            // height: 48px;
-            gap: 6px;
-            width: 96.5%;
-            margin: 16px auto;
-            //background-color: red;
-        }
+//             &-notifications {
+//                 width: calc(100% - 490px);
+//             }
+//         }
 
 
-        &-order-reference {
-            height: 20px;
-            gap: 8px;
-            width: calc(100% - 35px);
+//         &-table-reference {
+//             // height: 48px;
+//             gap: 6px;
+//             width: 96.5%;
+//             margin: 16px auto;
+//             //background-color: red;
+//         }
 
-        }
 
-        .notification-row-header {
-            width: 240px;
-        }
+//         &-order-reference {
+//             height: 20px;
+//             gap: 8px;
+//             width: calc(100% - 35px);
 
-        &-previous-performance {
-            .previous-performance-cards {
-                .previous-performance-card {
-                    width: calc(100% - 472px);
-                    gap: 16px;
+//         }
 
-                    &-value {
-                        font-size: 24px;
-                    }
+//         .notification-row-header {
+//             width: 240px;
+//         }
 
-                    &-elements {
-                        width: fit-content;
-                        display: flex;
-                        align-items: flex-start;
-                        flex-direction: column;
-                        flex-wrap: wrap;
-                        gap: 4px;
-                    }
-                }
-            }
-        }
-    }
-}
+//         &-previous-performance {
+//             .previous-performance-cards {
+//                 .previous-performance-card {
+//                     width: calc(100% - 472px);
+//                     gap: 16px;
+
+//                     &-value {
+//                         font-size: 24px;
+//                     }
+
+//                     &-elements {
+//                         width: fit-content;
+//                         display: flex;
+//                         align-items: flex-start;
+//                         flex-direction: column;
+//                         flex-wrap: wrap;
+//                         gap: 4px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 //@media (min-width: 1281px) and (max-width: 1440px) {}
