@@ -1,0 +1,129 @@
+&-today-order {
+    width: 100%;
+    height: fit-content;
+    //padding: 16px;
+    background-color: $widget-white;
+    border-radius: 12px;
+
+    .today-order-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin-bottom: 18px;
+        padding: 16px;
+
+        &-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px; 
+        }
+
+        &-heading {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 400;
+
+            
+            & span {
+                font-size: 18px;
+                font-weight: 400;
+            }
+            
+            &.status-completed {
+                color: $green;
+            }
+
+            &.status-inProcess {
+                color: $color-icons-dark-grey;
+            }
+            
+        }
+    }
+
+    .today-order-table-container {
+        width: 100%;
+        height: fit-content;
+        //background-color: rgb(247, 241, 231);
+        //padding: 16px;
+
+        table, td, th {
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        thead tr th{
+            border-bottom: 1px solid $blue;
+            padding-bottom: 20px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        tbody tr td {
+            color: $color-icons-dark-grey;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        tr:nth-child(2n) {
+            background-color: $light-blue;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+       
+        th, td {
+            padding: 14px;
+            // margin-left: 46px;
+        }
+        // .table-container-wrap {
+        //     //padding: 0px 16px;
+        // }    
+
+        .table-process {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 4px;
+            
+            & span {
+                font-size: 16px;
+                color: $color-icons-dark-grey; 
+            }
+
+            
+        }
+
+        .edit-table-process {
+            color: $active-link-color;
+
+            & span {
+                font-size: 16px;
+            }
+        }
+
+        .table-completed {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 4px;
+            color: $green;
+            
+            & span {
+                font-size: 16px;
+            }
+
+        }
+    }
+}

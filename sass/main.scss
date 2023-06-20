@@ -1,5 +1,4 @@
 @import "./includes/variables";
-
 @import "./base/base";
 
 .d-flex {
@@ -57,298 +56,35 @@
     &--dashboard {
         background-color: transparent;
         height: 100%;
-        width: 81%;
-        margin-left: 19%;
-        padding: 24px;
+        // width: 80%;
+        // margin-left: 20%;
+        // padding: 24px;
         display: flex;
         flex-direction: column;
         gap: 16px;
-
-        &-header {
-            //width: calc(100% - 48px);
-            width: 100%;
-            background-color: $widget-white;
-            height: 70px;
-            display: flex;
-            border-radius: 10px;
-            justify-content: space-between;
-            //align-items: center;
-            padding: 10px 16px;
-            overflow: hidden;
-            // margin: 24px;
-            // -webkit-box-shadow: 0px 0px 29px -4px $color-shadow-off-white;
-            // -moz-box-shadow: 0px 0px 29px -4px $color-shadow-off-white;
-            // box-shadow: 0px 0px 29px -4px $color-shadow-off-white;
-
-            &-title {
-                display: flex;
-
-                .user-hii,
-                .user-hey,
-                .user-hello,
-                #user-name {
-                    font-family: Pacifico, serif;
-                    font-size: 28px;
-                    color: $primary-grey;
-                    font-weight: 400;
-                }
-
-                #user-name {
-                    margin-left: -8px;
-                }
-            }
-
-            &-info {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                //width: 26%;
-
-                &-1 {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 0.5rem;
-                    margin-right: 1rem;
-
-                    #time {
-                        font-size: 16px;
-                        color: $primary-black;
-                        font-weight: 400;
-                    }
-                }
-
-                &-2 {
-                    gap: 0.5rem;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-
-                    #date {
-                        font-size: 16px;
-                        color: $primary-black;
-                        font-weight: 400;
-                    }
-                }
-            }
-        }
-
-        &-details {
-            //width: calc(100% - 48px);
-            width: 100%;
-            height: 348px;
-            //background-color: red;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 16px;
-            //margin: 24px;
-
-            &-graph {
-                width: calc(100% - 314px);
-                height: 100%;
-                background-color: $widget-white;
-                border-radius: 12px;
-                display: flex;
-                // justify-content: space-between;
-                align-items: center;
-                padding: 16px 0px;
-                // box-shadow: $primary-widget-shadow;
-                // -webkit-box-shadow: $primary-widget-shadow;
-                // -moz-box-shadow: $primary-widget-shadow;
-
-                &-pie {
-                    width: calc(100% - 343px);
-                    height: 100%;
-                    border-right: 2px solid $color-shadow-off-white;
-                    // background-color: aquamarine;
-                }
-
-                &-column {
-                    width: calc(100% - 283px);
-                    height: 100%;
-                    // background-color: yellow;
-                }
-            }
-
-            &-notifications {
-                width: calc(100% - 628px);
-                height: 100%;
-                background-color: $widget-white;
-                border-radius: 12px;
-                // box-shadow: $primary-widget-shadow;
-                // -webkit-box-shadow: $primary-widget-shadow;
-                // -moz-box-shadow: $primary-widget-shadow;
-            }
-        }
-
-        &-table-status {
-            padding: 0px 16px;
-
-            & > h5 {
-                font-size: 16px;
-                font-weight: 600;
-            }
-        }
-
-        &-table-chart {
-            position: relative;
-            height: 180px;
-            width: 180px;
-            //background-color: green;
-            margin: 30px auto;
-        }
-
-        #table-chart {
-            position: absolute;
-            top: 44%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 200px !important;
-            width: 400px !important;
-        }
-
-        &-table-reference {
-            height: 48px;
-            width: calc(100% - 48px);
-            //background-color: red;
-            margin: 16px auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .table-reference {
-            &-status {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 5px;
-
-                &-marker {
-                    height: 16px;
-                    width: 8px;
-                    border-radius: 4px;
-                }
-
-                &-text {
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-            }
-
-            &-occupied-marker {
-                background-color: $sky-blue;
-            }
-
-            &-occupied-text {
-                color: $dark-blue;
-            }
-
-            &-available-marker {
-                background-color: $color-shadow-off-white;
-            }
-
-            &-available-text {
-                color: $color-icons-dark-grey;
-            }
-
-            &-engaged-marker {
-                background-color: $green;
-            }
-
-            &-engaged-text {
-                color: $green;
-            }
-        }
-
-        &-order-reference {
-            height: fit-content;
-            width: calc(100% - 25px);
-            margin: 4px auto;
-            //background-color: red;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            //padding: 0px 25px;
-        }
-
-        .order-reference {
-            &-status {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 5px;
-
-                &-marker {
-                    height: 16px;
-                    width: 8px;
-                    border-radius: 4px;
-                }
-
-                &-text {
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-            }
-
-            &-total-marker {
-                background-color: $blue;
-            }
-
-            &-total-text {
-                color: $dark-blue;
-            }
-
-            &-customers-marker {
-                background-color: $lime-yellow;
-            }
-
-            &-customers-text {
-                color: $dark-yellow;
-            }
-
-            &-sales-marker {
-                background-color: $purpel;
-            }
-
-            &-sales-text {
-                color: $dark-purpel;
-            }
-        }
-
-        &-order-chart {
-            position: relative;
-            height: 100%;
-            width: 100%;
-            margin: 0px auto;
-            padding: 16px 0px;
-            //background-color: rgb(221, 195, 140);
-        }
-
-        .order-chart {
-            width: calc(100% - 25px);
-            margin: 0px auto;
-            height: 100%;
-            //background-color: rgb(209, 238, 105);
-        }
-
-        // #order-chart {
-        //     position: absolute;
-        //     top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%, -50%);
-        //     height: 100%;
-        //     width: 700px;
-        // }
     }
 }
 
 @import "./base/animation";
 
 // Running Orders page css
+
+.admin_container--dashboard-iframe {
+        background-color: transparent;
+        height: 100%;
+        width: 80%;
+        margin-left: 20%;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @import "./components/header";
+        @import "./layout/graph-notifications";
+        @import "./layout/previous-performance";
+        @import "./layout/today-order-table";
+        @import "./components/filter_dropdown";
+}
 
 .header-title {
     font-size: 24px;
@@ -510,100 +246,132 @@
 
 // for large screen desktop for min width 1564px
 
-// @media (min-width: 1629px) {
-//     .admin_container {
-//         & .sidebar {
-//             width: 16%;
+@media (min-width: 1629px) {
+    .admin_container {
+        & .sidebar {
+            width: 16%;
 
-//             &--navigations {
-//                 &-link {
-//                     margin-bottom: 2.5rem;
-//                     gap: 4.75rem;
-//                 }
-//             }
-//         }
+            &--navigations {
+                &-link {
+                    margin-bottom: 2.5rem;
+                    //gap: 4.75rem;
+                }
+            }
+        }
+    }
+    .admin_container--dashboard-iframe {
+        width: 84%;
+        margin-left: 16%;
+    }
+}
 
-//         &--dashboard {
-//             width: 84%;
-//             margin-left: 16%;
-//         }
-//     }
-// }
+// For Medium screen laptops or desktop
+@media (max-width: 1365px) and (min-width: 1240px) {
+    .admin_container {
+        & .sidebar {
+            width: 20%;
 
-// // For Medium screen laptops or desktop
-// @media (max-width: 1365px) and (min-width: 1240px) {
-//     .admin_container {
-//         & .sidebar {
-//             width: 20%;
+            &--navigations {
+                &-link {
+                    margin-bottom: 2rem;
+                    //gap: 2rem;
+                }
+            }
+        }
 
-//             &--navigations {
-//                 &-link {
-//                     margin-bottom: 2rem;
-//                     gap: 2rem;
-//                 }
-//             }
-//         }
+        
+    }
+    .admin_container--dashboard-iframe {
+        width: 80%;
+        margin-left: 20%;
 
-//         &--dashboard {
-//             width: 80%;
-//             margin-left: 20%;
+        &-order-reference {
+            width: calc(100% - 25px);
+        }
+    }
+}
 
-//             &-order-reference {
-//                 width: calc(100% - 25px);
-//             }
-//         }
-//     }
-// }
+// For device width less than 1240px & min width of 1000px
+// (Ex: Land Escape mode for ipad air, ipad mini, ipad)
+@media (max-width: 1239px) and (min-width: 1000px) {
+    .admin_container {
+        & .sidebar {
+            width: 24%;
 
-// // For device width less than 1240px & min width of 1000px
-// // (Ex: Land Escape mode for ipad ai5, ipad mini, ipad)
-// @media (max-width: 1239px) and (min-width: 1000px) {
-//     .admin_container {
-//         & .sidebar {
-//             width: 24%;
+            &--navigations {
+                &-link {
+                    margin-bottom: 1.75rem;
+                    //gap: 2rem;
+                }
+            }
+        }
 
-//             &--navigations {
-//                 &-link {
-//                     margin-bottom: 1.75rem;
-//                     gap: 2rem;
-//                 }
-//             }
-//         }
+    }
+    .admin_container--dashboard-iframe {
+        width: 76%;
+        margin-left: 24%;
 
-//         &--dashboard {
-//             width: 76%;
-//             margin-left: 24%;
+        &-details {
+            &-graph {
+                width: calc(100% - 258px);
 
-//             &-details {
-//                 &-graph {
-//                     width: calc(100% - 258px);
+                &-pie {
+                    width: calc(100% - 231px);
+                }
 
-//                     &-pie {
-//                         width: calc(100% - 231px);
-//                     }
+                &-column {
+                    width: calc(100% - 206px);
+                }
+            }
 
-//                     &-column {
-//                         width: calc(100% - 206px);
-//                     }
-//                 }
+            &-notifications {
+                width: calc(100% - 490px);
+            }
+        }
 
-//                 &-notifications {
-//                     width: calc(100% - 490px);
-//                 }
-//             }
 
-//             &-table-reference {
-//                 // height: 48px;
-//                 width: 96.5%;
-//                 //background-color: red;
-//             }
+        &-table-reference {
+            // height: 48px;
+            gap: 6px;
+            width: 96.5%;
+            margin: 16px auto;
+            //background-color: red;
+        }
 
-//             &-order-reference {
-//                 height: 48px;
-//                 width: calc(100% - 35px);
-//             }
-//         }
-//     }
-// }
+
+        &-order-reference {
+            height: 20px;
+            gap: 8px;
+            width: calc(100% - 35px);
+
+        }
+
+        .notification-row-header {
+            width: 240px;
+        }
+
+        &-previous-performance {
+            .previous-performance-cards {
+                .previous-performance-card {
+                    width: calc(100% - 472px);
+                    gap: 16px;
+
+                    &-value {
+                        font-size: 24px;
+                    }
+
+                    &-elements {
+                        width: fit-content;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 //@media (min-width: 1281px) and (max-width: 1440px) {}

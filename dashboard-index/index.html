@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Restaurant Digital Menu</title>
+</head>
+
+<body>
+
+    <section class="admin_container--dashboard-iframe">
+        <header class="admin_container--dashboard-iframe-header">
+            <div class="admin_container--dashboard-iframe-header-title">
+                <div id="user-welcome">
+                    <h3 class="user-hii">Hii</h3>
+                    <!-- <h3 class="user-hey">Hey </h3>
+                            <h3 class="user-hello">Hello</h3> -->
+                </div>
+                <h3 id="user-name">, Raghav</h3>
+            </div>
+            <div class="admin_container--dashboard-iframe-header-info">
+                <div class="admin_container--dashboard-iframe-header-info-1">
+                    <img class="time-info" src="../assets/images/img/time.svg" alt="clock">
+                    <h5 id="time"></h5>
+                </div>
+                <div class="admin_container--dashboard-iframe-header-info-2">
+                    <img class="date-info" src="../assets/images/img/date.svg" alt="calender">
+                    <h5 id="date"></h5>
+                </div>
+            </div>
+        </header>
+        <div class="admin_container--dashboard-iframe-details">
+            <div class="admin_container--dashboard-iframe-details-graph">
+                <div class="admin_container--dashboard-iframe-details-graph-pie">
+                    <div class="admin_container--dashboard-iframe-table-status">
+                        <h5 class="table-status_heading">table Status</h5>
+                    </div>
+                    <div class="admin_container--dashboard-iframe-table-chart">
+                        <canvas id="table-chart"></canvas>
+                        <div class="tableStatus"></div>
+                    </div>
+                    <div class="admin_container--dashboard-iframe-table-reference">
+                        <div class="table-reference">
+                            <div class="table-reference-available table-reference-status">
+                                    <div class="table-reference-status-marker table-reference-occupied-marker"></div>
+                                    <p class="table-reference-status-text table-reference-occupied-text">Occupied - 17%</p>
+                            </div>
+                            <div class="table-reference-available table-reference-status">
+                                    <div class="table-reference-status-marker table-reference-available-marker"></div>
+                                    <p class="table-reference-status-text table-reference-available-text">Available - 60%</p>
+                            </div>
+                            <div class="table-reference-engaged table-reference-status">
+                                    <div class="table-reference-status-marker table-reference-engaged-marker"></div>
+                                    <p class="table-reference-status-text table-reference-engaged-text">Engaged - 23%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin_container--dashboard-iframe-details-graph-column">
+                    <div class="admin_container--dashboard-iframe-order-reference">
+                        <div class="order-reference-total order-reference-status">
+                            <div class="order-reference-status-marker order-reference-total-marker"></div>
+                            <p class="order-reference-status-text order-reference-total-text">orders - 15</p>
+                        </div>
+                        <div class="order-reference-customers order-reference-status">
+                            <div class="order-reference-status-marker order-reference-customers-marker"></div>
+                            <p class="order-reference-status-text order-reference-customers-text">customers - 45</p>
+                        </div>
+                        <div class="order-reference-sales order-reference-status">
+                            <div class="order-reference-status-marker order-reference-sales-marker"></div>
+                            <p class="order-reference-status-text order-reference-sales-text">sales - 55k</p>
+                        </div>
+                    </div>
+                    <div class="admin_container--dashboard-iframe-order-chart">
+                        <div class="orderStatus">
+                            <div class="orderStatus-barchart">
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-orderBar">
+                                        <p class="orderBar-data">5</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-customersBar">
+                                        <p class="customersBar-data">15</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-salesBar">
+                                        <p class="salesBar-data">55k</p>
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-orderBar">
+                                        <p class="orderBar-data">5</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-customersBar">
+                                        <p class="customersBar-data">15</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-salesBar">
+                                        <p class="salesBar-data">55k</p>
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-orderBar">
+                                        <p class="orderBar-data">5</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-customersBar">
+                                        <p class="customersBar-data">15</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-salesBar">
+                                        <p class="salesBar-data">55k</p>
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-orderBar">
+                                        <p class="orderBar-data">5</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-customersBar">
+                                        <p class="customersBar-data">15</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-salesBar">
+                                        <p class="salesBar-data">55k</p>
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-orderBar">
+                                        <p class="orderBar-data">5</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-customersBar">
+                                        <p class="customersBar-data">15</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-salesBar">
+                                        <p class="salesBar-data">55k</p>
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-orderBar">
+                                        <p class="orderBar-data">5</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-customersBar">
+                                        <p class="customersBar-data">15</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-salesBar">
+                                        <p class="salesBar-data">55k</p>
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-orderBar">
+                                        <p class="orderBar-data">5</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-customersBar">
+                                        <p class="customersBar-data">15</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-salesBar">
+                                        <p class="salesBar-data">55k</p>
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-orderBar">
+                                        <p class="orderBar-data">5</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-customersBar">
+                                        <p class="customersBar-data">15</p>
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-salesBar">
+                                        <p class="salesBar-data">55k</p>
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-nodataBar1">
+    
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-nodataBar2">
+    
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-nodataBar3">
+    
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-nodataBar1">
+    
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-nodataBar2">
+    
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-nodataBar3">
+    
+                                    </div>
+                                </div>
+                                <div class="orderStatus-barchart-grouped">
+                                    <div class="orderStatus-barchart-grouped-nodataBar1">
+    
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-nodataBar2">
+    
+                                    </div>
+                                    <div class="orderStatus-barchart-grouped-nodataBar3">
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orderStatus-xAxes"></div>
+                            <div class="orderStatus-xAxes-time">
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">11am - 12pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">12pm - 01pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">01pm - 02pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">02pm - 03pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">03pm - 04pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">04pm - 05pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">05pm - 06pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">06pm - 07pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">07pm - 08pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">08pm - 09pm</p>
+                                </div>
+                                <div class="orderStatus-xAxes-time-slot">
+                                    <p class="orderStatus-xAxes-time-slot-text">09pm - 10pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin_container--dashboard-iframe-details-notifications">
+                <li class="notification-row-header">
+                    <p class="notification-row-header-heading">notification</p>
+                    <p class="notification-row-header-unread">1 unread</p>
+                </li>
+                <ul class="notification-row">
+                    <li class="notification-row-message active">
+                        <p class="notification-row-message-time">12:40 pm</p>
+                        <p class="notification-row-message-text">Table No. 16 has request for bill, <span> Print bill
+                            </span></p>
+                    </li>
+                    <li class="notification-row-message">
+                        <p class="notification-row-message-time">12:25 pm</p>
+                        <p class="notification-row-message-text">Table No. 13 has request for cash payment, <span> Accept
+                                request </span></p>
+                    </li>
+                    <li class="notification-row-message">
+                        <p class="notification-row-message-time">11:45 pm</p>
+                        <p class="notification-row-message-text">Table No. 12 has placed a new order, <span> View order
+                            </span></p>
+                    </li>
+                    <li class="notification-row-message">
+                        <p class="notification-row-message-time">11:35 pm</p>
+                        <p class="notification-row-message-text">Onion stock has reached to its threshold value, <span> View
+                            </span></p>
+                    </li>
+                    <li class="notification-row-message">
+                        <p class="notification-row-message-time">11:15 pm</p>
+                        <p class="notification-row-message-text">Table No. 01 has request for cancellation of new order,
+                            <span> Accept request </span></p>
+                    </li>
+                    <li class="notification-row-message">
+                        <p class="notification-row-message-time">11:00 pm</p>
+                        <p class="notification-row-message-text">Table No. 06 has request for bill, <span> Print bill
+                            </span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="admin_container--dashboard-iframe-previous-performance">
+    
+            <div class="previous-performance-header">
+                <div class="previous-performance-header-text">
+                    <p class="previous-performance-header-heading">Previous Performance</p>
+                    <p class="previous-performance-header-date"></p>
+                </div>
+                <div class="previous-performance-header-dropDown">
+                    <div id="dropdown-wrapper" class="previous-performance-selectSlot dropdown-wrapper" tabindex="1">
+                        <span class="dropdown-default">Last Week</span>
+    
+                        <ul class="dropdown-list">
+                            <li><a href="#">Last Week</a></li>
+                            <li><a href="#">Last month</a></li>
+                            <li><a href="#">Last year</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="previous-performance-cards">
+                <div class="previous-performance-card previous-performance-card-orders">
+    
+                    <div class="previous-performance-card-icon">
+                        <img src="../assets/images/img/orders.svg" alt="">
+                    </div>
+                    <div class="previous-performance-card-content">
+                        <div class="previous-performance-card-value">
+                            <p>1085</p>
+                        </div>
+                        <div class="previous-performance-card-elements">
+                            <div class="previous-performance-card-title">
+                                <p>Orders</p>
+                            </div>
+                            <div class="previous-performance-card-button">
+                                <button>Show Details</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="previous-performance-card previous-performance-card-customers">
+                    <div class="previous-performance-card-icon">
+                        <img src="../assets/images/img/customers.svg" alt="">
+                    </div>
+                    <div class="previous-performance-card-content">
+                        <div class="previous-performance-card-value">
+                            <p>102</p>
+                        </div>
+                        <div class="previous-performance-card-elements">
+                            <div class="previous-performance-card-title">
+                                <p>Customers</p>
+                            </div>
+                            <div class="previous-performance-card-button">
+                                <button>Show Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="previous-performance-card previous-performance-card-sales">
+                    <div class="previous-performance-card-icon">
+                        <img src="../assets/images/img/sales.svg" alt="">
+                    </div>
+                    <div class="previous-performance-card-content">
+                        <div class="previous-performance-card-value">
+                            <p>2,25,568</p>
+                        </div>
+                        <div class="previous-performance-card-elements">
+                            <div class="previous-performance-card-title">
+                                <p>Sales</p>
+                            </div>
+                            <div class="previous-performance-card-button">
+                                <button>Show Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="admin_container--dashboard-iframe-today-order">
+            <div class="today-order-header">
+                <div class="today-order-header-text">
+                    <p class="today-order-header-heading">Today's Order</p>
+                    <div class="today-order-header-status status-completed">
+                        <span class="material-symbols-rounded">check_circle</span>
+                        <p>243 Completed</p>
+                    </div>
+                    <div class="today-order-header-status status-inProcess">
+                        <span class="material-symbols-rounded">cached</span>
+                        <p>08 In-Process</p>
+                    </div>
+                </div>
+                <div class="today-order-header-dropDown">
+                    <div id="dropdown-wrapper" class="today-order-selectSlot dropdown-wrapper" tabindex="1">
+                        <span class="dropdown-default">Filter Orders</span>
+    
+                        <ul class="dropdown-list">
+                            <li><a href="#">All Orders</a></li>
+                            <li><a href="#">In-Process</a></li>
+                            <li><a href="#">Completed</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="today-order-table-container">
+                <div class="table-container-wrap">
+                    <div class="table-wrap">
+                        <table id="today-order">
+                            <thead>
+                                <tr class="today-order-table-heading">
+                                    <th>Sr. No.</th>
+                                    <th>Order No.</th>
+                                    <th>Table No.</th>
+                                    <th>Customer Name</th>
+                                    <th>Order Value</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>E04A01</td>
+                                    <td>15</td>
+                                    <td>Deepinder Goyal</td>
+                                    <td>&#8377;1525.00</td>
+                                    <td class="table-process"><span class="material-symbols-rounded">cached</span>In-Process
+                                    </td>
+                                    <td class="edit-table-process"><span class="material-symbols-rounded">stylus</span>Edit
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>E07B14</td>
+                                    <td>10</td>
+                                    <td>Arjun Jadhav</td>
+                                    <td>&#8377;7925.00</td>
+                                    <td class="table-process"><span class="material-symbols-rounded">cached</span>In-Process
+                                    </td>
+                                    <td class="edit-table-process"><span class="material-symbols-rounded">stylus</span>Edit
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>E08B12</td>
+                                    <td>10</td>
+                                    <td>Karan Mahamaya</td>
+                                    <td>&#8377;6525.00</td>
+                                    <td class="table-completed"><span
+                                            class="material-symbols-rounded">check_circle</span>Completed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>E09F34</td>
+                                    <td>12</td>
+                                    <td>Jitendra Kumar</td>
+                                    <td>&#8377;8925.00</td>
+                                    <td class="table-completed"><span
+                                            class="material-symbols-rounded">check_circle</span>Completed</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td>E05B16</td>
+                                    <td>19</td>
+                                    <td>Vinod Goswami</td>
+                                    <td>&#8377;5025.00</td>
+                                    <td class="table-completed"><span
+                                            class="material-symbols-rounded">check_circle</span>Completed</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+    integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"
+    integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/date-time.js"></script>
+</body>
+
+</html>
