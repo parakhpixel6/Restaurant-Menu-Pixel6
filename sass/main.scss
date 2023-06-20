@@ -75,15 +75,6 @@
 // Running Orders page css
 
 .admin_container--dashboard-iframe {
-        // background-color: transparent;
-        // height: 100%;
-        // width: 80%;
-        // margin-left: 20%;
-        // padding: 24px;
-        // display: flex;
-        // flex-direction: column;
-        // gap: 16px;
-
         @import "./components/header";
         @import "./layout/graph-notifications";
         @import "./layout/previous-performance";
