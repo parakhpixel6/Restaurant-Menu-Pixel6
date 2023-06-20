@@ -1,0 +1,110 @@
+&-previous-performance {
+    width: 100%;
+    height: fit-content;
+    padding: 16px;
+    background-color: $widget-white;
+    border-radius: 12px;
+
+    .previous-performance-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+
+        &-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px; 
+        }
+
+        &-heading {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &-date {
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-icons-dark-grey;
+        }
+    }
+
+    @import "../components/filter_dropdown";
+
+
+    .previous-performance-cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin: auto;
+        
+
+        .previous-performance-card {
+            width: calc(100% - 600px);
+            height: 123px;
+            border-radius: 12px;
+            display: flex;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            
+            &-orders {
+                background-color: $light-blue;
+                color: $dark-blue;
+            }
+            &-customers {
+                background-color: $light-yellow;
+                color: $dark-yellow;
+            }
+            &-sales {
+                background-color: $light-purpel;
+                color: $dark-purpel;
+            }
+
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-bottom: 16px;
+                width: fit-content;
+                font-size: 16px;
+            }
+
+            &-value {
+                font-family: Pacifico, sans-serif;
+                font-size: 40px;
+            }
+
+            &-elements {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 32px;
+            }
+
+            &-button button{
+                cursor: pointer;
+                height: 24px;
+                width: 88px;
+                border-radius: 8px;
+                box-shadow: none;
+                border: none;
+                color: #fff;
+                font-size: 12px;
+                background: rgb(255,102,102);
+                background: linear-gradient(90deg, rgba(255,102,102,1) 40%, rgba(255,150,136,1) 100%);
+            }
+        }
+    }
+}

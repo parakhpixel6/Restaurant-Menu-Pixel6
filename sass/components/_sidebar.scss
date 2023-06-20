@@ -1,10 +1,10 @@
 & .sidebar {
     height: 100%;
-    width: 19.1%;
+    width: 20%;
     //overflow-y: auto;
     background-color: $widget-white;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     text-align: left;
     padding: 1rem;
     box-shadow: -5px 0px 25px 0px $color-shadow-off-white;
@@ -81,7 +81,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 2.5rem;
-            gap: 3rem;
+            // gap: 3rem;
             cursor: pointer;
 
             &-text {

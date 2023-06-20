@@ -65,134 +65,160 @@
     width: 100%;
     min-height: 100vh;
     background-color: $primary-color-dashboard;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     @import "./components/sidebar";
 
     &--dashboard {
         background-color: transparent;
         height: fit-content;
-        width: 81%;
-        margin-left: 19%;
+        width: 80%;
+        margin-left: 20%;
         padding: 24px;
         display: flex;
         flex-direction: column;
         gap: 16px;
+        
 
         @import "./components/header";
 
         @import "./layout/graph-notifications";
 
-        &-previous-performance {
+        @import "./layout/previous-performance";
+
+        &-today-order {
             width: 100%;
             height: fit-content;
-            padding: 16px;
+            //padding: 16px;
             background-color: $widget-white;
             border-radius: 12px;
-
-            .previous-performance-header {
+        
+            .today-order-header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-
+                // margin-bottom: 18px;
+                padding: 16px;
+        
                 &-text {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 16px; 
                 }
-
+        
                 &-heading {
                     font-size: 18px;
                     font-weight: 600;
                 }
 
-                &-date {
+                &-status {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
                     font-size: 14px;
                     font-weight: 400;
-                    color: $color-icons-dark-grey;
-                }
-            }
 
-            &-default, li, span {
-                font-size: 14px;
-                font-weight: 400;
-            }
-
-            
-            .dropdown-wrapper {
-                position: relative;
-                width: 140px;
-                padding: 4px 6px;
-                background: #fff;
-                border-radius: 6px;
-                //box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-                cursor: pointer;
-                outline: none;
-                color: #FF4747;
-                transition: all 0.3s ease-out;
-                &:after {
-                    content: "";
-                    width: 0;
-                    height: 0;
-                    position: absolute;
-                    top: 50%;
-                    right: 15px;
-                    margin-top: -3px;
-                    border-width: 6px 6px 0 6px;
-                    border-style: solid;
-                    border-color: $active-link-color transparent;
-                }
-                &.is-active {
                     
-                    background: $active-link-color;
-                    box-shadow: none;
-                    border-bottom: none;
-                    color: white;
+                    & span {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    
+                    &.status-completed {
+                        color: $green;
+                    }
 
-                    &:after {
-                        border-color: #ffffff transparent;
-                        transform: rotate(180deg);
+                    &.status-inProcess {
+                        color: $color-icons-dark-grey;
                     }
-                    & .dropdown-list {
-                        max-height: 400px;
-                    }
+                    
                 }
             }
-            
-            .dropdown-list {
-                /* Size & position */
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                /* Styles */
-                background: #fff;
-                border-radius: 0 0 12px 12px;
-                border-top: none;
-                border-bottom: none;
-                list-style: none;
-                transition: all 0.3s ease-out;
-                /* Hiding */
-                max-height: 0;
-                overflow: hidden;
-                & li {
-                    padding: 0 10px;
+
+            .today-order-table-container {
+                width: 100%;
+                height: fit-content;
+                //background-color: rgb(247, 241, 231);
+                //padding: 16px;
+
+                table, td, th {
+                    text-align: left;
+                    white-space: nowrap;
                 }
-                & li:hover a {
+
+                thead tr th{
+                    border-bottom: 1px solid $blue;
+                    padding-bottom: 20px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                tbody tr td {
+                    color: $color-icons-dark-grey;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                tr:nth-child(2n) {
+                    background-color: $light-blue;
+                }
+
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+               
+                th, td {
+                    padding: 14px 16px;
+                    // margin-left: 46px;
+                }
+                // .table-container-wrap {
+                //     //padding: 0px 16px;
+                // }    
+
+                .table-process {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 4px;
+                    
+                    & span {
+                        font-size: 16px;
+                        color: $color-icons-dark-grey; 
+                    }
+
+                    
+                }
+
+                .edit-table-process {
                     color: $active-link-color;
+
+                    & span {
+                        font-size: 16px;
+                    }
                 }
-                & li:last-of-type a {
-                    border: none;
-                }
-                & a {
-                    display: block;
-                    text-decoration: none;
-                    color: #333;
-                    padding: 10px 0;
-                    transition: all 0.3s ease-out;
+
+                .table-completed {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 4px;
+                    color: $green;
+                    
+                    & span {
+                        font-size: 16px;
+                    }
+
                 }
             }
         }
+
+        @import "./components/filter_dropdown";
 
     }
 }
@@ -235,7 +261,7 @@
             &--navigations {
                 &-link {
                     margin-bottom: 2.5rem;
-                    gap: 4.75rem;
+                    // gap: 4.75rem;
                 }
             }
         }
@@ -257,7 +283,7 @@
             &--navigations {
                 &-link {
                     margin-bottom: 2rem;
-                    gap: 2rem;
+                    // gap: 2rem;
                 }
             }
         }
@@ -284,7 +310,7 @@
             &--navigations {
                 &-link {
                     margin-bottom: 1.75rem;
-                    gap: 2rem;
+                    // gap: 2rem;
                 }
             }
         }
@@ -330,6 +356,28 @@
 
             .notification-row-header {
                 width: 240px;
+            }
+
+            &-previous-performance {
+                .previous-performance-cards {
+                    .previous-performance-card {
+                        width: calc(100% - 472px);
+                        gap: 16px;
+
+                        &-value {
+                            font-size: 24px;
+                        }
+
+                        &-elements {
+                            width: fit-content;
+                            display: flex;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            gap: 4px;
+                        }
+                    }
+                }
             }
         }
 

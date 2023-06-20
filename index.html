@@ -498,31 +498,180 @@
                 </div>
             </div>
             <div class="admin_container--dashboard-previous-performance">
-                <div class="previous-performance-header">
-                    <div class="previous-performance-header-text">
-                        <p class="previous-performance-header-heading">Previous Performance</p>
-                        <p class="previous-performance-header-date"></p>
+                
+                    <div class="previous-performance-header">
+                        <div class="previous-performance-header-text">
+                            <p class="previous-performance-header-heading">Previous Performance</p>
+                            <p class="previous-performance-header-date"></p>
+                        </div>
+                        <div class="previous-performance-header-dropDown">
+                            <div id="dropdown-wrapper" class="previous-performance-selectSlot dropdown-wrapper" tabindex="1">
+                                <span class="dropdown-default">Last Week</span>
+                              
+                                <ul class="dropdown-list">
+                                    <li><a href="#">Last Week</a></li>
+                                    <li><a href="#">Last month</a></li>
+                                    <li><a href="#">Last year</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="previous-performance-header-dropDown">
-                        <div id="dropdown-wrapper" class="previous-performance-selectSlot dropdown-wrapper" tabindex="1">
-                            <span class="previous-performance-default">Last 7 days</span>
+                    <div class="previous-performance-cards">
+                        <div class="previous-performance-card previous-performance-card-orders">
+                            
+                                <div class="previous-performance-card-icon">
+                                    <img src="assets\images\img\orders.svg" alt="">
+                                </div>
+                                <div class="previous-performance-card-content">
+                                    <div class="previous-performance-card-value">
+                                        <p>1085</p>
+                                    </div>
+                                    <div class="previous-performance-card-elements">
+                                        <div class="previous-performance-card-title">
+                                            <p>Orders</p>
+                                        </div>
+                                        <div class="previous-performance-card-button">
+                                            <button>Show Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="previous-performance-card previous-performance-card-customers">
+                            <div class="previous-performance-card-icon">
+                                <img src="assets\images\img\customers.svg" alt="">
+                            </div>
+                            <div class="previous-performance-card-content">
+                                <div class="previous-performance-card-value">
+                                    <p>102</p>
+                                </div>
+                                <div class="previous-performance-card-elements">
+                                    <div class="previous-performance-card-title">
+                                        <p>Customers</p>
+                                    </div>
+                                    <div class="previous-performance-card-button">
+                                        <button>Show Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="previous-performance-card previous-performance-card-sales">
+                            <div class="previous-performance-card-icon">
+                                <img src="assets\images\img\sales.svg" alt="">
+                            </div>
+                            <div class="previous-performance-card-content">
+                                <div class="previous-performance-card-value">
+                                    <p>2,25,568</p>
+                                </div>
+                                <div class="previous-performance-card-elements">
+                                    <div class="previous-performance-card-title">
+                                        <p>Sales</p>
+                                    </div>
+                                    <div class="previous-performance-card-button">
+                                        <button>Show Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+            </div>
+            <div class="admin_container--dashboard-today-order">
+                <div class="today-order-header">
+                    <div class="today-order-header-text">
+                        <p class="today-order-header-heading">Today's Order</p>
+                        <div class="today-order-header-status status-completed">
+                            <span class="material-symbols-rounded">check_circle</span>
+                            <p>243 Completed</p>
+                        </div>
+                        <div class="today-order-header-status status-inProcess">
+                            <span class="material-symbols-rounded">cached</span>
+                            <p>08 In-Process</p>
+                        </div>
+                    </div>
+                    <div class="today-order-header-dropDown">
+                        <div id="dropdown-wrapper" class="today-order-selectSlot dropdown-wrapper" tabindex="1">
+                            <span class="dropdown-default">Filter Orders</span>
                           
                             <ul class="dropdown-list">
-                                <li><a href="#">Last 7 days</a></li>
-                                <li><a href="#">Last month</a></li>
-                                <li><a href="#">Last year</a></li>
+                                <li><a href="#">All Orders</a></li>
+                                <li><a href="#">In-Process</a></li>
+                                <li><a href="#">Completed</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <div class="today-order-table-container">
+                    <div class="table-container-wrap">
+                        <div class="table-wrap">
+                            <table id="today-order">
+                                <thead>
+                                    <tr class="today-order-table-heading">
+                                        <th>Sr. No.</th>
+                                        <th>Order No.</th>
+                                        <th>Table No.</th>
+                                        <th>Customer Name</th>
+                                        <th>Order Value</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>E04A01</td>
+                                        <td>15</td>
+                                        <td>Deepinder Goyal</td>
+                                        <td>&#8377;1525.00</td>
+                                        <td class="table-process"><span class="material-symbols-rounded">cached</span>In-Process</td>
+                                        <td class="edit-table-process"><span class="material-symbols-rounded">stylus</span>Edit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>E07B14</td>
+                                        <td>10</td>
+                                        <td>Arjun Jadhav</td>
+                                        <td>&#8377;7925.00</td>
+                                        <td class="table-process"><span class="material-symbols-rounded">cached</span>In-Process</td>
+                                        <td class="edit-table-process"><span class="material-symbols-rounded">stylus</span>Edit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>E08B12</td>
+                                        <td>10</td>
+                                        <td>Karan Mahamaya</td>
+                                        <td>&#8377;6525.00</td>
+                                        <td class="table-completed"><span class="material-symbols-rounded">check_circle</span>Completed</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>E09F34</td>
+                                        <td>12</td>
+                                        <td>Jitendra Kumar</td>
+                                        <td>&#8377;8925.00</td>
+                                        <td class="table-completed"><span class="material-symbols-rounded">check_circle</span>Completed</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>E05B16</td>
+                                        <td>19</td>
+                                        <td>Vinod Goswami</td>
+                                        <td>&#8377;5025.00</td>
+                                        <td class="table-completed"><span class="material-symbols-rounded">check_circle</span>Completed</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <iframe src="" name="page-load" frameborder="0"></iframe>
+            <!-- <iframe src="" name="page-load" frameborder="0"></iframe> -->
         </section>
     </main>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
-        integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
     integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -531,6 +680,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/date-time.js"></script>
 </body>
-
 </html>
