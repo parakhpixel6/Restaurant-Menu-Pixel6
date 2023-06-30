@@ -37,6 +37,10 @@
     gap: 8px;
 }
 
+.text-right{
+    text-align: right;
+}
+
 .btn-wrap {
     padding: 4px 8px;
     background: linear-gradient(90deg, #ff6666 0%, #ff9688 100%);
@@ -49,6 +53,7 @@
 
 .btn-secondary {
     display: inline-flex;
+    align-items: center;
     gap: 8px;
     background: #fff;
     color: #ff4747;
@@ -74,10 +79,15 @@
 .form-row{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
 }
 
 .form-col-2{
     width: calc(50% - 24px);
+}
+
+.nowrap{
+    text-wrap:nowrap;
 }
 
 .input-field{
@@ -92,9 +102,31 @@
     padding: 0px 0px 0px 16px;
 }
 
+.text-area{
+    border-radius: 12px;
+}
+
+select{
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+}
+
+.label-padding{
+    padding-left: 16px;
+}
+
+.text-small-lightgrey{
+    font-size: 12px;
+    line-height: 16px;
+    color: #555555;
+}
+
 .custom-table{
     width: 100%;
     border-collapse: collapse;
+    // text-wrap: nowrap;
     td{
         padding: 16px;
     }
@@ -372,7 +404,8 @@
 .order-details-heading,
 .bill-amt span,
 .cus-name,
-.stage-status h1 {
+.stage-status h1,
+.sub-title {
     font-size: 20px;
     line-height: 30px;
     font-weight: 600;
@@ -387,6 +420,26 @@
         }
     }
     
+}
+
+.report-dash{
+    .report-stat-container{
+        padding: 8px 16px;
+        background-color: #EDFBFF;
+        color: #14809E;
+        border-radius: 12px;
+        align-items: center;
+        .rpt-value{
+            font-size: 40px;
+            line-height: 70px;
+            font-family: Pacifico, sans-serif;
+        }
+    }
+    .stat-secondary{
+        background-color: #FFFBE9;
+        color: #CBA703;
+    }
+
 }
 
 //-------MEDIA QUERY-------//

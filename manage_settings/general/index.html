@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <div class="header center container-wrap">
+            <div class="header-title d-flex center g-24">
+                <p>General Settings</p>
+            </div>
+        </div>
+        <div id="categories-search-bar disp-none">
+            <div class="container-wrap header center">
+                <input type="search" class="search-tab" placeholder="Search">
+                <div>
+                    <button class="btn-wrap">Add New </button>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col-2 container-wrap">
+                <p>Currency Setting</p>
+                <div class="input-box">
+                    <label for="currency">Select currency</label><br>
+                    <input id="currency" type="text" class="input-field">
+                </div>
+            </div>
+            <div class="form-col-2 container-wrap">
+                <p>Time Zone</p>
+                <div class="input-box">
+                    <label for="timeZone">Select time zone</label><br>
+                    <input id="timeZone" type="text" class="input-field">
+                </div>
+            </div>
+        </div>
+        <div class="container-wrap">
+            <p>Food Catering</p>
+            <div class="">
+                <input type="checkbox" name="Breakfast" id="Breakfast" value="Breakfast">
+                <label for="Breakfast">Breakfast</label>
+                <input type="checkbox" name="Dinner" id="Dinner" value="Dinner">
+                <label for="Dinner">Dinner</label>
+                <input type="checkbox" name="Snacks" id="Snacks" value="Snacks">
+                <label for="Snacks">Snacks</label>
+                <input type="checkbox" name="Lunch" id="Lunch" value="Lunch">
+                <label for="Lunch">Lunch</label>
+            </div>
+        </div>
+        <div class="disp-none">
+            <table class="custom-table container-wrap">
+                <thead>
+                    <tr>
+                        <td>Date</td>
+                        <td>Day</td>
+                        <td>Open Time</td>
+                        <td>Close Time</td>
+                        <td>Status</td>
+                        <td>Option</td>
+                    </tr>
+                </thead>
+                <tbody id="calenderTable">
+                </tbody>
+            </table>
+        </div>
+        <div class="container-wrap" id="add-new-device">
+            <form action="">
+                <div class="d-flex form-row">
+                    <div class="form-col-2 input-box">
+                        <label for="deviceId">Device ID</label><br>
+                        <input id="deviceId" type="text" class="input-field">
+                    </div>
+                    <div class="form-col-2 input-box">
+                        <label for="deviceName">Device Name</label><br>
+                        <input id="deviceName" type="text" class="input-field">
+                    </div>
+                </div>
+                <div class="d-flex form-row">
+                    <div class="form-col-2 input-box">
+                        <label for="serialNumber">Serial Number</label><br>
+                        <input id="serialNumber" type="text" class="input-field">
+                    </div>
+                    <div class="form-col-2 input-box">
+                        <label for="deviceType">Device Type</label><br>
+                        <select name="" id="deviceType">
+                            <option value="">Android Tablet</option>
+                            <option value="">IPad Pro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex form-row">
+                    <div class="form-col-2 input-box">
+                        <label for="status">Status</label><br>
+                        <input id="status" type="text" class="input-field">
+                    </div>
+                    <div class="form-col-2">
+                    </div>
+                </div>
+                <div class="text-right">
+                    <button class="btn-wrap">Add Device</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

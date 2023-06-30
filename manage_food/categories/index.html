@@ -32,14 +32,14 @@
             </div>
         </div>
         <div id="categories-search-bar" class="disp-none">
-            <div class="container-wrap header center" >
+            <div class="container-wrap header center">
                 <input type="search" class="search-tab" placeholder="Search">
                 <div>
                     <button class="btn-wrap">Add New </button>
                 </div>
             </div>
         </div>
-        <div id="categories-table" class="disp-none">
+        <div class="disp-none">
             <table class="custom-table container-wrap">
                 <thead>
                     <tr>
@@ -57,21 +57,26 @@
         </div>
         <div id="add-new-item" class="container-wrap">
             <form action="">
-
+                <div class="d-flex form-row">
+                    <div class="form-col-2 input-box">
+                        <label for="categoryName">Category Name</label><br>
+                        <input id="categoryName" type="text" class="input-field">
+                    </div>
+                    <div class="form-col-2 input-box">
+                        <label for="categoryName">Category Icon</label><br>
+                        <input id="categoryName" type="text" class="input-field">
+                    </div>
+                </div>
+                <div class="d-flex form-row flex-column">
+                    <label for="categoryDescription" class="label-padding">Category Description</label>
+                    <textarea name="" id="categoryDescription" class="text-area" cols="30" rows="5"></textarea>
+                </div>
+                <div class="text-right">
+                    <button class="btn-wrap">
+                        <img src="" alt=""> Add Category
+                    </button>
+                </div>
             </form>
-            <div class="d-flex form-row">
-                <div class="form-col-2 input-box">
-                    <label for="categoryName">Category Name</label><br>
-                    <input id="categoryName" type="text" class="input-field">
-                </div>
-                <div class="form-col-2 input-box">
-                    <label for="categoryName">Category Icon</label><br>
-                    <input id="categoryName" type="text" class="input-field">
-                </div>
-            </div>
-            <div class="d-flex form-row">
-                <label for=""></label>
-            </div>
         </div>
     </div>
     <script src="./categories.js"></script>
