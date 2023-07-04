@@ -18,37 +18,37 @@
         <div class="header center container-wrap">
             <div class="header-title d-flex center g-24">
                 <p>Table</p>
-                <div class="d-flex center g-16">
+                <div class="d-flex center g-16 disp-none add-table">
                     <img src="../../assets/images/img/arrow-right.svg" alt="">
-                    <p>Add New Device</p>
+                    <p>Add New Table</p>
                 </div>
             </div>
-            <div class="d-flex stats disp-none">
-                <div class="d-flex center">
+            <div class="d-flex stats add-table g-24">
+                <div class="d-flex center g-16">
                     <img src="../../assets/images/illustrations/inactive-table-stats.svg" alt="">
                     <div>
                         <p class="stat-value">02</p>
                         <p class="stat-text">Tables Disabled</p>
                     </div>
                 </div>
-                <div class="d-flex center">
+                <div class="d-flex center g-16">
                     <img src="../../assets/images/illustrations/active-table-stats.svg" alt="">
-                    <div>
+                    <div class="enable">
                         <p class="stat-value">08</p>
                         <p class="stat-text">Tables Enabled</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="categories-search-bar disp-none">
+        <div id="categories-search-bar" class="add-table">
             <div class="container-wrap header center">
                 <input type="search" class="search-tab" placeholder="Search">
                 <div>
-                    <button class="btn-wrap">Add New </button>
+                    <button class="btn-wrap" onclick="addTableFun()"><img src="../../assets/images/icons/add-new.svg" alt="">Add New </button>
                 </div>
             </div>
         </div>
-        <div class="disp-none">
+        <div class="add-table">
             <table class="custom-table container-wrap">
                 <thead>
                     <tr>
@@ -64,7 +64,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="container-wrap" id="add-new-table">
+        <div class="container-wrap disp-none add-table" id="add-new-table">
             <form action="">
                 <div class="d-flex form-row">
                     <div class="form-col-2 input-box">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="text-right">
-                    <button class="btn-wrap">Add Table</button>
+                    <button class="btn-wrap" onclick="addTableFun()"><img src="../../assets/images/icons/check-tick.svg" alt="">Add Table</button>
                 </div>
             </form>
         </div>

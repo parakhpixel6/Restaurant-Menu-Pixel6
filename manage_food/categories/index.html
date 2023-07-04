@@ -18,12 +18,12 @@
         <div class="header center container-wrap">
             <div class="header-title d-flex center g-24">
                 <p>Categories</p>
-                <div class="d-flex disp-none center g-16">
+                <div class="d-flex add-category disp-none center g-16">
                     <img src="../../assets/images/img/arrow-right.svg" alt="">
                     <p>Add New</p>
                 </div>
             </div>
-            <div class="d-flex stats">
+            <div class="d-flex stats add-category">
                 <img src="../../assets/images/illustrations/category-stats.svg" alt="">
                 <div>
                     <p class="stat-value">25</p>
@@ -31,15 +31,15 @@
                 </div>
             </div>
         </div>
-        <div id="categories-search-bar" class="disp-none">
+        <div id="categories-search-bar" class="add-category">
             <div class="container-wrap header center">
                 <input type="search" class="search-tab" placeholder="Search">
                 <div>
-                    <button class="btn-wrap">Add New </button>
+                    <button class="btn-wrap" onclick="addCategoriesFun()"><img src="../../assets/images/icons/add-new.svg" alt=""> Add New </button>
                 </div>
             </div>
         </div>
-        <div class="disp-none">
+        <div class="add-category">
             <table class="custom-table container-wrap">
                 <thead>
                     <tr>
@@ -55,8 +55,8 @@
                 </tbody>
             </table>
         </div>
-        <div id="add-new-item" class="container-wrap">
-            <form action="">
+        <div id="add-new-item" class="container-wrap add-category disp-none">
+            <!-- <form action=""> -->
                 <div class="d-flex form-row">
                     <div class="form-col-2 input-box">
                         <label for="categoryName">Category Name</label><br>
@@ -72,11 +72,11 @@
                     <textarea name="" id="categoryDescription" class="text-area" cols="30" rows="5"></textarea>
                 </div>
                 <div class="text-right">
-                    <button class="btn-wrap">
+                    <button class="btn-wrap" onclick="addCategoriesFun()">
                         <img src="" alt=""> Add Category
                     </button>
                 </div>
-            </form>
+            <!-- </form> -->
         </div>
     </div>
     <script src="./categories.js"></script>

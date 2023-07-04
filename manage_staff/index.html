@@ -18,12 +18,13 @@
         <div class="header center container-wrap">
             <div class="header-title d-flex center g-24">
                 <p>Manage Staff</p>
-                <div class="d-flex disp-none center g-16">
-                    <img src="../../assets/images/img/arrow-right.svg" alt="">
-                    <p>Add New Staff</p>
+                <div class="d-flex center g-16">
+                    <img src="../../assets/images/img/arrow-right.svg" alt="" class="add-staff ex-staff disp-none">
+                    <p class="add-staff disp-none">Add New Staff</p>
+                    <p class="ex-staff disp-none">Ex-Staff</p>
                 </div>
             </div>
-            <div class="d-flex stats disp-none">
+            <div class="d-flex stats add-staff ex-staff">
                 <div class="d-flex center">
                     <img src="../../assets/images/illustrations/staff-stats.svg" alt="">
                     <div>
@@ -40,16 +41,16 @@
                 </div>
             </div>
         </div>
-        <div id="categories-search-bar" class="disp-none">
+        <div id="categories-search-bar" class="add-staff ex-staff">
             <div class="container-wrap header center">
                 <input type="search" class="search-tab" placeholder="Search">
                 <div>
-                    <button class="btn-wrap">Add New </button>
+                    <button class="btn-wrap" onclick="addStaffFun()">Add New </button>
                 </div>
             </div>
         </div>
-        <div class="disp-none">
-            <table class="custom-table container-wrap">
+        <div class="">
+            <table class="custom-table add-staff container-wrap" id="add-staff">
                 <thead>
                     <tr>
                         <td>Staff ID</td>
@@ -63,15 +64,28 @@
                 </thead>
                 <tbody id="staffInfoTable">
                 </tbody>
-                <tbody id="exStaffInfoTable" class="disp">
+            </table>
+            <table class="custom-table ex-staff disp-none container-wrap">
+                <thead>
+                    <tr>
+                        <td>Staff ID</td>
+                        <td>Image</td>
+                        <td>Staff Name</td>
+                        <td>Role</td>
+                        <td>Working From</td>
+                        <td>Working To</td>
+                        <td>Options</td>
+                    </tr>
+                </thead>
+                <tbody id="exStaffInfoTable">
                 </tbody>
             </table>
         </div>
-        <div class="text-right disp-none">
-            <button class="btn-wrap">Show Ex Staff</button>
+         <div class="text-right add-staff ex-staff">
+            <button class="btn-wrap" onclick="exStaff()">Show Ex Staff</button>
         </div>
-        <div class="container-wrap" id="add-new-staff">
-            <form action="">
+        <div class="container-wrap disp-none add-staff" id="add-new-staff">
+            <!-- <form action=""> -->
                 <div class="d-flex form-row">
                     <div class="form-col-2 input-box">
                         <label for="staffName">Staff Name</label><br>
@@ -137,9 +151,9 @@
                 </div>
                 <div class="text-right">
                     <button class="btn-wrap">Disable Staff</button>
-                    <button class="btn-wrap">Add New Staff</button>
+                    <button class="btn-wrap" onclick="addStaffFun()">Add New Staff</button>
                 </div>
-            </form>
+            <!-- </form> -->
         </div>
     <script src="./manage_staff.js"></script>
 </body>

@@ -27,7 +27,5 @@ cusData.forEach((item) => {
     </tr>
     `
 })
-console.log(result);
-console.log(customerEntry);
 
 customerEntry.innerHTML = result;

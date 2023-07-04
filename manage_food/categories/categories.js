@@ -12,6 +12,7 @@ let cateogryData = [
 ]
 
 let categoriesTable = document.querySelector("#categoriesTable");
+let addCategoriesQuery = document.querySelectorAll(".add-category")
 let result = ""
 
 cateogryData.forEach((item) => {
@@ -21,9 +22,15 @@ cateogryData.forEach((item) => {
         <td><img src="${item.icon}" alt=""></td>
         <td>${item.categoryDescription}</td>
         <td>${item.noOfItems}</td>
-        <td><img src="../../assets/images/icons/edit.svg" alt=""> Edit</td>
+        <td><div style="display: flex; align-items: center; gap: 4px"><img src="../../assets/images/icons/edit.svg" alt=""> Edit</td>
     </tr>
     `
 })
 
 categoriesTable.innerHTML = result;
+console.log(addCategoriesQuery);
+function addCategoriesFun() {
+    addCategoriesQuery.forEach((item) => {
+        item.classList.toggle("disp-none");
+    })
+}

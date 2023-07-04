@@ -20,6 +20,7 @@ let calenderData = [
 
 let discountCouponTable = document.querySelector("#discountCouponTable");
 let calenderTable = document.querySelector("#calenderTable");
+let addCouponquery = document.querySelectorAll(".add-coupon")
 let result = "",
     calender = "";
 
@@ -56,4 +57,10 @@ if (discountCouponTable != null) {
 }
 else if (calenderTable != null) {
     calenderTable.innerHTML = calenderResult;
+}
+
+function addCouponFun() {
+    addCouponquery.forEach((item) => {
+        item.classList.toggle("disp-none");
+    })
 }

@@ -23,6 +23,8 @@ let tableData = [
 
 let devicesTable = document.querySelector("#devicesTable");
 let tablesInfoTable = document.querySelector("#tablesInfoTable");
+let addDeviceQuery = document.querySelectorAll(".add-device");
+let addTableQuery = document.querySelectorAll(".add-table");
 let result = "",
     tableInfoResult = "";
 
@@ -58,4 +60,16 @@ if (devicesTable != null) {
 }
 else if (tablesInfoTable != null) {
     tablesInfoTable.innerHTML = tableInfoResult;
+}
+
+function addDeviceFun() {
+    addDeviceQuery.forEach((item) => {
+        item.classList.toggle("disp-none");
+    })
+}
+
+function addTableFun() {
+    addTableQuery.forEach((item) => {
+        item.classList.toggle("disp-none")
+    })
 }

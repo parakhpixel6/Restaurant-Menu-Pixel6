@@ -32,9 +32,7 @@ tables.forEach((item) => {
 document.querySelector(".table-info").innerHTML = result;
 
 function myFunction() {
-    console.log("hello");
-    console.log(document.querySelector(".running-orders-dash"));
-    console.log(document.querySelector(".table-selected"));
     document.querySelector(".running-orders-dash").classList.toggle("disp-none");
     document.querySelector(".table-selected").classList.toggle("disp-none");
 }
+
