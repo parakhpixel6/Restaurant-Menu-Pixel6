@@ -39,7 +39,7 @@ couponData.forEach((item) => {
     `
 })
 
-couponData.forEach((item) => {
+calenderData.forEach((item) => {
     calender += `
     <tr>
         <td>${item.date}</td>
@@ -56,7 +56,7 @@ if (discountCouponTable != null) {
     discountCouponTable.innerHTML = result;
 }
 else if (calenderTable != null) {
-    calenderTable.innerHTML = calenderResult;
+    calenderTable.innerHTML = calender;
 }
 
 function addCouponFun() {

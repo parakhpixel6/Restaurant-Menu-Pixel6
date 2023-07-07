@@ -20,33 +20,44 @@
                 <p>General Settings</p>
             </div>
         </div>
-        <div id="categories-search-bar disp-none">
+        <!-- <div id="categories-search-bar disp-none">
             <div class="container-wrap header center">
                 <input type="search" class="search-tab" placeholder="Search">
                 <div>
                     <button class="btn-wrap">Add New </button>
                 </div>
             </div>
-        </div>
-        <div class="form-row">
+        </div> -->
+        <div class="header">
             <div class="form-col-2 container-wrap">
-                <p class="su">Currency Setting</p>
+                <p class="sub-title">Currency Setting</p>
                 <div class="input-box">
                     <label for="currency">Select currency</label><br>
-                    <input id="currency" type="text" class="input-field">
+                    <!-- <input id="currency" type="text" class="input-field"> -->
+                    <select name="" id="">
+                        <option value="">Rupee(INR)</option>
+                        <option value="">USD</option>
+                        <option value="">CAD</option>
+                        <option value="">JPY</option>
+                    </select>
                 </div>
             </div>
             <div class="form-col-2 container-wrap">
-                <p class="su">Time Zone</p>
+                <p class="sub-title">Time Zone</p>
                 <div class="input-box">
                     <label for="timeZone">Select time zone</label><br>
-                    <input id="timeZone" type="text" class="input-field">
+                    <!-- <input id="timeZone" type="text" class="input-field"> -->
+                    <select name="" id="">
+                        <option value="">Kolkata</option>
+                        <option value="">Mumbai</option>
+                        <option value="">Delhi</option>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="container-wrap">
-            <p  class="su">Food Catering</p>
-            <div class="">
+            <p  class="sub-title">Food Catering</p>
+            <div class="food-category-checkbox">
                 <input type="checkbox" name="Breakfast" id="Breakfast" value="Breakfast">
                 <label for="Breakfast">Breakfast</label>
                 <input type="checkbox" name="Dinner" id="Dinner" value="Dinner">
@@ -57,7 +68,7 @@
                 <label for="Lunch">Lunch</label>
             </div>
         </div>
-        <div class="disp-none">
+        <div class="">
             <table class="custom-table container-wrap">
                 <thead>
                     <tr>
@@ -73,7 +84,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="container-wrap" id="add-new-device">
+        <!-- <div class="container-wrap" id="add-new-device">
             <form action="">
                 <div class="d-flex form-row">
                     <div class="form-col-2 input-box">
@@ -112,8 +123,9 @@
 
 
             </form>
-        </div>
+        </div> -->
     </div>
+    <script src="../manage_setting.js"></script>
 </body>
 
 </html>
