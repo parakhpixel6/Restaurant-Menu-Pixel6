@@ -8,7 +8,7 @@
 
 html,
 body {
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
@@ -948,7 +948,7 @@ select {
   justify-content: center;
   padding-bottom: 16px;
   width: fit-content;
-  font-size: 16px;
+  gap: 16px;
 }
 .admin_container--dashboard-iframe-previous-performance .previous-performance-cards .previous-performance-card-value {
   font-family: Pacifico, sans-serif;
@@ -1195,10 +1195,6 @@ select {
   gap: 40px;
 }
 
-.chart-img {
-  width: 100%;
-}
-
 .table-selected .table-details-wrap {
   flex-direction: column;
   gap: 16px;
@@ -1327,49 +1323,268 @@ select {
   font-weight: 600;
 }
 
-.categories-dash .stats .stat-value, .categories-dash .stats .stat-text {
-  color: #994996;
+.container-wrap-main {
+  width: 100%;
+  height: 40%;
+  background: #ffffff;
+  border-radius: 12px;
 }
 
-.report-dash .report-stat-container {
+.past-order-path {
+  color: #ff4747;
+}
+
+.past_orders {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-stats-value {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #14809e;
+}
+
+.cart-stats-total-order {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #14809e;
+  width: 67px;
+  height: 16px;
+  left: 54px;
+  top: 42px;
+}
+
+.ruppe-stats-value {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #cba703;
+}
+
+.ruppe-stats-total-value {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #cba703;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f3f8ff;
+  border-radius: 1px solid #e8f1ff;
+}
+
+.past-order-table-status.red.active {
+  width: 400px;
+}
+.past-order-table-status.red.active p {
+  margin-top: 2px;
+}
+
+.past-order-filter {
+  padding: 4px, 8px, 4px, 8px;
+  color: #ff4747;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.past-order-filter-btn {
+  border: none;
+  color: #ff4747;
+  background-color: #ffffff;
+}
+
+.filter-order-selectSlot {
+  margin-top: 9px;
+}
+
+.past-order-filter-img {
+  margin-bottom: -5px;
+}
+
+.past-order-datefilter-img {
+  margin-bottom: -7px;
+}
+
+.past-order-table {
+  border-radius: 8px;
+}
+
+.past-order-table-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff4747;
+}
+
+.past-order-table-heading-data tr {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #555555;
+}
+
+.past-order-table-heading-data-view input {
+  color: #ff4747;
+  border-radius: 8px;
+  border-color: #ff9898;
+  background-color: #fbfcfd;
+  padding: 4px, 12px, 4px, 12px;
+  border: solid 1px;
+  height: 29px;
+  width: 57px;
+}
+
+.past-order-pagination-btn {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+
+.past-order-1st-btn {
+  background-color: #ff6666;
+  color: #e8f1ff;
+  width: 25px;
+  height: 29px;
+  padding: 4px, 8px, 4px, 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.past-order-previous-btn {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #aaaaaa;
+  border: none;
+  background-color: transparent;
+}
+
+.past-order-next-btn {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ff4747;
+  border: none;
+  background-color: transparent;
+}
+
+.customers-dash {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.customers-dash .header .cus-stats {
+  text-align: center;
+}
+.customers-dash .header .cus-stats .stat-secondary {
+  color: #cba703;
+}
+.customers-dash .header .cus-stats .stat-value {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+}
+.customers-dash .header .cus-stats .stat-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+.customers-dash .search-tab {
+  width: 50%;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ff4747;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+.customers-dash table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.customers-dash table td {
+  padding: 16px;
+}
+.customers-dash table thead td {
+  color: #ff4747;
+}
+.customers-dash table tbody tr {
+  border-top: 2px solid #e8f1ff;
+  font-size: 14px;
+  line-height: 21px;
+}
+.customers-dash table tbody tr:nth-child(even) {
+  background: #e8f1ff;
+}
+.customers-dash .report-dash .report-stat-container {
   padding: 8px 16px;
   background-color: #EDFBFF;
   color: #14809E;
   border-radius: 12px;
   align-items: center;
 }
-.report-dash .report-stat-container .rpt-value {
+.customers-dash .report-dash .report-stat-container .rpt-value {
   font-size: 40px;
   line-height: 70px;
   font-family: Pacifico, sans-serif;
 }
-.report-dash .stat-secondary {
+.customers-dash .report-dash .stat-secondary {
   background-color: #FFFBE9;
   color: #CBA703;
 }
-
-.icon-change-container {
+.customers-dash .icon-change-container {
   width: 20%;
   display: grid;
   align-items: end;
   justify-items: center;
 }
-
-.food-items-dash .options {
+.customers-dash .food-items-dash .options {
   display: flex;
   gap: 8px;
 }
-
-.food-category-checkbox {
+.customers-dash .food-category-checkbox {
   display: inline-flex;
   gap: 24px;
 }
-.food-category-checkbox input[type=checkbox] {
+.customers-dash .food-category-checkbox input[type=checkbox] {
   border-radius: 4px;
   width: 24px;
   margin-right: 8px;
 }
-.food-category-checkbox label {
+.customers-dash .food-category-checkbox label {
   font-size: 16px !important;
   line-height: 24px !important;
 }
