@@ -2,22 +2,22 @@
 @import "./base/base";
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .container-wrap {
-    padding: 16px;
-    background-color: $widget-white;
-    border-radius: 12px;
-    width: 100%;
+  padding: 16px;
+  background-color: $widget-white;
+  border-radius: 12px;
+  width: 100%;
 }
 
 .content-frame {
-    height: 100%;
+  height: 100%;
 }
 
 .enable{
@@ -33,8 +33,8 @@
 }
 
 .center {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .mar-b-16{
@@ -46,15 +46,15 @@
 }
 
 .g-24 {
-    gap: 24px;
+  gap: 24px;
 }
 
-.g-16{
-    gap: 16px;
+.g-16 {
+  gap: 16px;
 }
 
-.g-8{
-    gap: 8px;
+.g-8 {
+  gap: 8px;
 }
 
 .text-right{
@@ -88,10 +88,10 @@
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .justify-end{
@@ -102,9 +102,9 @@
     display: none !important;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-row{
@@ -199,24 +199,24 @@ select{
 }
 
 .admin_container {
-    width: 100%;
-    max-width: 1242px;
+  width: 100%;
+  max-width: 1242px;
+  display: flex;
+  margin: 0px auto;
+  height: 100vh;
+  background-color: $primary-color-dashboard;
+
+  @import "./components/sidebar";
+
+  &--dashboard {
+    background-color: transparent;
+    height: 100%;
+    width: 80%;
+    padding: 24px;
     display: flex;
-    margin: 0px auto;
-    height: 100vh;
-    background-color: $primary-color-dashboard;
-
-    @import "./components/sidebar";
-
-    &--dashboard {
-        background-color: transparent;
-        height: 100%;
-        width: 80%;
-        padding: 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .header{
@@ -249,202 +249,195 @@ select{
 
 @import "./base/animation";
 
-
-
 .admin_container--dashboard-iframe {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    @import "./components/header";
-    @import "./layout/graph-notifications";
-    @import "./layout/previous-performance";
-    @import "./layout/today-order-table";
-    @import "./components/filter_dropdown";
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @import "./components/header";
+  @import "./layout/graph-notifications";
+  @import "./layout/previous-performance";
+  @import "./layout/today-order-table";
+  @import "./components/filter_dropdown";
 }
 
 // Running Orders page css
 
 .header-title {
-    font-size: 24px;
-    line-height: 36px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .table-status {
-    font-size: 14px;
-    line-height: 21px;
-    border-radius: 8px;
-    border: 1px solid $color-shadow-off-white;
-    padding: 4px 12px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 8px;
+  border: 1px solid $color-shadow-off-white;
+  padding: 4px 12px;
 }
 
 .table-status.red {
-    color: $active-link-color;
-    &.active {
-        border-color: $red;
-    }
+  color: $active-link-color;
+  &.active {
+    border-color: $red;
+  }
 }
 .table-status.grey {
-    color: $primary-grey;
-    &.active {
-        border-color: $primary-grey;
-    }
+  color: $primary-grey;
+  &.active {
+    border-color: $primary-grey;
+  }
 }
 .table-status.blue {
-    color: $dark-blue;
-    &.active {
-        border-color: $dark-blue;
-    }
+  color: $dark-blue;
+  &.active {
+    border-color: $dark-blue;
+  }
 }
 
 .table-status.green {
-    color: $green;
-    &.active {
-        border-color: $green;
-    }
+  color: $green;
+  &.active {
+    border-color: $green;
+  }
 }
 
-.running-orders-dash{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    .table-info{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-        gap: 40px;
-    }
-}
-
-.chart-img{
-    width: 100%;
+.running-orders-dash {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .table-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 40px;
+  }
 }
 
 .table-selected {
-    .table-details-wrap {
-        flex-direction: column;
-        gap: 16px;
-        .notification-container {
-            width: 100%;
-            gap: 10px;
-            align-items: center;
-            .notification-count {
-                padding: 15px 12px;
-                background-color: #ffeded;
-                border-radius: 12px;
-            }
-            .notification-text {
-                padding: 12px 16px;
-                width: 100%;
-                border-radius: 12px;
-                background-color: #ffeded;
-                justify-content: space-between;
-                .text-container {
-                    align-items: center;
-                    .text {
-                        margin-left: 8px;
-                        font-size: 14px;
-                        line-height: 21px;
-                    }
-                }
-            }
+  .table-details-wrap {
+    flex-direction: column;
+    gap: 16px;
+    .notification-container {
+      width: 100%;
+      gap: 10px;
+      align-items: center;
+      .notification-count {
+        padding: 15px 12px;
+        background-color: #ffeded;
+        border-radius: 12px;
+      }
+      .notification-text {
+        padding: 12px 16px;
+        width: 100%;
+        border-radius: 12px;
+        background-color: #ffeded;
+        justify-content: space-between;
+        .text-container {
+          align-items: center;
+          .text {
+            margin-left: 8px;
+            font-size: 14px;
+            line-height: 21px;
+          }
         }
-        .order-details-container {
-            width: 100%;
-        }
-        .order-details-wrap {
-            align-self: flex-start;
-
-            .order-details-heading {
-                margin-bottom: 16px;
-            }
-            li {
-                padding: 12px 0;
-                border-top: 1px solid $color-shadow-off-white;
-                &:last-child {
-                    border-bottom: 1px solid $color-shadow-off-white;
-                }
-                .order-item {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    .item-detail {
-                        display: flex;
-                        gap: 12px;
-                        img {
-                            border-radius: 6px;
-                        }
-                        .qty {
-                            font-size: 14px;
-                            line-height: 21px;
-                            color: $primary-grey;
-                        }
-                    }
-                    .price {
-                        font-size: 18px;
-                        line-height: 27px;
-                        font-weight: 600;
-                    }
-                }
-            }
-            .bill-amt {
-                font-size: 14px;
-                line-height: 21px;
-                span {
-                    margin-left: 12px;
-                }
-            }
-            .text-right {
-                padding: 16px 0;
-            }
-        }
-        .other-details-wrap {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            .cus-details-wrap {
-                background-color: #fff;
-                border-radius: 12px;
-            }
-            .cus-name {
-                text-align: center;
-                font-weight: 400;
-                margin-bottom: 24px;
-            }
-            .cus-contact {
-                display: inline-flex;
-                align-items: center;
-                img {
-                    margin-right: 8px;
-                }
-            }
-            .btn-container {
-                justify-content: space-evenly;
-            }
-            .device-info {
-                .device-id {
-                    font-size: 12px;
-                    line-height: 16px;
-                    color: #555555;
-                }
-            }
-            .serve-staff-info {
-                p {
-                    color: #555555;
-                }
-                .waiter-profiles {
-                    display: flex;
-                    gap: 24px;
-                    margin-top: 8px;
-                    img {
-                        width: 40px;
-                    }
-                }
-            }
-        }
+      }
     }
-}
+    .order-details-container {
+      width: 100%;
+    }
+    .order-details-wrap {
+      align-self: flex-start;
 
+      .order-details-heading {
+        margin-bottom: 16px;
+      }
+      li {
+        padding: 12px 0;
+        border-top: 1px solid $color-shadow-off-white;
+        &:last-child {
+          border-bottom: 1px solid $color-shadow-off-white;
+        }
+        .order-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .item-detail {
+            display: flex;
+            gap: 12px;
+            img {
+              border-radius: 6px;
+            }
+            .qty {
+              font-size: 14px;
+              line-height: 21px;
+              color: $primary-grey;
+            }
+          }
+          .price {
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 600;
+          }
+        }
+      }
+      .bill-amt {
+        font-size: 14px;
+        line-height: 21px;
+        span {
+          margin-left: 12px;
+        }
+      }
+      .text-right {
+        padding: 16px 0;
+      }
+    }
+    .other-details-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .cus-details-wrap {
+        background-color: #fff;
+        border-radius: 12px;
+      }
+      .cus-name {
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 24px;
+      }
+      .cus-contact {
+        display: inline-flex;
+        align-items: center;
+        img {
+          margin-right: 8px;
+        }
+      }
+      .btn-container {
+        justify-content: space-evenly;
+      }
+      .device-info {
+        .device-id {
+          font-size: 12px;
+          line-height: 16px;
+          color: #555555;
+        }
+      }
+      .serve-staff-info {
+        p {
+          color: #555555;
+        }
+        .waiter-profiles {
+          display: flex;
+          gap: 24px;
+          margin-top: 8px;
+          img {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
 .order-details-heading,
 .bill-amt span,
 .cus-name,
@@ -458,180 +451,225 @@ select{
 // past orders css start
 
 .container-wrap-main {
-    width: 100%;
-    height: 40%;
-    background: #ffffff;
-    border-radius: 12px;
+  width: 100%;
+  height: 40%;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.past-order-path {
+  color: #ff4747;
+}
+.past_orders {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cart-stats-value {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #14809e;
+}
+.cart-stats-total-order {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #14809e;
+  width: 67px;
+  height: 16px;
+  left: 54px;
+  top: 42px;
+}
+.ruppe-stats-value {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #cba703;
+}
+.ruppe-stats-total-value {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #cba703;
+}
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+th,
+td {
+  text-align: left;
+  padding: 16px;
+}
+tr:nth-child(odd) {
+  background-color: #f3f8ff;
+  border-radius: 1px solid #e8f1ff;
+}
+.past-order-table-status.red.active {
+  width: 400px;
+  p {
+    margin-top: 2px;
   }
-  .past-order-path {
-    color: #ff4747;
-  }
-  .past_orders {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .cart-stats-value {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-    color: #14809e;
-  }
-  .cart-stats-total-order {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #14809e;
-    width: 67px;
-    height: 16px;
-    left: 54px;
-    top: 42px;
-  }
-  .ruppe-stats-value {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-    color: #cba703;
-  }
-  .ruppe-stats-total-value {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #cba703;
-  }
-  table {
-    border-spacing: 0;
-    width: 100%;
-  }
-  th,
-  td {
-    text-align: left;
-    padding: 16px;
-  }
-  tr:nth-child(odd) {
-    background-color: #f3f8ff;
-    border-radius: 1px solid #e8f1ff;
-  }
-  .past-order-table-status.red.active {
-    width: 400px;
-    p {
-      margin-top: 2px;
-    }
-  }
-  
-  // .past-order-search-tab {
-  //   width: 50%;
-  //   padding: 8px;
-  //   font-size: 14px;
-  //   line-height: 21px;
-  //   // color:#FF4747;
-  //   border: 1px solid #AAA;
-  //   border-radius: 8px;
-  // }
-  .past-order-filter {
-    padding: 4px, 8px, 4px, 8px;
-    color: #ff4747;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .past-order-filter-btn {
-    border: none;
-    color: #ff4747;
-    background-color: #ffffff;
-  }
-  
-  .filter-order-selectSlot {
-    margin-top: 9px;
-  }
-  .past-order-filter-img {
-    margin-bottom: -5px;
-  }
-  .past-order-datefilter-img {
-    margin-bottom: -7px;
-  }
-  .past-order-table {
-    border-radius: 8px;
-  }
-  .past-order-table-heading {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ff4747;
-  }
-  .past-order-table-heading-data tr {
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #555555;
-  }
-  .past-order-table-heading-data-view input {
-    color: #ff4747;
-    border-radius: 8px;
-    border-color: #ff9898;
-    background-color: #fbfcfd;
-    padding: 4px, 12px, 4px, 12px;
-    border: solid 1px;
-    height: 29px;
-    width: 57px;
-  }
-  .past-order-pagination-btn {
-    margin-top: 16px;
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    gap: 16px;
-  }
-  .past-order-1st-btn {
-    background-color: #ff6666;
-    color: #e8f1ff;
-    width: 25px;
-    height: 29px;
-    padding: 4px, 8px, 4px, 8px;
-    border-radius: 8px;
-    border: none;
-  }
-  .past-order-previous-btn {
-    font-family:"Nunito";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #aaaaaa;
-    border: none;
-    background-color: transparent;
-  }
-  .past-order-next-btn {
-    font-family:"Nunito";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ff4747;
-    border: none;
-    background-color: transparent;
-  }
-  // past orders css end
+}
 
+// .past-order-search-tab {
+//   width: 50%;
+//   padding: 8px;
+//   font-size: 14px;
+//   line-height: 21px;
+//   // color:#FF4747;
+//   border: 1px solid #AAA;
+//   border-radius: 8px;
+// }
+.past-order-filter {
+  padding: 4px, 8px, 4px, 8px;
+  color: #ff4747;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.past-order-filter-btn {
+  border: none;
+  color: #ff4747;
+  background-color: #ffffff;
+}
+
+.filter-order-selectSlot {
+  margin-top: 9px;
+}
+.past-order-filter-img {
+  margin-bottom: -5px;
+}
+.past-order-datefilter-img {
+  margin-bottom: -7px;
+}
+.past-order-table {
+  border-radius: 8px;
+}
+.past-order-table-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff4747;
+}
+.past-order-table-heading-data tr {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #555555;
+}
+.past-order-table-heading-data-view input {
+  color: #ff4747;
+  border-radius: 8px;
+  border-color: #ff9898;
+  background-color: #fbfcfd;
+  padding: 4px, 12px, 4px, 12px;
+  border: solid 1px;
+  height: 29px;
+  width: 57px;
+}
+.past-order-pagination-btn {
+margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+.past-order-1st-btn {
+  background-color: #ff6666;
+  color: #e8f1ff;
+  width: 25px;
+  height: 29px;
+  padding: 4px, 8px, 4px, 8px;
+  border-radius: 8px;
+  border: none;
+}
+.past-order-previous-btn {
+  font-family:"Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #aaaaaa;
+  border: none;
+  background-color: transparent;
+}
+.past-order-next-btn {
+  font-family:"Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ff4747;
+  border: none;
+  background-color: transparent;
+}
+// past orders css end
 //  manage order customer component css
 
-.categories-dash{
-    .stats{
-        .stat-value, .stat-text{
-            color: #994996;
-        }
+.customers-dash {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .header {
+    .cus-stats {
+      text-align: center;
+      .stat-secondary {
+        color: #cba703;
+      }
+      .stat-value {
+        font-size: 28px;
+        line-height: 42px;
+        font-weight: 600;
+      }
+      .stat-text {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  .search-tab {
+    width: 50%;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ff4747;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    td {
+      padding: 16px;
+    }
+    thead {
+      td {
+        color: #ff4747;
+        // font-size: large;
+      }
+    }
+    tbody {
+      tr {
+        border-top: 2px solid #e8f1ff;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      tr:nth-child(even) {
+        background: #e8f1ff;
+      }
     }
 }
 
@@ -811,5 +849,4 @@ select{
 //         }
 //     }
 // }
-
-//@media (min-width: 1281px) and (max-width: 1440px) {}
+}
