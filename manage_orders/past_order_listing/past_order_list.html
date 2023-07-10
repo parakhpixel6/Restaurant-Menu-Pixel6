@@ -1,0 +1,185 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="past_orders">
+      <div>
+        <span>My Dashboard</span>
+          <span>> Manage orders ></span> 
+          <span class="past-order-path"> Past Order</span>
+      </div>
+      <div class="header container-wrap">
+        <div>
+          <p class="header-title">Past Order</p>
+        </div>
+        <div class="admin_container--dashboard-header-info d-flex">
+          <div class="admin_container--dashboard-header-info-1 d-flex">
+            <img
+              class="cart-stats-info"
+              src="../../assets/images/img/cart-stats.svg"
+              alt="cart-stats"
+            />
+            <div>
+              <h3 class="cart-stats-value">245</h3>
+              <p class="cart-stats-total-order">Total Order</p>
+            </div>
+          </div>
+          <div class="admin_container--dashboard-header-info-2 d-flex">
+            <img
+              class="ruppe-stats-info"
+              src="../../assets/images/img/ruppe-stats.svg"
+              alt="ruppe-stats"
+            />
+            <div>
+            <h3 class="ruppe-stats-value">52,890</h3>
+            <p class="ruppe-stats-total-value">Total Value</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container-wrap past-order-filter" >
+        <div class="d-flex past-order-table-status table-status red active">
+          <img class="search-img" src="../../assets/images/icons/search.svg" alt="Search">
+          <p>Search</p>
+        </div>
+
+        <div class="filter-order-selectSlot dropdown-wrapper">
+          <span class="dropdown-default">Filter Orders
+             <img class="past-order-filter-img" src="../../assets/images/icons/filled arrow up.svg" alt="filter">
+          </span>
+        </div>
+      </div>
+      <!-- <div>
+        <div>
+          <tr>
+            <span>
+              <th>
+                <label for="dateofbirth"> from Date</label>
+                <input type="date">
+              </th>
+            </span>
+            <span>
+              <th>
+                <label for="dateofbirth"> to Date</label>
+                <input type="date">
+              </th>
+            </span>
+          </tr>
+        </div>
+      </div> -->
+      <div class=" container-wrap-main container-wrap">
+        <div class="container-wrap">
+          <table class="past-order-table">
+            <div>
+              <tr class="past-order-table-heading-even">
+                <div>
+                  <span>
+                    <th class="past-order-table-heading">Date
+                      <img class="past-order-datefilter-img" src="../../assets/images/icons/sort.svg" alt="datefilter">
+                    </th>
+                  </span>
+                </div>
+                  <th class="past-order-table-heading">Order No.</th>
+                  <th class="">Table No.</th>
+                  <th class="past-order-table-heading">Customer Name</th>
+                  <th class="past-order-table-heading">Order Value</th>
+                  <th class="past-order-table-heading">Payment Mode</th>
+                  <th class="">Option</th>
+              </tr>
+          </div>
+
+          <div class="past-order-table-heading-data">
+          <tr class="past-order-table-heading-odd">
+            <td class="past-order-table-heading-data">11/05/2023</td>
+            <td class="past-order-table-heading-data">011B57</td>
+            <td class="past-order-table-heading-data">15</td>
+            <td class="past-order-table-heading-data">Karan Jadhav</td>
+            <td class="past-order-table-heading-data">NA</td>
+            <td class="past-order-table-heading-data">15,542</td>
+            <td class="past-order-table-heading-data-view"><input type="button" value=" View "></td>
+          </tr>
+        </div>
+
+        <div class="">
+          <tr class="past-order-table-heading-even">
+            <td class="past-order-table-heading-data">11/05/2023</td>
+            <td class="past-order-table-heading-data">011B57</td>
+            <td class="past-order-table-heading-data">15</td>
+            <td class="past-order-table-heading-data">Karan Jadhav</td>
+            <td class="past-order-table-heading-data">15,542</td>
+            <td class="past-order-table-heading-data">NA</td>
+            <td class="past-order-table-heading-data-view"><input type="button" value="View"></td>
+          </tr>
+        </div>
+
+        <div class=">
+          <tr class="past-order-table-heading-odd">
+            <td class="past-order-table-heading-data">11/05/2023</td>
+            <td class="past-order-table-heading-data">011B57</td>
+            <td class="past-order-table-heading-data">15</td>
+            <td class="past-order-table-heading-data">Karan Jadhav</td>
+            <td class="past-order-table-heading-data">15,542</td>
+            <td class="past-order-table-heading-data">NA</td>
+            <td class="past-order-table-heading-data-view"><input type="button" value="View"></td>
+          </tr>
+        </div>
+
+        <div class="">
+          <tr class="past-order-table-heading-even">
+            <td class="past-order-table-heading-data">11/05/2023</td>
+            <td class="past-order-table-heading-data">011B57</td>
+            <td class="past-order-table-heading-data">15</td>
+            <td class="past-order-table-heading-data">Karan Jadhav</td>
+            <td class="past-order-table-heading-data">15,542</td>
+            <td class="past-order-table-heading-data">NA</td>
+            <td class="past-order-table-heading-data-view"><input type="button" value="View"></td>
+          </tr>
+        </div>
+
+        <div class="">
+          <tr class="past-order-table-heading-even">
+            <td class="past-order-table-heading-data">11/05/2023</td>
+            <td class="past-order-table-heading-data">011B57</td>
+            <td class="past-order-table-heading-data">15</td>
+            <td class="past-order-table-heading-data">Karan Jadhav</td>
+            <td class="past-order-table-heading-data">15,542</td>
+            <td class="past-order-table-heading-data">NA</td>
+            <td class="past-order-table-heading-data-view">
+              <input type="button" value="View"></td>
+          </tr>
+        </div>
+        </table>
+      </div>
+      </div>
+      <div class="past-order-pagination-btn">
+      
+        <input class="past-order-previous-btn" type="button" value="< Previous">
+        <span><input class="past-order-1st-btn" type="button" value="1"></span>
+        <span>2</span>
+        <span>3</span>
+        <span>....</span>
+        <span>10</span>
+        <input class="past-order-next-btn" type="button" value="Next >">
+    
+      </div>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+          integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+      </script> -->
+    </body>
+  </html>
