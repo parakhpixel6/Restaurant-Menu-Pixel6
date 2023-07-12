@@ -411,6 +411,7 @@ select {
   overflow: hidden;
 }
 .admin_container--dashboard-iframe-header-title {
+  align-items: center;
   display: flex;
 }
 .admin_container--dashboard-iframe-header-title .user-hii,
