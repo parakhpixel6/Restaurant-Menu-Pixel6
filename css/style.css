@@ -54,7 +54,7 @@ li {
 }
 
 .enable {
-  color: #54BA54;
+  color: #54ba54;
 }
 
 .primary-stat {
@@ -62,7 +62,7 @@ li {
 }
 
 .secondary-stat {
-  color: #14809E;
+  color: #14809e;
 }
 
 .center {
@@ -115,7 +115,7 @@ li {
 }
 
 .btn-disable {
-  background: #DDDDDD;
+  background: #dddddd;
   color: #888888;
 }
 
@@ -208,15 +208,15 @@ select {
   padding: 16px;
 }
 .custom-table thead td {
-  color: #FF4747;
+  color: #ff4747;
 }
 .custom-table tbody tr {
-  border-top: 2px solid #E8F1FF;
+  border-top: 2px solid #e8f1ff;
   font-size: 14px;
   line-height: 21px;
 }
 .custom-table tbody tr:nth-child(even) {
-  background: #E8F1FF;
+  background: #e8f1ff;
 }
 
 .dashboard-container {
@@ -351,7 +351,7 @@ select {
   text-align: center;
 }
 .header .stats .stat-secondary {
-  color: #CBA703;
+  color: #cba703;
 }
 .header .stats .stat-value {
   font-size: 28px;
@@ -368,8 +368,8 @@ select {
   padding: 8px;
   font-size: 14px;
   line-height: 21px;
-  color: #FF4747;
-  border: 1px solid #AAA;
+  color: #ff4747;
+  border: 1px solid #aaa;
   border-radius: 8px;
 }
 
@@ -1502,6 +1502,127 @@ tr:nth-child(odd) {
   background-color: transparent;
 }
 
+.gross-bill-past-order {
+  color: #ff4747;
+  margin-right: 5px;
+  font-family: "Nunito";
+  width: 400px;
+  size: 14px;
+}
+
+.hr-past-order {
+  width: 298px;
+  float: right;
+  height: 1px;
+  top: 594px;
+  left: 574px;
+  justify-content: flex-end;
+  color: #afaaaa;
+}
+
+.grey-clr {
+  color: #555555;
+  font-family: "Nunito";
+  width: 400px;
+  text-align: right;
+}
+
+.black-clr {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.green-clr {
+  color: #54BA54;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.past-order-main {
+  margin-bottom: 20px;
+}
+
+.past-order-cust-review {
+  justify-content: space-between;
+}
+
+.past-order-bill {
+  line-height: 25px;
+}
+
+.past-order-img {
+  padding: 10px;
+}
+
+.past-order-img-star {
+  padding: 15px;
+}
+
+.past-order-rate {
+  height: 100px;
+}
+
+.past-order-details-heading {
+  font-family: "Nunito";
+  font-weight: 400px;
+  size: 16px;
+  line-height: 24px;
+  color: #cba703;
+  margin-top: 10px;
+}
+
+.past-order-top-heading {
+  background-color: #DDDDDD;
+  border-radius: 8px;
+}
+
+.past-order-complete-btn {
+  border-radius: 8px;
+  padding: 4px 8px 4px 8px;
+  gap: 8px;
+  border-color: #54BA54;
+  color: #54BA54;
+}
+
+.past-order-border {
+  border-top: 1px solid #DDDDDD;
+}
+
+.past-order-amt-detail {
+  color: #222222;
+  font-weight: 600;
+}
+
+.past-order-man-detail {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #888888;
+}
+
+.past-order-man {
+  margin-bottom: 10px;
+}
+
+.past-order-klogo {
+  width: 285px;
+}
+
+.past-order-success {
+  height: 326px;
+}
+
+.past-order-billsuccess {
+  margin-bottom: 50px;
+}
+
+.p-order-view-bill {
+  float: right;
+}
+
 .customers-dash {
   display: flex;
   flex-direction: column;
@@ -1551,8 +1672,8 @@ tr:nth-child(odd) {
 }
 .customers-dash .report-dash .report-stat-container {
   padding: 8px 16px;
-  background-color: #EDFBFF;
-  color: #14809E;
+  background-color: #edfbff;
+  color: #14809e;
   border-radius: 12px;
   align-items: center;
 }
@@ -1562,8 +1683,8 @@ tr:nth-child(odd) {
   font-family: Pacifico, sans-serif;
 }
 .customers-dash .report-dash .stat-secondary {
-  background-color: #FFFBE9;
-  color: #CBA703;
+  background-color: #fffbe9;
+  color: #cba703;
 }
 .customers-dash .icon-change-container {
   width: 20%;
