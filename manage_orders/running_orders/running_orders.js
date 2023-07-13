@@ -25,7 +25,7 @@ let result = "";
 tables.forEach((item) => {
     result += `
     <div>
-        <img id="tableNum" onclick="myFunction()" src="${item.img}"  alt="">
+        <img  class="past-order-view-btn" id="tableNum" onclick="myFunction()" src="${item.img}"  alt="">
     </div> 
     `
 })

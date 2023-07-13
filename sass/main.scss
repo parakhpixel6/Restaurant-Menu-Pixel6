@@ -4,6 +4,13 @@
 .d-flex {
   display: flex;
 }
+.disp-none{
+  display: none;
+
+}
+.g-30{
+  gap: 30px;
+}
 
 .flex-column {
   flex-direction: column;
@@ -15,7 +22,9 @@
   border-radius: 12px;
   width: 100%;
 }
-
+.a-align-c{
+  align-items: center;
+}
 .content-frame {
   height: 100%;
 }
@@ -313,7 +322,9 @@ select {
     gap: 40px;
   }
 }
-
+.flex-d-col{
+  flex-direction: column;
+}
 .table-selected {
   .table-details-wrap {
     flex-direction: column;
@@ -464,6 +475,34 @@ select {
   flex-direction: column;
   gap: 16px;
 }
+.past-orders-textfeild{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-evenly;
+
+}
+.past-order-input-valspam{
+  position: absolute;
+    margin-left: -36px;
+    margin-top: -5px;
+}
+.select-order-value{
+  color: var(--red-dark-grey, #555);
+/* caption 12px reg */
+font-family: Nunito;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+}
+.past-order-input-val{
+  outline: none;
+    position: relative;
+    border: none;
+    border-bottom: 3px solid #cfcccc;
+    padding: 4px;
+}
 .cart-stats-value {
   font-family: "Nunito";
   font-style: normal;
@@ -541,7 +580,37 @@ tr:nth-child(odd) {
   color: #ff4747;
   background-color: #ffffff;
 }
+.past-order-r-btn{
+display: inline-flex;
+padding: 4px 12px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+color: #FF4747;
+border-color: #FF4747;
+background-color: transparent;
+font-family: Nunito;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
 
+}
+.past-order-aply-btn{
+  display: inline-flex;
+padding: 4px 12px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+background: var(--red-linear-red, linear-gradient(90deg, #F66 0%, #FF9688 100%));
+color: var(--red-white, #FFF);
+font-family: Nunito;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+border: none;
+}
 .filter-order-selectSlot {
   margin-top: 9px;
 }
@@ -656,6 +725,13 @@ tr:nth-child(odd) {
 .past-order-cust-review{
   justify-content: space-between;
 }
+.past-order-search-block{
+  padding: 4px, 8px, 4px, 8px;
+  color: #ff4747;
+  display: flex;
+  // flex-direction: row;
+  justify-content: space-between;
+}
 .past-order-bill{
   line-height: 25px;
 }
@@ -667,6 +743,12 @@ tr:nth-child(odd) {
 }
 .past-order-rate{
   height: 100px;
+}
+.past-order-view-btn{
+  cursor: pointer;
+}
+.past-m-b{
+  margin-bottom: -15px;
 }
 .past-order-details-heading{
 font-family:"Nunito";
@@ -716,6 +798,57 @@ margin-top: 10px;
 }
 .p-order-view-bill{
   float: right;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.range-slider {
+  position: relative;
+  width: 714px;
+  height: 5px;
+  border-radius: 15px;
+  background: #aaaaaa
+    no-repeat padding-box;
+}
+.range-slider .progress {
+  position: absolute;
+  left: 25%;
+  right: 0%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgb(255, 102, 102);
+    background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+    
+}
+.range-slider input[type="range"] {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  -webkit-appearance: none;
+  pointer-events: none;
+  background: none;
+  outline: none;
+}
+.range-slider .range-min::-webkit-slider-thumb {
+  pointer-events: auto;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fcfcfc 0% 0% no-repeat padding-box;
+  border: 4px solid orangered;
+  border-radius: 50%;
+  opacity: 1;
+}
+.range-slider .range-max::-webkit-slider-thumb {
+  pointer-events: auto;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fcfcfc 0% 0% no-repeat padding-box;
+  border:4px solid orangered;
+  border-radius: 20px;
+  opacity: 1;
 }
 
 // past orders css end
