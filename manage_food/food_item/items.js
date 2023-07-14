@@ -47,7 +47,6 @@ let resultfood = ""
 foodData.forEach((item) => {
     resultfood += `
     <tr>
-        
         <td><img src="${item.Image}" alt=""></td>
         <td>${item.ItemName}</td>
         <td>${item.ItemDescription}</td>

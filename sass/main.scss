@@ -53,7 +53,9 @@
 .mar-0 {
   margin: 0px !important;
 }
-
+.g-48{
+  gap: 48px;
+}
 .g-24 {
   gap: 24px;
 }
@@ -504,40 +506,38 @@ line-height: 16px; /* 133.333% */
     padding: 4px;
 }
 .cart-stats-value {
-  font-family: "Nunito";
+  color: var(--dark-blue, #14809E);
+  font-family: Nunito;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
-  line-height: 42px;
-  color: #14809e;
+  line-height: 42px; 
 }
 .cart-stats-total-order {
-  font-family: "Nunito";
+  color: var(--dark-blue, #14809E);
+
+  /* caption 12px reg */
+  font-family: Nunito;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
   line-height: 16px;
-  color: #14809e;
-  width: 67px;
-  height: 16px;
-  left: 54px;
-  top: 42px;
 }
 .ruppe-stats-value {
-  font-family: "Nunito";
+  color: var(--dark-yellow, #CBA703);
+  font-family: Nunito;
+  font-size: 28px;
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
   line-height: 42px;
-  color: #cba703;
 }
 .ruppe-stats-total-value {
-  font-family: "Nunito";
+  color: var(--dark-yellow, #CBA703);
+  font-family: Nunito;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: #cba703;
+  line-height: 16px; 
 }
 table {
   border-spacing: 0;
@@ -799,6 +799,7 @@ margin-top: 10px;
 .p-order-view-bill{
   float: right;
 }
+// past order slider css start
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -850,10 +851,62 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 20px;
   opacity: 1;
 }
-
+// past order slider css end
 // past orders css end
-//  manage order customer component css
 
+// food item css start
+.food-h-num{
+  color: var(--dark-purpel, #994996);
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+}
+.food-h-name{
+  color: var(--dark-purpel, #994996);
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; 
+}
+.food-h-num1{
+  color: var(--dark-blue, #14809E);
+font-family: Nunito;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 42px; /* 150% */
+}
+.food-h-name1{
+  color: var(--dark-blue, #14809E);
+
+/* caption 12px reg */
+font-family: Nunito;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+}
+// food item css end
+//  manage order customer component css
+.cate-h-num{
+  color: var(--dark-purpel, #994996);
+font-family: Nunito;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 42px; 
+}
+.cate-h-text{
+  color: var(--dark-purpel, #994996);
+font-family: Nunito;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+}
 .customers-dash {
   display: flex;
   flex-direction: column;
@@ -907,6 +960,8 @@ input[type="number"]::-webkit-outer-spin-button {
       }
     }
   }
+
+  
 
   .report-dash {
     .report-stat-container {
