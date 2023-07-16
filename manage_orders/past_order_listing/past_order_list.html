@@ -40,7 +40,7 @@
     </div>
     </div>
 
-    <div class="container-wrap past-order-search-block flex-d-col d-flex btn-container g-30"  >
+    <div class="container-wrap past-order-search-block flex-d-col d-flex btn-container g-30">
       <div class="d-flex past-order-cust-review btn-container g-30">
         <div class="d-flex past-order-table-status table-status red active btn-container  ">
           <img
@@ -51,7 +51,7 @@
           <p>Search</p>
         </div>
   
-        <div class="filter-order-selectSlot dropdown-wrapper">
+        <div class="filter-order-selectSlot dropdown-wrapper" onclick="togglePastOrderFilterDivFun()">
           <span class="dropdown-default"
             >Filter Orders
             <img
@@ -62,7 +62,7 @@
           </span>
         </div>
       </div>
-      <div class="d-flex past-orders-textfeild ">
+      <div class="d-flex past-orders-textfeild past-order-filter-div disp-none ">
         <div class="">
         <input  class="past-order-input-val"  type="text" placeholder="From Date" value="11/05/2023">
         <span class="past-order-input-valspam"><img src="../../assets/images/img/Calendar.svg" alt=""></span>
@@ -82,30 +82,28 @@
             <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
         </div>
       </div>
-      <div class="select-order-value past-m-b">
+      <div class="select-order-value past-m-b past-order-filter-div disp-none">
         <span>Select Order Value (₹199 - ₹52890)</span>
       </div>
-      <!-- form start  -->
-      <div class="d-flex past-order-cust-review a-align-c">
+      <div class="d-flex past-order-cust-review a-align-c past-order-filter-div disp-none">
       <div class="flex relative justify-center items-center h-20 w-full mx-auto rounded">
-        <div class="min-value numberVal disp-none">
-          <input type="number" class="d-none" min="0" max="100" value="25" disabled>
-        </div>
-       
+        
         <div class="range-slider">
           <div class="progress"></div>
-          <span class="range-min-wrapper ">
-            <input class="range-min" type="range" min="0" max="100" value="25">
-            <!-- <span class="range-min-value">0</span> -->
+          <span class="range-min-wrapper numberVal">
+            <input class="range-min" type="range" min="199" max="52890" value="199">
           </span>
-          <span class="range-max-wrapper">
-            <input class="range-max" type="range" min="0" max="100" value="100">
-            <!-- <span class="range-max-value ">100</span> -->
+          <span class="range-max-wrapper numberVal">
+            <input class="range-max" type="range" min="199" max="52890" value="52890">
           </span>
         </div>
-        
-        <div class="max-value numberVal disp-none">
-          <input type="number" class="border text-center" min="0" max="100" value="75" disabled>
+        <div class="margin-top-5 ">
+          <span class="range-min-wrapper numberVal">
+            <span class="range-min-value">₹199</span>
+          </span>
+          <span class="range-max-wrapper numberVal">
+            <span class="range-max-value" style="float: right;">₹52890</span>
+          </span>
         </div>
       </div>
       <div class="d-flex g-16">
@@ -113,9 +111,8 @@
         <input class="past-order-aply-btn past-order-view-btn" type="button" value="Apply">
       </div>
       
-    </div>
-       <!-- form end  -->
 
+      </div>
     </div>
 
     <div class="container-wrap-main">
@@ -237,5 +234,6 @@
           crossorigin="anonymous" referrerpolicy="no-referrer">
       </script> -->
       <script src="../../manage_orders/past_order_listing/past_order.js"></script>
+      <script src="../../js/range-slider.js"></script>
   </body>
 </html>
