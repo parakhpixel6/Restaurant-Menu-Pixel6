@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <div class="global-container" id="global">
+        <div class="window">
+            <div class="delete-pop-header">
+                <span>
+                    Delete Food Item
+                </span>
+                <div class="delete-icon">
+                    <img src="../../assets/images/icons/delete.svg" alt="" />
+                </div>
+            </div>
+            <div class="d-flex flex-column a-align-c">
+                <span style="margin-top: 41px;margin-bottom: 40px;" class="delete-item-pop-content">Are you sure you want to delete French toast from Menu</span>
+                <div class="mar-b-16">
+                    <input type="radio" name="" value="Yes, I`m sure"/>
+                    <label>Yes, I'm sure</label>
+                </div>
+                <button class="btn-wrap past-order-view-btn"><img src="../../assets/images/icons/delete.svg" alt=""> Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories-dash dashboard-container">
+        <div class="header center container-wrap">
+            <div class="header-title d-flex center g-24">
+                <p>French Toast</p>
+            </div>
+            <div class="d-flex g-24">
+                <div class="d-flex justify-between a-align-c">
+                    <p>Visible on Menu</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                     </label>
+                </div>
+                <button class="btn-wrap btn-secondary past-order-view-btn" id="delete-food-item"><img src="../../assets/images/icons/delete.svg" alt=""> Delete</button>
+            </div>
+        </div>
+        <div id="edit-new-item" class="">
+            <!-- form start -->
+            <div class="form-row g-16" >
+                <div class="container-wrap">
+                    <p class="food-form-title">Basic Details</p>
+                    <div class="food-form-input-box margin-top-24">
+                        <label class="food-item-dish-composition-label">Enter Food Name</label>
+                        <input style="width: 596px; height: 56px;" id="foodName" value="French Toast" class="outline-bottom">  
+                    </div>
+                    <div class="food-form-input-box margin-top-24">
+                        <label class="food-item-dish-composition-label">Enter Food Price</label>
+                        <input style="width: 596px; height: 56px;" id="foodName" value="199" class="outline-bottom">  
+                    </div>
+                    <div class="margin-top-24">
+                        <label class="food-item-dish-composition-label">Select Food Category</label>
+                        <select name="" id="foodCategory" class="food-form-input-box">
+                            <option value="" selected>Breakfast</option>
+                            <option value="">Beverages</option>
+                            <option value="">Seafood</option>
+                            <option value="">Soups</option>
+                            <option value="">Desserts</option>
+                            <option value="">Brunch</option>
+                            <option value="">Appetizers</option>
+                        </select>
+                    </div>
+                    <div class="margin-top-24">
+                        <label for="description">Food Description</label><br>
+                        <textarea name="" id="description" class="food-text-area" rows="5"></textarea>
+                    </div>
+                    <div class="margin-top-24">
+                        <label for="ingredients">Food Ingredients</label><br>
+                        <textarea name="" id="ingredients" class="food-text-area" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="d-flex flex-column g-8">
+                    <div class="container-wrap diatry-attributes">
+                        <p class="food-form-title">Dietary Attributes</p>
+                        <div class="margin-top-24">
+                            <div class="d-flex justify-between mar-b-12">
+                                <p>Vegetarian</p>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                 </label>
+                            </div>
+                            <div class="d-flex justify-between mar-b-12">
+                                <p>Gluten Free</p>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                 </label>
+                            </div>
+                            <div class="d-flex justify-between mar-b-12">
+                                <p>Vegan</p>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                 </label>
+                            </div>
+                            <div class="d-flex justify-between mar-b-12">
+                                <p>Sweet Level</p>
+                            </div>
+                            <div class="d-flex justify-between mar-b-12">
+                                <p>Spicy Level</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-wrap">
+                        <p class="food-form-title">Measurement Attributes</p>
+                        <div class="margin-top-24">
+                            <div class=" mar-b-12">
+                                <label for="unit">Unit</label><br>
+                                <select name="" id="unit">
+                                    <option value="">Piece</option>
+                                    <option value="">Piece</option>
+                                    <option value="">Piece</option>
+                                    <option value="">Piece</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="qty">Serving Qty</label><br>
+                                <input id="qty" value="1" type="text" class="input-field">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="form-row g-16" >
+                <div class="g-16">
+                    <div class="container-wrap image-gallery-container mar-b-16">
+                        <p class="food-form-title">Image Gallery</p>
+                        <div>
+                            <p class="food-edit-item-img-label">Hero Image</p>
+                            <div class="form-row a-align-c">
+                                <div>
+                                    <img src="../../assets/images/img/french-toast.png" height="80" width="80">
+                                </div>
+                                <button class="btn-wrap btn-secondary past-order-view-btn">Change Image</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="food-edit-item-img-label">All Images</p>
+                            <div class="form-row a-align-c">
+                                <div class="g-24">
+                                    <img src="../../assets/images/img/french-toast.png"  height="80" width="80" alt="">
+                                    <img src="../../assets/images/img/breakfast-burrito.png"  height="80" width="80" alt="">
+                                </div>
+                                <button class="btn-wrap btn-secondary past-order-view-btn" style="height: fit-content;">Add Image</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-wrap dish-composition-container">
+                        <p class="food-form-title">Dish Composition</p>
+                        <div class="g-36">
+                            <div class="form-row g-24">
+                                <div>
+                                    <label for="foodName" class="food-item-dish-composition-label">Ingredient - 1</label><br>
+                                    <input id="foodName" value="Whole Wheat Bread" class="outline-bottom">
+                                </div>
+                                <div>
+                                    <label for="foodName" class="food-item-dish-composition-label">Qty</label><br>
+                                    <input id="foodName" value="2 Nos" class="outline-bottom">
+                                </div>
+                                <img src="../../assets/images/icons/delete.svg" alt="">
+                            </div>
+                            <div class="form-row g-24">
+                                <div>
+                                    <label for="foodName" class="food-item-dish-composition-label">Ingredient - 2</label><br>
+                                    <input id="foodName" value="Butter" class="outline-bottom">
+                                </div>
+                                <div>
+                                    <label for="foodName" class="food-item-dish-composition-label">Qty</label><br>
+                                    <input id="foodName" value="50 gm" class="outline-bottom">
+                                </div>
+                                <img src="../../assets/images/icons/delete.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn-wrap btn-secondary past-order-view-btn">Add More Ingredients</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-wrap special-attribute-container">
+                    <p class="sub-title">Special Attributes</p>
+                    <div class="d-flex justify-between margin-top-24">
+                        <p>Chefs Recommended</p>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                         </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-wrap">
+                <div class="text-right">
+                    <button class="btn-wrap past-order-view-btn"><img src="../../assets/images/icons/check-tick.svg" alt=""> Save Details</button>
+                </div>
+            </div>
+        </div> 
+    <!-- form end -->
+    <script src="./edit-items.js"></script>
+</body>
+
+</html>

@@ -15,7 +15,6 @@
 <body>
     <div class="categories-dash dashboard-container">
         <div class="header center container-wrap">
-            
             <div class="header-title d-flex center g-24">
                 <p>Food Items</p>
                 <div class="d-flex add-category disp-none center g-16">
@@ -23,31 +22,104 @@
                     <p>Add New</p>
                 </div>
             </div>
-            <div class="d-flex g-48">
-            <div class=" d-flex start g-8">
-                <img src="../../assets/images/illustrations/category-stats.svg" alt="">
-                <div>
-                    <p class="food-h-num">17</p>
-                    <p class="food-h-name">Categories in Use</p>
-                </div>
-            </div>  
-            <div class="d-flex start g-8">
-                <img src="../../assets/images/img/fork-knife.svg" alt="">
-                <div>
-                    <p class="food-h-num1">85</p>
-                    <p class="food-h-name1">Total Items</p>
-                </div>
-            </div> 
+            <div class="d-flex g-48 add-category">
+                <div class=" d-flex start g-8">
+                    <img src="../../assets/images/illustrations/category-stats.svg" alt="">
+                    <div>
+                        <p class="food-h-num">17</p>
+                        <p class="food-h-name">Categories in Use</p>
+                    </div>
+                </div>  
+                <div class="d-flex start g-8">
+                    <img src="../../assets/images/img/fork-knife.svg" alt="">
+                    <div>
+                        <p class="food-h-num1">85</p>
+                        <p class="food-h-name1">Total Items</p>
+                    </div>
+                </div> 
+            </div>
         </div>
-        </div>
-        <div id="categories-search-bar" class="add-category">
+
+        <div id="categories-search-bar" class="add-category container-wrap past-order-search-block flex-d-col d-flex btn-container g-30">
             <div class="container-wrap header center">
                 <input type="search" class="search-tab" placeholder="Search">
+                <div class="filter-order-selectSlot dropdown-wrapper"  onclick="addFoodItemFilterFun()">
+                    <span class="dropdown-default"
+                      >Filter Orders
+                      <img
+                        class="past-order-filter-img"
+                        src="../../assets/images/icons/filled arrow up.svg"
+                        alt="filter"
+                      />
+                    </span>
+                </div>
                 <div>
                     <button class="btn-wrap past-order-view-btn" onclick="addCategoriesFun()"><img src="../../assets/images/icons/add-new.svg" alt=""> Add New </button>
                 </div>
             </div>
+            <div class="d-flex past-orders-textfeild food-item-filter-div disp-none">
+                <div>
+                    <label for="foodName" class="label-text">Categories</label><br>
+                    <input  class="past-order-input-val" type="text" placeholder="Table No" value="All Categories">
+                    <span class="past-order-input-valspam">
+                      <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
+                  </div>
+  
+                  <div>
+                    <label for="foodName" class="label-text">Food Type</label><br>
+                    <input class="past-order-input-val" type="text" value="All Type">
+                    <span class="past-order-input-valspam">
+                      <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
+                  </div>
+
+                <div>
+                    <label for="foodName" class="label-text">Dietary Attributes</label><br>
+                    <input  class="past-order-input-val" type="text" placeholder="Table No" value="Spicy">
+                  <span class="past-order-input-valspam">
+                    <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
+                </div>
+
+                <div>
+                    <label for="foodName" class="label-text">Measurement Unit</label><br>
+                    <input class="past-order-input-val" type="text" value="All Units">
+                  <span class="past-order-input-valspam">
+                    <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
+                </div>
+
+              </div>
+              <div class="select-order-value past-m-b food-item-filter-div disp-none">
+                <span>Price Range (₹199 - ₹1800)</span>
+              </div>
+              <div class="d-flex past-order-cust-review a-align-c food-item-filter-div disp-none">
+              <div class="flex relative justify-center items-center h-20 w-full mx-auto rounded">
+                
+                <div class="range-slider">
+                  <div class="progress"></div>
+                  <span class="range-min-wrapper numberVal">
+                    <input class="range-min" type="range" min="199" max="1800" value="199">
+                  </span>
+                  <span class="range-max-wrapper numberVal">
+                    <input class="range-max" type="range" min="199" max="1800" value="1800">
+                  </span>
+                </div>
+                <div class="margin-top-5 ">
+                  <span class="range-min-wrapper numberVal">
+                    <span class="range-min-value">₹199</span>
+                  </span>
+                  <span class="range-max-wrapper numberVal">
+                    <span class="range-max-value" style="float: right;">₹1800</span>
+                  </span>
+                </div>
+              </div>
+              <div class="d-flex g-16">
+                <input class="past-order-r-btn past-order-view-btn"  type="button" value="Reset">
+                <input class="past-order-aply-btn past-order-view-btn" type="button" value="Apply">
+              </div>
+              
+        
+              </div>
         </div>
+
         <div class="add-category">
             <table class="custom-table container-wrap">
                 <thead>
@@ -99,7 +171,7 @@
             <div class="d-flex flex-column g-8">
                 <div class="container-wrap">
                     <p class="sub-title">Dietary Attributes</p>
-                    <div>
+                    <div class="form-row">
                         <p>Vegetarian</p>
                         <img src="" alt="">
                     </div>
@@ -185,6 +257,7 @@
     </div> 
     <!-- form end -->
     <script src="./items.js"></script>
+    <script src="../../js/range-slider.js"></script>
 </body>
 
 </html>

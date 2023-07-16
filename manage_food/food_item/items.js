@@ -53,15 +53,24 @@ foodData.forEach((item) => {
         <td>${item.category}</td>
         <td>${item.price}</td>
         <td><div style="display: flex; align-items: center; gap: 4px; color: #FF4747">
-        <img src="../../assets/images/icons/edit.svg" alt="">
-        <img src="../../assets/images/icons/delete.svg" alt="">
+        <img onclick="editOrDeleteFoodItemFun('edit')" src="../../assets/images/icons/edit.svg" alt="">
+        <img onclick="editOrDeleteFoodItemFun()" src="../../assets/images/icons/delete.svg" alt="">
         <img src="../../assets/images/icons/info.svg" alt=""></div></td>
     </tr>
     `
 })
 
+function editOrDeleteFoodItemFun(operation = 'delete') {
+    window.location.href = '../../manage_food/food_item/edit_item.html?operation='+operation
+}
+
+function addFoodItemFilterFun() {
+    document.querySelectorAll(".food-item-filter-div").forEach((item) => {
+        item.classList.toggle("disp-none");
+    })
+}
+
 foodTable.innerHTML = resultfood;
-console.log(addFoodQuery);
 function addCategoriesFun() {
     addFoodQuery.forEach((item) => {
         item.classList.toggle("disp-none");
