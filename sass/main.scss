@@ -139,7 +139,9 @@
 .nowrap {
   text-wrap: nowrap;
 }
-
+.out-none{
+  outline: none;
+}
 .input-field {
   border: none;
   width: 100%;
@@ -471,6 +473,22 @@ select {
   line-height: 30px;
   font-weight: 600;
 }
+.staff-disable-btn{
+display: inline-flex;
+padding: 4px 8px;
+align-items: center;
+gap: 4px;
+border-radius: 8px;
+border: 1px solid var(--red-red, #FF9898);
+color: var(--red-dark-red, #FF4747);
+text-align: right;
+font-family: Nunito;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+background-color: transparent;
+}
 
 // past orders css start
 
@@ -499,6 +517,10 @@ select {
   position: absolute;
     margin-left: -36px;
     margin-top: -5px;
+}
+.manage-order-id{
+  margin-right: -55px;
+  padding-top: 6px;
 }
 .select-order-value{
   color: var(--red-dark-grey, #555);
@@ -842,6 +864,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background: none;
   outline: none;
 }
+
 .range-slider .range-min::-webkit-slider-thumb {
   pointer-events: auto;
   -webkit-appearance: none;
@@ -886,7 +909,7 @@ input[type="number"]::-webkit-outer-spin-button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(66, 64, 64);
+  background-color: #888;
   transition: .4s;
 }
 
@@ -1007,12 +1030,11 @@ input:checked + .slider:before {
 .food-edit-item-img-label {
   color: var(--red-dark-grey, #555);
 
-  /* title 16px reg */
   font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .image-gallery-container {
   width: 628px;
@@ -1031,13 +1053,11 @@ input:checked + .slider:before {
 }
 .label-text {
   color: var(--red-dark-grey, #555);
-
-  /* caption 12px reg */
   font-family: Nunito;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px; 
 }
 .margin-top-5 {
   margin-top: 5px;
@@ -1050,12 +1070,11 @@ input:checked + .slider:before {
 }
 .food-sub-title {
   color: var(--red-dark-grey, #555);
-  /* title 16px reg */
   font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px; 
 }
 
 .food-form-input-box {
@@ -1075,22 +1094,19 @@ input:checked + .slider:before {
 }
 .food-form-title {
   color: var(--red-black, #222);
-
-  /* largetitle 20px semibold */
   font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px; /* 150% */
+  line-height: 30px; 
 }
 .food-item-dish-composition-label {
   color: var(--red-dark-grey, #555);
-  /* caption 12px reg */
   font-family: Nunito;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
 }
 .food-h-num{
   color: var(--dark-purpel, #994996);
@@ -1110,11 +1126,21 @@ input:checked + .slider:before {
 }
 .food-h-num1{
   color: var(--dark-blue, #14809E);
-font-family: Nunito;
-font-size: 28px;
-font-style: normal;
-font-weight: 600;
-line-height: 42px; /* 150% */
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px; 
+}
+.food-level{
+  width: 56px;
+  height: 27.816px;
+  flex-shrink: 0 ;margin-top: -13px;
+ 
+}
+.food-level-s{
+padding-top: 10px;
+margin-left: -4px;
 }
 .food-h-name1{
   color: var(--dark-blue, #14809E);
@@ -1143,6 +1169,21 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 16px;
+}
+.manage-staff-user-lb{
+color: var(--red-black, #222);
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+.manage-staff-user-chk{
+width: 18px;
+height: 18px;
+flex-shrink: 0;
+border-radius: 12px;
+background: var(--red-white, #FFF);
 }
 .customers-dash {
   display: flex;

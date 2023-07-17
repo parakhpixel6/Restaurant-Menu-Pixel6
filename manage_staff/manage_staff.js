@@ -20,6 +20,7 @@ let exStaffInfoTable = document.querySelector("#exStaffInfoTable");
 let addStaffQuery = document.querySelectorAll(".add-staff");
 let exStaffQuery = document.querySelectorAll(".ex-staff");
 let addStaffId = document.querySelectorAll("#add-staff");
+let addManageStaff = document.querySelector('.addManageStaff');
 // let exStaffId = document.querySelectorAll("#ex-staff");
 let staffInfoResult = "",
     exStaffInfoResult = "";
@@ -55,23 +56,25 @@ exStaffData.forEach((item) => {
 if (staffInfoTable != null) {
     staffInfoTable.innerHTML = staffInfoResult;
 }
-else if (exStaffInfoTable != null) {
-    exStaffInfoTable.innerHTML = exStaffInfoResult;
-}
+
 
 
 function addStaffFun() {
     addStaffQuery.forEach((item) => {
         item.classList.toggle("disp-none");
+        addManageStaff.classList.add('disp-none');
     })
     // addStaffId.classList.toggle("disp-none");
 }
 
+
 function exStaff() {
     // addStaffQuery.forEach((item) => {
-    //     item.classList.toggle("disp-none")
-    // })
-    // addStaffId.classList.toggle("disp-none")
+        //     item.classList.toggle("disp-none")
+        // })
+    addStaffId[0].classList.toggle("disp-none");
+    exStaffInfoTable.innerHTML = exStaffInfoResult;
+
     exStaffQuery.forEach((item) => {
         item.classList.toggle("disp-none");
     })
