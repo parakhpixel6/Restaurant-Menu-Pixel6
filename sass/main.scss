@@ -82,7 +82,7 @@
 
 .btn-wrap {
   padding: 4px 8px;
-  background: linear-gradient(90deg, #ff6666 0%, #ff9688 100%);
+  background: #ff6767;
   color: $widget-white;
   font-size: 14px;
   line-height: 21px;
@@ -522,6 +522,61 @@ background-color: transparent;
   margin-right: -55px;
   padding-top: 6px;
 }
+.sale-rpt-bg{
+  width: 455px;
+height: 123px;
+flex-shrink: 0;
+border-radius: 12px;
+background: var(--light-yellow, #FFFBE9);
+}
+.sale-rpt-value{
+color: var(--dark-blue, #14809E);
+font-family: Pacifico;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.sale-rpt-value-name{
+color: var(--dark-blue, #14809E);
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+.sale-rpt-rs-bg{
+width: 455px;
+height: 123px;
+flex-shrink: 0;
+border-radius: 12px;
+background: var(--light-blue, #EDFBFF);
+}
+.sale-rpt-rs-value{
+color: var(--dark-yellow, #CBA703);
+font-family: Pacifico;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.sale-rpt-rs-value-name{
+color: var(--dark-yellow, #CBA703);
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+.sale-select-day{
+  color: var(--red-dark-red, #FF4747);
+text-align: right;
+font-family: Nunito;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 150% */
+}
 .select-order-value{
   color: var(--red-dark-grey, #555);
 /* caption 12px reg */
@@ -832,6 +887,23 @@ margin-top: 10px;
 .p-order-view-bill{
   float: right;
 }
+.manage-set-rest{
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.manage-set-rest-logo{
+width: 110px;
+height: 110px;
+flex-shrink: 0;border-radius: 120px;
+border: 1px solid #F6E9D6;
+background: url(<path-to-image>), lightgray -55.663px -38.73px / 276.074% 156.294% no-repeat;
+}
+.manage-set-rest-main{
+width: 142px;
+height: 312px;
+flex-shrink: 0; border-radius: 12px;
+background: var(--red-white, #FFF);
+}
 // past order slider css start
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -953,7 +1025,7 @@ input:checked + .slider:before {
   color: #555;
   text-align: center;
   font-family: Open Sans;
-  font-size: 12px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

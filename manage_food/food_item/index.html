@@ -44,10 +44,10 @@
             <div class="container-wrap header center">
                 <input type="search" class="search-tab" placeholder="Search">
                 <div class="filter-order-selectSlot dropdown-wrapper"  onclick="addFoodItemFilterFun()">
-                    <span class="dropdown-default"
+                    <span class="dropdown-default past-order-view-btn"
                       >Filter Orders
                       <img
-                        class="past-order-filter-img"
+                        class="past-order-filter-img past-order-view-btn"
                         src="../../assets/images/icons/filled arrow up.svg"
                         alt="filter"
                       />
@@ -112,8 +112,8 @@
                 </div>
               </div>
               <div class="d-flex g-16">
-                <input class="past-order-r-btn past-order-view-btn"  type="button" value="Reset">
-                <input class="past-order-aply-btn past-order-view-btn" type="button" value="Apply">
+                <input class="past-order-r-btn past-order-view-btn" onclick="window.location.href='../../manage_food/food_item/index.html'" type="button" value="Reset">
+                <input class="past-order-aply-btn past-order-view-btn" onclick="window.location.href='../../manage_food/food_item/index.html'" type="button" value="Apply">
               </div>
               
         
@@ -251,12 +251,12 @@
         </div>
         <div class="container-wrap">
             <div class="text-right">
-                <button class="btn-wrap past-order-view-btn"><img src="../../assets/images/icons/check-tick.svg" alt=""> Save Details</button>
+                <button   class="btn-wrap past-order-view-btn"><img src="../../assets/images/icons/check-tick.svg" alt=""> Save Details</button>
             </div>
         </div>
     </div> 
     <!-- form end -->
-    <script src="./items.js"></script>
+    <script src="../../manage_food/food_item/items.js"></script>
     <script src="../../js/range-slider.js"></script>
 </body>
 

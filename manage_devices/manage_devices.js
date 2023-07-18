@@ -36,7 +36,7 @@ tableData.forEach((item) => {
         <td>${item.assignedStaff}</td>
         <td>${item.assignedDevice}</td>
         <td>${item.status}</td>
-        <td><img src="../../assets/images/icons/edit.svg" alt=""> <img src="../../assets/images/icons/delete.svg" alt=""></td>
+        <td><img onclick="addTableFun()" class="past-order-view-btn" src="../../assets/images/icons/edit.svg" alt=""> <img class="past-order-view-btn" src="../../assets/images/icons/delete.svg" alt=""></td>
     </tr>
     `
 })
@@ -50,7 +50,7 @@ deviceData.forEach((item) => {
         <td>${item.type}</td>
         <td>${item.maappedTo}</td>
         <td>${item.status}</td>
-        <td><img src="../../assets/images/icons/edit.svg" alt=""> <img src="../../assets/images/icons/delete.svg" alt=""></td>
+        <td><img onclick="addDeviceFun()" class="past-order-view-btn" src="../../assets/images/icons/edit.svg" alt=""> <img class="past-order-view-btn" src="../../assets/images/icons/delete.svg" alt=""></td>
     </tr>
     `
 })

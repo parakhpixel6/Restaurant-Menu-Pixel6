@@ -34,7 +34,7 @@ couponData.forEach((item) => {
         <td>${item.validTill}</td>
         <td>${item.applicableOn}</td>
         <td>${item.status}</td>
-        <td><img src="../../assets/images/icons/edit.svg" alt=""> <img src="../../assets/images/icons/delete.svg" alt=""></td>
+        <td><img class="past-order-view-btn" onclick="addCouponFun()" src="../../assets/images/icons/edit.svg" alt=""> <img class="past-order-view-btn" src="../../assets/images/icons/delete.svg" alt=""></td>
     </tr>
     `
 })
@@ -47,7 +47,7 @@ calenderData.forEach((item) => {
         <td>${item.openTime}</td>
         <td>${item.closeTime}</td>
         <td>${item.status}</td>
-        <td><img src="../../assets/images/icons/edit.svg" alt=""></td>
+        <td><img class="past-order-view-btn" src="../../assets/images/icons/edit.svg" alt=""></td>
     </tr>
     `
 })
@@ -63,4 +63,7 @@ function addCouponFun() {
     addCouponquery.forEach((item) => {
         item.classList.toggle("disp-none");
     })
+}
+function aaa(){
+    alert('"Tip Values Updated Successfully"');
 }

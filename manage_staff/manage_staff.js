@@ -34,7 +34,7 @@ staffData.forEach((item) => {
         <td>${item.role}</td>
         <td>${item.reportingTo}</td>
         <td>${item.workingSince}</td>
-        <td><img src="../../assets/images/icons/edit.svg" alt=""> <img src="../../assets/images/icons/delete.svg" alt=""></td>
+        <td><img class="past-order-view-btn" onclick="addStaffFun()" src="../../assets/images/icons/edit.svg" alt=""> <img  class="past-order-view-btn" src="../../assets/images/icons/delete.svg" alt=""></td>
     </tr>
     `
 })
@@ -48,7 +48,7 @@ exStaffData.forEach((item) => {
         <td>${item.role}</td>
         <td>${item.workingFrom}</td>
         <td>${item.workingto}</td>
-        <td><img src="../../assets/images/icons/edit.svg" alt=""> <img src="../../assets/images/icons/delete.svg" alt=""></td>
+<td><img  class="past-order-view-btn" onclick="addStaffFun() src="../../assets/images/icons/edit.svg" alt=""> <img id="delete-food-item"  class="past-order-view-btn" src="../../assets/images/icons/delete.svg" alt=""></td>
     </tr>
     `
 })
@@ -79,3 +79,4 @@ function exStaff() {
         item.classList.toggle("disp-none");
     })
 }
+{/* <script src="../../manage_food/food_item/items.js"></script> */}
