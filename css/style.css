@@ -147,6 +147,19 @@ li {
   gap: 4px;
 }
 
+.done-update-btn {
+  padding: 4px 8px;
+  background: #54BA54;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 8px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .btn-secondary {
   gap: 8px;
   background: #fff;
@@ -1569,7 +1582,7 @@ td {
 }
 
 tr:nth-child(odd) {
-  background-color: #f3f8ff;
+  background-color: #f5f8fc;
   border-radius: 1px solid #e8f1ff;
 }
 
@@ -1988,6 +2001,18 @@ input:checked + .slider:before {
 
 .delete-item-pop-content {
   color: #555;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 202px;
+  height: 32px;
+}
+
+.delete-item-pop-update {
+  color: #54BA54;
   text-align: center;
   font-family: Open Sans;
   font-size: 15px;
