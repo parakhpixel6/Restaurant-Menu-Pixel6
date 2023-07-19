@@ -34,7 +34,7 @@ couponData.forEach((item) => {
         <td>${item.validTill}</td>
         <td>${item.applicableOn}</td>
         <td>${item.status}</td>
-        <td><img class="past-order-view-btn" onclick="addCouponFun()" src="../../assets/images/icons/edit.svg" alt=""> <img class="past-order-view-btn" src="../../assets/images/icons/delete.svg" alt=""></td>
+        <td><img class="past-order-view-btn" onclick="addCouponFun()" src="../../assets/images/icons/edit.svg" alt=""> <img onclick="popIt()" class="past-order-view-btn" src="../../assets/images/icons/delete.svg" alt=""></td>
     </tr>
     `
 })

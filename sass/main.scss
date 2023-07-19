@@ -904,6 +904,10 @@ height: 312px;
 flex-shrink: 0; border-radius: 12px;
 background: var(--red-white, #FFF);
 }
+.delete-popup-btn-content{
+  margin-top: 41px;
+  margin-bottom: 40px;
+}
 // past order slider css start
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
