@@ -118,7 +118,22 @@
   align-items: center;
   gap: 4px;
 }
-
+.general-sett-pop{
+color: var(--red-black, #222);
+text-align: center;
+font-family: Nunito;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 150% */
+}
+.general-sett-ip{
+height: 50px; 
+width:445px
+}
+.general-sett-btn-p{
+  padding-top: 80px;
+}
 .btn-secondary {
   gap: 8px;
   background: #fff;
@@ -1136,7 +1151,15 @@ input:checked + .slider:before {
   border-radius: 12px;
   background: #FFF;
 }
-
+.window1{
+  text-align: center;
+  animation-name: grow;
+  animation-duration: 0.3s;
+  width: 471px;
+  height: 374px;
+  border-radius: 12px;
+  background: #FFF;
+}
 .confirm{
   background-color: #dfdfdf;
   width: 100%;
