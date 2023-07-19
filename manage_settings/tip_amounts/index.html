@@ -14,6 +14,27 @@
 </head>
 
 <body>
+    <div class="global-container" id="global">
+        <div class="window">
+            <div class="delete-pop-header ">
+                <span>
+                    Updated Value
+                </span>
+                <div class="delete-icon">
+                    <img src="../../assets/images/icons/complete.svg" alt="" />
+                </div>
+            </div>
+            <div class="d-flex flex-column a-align-c">
+                <span class="delete-item-pop-update delete-popup-btn-content">Updated Successfully</span>
+                <div class="mar-b-16">
+                    <input type="radio" name="" value="Yes, I`m sure"/>
+                    <label>Yes, I'm sure</label>
+                </div>
+                <button onclick="unPopIt()" class="done-update-btn past-order-view-btn ">Done</button>
+            </div>
+        </div>
+    </div>
+
     <div class="dashboard-container">
         <div class="header center container-wrap">
             <div class="header-title d-flex center g-24">
@@ -22,7 +43,7 @@
         </div>
         <div class="container-wrap" id="add-new-device">
             <p class="sub-title mar-b-16">Set Tip Values</p>
-            <form action="">
+            <!-- <form action=""> -->
                 <div class="d-flex form-row">
                     <div class="form-col-2 input-box">
                         <label for="value1">Value 1</label><br>
@@ -52,11 +73,13 @@
                     </div>
                 </div>
                 <div class="text-right">
-                    <button class="btn-wrap past-order-view-btn" onclick="aaa()"><img src="../../assets/images/icons/check-tick.svg" alt="">Update Values</button>
+                    <button onclick="popIt()" class="btn-wrap past-order-view-btn"><img src="../../assets/images/icons/check-tick.svg" alt="">Update Values</button>
                 </div>
-            </form>
+            <!-- </form> -->
         </div>
     </div>
+    <!-- <script src="../../manage_settings/manage_setting.js"></script> -->
+    <script src="../../js/delete-popup.js"></script>
 </body>
-<script src="../../manage_settings/manage_setting.js"></script>
+
 </html>

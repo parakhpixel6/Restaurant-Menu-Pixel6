@@ -47,7 +47,7 @@ calenderData.forEach((item) => {
         <td>${item.openTime}</td>
         <td>${item.closeTime}</td>
         <td>${item.status}</td>
-        <td><img class="past-order-view-btn" src="../../assets/images/icons/edit.svg" alt=""></td>
+        <td><img onclick="popIt()" class="past-order-view-btn" src="../../assets/images/icons/edit.svg" alt=""></td>
     </tr>
     `
 })
@@ -64,6 +64,6 @@ function addCouponFun() {
         item.classList.toggle("disp-none");
     })
 }
-function aaa(){
-    alert('"Tip Values Updated Successfully"');
-}
+// function aaa(){
+//     alert('"Tip Values Updated Successfully"');
+// }
