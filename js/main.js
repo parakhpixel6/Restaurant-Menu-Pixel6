@@ -15,40 +15,63 @@ navigationSubMenuLinks.forEach(subMenuLink => {
 // Get all sidebar--navigations-submenu elements
 const subMenus = document.querySelectorAll('.sidebar--navigations-submenu');
 
+// ... (existing code)
+
 // Add click event listener to each submenu
 subMenus.forEach(subMenu => {
-    const link = subMenu.querySelector('.sidebar--navigations-link');
-    const subSubMenu = subMenu.querySelector('.sidebar--navigations-submenu-link');
-    const subsubMenuActive = subMenu.querySelector('.sidebar--navigations-subsubmenu');
+  const link = subMenu.querySelector('.sidebar--navigations-link');
+  const subSubMenu = subMenu.querySelector('.sidebar--navigations-submenu-link');
+  const subsubMenuActive = subMenu.querySelector('.sidebar--navigations-subsubmenu');
 
-    // Toggle active class and display on click
-    link.addEventListener('click', () => {
-        subMenus.forEach(otherSubMenu => {
-            if (otherSubMenu !== subMenu) {
-                const otherSubSubMenu = otherSubMenu.querySelector('.sidebar--navigations-submenu-link');
-                const otherSubsubMenuActive = otherSubMenu.querySelector('.sidebar--navigations-subsubmenu');
+  // Variable to store the firstChildSubSubMenu
+  let firstChildSubSubMenu = subMenu.querySelector('.sidebar--navigations-subsubmenu .sidebar--navigations-submenu-link');
 
-                otherSubMenu.classList.remove('active');
-                otherSubSubMenu.style.display = 'none';
-                otherSubSubMenu.classList.remove('active');
-                otherSubsubMenuActive.classList.remove('active');
-            }
+  // Toggle active class and display on click
+  link.addEventListener('click', () => {
+    const isActive = subMenu.classList.contains('active');
+
+    subMenus.forEach(otherSubMenu => {
+      if (otherSubMenu !== subMenu) {
+        const otherSubSubMenu = otherSubMenu.querySelector('.sidebar--navigations-submenu-link');
+        const otherSubsubMenuActive = otherSubMenu.querySelector('.sidebar--navigations-subsubmenu');
+
+        otherSubMenu.classList.remove('active');
+        otherSubSubMenu.style.display = 'none';
+        otherSubSubMenu.classList.remove('active');
+        otherSubsubMenuActive.classList.remove('active');
+
+        // Remove active class from all child subsubmenu links
+        const childSubSubMenus = otherSubMenu.querySelectorAll('.sidebar--navigations-subsubmenu .sidebar--navigations-submenu-link');
+        childSubSubMenus.forEach(childSubSubMenu => {
+          childSubSubMenu.classList.remove('active');
         });
-
-        subMenu.classList.toggle('active');
-
-        if (subMenu.classList.contains('active')) {
-            subSubMenu.style.display = 'block';
-            subSubMenu.classList.add('active');
-            subsubMenuActive.classList.add('active');
-        } else {
-            subSubMenu.style.display = 'none';
-            subSubMenu.classList.remove('active');
-            subsubMenuActive.classList.remove('active');
-            link.classList.remove('active');
-        }
+      }
     });
+
+    subMenu.classList.toggle('active');
+
+    if (subMenu.classList.contains('active')) {
+      subSubMenu.style.display = 'block';
+      subsubMenuActive.classList.add('active');
+
+      // Add active class to the first child subsubmenu link if it is not active
+      if (firstChildSubSubMenu && !firstChildSubSubMenu.classList.contains('active')) {
+        firstChildSubSubMenu.classList.add('active');
+      }
+    } else {
+      subSubMenu.style.display = 'none';
+      subSubMenu.classList.remove('active');
+      subsubMenuActive.classList.remove('active');
+    }
+  });
 });
+
+
+// ... (existing code)
+
+
+
+
 
 //// SIDEBAR NAVIGATIONS LINK COLOR SWITCHING
 const navigationLinks = document.querySelectorAll('.sidebar--navigations-link');
