@@ -43,37 +43,78 @@
 
         <div id="categories-search-bar" class="add-category container-wrap past-order-search-block flex-d-col d-flex btn-container g-30">
             <div class="container-wrap header center">
-                <input type="search" class="search-tab" placeholder="Search">
-                <div class="filter-order-selectSlot dropdown-wrapper"  onclick="addFoodItemFilterFun()">
-                    <span class="dropdown-default past-order-view-btn"
-                      >Filter Orders
-                      <img
-                        class="past-order-filter-img past-order-view-btn"
-                        src="../../assets/images/icons/filled arrow up.svg"
-                        alt="filter"
-                      />
-                    </span>
-                </div>
-                <div>
+                <input type="search" class="search-tab out-none" placeholder="Search">
+                
+                <div class="d-flex center g-16">
+                    <div class="filter-order-selectSlot dropdown-wrapper"  onclick="addFoodItemFilterFun()">
+                        <span class="dropdown-default past-order-view-btn"
+                          >Filter Orders
+                          <img
+                            class="past-order-filter-img past-order-view-btn"
+                            src="../../assets/images/icons/filled arrow up.svg"
+                            alt="filter"
+                          />
+                        </span>
+                    </div>
                     <button class="btn-wrap past-order-view-btn" onclick="editOrDeleteFoodItemFun('edit')"><img src="../../assets/images/icons/add-new.svg" alt=""> Add New </button>
                 </div>
             </div>
             <div class="d-flex past-orders-textfeild food-item-filter-div disp-none">
-                <div>
+
+                <div class=" food-item-dropDown">
+                    <label for="food-item-category foodName">Categories</label><br>
+                     <!-- <input id="currency" type="text" class="input-field">  -->
+                    <select class="font-s-12 past-order-view-btn out-none" name="foodName" id="foodName">
+                        <option value="">All Categories</option>
+                        <option value="">Drink</option>
+                        <option value="">Breakfast</option>
+                        <option value="">Continental</option>
+                    </select>
+                </div>
+                <div class=" food-item-dropDown">
+                    <label for="food-item-category foodName">Food Type</label><br>
+                     <!-- <input id="currency" type="text" class="input-field">  -->
+                    <select class="font-s-12 past-order-view-btn out-none" name="foodName" id="foodName">
+                        <option value="">All Type</option>
+                        <option value="">Veg</option>
+                        <option value="">Non-Veg</option>
+                    </select>
+                </div>
+                <div class=" food-item-dropDown">
+                    <label for="food-item-category foodName">Dietary Attributes</label><br>
+                     <!-- <input id="currency" type="text" class="input-field">  -->
+                    <select class="font-s-12 past-order-view-btn out-none" name="foodName" id="foodName">
+                        <option value="">Spicy</option>
+                        <option value="">Sweet</option>
+                        <option value="">Hot</option>
+                        <option value="">Glutten Free</option>
+                    </select>
+                </div>
+                <div class=" food-item-dropDown">
+                    <label for="food-item-category foodName">Measurement Unit</label><br>
+                     <!-- <input id="currency" type="text" class="input-field">  -->
+                    <select class="font-s-12 past-order-view-btn out-none" name="foodName" id="foodName">
+                        <option value="">Piece</option>
+                        <option value="">Liter</option>
+                        <option value="">Portion</option>
+                        <option value="">Gram</option>
+                    </select>
+                </div>
+                <!-- <div>
                     <label for="foodName" class="label-text">Categories</label><br>
-                    <input  class="past-order-input-val" type="text" placeholder="Table No" value="All Categories">
+                    <input  class="past-order-input-val" type="select" placeholder="Table No" value="All Categories">
                     <span class="past-order-input-valspam">
                       <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
-                  </div>
+                  </div> -->
   
-                  <div>
+                  <!-- <div>
                     <label for="foodName" class="label-text">Food Type</label><br>
                     <input class="past-order-input-val" type="text" value="All Type">
                     <span class="past-order-input-valspam">
                       <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
-                  </div>
+                  </div> -->
 
-                <div>
+                <!-- <div>
                     <label for="foodName" class="label-text">Dietary Attributes</label><br>
                     <input  class="past-order-input-val" type="text" placeholder="Table No" value="Spicy">
                   <span class="past-order-input-valspam">
@@ -85,7 +126,7 @@
                     <input class="past-order-input-val" type="text" value="All Units">
                   <span class="past-order-input-valspam">
                     <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
-                </div>
+                </div> -->
 
               </div>
               <div class="select-order-value past-m-b food-item-filter-div disp-none">
@@ -152,7 +193,7 @@
                 </div>
                 <div class="input-box">
                     <label for="foodCategory">Select Food Category</label><br>
-                    <select name="" id="foodCategory">
+                    <select class="out-none" name="" id="foodCategory">
                         <option value="">Breakfast</option>
                         <option value="">Beverages</option>
                         <option value="">Seafood</option>
@@ -164,10 +205,10 @@
                 </div>
                 <div>
                     <label for="description">Food Description</label><br>
-                    <textarea name="" id="description" class="text-area" rows="5"></textarea></div>
+                    <textarea name="" id="description" class="text-area out-none" rows="5"></textarea></div>
                 <div>
                     <label for="ingredients">Food Ingredients</label><br>
-                    <textarea name="" id="ingredients" class="text-area" rows="5"></textarea></div>
+                    <textarea name="" id="ingredients" class="text-area out-none" rows="5"></textarea></div>
             </div>
             <div class="d-flex flex-column g-8">
                 <div class="container-wrap">
@@ -195,14 +236,14 @@
                         <label for="unit">Unit</label><br>
                         <select name="" id="unit">
                             <option value="">Piece</option>
-                            <option value="">Piece</option>
-                            <option value="">Piece</option>
-                            <option value="">Piece</option>
+                            <option value="">Liter</option>
+                            <option value="">Portion</option>
+                            <option value="">Gram</option>
                         </select>
                     </div>
                     <div class="input-box">
                         <label for="qty">Serving Qty</label><br>
-                        <input id="qty" type="text" class="input-field">
+                        <input id="qty" type="text" class="input-field out-none">
                     </div>
                 </div>
             </div>

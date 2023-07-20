@@ -47,7 +47,8 @@ calenderData.forEach((item) => {
         <td>${item.openTime}</td>
         <td>${item.closeTime}</td>
         <td>${item.status}</td>
-        <td><img onclick="popIt()" class="past-order-view-btn" src="../../assets/images/icons/edit.svg" alt=""></td>
+        <td onclick="popIt()" class="past-order-view-btn" class="edit-table-process"><div style="display: flex; align-items: center; gap: 4px; color: #FF4747"><img src="../../assets/images/icons/edit.svg" alt=""> Edit</div></td>
+        
     </tr>
     `
 })

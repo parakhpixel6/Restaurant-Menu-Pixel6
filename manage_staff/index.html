@@ -67,7 +67,7 @@
         </div>
         <div id="categories-search-bar" class="add-staff ex-staff">
             <div class="container-wrap header center">
-                <input type="search" class="search-tab" placeholder="Search">
+                <input type="search" class="search-tab out-none" placeholder="Search">
                 <div>
                     <button class="btn-wrap past-order-view-btn" onclick="addStaffFun()">Add New </button>
                 </div>
@@ -131,13 +131,13 @@
             <div class="d-flex form-row">
                 <div class="form-col-2 input-box">
                     <label for="role">Role</label><br>
-                    <select name="" id="role">
+                    <select class="out-none" name="" id="role">
                         <option value="">Admin</option>
                     </select>
                 </div>
                 <div class="form-col-2 input-box">
                     <label for="reporting">Reporting To</label><br>
-                    <select name="" id="reporting">
+                    <select class="out-none" name="" id="reporting">
                         <option value="">None</option>
                     </select>
                 </div>
@@ -202,7 +202,7 @@
                 </div>
             </div>
             <div class="d-flex past-order-cust-review">
-                <div>
+                <div class="d-flex center g-8">
                     <input class="manage-staff-user-chk" for="user" type="checkbox">
                     <label class="manage-staff-user-lb" id="user">Send Invitation to User</label>
                 </div>

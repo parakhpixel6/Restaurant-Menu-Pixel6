@@ -6,6 +6,7 @@ let cancelButton = document.querySelector(".cancel");
 function popIt(){
   popWin.classList.remove("unpop");
   popWin.classList.add("pop");
+  popWin.scrollIntoView();
 }
 
 //for popup close

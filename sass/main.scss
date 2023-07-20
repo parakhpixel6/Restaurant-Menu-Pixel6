@@ -1093,7 +1093,7 @@ input:checked + .slider:before {
 .delete-item-pop-content {
   color: #555;
   text-align: center;
-  font-family: Open Sans;
+  // font-family: Open Sans;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1104,7 +1104,7 @@ input:checked + .slider:before {
 .delete-item-pop-update {
   color: #54BA54;
   text-align: center;
-  font-family: Open Sans;
+  // font-family: Open Sans;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1246,6 +1246,7 @@ input:checked + .slider:before {
   flex: 1 0 0;
 }
 .food-text-area {
+  outline: none;
   width: 596px;
   height: 88px;
   flex-shrink: 0;
@@ -1291,6 +1292,16 @@ input:checked + .slider:before {
   font-style: normal;
   font-weight: 600;
   line-height: 42px; 
+}
+
+.food-item-dropDown {
+  border-bottom: 2px solid rgba(136, 136, 136, 0.53);
+  /* padding: 0px 0px 0px 16px; */
+  width: 177px
+}
+
+.font-s-12 {
+  font-size:  12px;
 }
 .food-level{
   width: 56px;
