@@ -324,6 +324,102 @@ select {
   border-radius: 8px;
 }
 
+.circle{
+    height: 150px;
+    width: 150px;
+    background-color: #9CDA9C;
+    border: 5px solid;
+    border-radius: 50%;
+    position: absolute;
+    color: #FFFFFF;
+    .status-icon{
+        height: 20px;
+        width: 20px;
+    }
+    .status-text-container{
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &.engaged{
+        background-color: #B3D9E2;
+        border-color: #D3F5FF;
+        .status-icon{
+            background: url('../assets/images/icons/timer.png') center center no-repeat ;
+        }
+        .table_no{
+            color: #14809E;
+        }
+    }
+    &.available{
+        background-color: #DDDDDD;
+        border-color: #ECECEC;
+        color: #888888;
+        .status-icon{
+            height: 40px;
+            width: 100px;
+            background: url('../assets/images/icons/table_available.png') center center no-repeat ;
+        }
+        .table_no{
+            color: #555555;
+        }
+    }
+    &.merged{
+        background-color: #F3CA79;
+        border-color: #FFEDCA;
+        .status-icon{
+            background: url('../assets/images/icons/merge.png') center center no-repeat ;
+        }
+        .table_no{
+            color: #C9870B;
+        }
+    }
+    &.occupied{
+        .status-icon{
+            background: url('../assets/images/icons/cart.png') center center no-repeat ;
+        }
+        .table_no{
+            color: #278827;
+        }
+    }
+    .table_no{
+        font-size: 28px;
+        margin: 16px;
+        font-weight: 700;
+    }
+}
+
+.pie-wrapper {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  transform: rotate(90deg);
+  .pie {
+    height: 100%;
+    width: 100%;
+    // clip: rect(0, 15px, 15px, 7.5px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    .half-circle {
+      height: 100%;
+      width: 100%;  
+      border-radius: 50%;
+      clip: rect(0, 75px, 75px, 0);
+      left: 0;
+      position: absolute;
+      top: 0;
+      &.engaged{
+        border: 6px solid ;
+        border-color: #3498db; 
+      }
+      &.occupied{
+        border: 6px solid #54BA54;
+      }
+    }
+  }
+}
+
 @import "./base/animation";
 
 .admin_container--dashboard-iframe {
@@ -692,10 +788,10 @@ td {
   text-align: left;
   padding: 16px;
 }
-tr:nth-child(odd) {
-  background-color: #f5f8fc;
-  border-radius: 1px solid #e8f1ff;
-}
+// tr:nth-child(odd) {
+//   background-color: #f3f8ff;
+//   border-radius: 1px solid #e8f1ff;
+// }
 .past-order-table-status.red.active {
   width: 400px;
   p {
