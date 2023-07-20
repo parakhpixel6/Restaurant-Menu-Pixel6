@@ -649,6 +649,21 @@ font-weight: 400;
 line-height: 21px;
 background-color: transparent;
 }
+.img-file-btn{
+  display: inline-flex;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  // color: var(--red-dark-red, #FF4747);
+  text-align: right;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: transparent;
+  }
 
 // past orders css start
 
@@ -677,10 +692,14 @@ background-color: transparent;
   position: absolute;
     margin-left: -36px;
     margin-top: -5px;
+
 }
 .manage-order-id{
   margin-right: -55px;
   padding-top: 6px;
+}
+.margin-left-30{
+margin-left: 30px;
 }
 .sale-rpt-bg{
   width: 455px;
@@ -752,6 +771,9 @@ line-height: 16px; /* 133.333% */
     border: none;
     border-bottom: 2px solid #8888;
     padding: 4px;
+}
+.padding-4{
+  padding: 4px;
 }
 .cart-stats-value {
   color: var(--dark-blue, #14809E);
@@ -1408,6 +1430,9 @@ input:checked + .slider:before {
 .food-level-s{
 padding-top: 10px;
 margin-left: -4px;
+}
+.padding-t-10{
+  padding-top: 10px;
 }
 .food-h-name1{
   color: var(--dark-blue, #14809E);

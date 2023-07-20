@@ -117,15 +117,9 @@
                 </div>
                 <div class="form-col-2 input-box">
                     <label for="staffImage">Staff Image</label><br>
-                    <div class="">
-                        <input id="joiningDate" type="text" class="input-field manage-order-id out-none"  placeholder=".png file">
-                        <span class="past-order-input-valspam">
-                            <div class="text-right past-order-view-btn">
-                            <button class="past-order-view-btn staff-disable-btn" onclick="window.location.href = '../../assets/images/img'">
-                                choose file</button>
-                            </div></span>
+                    <div class="past-order-input-valspam text-right">
+                        <input type="file" class=" d-flex manage-order-id img-file-btn past-order-view-btn margin-left-30 out-none">
                       </div>   
-                    <!-- <input id="staffImage" type="text" class="input-field out-none"> -->
                 </div>
             </div>
             <div class="d-flex form-row">
@@ -178,7 +172,7 @@
 
             </div>
             <div class="d-flex form-row">
-                <div class="form-col-2 input-box" >
+                <!-- <div class="form-col-2 input-box" >
                     <label for="joiningDate">Identity Proof</label><br>
                     <div class="">
                         <input id="joiningDate" type="text" class="input-field manage-order-id out-none"  placeholder=".png file">
@@ -188,17 +182,28 @@
                                 choose file</button>
                             </div></span>
                       </div>                
+                </div> -->
+                <div class="form-col-2 input-box">
+                    <label for="staffImage">Identity Proof</label><br>
+                    <div class="past-order-input-valspam text-right">
+                        <input type="file" class=" d-flex manage-order-id img-file-btn past-order-view-btn margin-left-30 out-none">
+                      </div>   
                 </div>
 
                 <div class="form-col-2 input-box">
-                    <label for="joiningDate">Access to functionality</label><br>
+                    <!-- <label for="joiningDate">Access to functionality</label><br>
                     <div class="">
                         <input  id="joiningDate" type="text" class="input-field out-none">
                         <span class="past-order-input-valspam"><label  class="switch">
                             <input type="checkbox">
                             <span class="slider round"></span>
                          </label></span>
-                      </div>                
+                      </div>                 -->
+                      <label for="role">Access to functionality</label><br>
+                      <select class="out-none" name="" id="role">
+                          <option value="">Active</option>
+                          <option value="">Inactive</option>
+                      </select>
                 </div>
             </div>
             <div class="d-flex past-order-cust-review">
@@ -209,10 +214,10 @@
               
             <div class="text-right past-order-view-btn">
                 <button class="past-order-view-btn staff-disable-btn" onclick="popIt()">
-                    <img src="../assets/images/img/staff/danger.svg" alt="danger">
+                    
                     Disable Staff</button>
                 <button class="btn-wrap past-order-view-btn" onclick="addStaffFun()">
-                    <img src="../assets/images/img/staff/tick-circle.svg" alt="tick-circle">
+                    
                     Add New Staff</button>
             </div>
         </div>

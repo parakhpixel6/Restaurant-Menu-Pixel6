@@ -41,15 +41,6 @@
     </div>
 
     <div class="container-wrap past-order-search-block flex-d-col d-flex btn-container g-30 padding-16">
-      <!-- <div class="d-flex past-order-cust-review btn-container g-30"> -->
-        <!-- <div class="d-flex past-order-table-status table-status red active btn-container  ">
-          <img
-            class="search-img"
-            src="../../assets/images/icons/search.svg"
-            alt="Search"
-          />
-          <p>Search</p>
-        </div> -->
         <div class="container-wrap header center p-revert" >
           <input type="search" class="search-tab out-none" placeholder="Search">
         <div class="filter-order-selectSlot dropdown-wrapper" onclick="togglePastOrderFilterDivFun()">
@@ -65,22 +56,35 @@
       </div>
       <div class="d-flex past-orders-textfeild past-order-filter-div disp-none justify-between ">
         <div class="">
-        <input  class="past-order-input-val"  type="text" placeholder="From Date" value="11/05/2023">
+        <input  class="past-order-input-val"  type="text" placeholder="From Date(dd/mm/yyyy)" value="11/05/2023">
         <span class="past-order-input-valspam"><img src="../../assets/images/img/Calendar.svg" alt=""></span>
       </div>
         <div> 
-          <input  class="past-order-input-val" type="text" placeholder="To date" value="To Date">
+          <input  class="past-order-input-val" type="text" placeholder="To date(dd/mm/yyyy)" value="">
           <span class="past-order-input-valspam"><img src="../../assets/images/img/Calendar.svg" alt=""></span>
         </div>
-        <div>
-          <input  class="past-order-input-val" type="text" placeholder="Table No" value=" All Table">
-          <span class="past-order-input-valspam">
-            <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
+        <div >
+            <select class="past-order-view-btn out-none food-item-dropDown padding-4">
+              <option selected>All Tables</option>
+              <option>T01</option>
+              <option>T02</option>
+              <option>T03</option>
+              <option>T04</option>
+              <option>T05</option>
+          </select> 
         </div>
         <div>
-          <input class="past-order-input-val" type="text" value="Payment Mode">
-          <span class="past-order-input-valspam">
-            <img  src="../../assets/images/img/arrow-down.svg" alt=""></span>
+          <!-- <input class="past-order-input-val" type="text" value="Payment Mode"> -->
+          <!-- <span class="past-order-input-valspam"> -->
+            <!-- <img  src="../../assets/images/img/arrow-down.svg" alt=""> -->
+            <select class="past-order-view-btn out-none food-item-dropDown padding-4">
+              <option selected>Payment Mode</option>
+              <option>Cash</option>
+              <option>Net banking</option>
+              <option>UPI</option>
+              <option>Credit/Debit Card</option>
+          </select>
+          <!-- </span> -->
         </div>
       </div>
       <div class="select-order-value past-m-b past-order-filter-div disp-none">

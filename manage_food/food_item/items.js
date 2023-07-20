@@ -52,10 +52,9 @@ foodData.forEach((item) => {
         <td>${item.ItemDescription}</td>
         <td>${item.category}</td>
         <td>${item.price}</td>
-        <td><div style="display: flex; align-items: center; gap: 4px; color: #FF4747">
-        <img onclick="editOrDeleteFoodItemFun('edit')" src="../../assets/images/icons/edit.svg" alt="">Edit</td>
-      
-        
+        <td>
+        <a onclick="editOrDeleteFoodItemFun('edit')"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+        </td>
     </tr>
     `
 })
