@@ -62,6 +62,10 @@ li {
   font-size: 16px;
 }
 
+.padding-16 {
+  padding: 16px;
+}
+
 .transform-checkbox {
   transform: scale(1.2);
 }
@@ -83,6 +87,10 @@ li {
 
 .enable {
   color: #54ba54;
+}
+
+.p-revert {
+  padding: revert;
 }
 
 .primary-stat {
@@ -189,6 +197,10 @@ li {
 .btn-disable {
   background: #dddddd;
   color: #888888;
+}
+
+.clr-red {
+  color: #FF4747;
 }
 
 .text-center {
@@ -305,6 +317,10 @@ select {
 }
 .custom-table tbody tr:nth-child(even) {
   background: #e8f1ff;
+}
+
+.past-bg-clr-row {
+  background-color: #e8f1ff;
 }
 
 .dashboard-container {
@@ -1458,7 +1474,6 @@ select {
   display: flex;
   flex-direction: row;
   gap: 16px;
-  justify-content: space-evenly;
 }
 
 .past-order-input-valspam {
@@ -1601,7 +1616,7 @@ td {
 }
 
 tr:nth-child(odd) {
-  background-color: #f5f8fc;
+  background-color: #ffffff;
   border-radius: 1px solid #e8f1ff;
 }
 
