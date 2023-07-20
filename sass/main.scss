@@ -26,7 +26,9 @@
 .font-s-16 {
   font-size:  16px;
 }
-
+.padding-16{
+  padding: 16px;
+}
 .transform-checkbox {
   transform:  scale(1.2);
 }
@@ -47,7 +49,9 @@
 .enable {
   color: #54ba54;
 }
-
+.p-revert{
+  padding:revert;
+}
 .primary-stat {
   color: #994996;
 }
@@ -146,7 +150,9 @@ width:445px
   color: #888888;
   // border: 1px solid #888888;
 }
-
+.clr-red{
+  color: #FF4747;
+}
 .text-center {
   text-align: center;
 }
@@ -268,7 +274,9 @@ select {
     }
   }
 }
-
+.past-bg-clr-row{
+  background-color:#e8f1ff;
+}
 .dashboard-container {
   display: flex;
   flex-direction: column;
@@ -566,7 +574,7 @@ background-color: transparent;
   display: flex;
   flex-direction: row;
   gap: 16px;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
 
 }
 .past-order-input-valspam{
@@ -693,7 +701,7 @@ td {
   padding: 16px;
 }
 tr:nth-child(odd) {
-  background-color: #f5f8fc;
+  background-color: #ffffff;
   border-radius: 1px solid #e8f1ff;
 }
 .past-order-table-status.red.active {

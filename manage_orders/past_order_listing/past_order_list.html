@@ -40,17 +40,18 @@
     </div>
     </div>
 
-    <div class="container-wrap past-order-search-block flex-d-col d-flex btn-container g-30">
-      <div class="d-flex past-order-cust-review btn-container g-30">
-        <div class="d-flex past-order-table-status table-status red active btn-container  ">
+    <div class="container-wrap past-order-search-block flex-d-col d-flex btn-container g-30 padding-16">
+      <!-- <div class="d-flex past-order-cust-review btn-container g-30"> -->
+        <!-- <div class="d-flex past-order-table-status table-status red active btn-container  ">
           <img
             class="search-img"
             src="../../assets/images/icons/search.svg"
             alt="Search"
           />
           <p>Search</p>
-        </div>
-  
+        </div> -->
+        <div class="container-wrap header center p-revert" >
+          <input type="search" class="search-tab out-none" placeholder="Search">
         <div class="filter-order-selectSlot dropdown-wrapper" onclick="togglePastOrderFilterDivFun()">
           <span class="dropdown-default past-order-view-btn"
             >Filter Orders
@@ -62,7 +63,7 @@
           </span>
         </div>
       </div>
-      <div class="d-flex past-orders-textfeild past-order-filter-div disp-none ">
+      <div class="d-flex past-orders-textfeild past-order-filter-div disp-none justify-between ">
         <div class="">
         <input  class="past-order-input-val"  type="text" placeholder="From Date" value="11/05/2023">
         <span class="past-order-input-valspam"><img src="../../assets/images/img/Calendar.svg" alt=""></span>
@@ -142,7 +143,7 @@
           </div>
 
           <div class="past-order-table-heading-data">
-            <tr class="past-order-table-heading-odd">
+            <tr  class="past-order-table-heading-odd">
               <td class="past-order-table-heading-data">11/05/2023</td>
               <td class="past-order-table-heading-data">011B57</td>
               <td class="past-order-table-heading-data">15</td>
@@ -161,7 +162,7 @@
           </div>
 
           <div>
-            <tr class="past-order-table-heading-even">
+            <tr class="past-order-table-heading-even" style="background-color: #e8f1ff;">
               <td class="past-order-table-heading-data">11/05/2023</td>
               <td class="past-order-table-heading-data">011B57</td>
               <td class="past-order-table-heading-data">15</td>

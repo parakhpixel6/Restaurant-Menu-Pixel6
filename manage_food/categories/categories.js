@@ -22,7 +22,9 @@ cateogryData.forEach((item) => {
         <td><img src="${item.icon}" alt=""></td>
         <td>${item.categoryDescription}</td>
         <td>${item.noOfItems}</td>
-        <td><div style="display: flex; align-items: center; gap: 4px; color: #FF4747"><img onclick="addCategoriesFun()" src="../../assets/images/icons/edit.svg" alt=""> Edit</div></td>
+        <td><div>
+        <a onclick="addCategoriesFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+        </div></td>
     </tr>
     `
 })
