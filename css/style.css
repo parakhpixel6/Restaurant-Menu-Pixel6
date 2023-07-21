@@ -77,6 +77,12 @@ li {
   width: 100%;
 }
 
+.container-wrap-past {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  width: 100%;
+}
+
 .a-align-c {
   align-items: center;
 }
@@ -136,6 +142,10 @@ li {
 
 .g-8 {
   gap: 8px;
+}
+
+.g-12 {
+  gap: 12px;
 }
 
 .text-right {
@@ -316,12 +326,12 @@ select {
   color: #ff4747;
 }
 .custom-table tbody tr {
-  border-top: 2px solid #e8f1ff;
+  border-top: 2px solid #FFF4F4;
   font-size: 14px;
   line-height: 21px;
 }
 .custom-table tbody tr:nth-child(even) {
-  background: #e8f1ff;
+  background: #FFF4F4;
 }
 
 .past-bg-clr-row {
@@ -1357,6 +1367,13 @@ select {
   padding: 4px 12px;
 }
 
+.table-status-inpro {
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
 .table-status.red {
   color: #FF4747;
 }
@@ -1741,8 +1758,8 @@ td {
 }
 
 tr:nth-child(odd) {
-  background-color: #f3f8ff;
-  border-radius: 1px solid #e8f1ff;
+  background-color: #ffffff;
+  border-radius: 1px solid #FFF4F4;
 }
 
 .past-order-table-status.red.active {
@@ -1960,6 +1977,14 @@ tr:nth-child(odd) {
   cursor: pointer;
 }
 
+.bg-clr-red {
+  background-color: #FFF4F4;
+}
+
+.bg-clr-white {
+  background-color: #FFFfFf;
+}
+
 .past-m-b {
   margin-bottom: -15px;
 }
@@ -1983,8 +2008,9 @@ tr:nth-child(odd) {
   border-radius: 8px;
   padding: 4px 8px 4px 8px;
   gap: 8px;
-  border-color: #54BA54;
+  border-color: #ffffff;
   color: #54BA54;
+  font-size: 16px;
 }
 
 .past-order-border {
@@ -2500,12 +2526,12 @@ input:checked + .slider:before {
   color: #ff4747;
 }
 .customers-dash table tbody tr {
-  border-top: 2px solid #e8f1ff;
+  border-top: 2px solid #FFF4F4;
   font-size: 14px;
   line-height: 21px;
 }
 .customers-dash table tbody tr:nth-child(even) {
-  background: #e8f1ff;
+  background: #FFFfFf;
 }
 .customers-dash .report-dash .report-stat-container {
   padding: 8px 16px;
