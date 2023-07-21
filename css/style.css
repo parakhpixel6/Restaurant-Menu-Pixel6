@@ -242,6 +242,11 @@ li {
   margin-bottom: 24px;
 }
 
+.form-row1 {
+  display: flex;
+  margin-bottom: 24px;
+}
+
 .form-col-2 {
   width: calc(50% - 24px);
 }
@@ -1683,6 +1688,10 @@ select {
   padding: 4px;
 }
 
+.margin-top-30 {
+  margin-top: 30px;
+}
+
 .cart-stats-value {
   color: var(--dark-blue, #14809E);
   font-family: Nunito;
@@ -1868,6 +1877,14 @@ tr:nth-child(odd) {
   color: #ff4747;
   border: none;
   background-color: transparent;
+}
+
+.width-730 {
+  width: 730px;
+}
+
+.padding-t-30 {
+  padding-top: 30px;
 }
 
 .gross-bill-past-order {
