@@ -18,7 +18,7 @@ let result = ""
 cusData.forEach((item) => {
     console.log(item);
     result += `
-    <tr>
+    <tr class="custom-table past-order-table">
         <td>${item.customerName}</td>
         <td>${item.contactNo}</td>
         <td>${item.emailID}</td>

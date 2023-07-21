@@ -39,6 +39,11 @@
   border-radius: 12px;
   width: 100%;
 }
+.container-wrap-past {
+  background-color: $widget-white;
+  border-radius: 12px;
+  width: 100%;
+}
 .a-align-c{
   align-items: center;
 }
@@ -93,7 +98,9 @@
 .g-8 {
   gap: 8px;
 }
-
+.g-12 {
+  gap: 12px;
+}
 .text-right {
   text-align: right;
 }
@@ -269,12 +276,12 @@ select {
   }
   tbody {
     tr {
-      border-top: 2px solid #e8f1ff;
+      border-top: 2px solid #FFF4F4;
       font-size: 14px;
       line-height: 21px;
     }
     tr:nth-child(even) {
-      background: #e8f1ff;
+      background: #FFF4F4;
     }
   }
 }
@@ -457,6 +464,13 @@ select {
   line-height: 21px;
   border-radius: 8px;
   border: 1px solid $color-shadow-off-white;
+  padding: 4px 12px;
+}
+.table-status-inpro {
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 8px;
+  // border: 1px solid $color-shadow-off-white;
   padding: 4px 12px;
 }
 
@@ -826,16 +840,19 @@ td {
   padding: 16px;
 }
 tr:nth-child(odd) {
-  background-color: #f3f8ff;
-  border-radius: 1px solid #e8f1ff;
+  background-color: #ffffff;
+  border-radius: 1px solid #FFF4F4;
 }
+
 .past-order-table-status.red.active {
   width: 400px;
   p {
     margin-top: 2px;
   }
 }
-
+// .custom-table tbody tr:nth-child(odd) {
+//   background: #FFF4F4;
+// }
 // .past-order-search-tab {
 //   width: 50%;
 //   padding: 8px;
@@ -1029,6 +1046,12 @@ border: none;
 .past-order-view-btn{
   cursor: pointer;
 }
+.bg-clr-red{
+  background-color: #FFF4F4;
+}
+.bg-clr-white{
+  background-color: #FFFfFf;
+}
 .past-m-b{
   margin-bottom: -15px;
 }
@@ -1049,8 +1072,9 @@ margin-top: 10px;
   border-radius: 8px;
     padding: 4px 8px 4px 8px;
     gap: 8px;
-    border-color: #54BA54;
+    border-color: #ffffff;
     color: #54BA54;
+    font-size: 16px;
 }
 .past-order-border{
   border-top: 1px solid #DDDDDD ;
@@ -1533,12 +1557,12 @@ background: var(--red-white, #FFF);
     }
     tbody {
       tr {
-        border-top: 2px solid #e8f1ff;
+        border-top: 2px solid #FFF4F4;
         font-size: 14px;
         line-height: 21px;
       }
       tr:nth-child(even) {
-        background: #e8f1ff;
+        background: #FFFfFf;
       }
     }
   }
