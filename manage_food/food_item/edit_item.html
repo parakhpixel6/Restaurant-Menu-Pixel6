@@ -65,7 +65,7 @@
                     </div>
                     <div class="margin-top-24 past-order-input-val, outline-bottom">
                         <label class="food-item-dish-composition-label">Select Food Category</label>
-                        <select name="" id="foodCategory" class="food-form-input-box">
+                        <select name="" id="foodCategory" class="food-form-input-box out-none">
                             <option value="" selected>Breakfast</option>
                             <option value="">Beverages</option>
                             <option value="">Seafood</option>
@@ -89,56 +89,57 @@
                     <div class="container-wrap diatry-attributes">
                         <p class="food-form-title">Dietary Attributes</p>
                         <div class="margin-top-24">
-                            <div class="d-flex justify-between mar-b-12 past-order-input-val, outline-bottom">
+                            <div class="d-flex justify-between" style="line-height:3; align-items:center;">
                                 <p>Vegetarian</p>
                                 <label class="switch">
                                     <input type="checkbox" checked>
                                     <span class="slider round"></span>
                                  </label>
                             </div>
-                            <div class="d-flex justify-between mar-b-12 past-order-input-val, outline-bottom">
+                            <div class="d-flex justify-between" style="line-height:3; align-items:center;">
                                 <p>Gluten Free</p>
                                 <label class="switch">
                                     <input type="checkbox" checked>
                                     <span class="slider round"></span>
                                  </label>
                             </div>
-                            <div class="d-flex justify-between mar-b-12 past-order-input-val, outline-bottom">
+                            <div class="d-flex justify-between" style="line-height:3; align-items:center;">
                                 <p>Vegan</p>
                                 <label class="switch">
                                     <input type="checkbox">
                                     <span class="slider round"></span>
                                  </label>
                             </div>
-                            <div class="d-flex justify-between mar-b-12 past-order-input-val, outline-bottom">
+                            <div class="d-flex justify-between" style="line-height:3; align-items:center;">
                                 <p>Sweet Level</p>
                                     <div class="food-level">
                                         <img src="../../assets/images/img/named_range.png" alt=""> 
                                     </div>
                             </div>
-                            <div class="d-flex justify-between mar-b-12" >
+                            <div class="d-flex justify-between" style="line-height:3; align-items:center;" >
                                 <p>Spicy Level</p>
                                 <div class="food-level">
-                                    <img class="food-level-s" src="../../assets/images/img/named_range.png" alt=""> 
+                                    <img class="" src="../../assets/images/img/named_range.png" alt=""> 
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="container-wrap ">
                         <p class="food-form-title ">Measurement Attributes</p>
-                        <div class="margin-top-24 ">
+                        <div class="margin-top-24">
                             <div class=" mar-b-12 past-order-input-val, outline-bottom">
-                                <label for="unit">Unit</label><br>
-                                <select name="" id="unit">
+                                <label  for="unit">Unit</label><br>
+                                <select class="out-none" name="" id="unit">
                                     <option value="">Piece</option>
-                                    <option value="">Piece</option>
-                                    <option value="">Piece</option>
-                                    <option value="">Piece</option>
+                                    <option value="">Weight</option>
+                                    <option value="">ml</option>
+                                    <option value="">Portion</option>
+                                    <option value="">Number</option>
                                 </select>
                             </div>
                             <div class="past-order-input-val, outline-bottom">
                                 <label for="qty">Serving Qty</label><br>
-                                <input id="qty" value="1" type="text" class="input-field">
+                                <input id="qty" value="1" type="text" class="input-field out-none">
                             </div>
 
                         </div>
@@ -173,7 +174,7 @@
                     <div class="container-wrap dish-composition-container">
                         <p class="food-form-title past-order-input-val, outline-bottom">Dish Composition</p>
                         <div class="g-36 padding-t-10">
-                            <div class="form-row g-24">
+                            <div class="form-row1 g-24">
                                 <div>
                                     <label for="foodName" class="food-item-dish-composition-label">Ingredient - 1</label><br>
                                     <input id="foodName" value="Whole Wheat Bread" class="outline-bottom">
@@ -182,9 +183,9 @@
                                     <label for="foodName" class="food-item-dish-composition-label">Qty</label><br>
                                     <input id="foodName" value="2 Nos" class="outline-bottom">
                                 </div>
-                                <img src="../../assets/images/icons/delete.svg" alt="">
+                                
                             </div>
-                            <div class="form-row g-24">
+                            <div class="form-row1 g-24">
                                 <div>
                                     <label for="foodName" class="food-item-dish-composition-label">Ingredient - 2</label><br>
                                     <input id="foodName" value="Butter" class="outline-bottom">
@@ -193,11 +194,11 @@
                                     <label for="foodName" class="food-item-dish-composition-label">Qty</label><br>
                                     <input id="foodName" value="50 gm" class="outline-bottom">
                                 </div>
-                                <img src="../../assets/images/icons/delete.svg" alt="">
+                                
                             </div>
                         </div>
                         <div class="text-right">
-                            <button class="btn-wrap btn-secondary past-order-view-btn">Add More Ingredients</button>
+                            <button class="btn-wrap btn-secondary past-order-view-btn margin-top-30">Add More Ingredients</button>
                         </div>
                     </div>
                 </div>

@@ -36,7 +36,10 @@ tableData.forEach((item) => {
         <td>${item.assignedStaff}</td>
         <td>${item.assignedDevice}</td>
         <td>${item.status}</td>
-        <td><img onclick="addTableFun()" class="past-order-view-btn" src="../../assets/images/icons/edit.svg" alt=""> <img onclick="popIt()" class="past-order-view-btn" src="../../assets/images/icons/delete.svg" alt=""></td>
+        <td>
+        <a onclick="addTableFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+        <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
+        </td>
     </tr>
     `
 })
@@ -50,7 +53,10 @@ deviceData.forEach((item) => {
         <td>${item.type}</td>
         <td>${item.maappedTo}</td>
         <td>${item.status}</td>
-        <td><img onclick="addDeviceFun()" class="past-order-view-btn" src="../../assets/images/icons/edit.svg" alt=""> <img onclick="popIt()" class="past-order-view-btn" src="../../assets/images/icons/delete.svg" alt=""></td>
+        <td>
+        <a onclick="addDeviceFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+        <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
+</td>
     </tr>
     `
 })
