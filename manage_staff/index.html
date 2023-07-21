@@ -68,7 +68,9 @@
         <div id="categories-search-bar" class="add-staff ex-staff">
             <div class="container-wrap header center">
                 <input type="search" class="search-tab out-none" placeholder="Search">
-                <div>
+              
+                <div class="d-flex g-16">
+                    <button class="past-order-view-btn staff-disable-btn g-16" onclick="exStaff()">Show Ex Staff</button>
                     <button class="btn-wrap past-order-view-btn" onclick="addStaffFun()">Add New </button>
                 </div>
             </div>
@@ -105,9 +107,9 @@
                 </tbody>
             </table>
         </div>
-        <div class="text-right add-staff ex-staff">
+        <!-- <div class="text-right add-staff ex-staff">
             <button class="btn-wrap past-order-view-btn" onclick="exStaff()">Show Ex Staff</button>
-        </div>
+        </div> -->
         <div class="container-wrap disp-none add-staff" id="add-new-staff">
             <!-- <form action=""> -->
             <div class="d-flex form-row">
@@ -211,13 +213,10 @@
                     <input class="manage-staff-user-chk" for="user" type="checkbox">
                     <label class="manage-staff-user-lb" id="user">Send Invitation to User</label>
                 </div>
-              
             <div class="text-right past-order-view-btn">
                 <button class="past-order-view-btn staff-disable-btn" onclick="popIt()">
-                    
                     Disable Staff</button>
                 <button class="btn-wrap past-order-view-btn" onclick="addStaffFun()">
-                    
                     Add New Staff</button>
             </div>
         </div>
