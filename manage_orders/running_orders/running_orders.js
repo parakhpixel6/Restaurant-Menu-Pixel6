@@ -24,7 +24,7 @@ let result = "";
 
 tables.forEach((item) => {
     result += `
-    <div onclick="myFunction()">
+    <div class="cursor-pointer" onclick="myFunction()">
         <div class ="circle text-center ${item.status}">
             <p class="table_no">${item.tableNo}</p>
             <div class="status-text-container"><div class ="status-icon text-center"></div>${item.statusText}</div>
