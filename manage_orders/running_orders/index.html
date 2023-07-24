@@ -14,6 +14,60 @@
 </head>
 
 <body>
+    <div class="global-container" id="global">
+        <div class="window">
+            <div class="table-pop-header">
+                <span>
+                    Change Table
+                </span>
+            </div>
+            <div class="d-flex flex-column a-align-c">
+                <div class="form-row pop-up-form">
+                    <div class="input-box form-col-2 ">
+                        <label for="tableNo">Table No</label>
+                        <input type="text" class="input-field" name="tableNo">
+                    </div>
+                    <div class="img-container">
+                        <img src="../../assets/images/icons/change.svg" alt="">
+                    </div>
+                    <div class="input-box form-col-2">
+                        <select name="Table No" id="">
+                            <option value="">Table No</option>
+                        </select>
+                    </div>
+                </div>
+                <span  class="mar-b-16">Order will be transfer to selected table</span>
+                <button onclick="window.location.href = '../../manage_devices/smart_devices/index.html'" class="btn-wrap past-order-view-btn"><img src="../../assets/images/icons/change.png" alt=""> Change Table</button>
+            </div>
+        </div>
+    </div>
+    <div class="global-container-merge" id="globalMerge">
+        <div class="window">
+            <div class="table-pop-header">
+                <span>
+                    Merge Table
+                </span>
+            </div>
+            <div class="d-flex flex-column a-align-c">
+                <div class="form-row pop-up-form">
+                    <div class="input-box form-col-2">
+                        <label for="tableNo">Table No</label>
+                        <input type="text" class="input-field" name="tableNo">
+                    </div>
+                    <div class="img-container">
+                        <img src="../../assets/images/icons/merge-btn-secondary.svg" alt="">
+                    </div>
+                    <div class="input-box form-col-2">
+                        <select name="Table No" id="">
+                            <option value="">Table No</option>
+                        </select>
+                    </div>
+                </div>
+                <span  class="mar-b-16">This table will be merged with selected table</span>
+                <button onclick="window.location.href = '../../manage_devices/smart_devices/index.html'" class="btn-wrap past-order-view-btn"><img src="../../assets/images/icons/merge.svg" alt=""> Merge Table</button>
+            </div>
+        </div>
+    </div>
     <div class="d-flex flex-column running-orders-dash">
         <div class="header center container-wrap">
             <div>
@@ -144,8 +198,8 @@
                         <p class="cus-contact"><img src="../../assets/images/icons/email.svg" alt="">karanjadhav4201@gmail.com</p>
                     </div>
                     <div class="d-flex btn-container">
-                        <button class="btn-wrap btn-secondary past-order-view-btn"><img src="../../assets/images/icons/change.svg" alt=""> Change Table</button>
-                        <button class="btn-wrap btn-secondary past-order-view-btn"><img src="../../assets/images/icons/merge-btn-secondary.svg" alt=""> Merge With</button>
+                        <button class="btn-wrap btn-secondary past-order-view-btn" onClick="popIt()"><img src="../../assets/images/icons/change.svg" alt="" > Change Table</button>
+                        <button class="btn-wrap btn-secondary past-order-view-btn" onclick="popItMerge()"><img src="../../assets/images/icons/merge-btn-secondary.svg" alt=""> Merge With</button>
                     </div>
                     <div class="container-wrap">
                         <div class="text-center device-info">
@@ -168,6 +222,7 @@
    
     </div> 
     <script src="./running_orders.js"></script>
+    <script src="../../js/delete-popup.js"></script>
 </body>
 
 </html>
