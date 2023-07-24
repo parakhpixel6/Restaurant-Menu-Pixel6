@@ -85,6 +85,7 @@ li {
   background-color: #FFFFFF;
   border-radius: 12px;
   width: 100%;
+  padding: 16px;
 }
 
 .a-align-c {
@@ -1636,7 +1637,6 @@ button:hover {
 }
 
 .sale-rpt-bg {
-  width: 455px;
   height: 123px;
   flex-shrink: 0;
   border-radius: 12px;
