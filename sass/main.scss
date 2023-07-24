@@ -1364,9 +1364,17 @@ input:checked + .slider:before {
 }
 .image-gallery-container {
   width: 628px;
-  height: 364px;
+  height: 300px;
   flex-shrink: 0;
 }
+button:disabled{
+background-color: white;
+color: #aaaaaa;
+border-color: #aaaaaa;
+}
+button:disabled:hover{
+  background-color:none;
+  }
 .special-attribute-container {
   width: 314px;
   height: 109px;
