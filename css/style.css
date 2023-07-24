@@ -96,6 +96,10 @@ li {
   height: 100%;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .enable {
   color: #54ba54;
 }
@@ -515,6 +519,7 @@ button:hover {
   border-radius: 50%;
   position: absolute;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .circle .status-icon {
   height: 20px;
@@ -528,6 +533,7 @@ button:hover {
 .circle.engaged {
   background-color: #B3D9E2;
   border-color: #D3F5FF;
+  cursor: pointer;
 }
 .circle.engaged .status-icon {
   background: url("../assets/images/icons/timer.png") center center no-repeat;
@@ -539,6 +545,7 @@ button:hover {
   background-color: #DDDDDD;
   border-color: #ECECEC;
   color: #888888;
+  cursor: pointer;
 }
 .circle.available .status-icon {
   height: 40px;
@@ -551,12 +558,16 @@ button:hover {
 .circle.merged {
   background-color: #F3CA79;
   border-color: #FFEDCA;
+  cursor: pointer;
 }
 .circle.merged .status-icon {
   background: url("../assets/images/icons/merge.png") center center no-repeat;
 }
 .circle.merged .table_no {
   color: #C9870B;
+}
+.circle.occupied {
+  cursor: pointer;
 }
 .circle.occupied .status-icon {
   background: url("../assets/images/icons/cart.png") center center no-repeat;
