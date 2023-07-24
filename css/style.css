@@ -330,6 +330,11 @@ button:hover {
   color: #FFFFFF;
 }
 
+.export-hover:hover {
+  background-color: #e33c3c;
+  color: #FFFFFF;
+}
+
 .label-padding {
   padding-left: 16px;
 }
