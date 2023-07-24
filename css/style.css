@@ -261,6 +261,12 @@ li {
   margin-bottom: 24px;
 }
 
+.form-row-cust {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 24px;
+}
+
 .form-row1 {
   display: flex;
   margin-bottom: 24px;
