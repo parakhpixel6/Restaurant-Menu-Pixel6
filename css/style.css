@@ -58,6 +58,10 @@ li {
   flex-direction: column;
 }
 
+.padding-b-15 {
+  padding-bottom: 15px;
+}
+
 .font-s-16 {
   font-size: 16px;
 }
@@ -154,7 +158,7 @@ li {
 
 .btn-wrap {
   padding: 4px 8px;
-  background: #ff6767;
+  background: #ff4949;
   color: #FFFFFF;
   font-size: 14px;
   line-height: 21px;
@@ -303,6 +307,16 @@ select {
   font-size: 16px;
   line-height: 24px;
   border: none;
+}
+
+button:hover {
+  background-color: #e33c3c;
+  color: #FFFFFF;
+}
+
+.btn-hover-bg :hover {
+  background-color: #e33c3c;
+  color: #FFFFFF;
 }
 
 .label-padding {
@@ -1805,7 +1819,7 @@ tr:nth-child(odd) {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: var(--red-linear-red, linear-gradient(90deg, #F66 0%, #FF9688 100%));
+  background: #ff4949;
   color: var(--red-white, #FFF);
   font-family: Nunito;
   font-size: 14px;
