@@ -163,7 +163,7 @@ li {
 
 .btn-wrap {
   padding: 4px 8px;
-  background: linear-gradient(90deg, #FF6666 0%, #FF9688 100%);
+  background: #ff4949;
   color: #FFFFFF;
   font-size: 14px;
   line-height: 21px;
@@ -1994,6 +1994,9 @@ tr:nth-child(odd) {
 .past-order-view-btn {
   cursor: pointer;
 }
+.past-order-view-btn > span {
+  font-weight: 300;
+}
 
 .bg-clr-red {
   background-color: #FFF4F4;
@@ -2202,7 +2205,6 @@ input:checked + .slider:before {
 }
 
 .delete-pop-header {
-  width: 350px;
   height: 82px;
 }
 
