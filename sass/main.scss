@@ -45,6 +45,7 @@
   background-color: $widget-white;
   border-radius: 12px;
   width: 100%;
+  padding: 16px;
 }
 .a-align-c{
   align-items: center;
@@ -731,7 +732,7 @@ background-color: transparent;
 margin-left: 30px;
 }
 .sale-rpt-bg{
-  width: 455px;
+  // width: 455px;
 height: 123px;
 flex-shrink: 0;
 border-radius: 12px;
