@@ -328,6 +328,12 @@ button:hover {
   padding-left: 16px;
 }
 
+.icon-g {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .text-small-lightgrey {
   font-size: 12px;
   line-height: 16px;
