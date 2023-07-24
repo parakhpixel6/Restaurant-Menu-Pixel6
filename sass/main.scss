@@ -114,8 +114,8 @@
 
 .btn-wrap {
   padding: 4px 8px;
-  // background: #ff4949;
-  background: linear-gradient(90deg, #FF6666 0%, #FF9688 100%);
+  background: #ff4949;
+  // background: linear-gradient(90deg, #FF6666 0%, #FF9688 100%);
   color: $widget-white;
   font-size: 14px;
   line-height: 21px;
@@ -1062,6 +1062,10 @@ border: none;
 }
 .past-order-view-btn{
   cursor: pointer;
+
+  & > span {
+    font-weight: 300;
+  }
 }
 .bg-clr-red{
   background-color: #FFF4F4;
@@ -1254,7 +1258,7 @@ input:checked + .slider:before {
 
 //delete food item 
 .delete-pop-header{
-  width: 350px;
+  // width: 350px;
   height: 82px;
 }
 .delete-pop-header, .table-pop-header {
