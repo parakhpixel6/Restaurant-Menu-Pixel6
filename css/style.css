@@ -797,7 +797,7 @@ button:hover {
   line-height: 21px;
   color: #222222;
 }
-.admin_container--dashboard-iframe-details-notifications .notification-row-message-text > span {
+.admin_container--dashboard-iframe-details-notifications .notification-row-message-text > a {
   color: #FF4747;
 }
 .admin_container--dashboard-iframe-table-status {
