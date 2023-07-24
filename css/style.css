@@ -1271,7 +1271,7 @@ button:hover {
   white-space: nowrap;
 }
 .admin_container--dashboard-iframe-today-order .today-order-table-container thead tr th {
-  border-bottom: 1px solid #D3F5FF;
+  border-bottom: 2px solid #FFF4F4;
   padding-bottom: 20px;
   font-size: 16px;
   font-weight: 400;
@@ -1282,7 +1282,7 @@ button:hover {
   font-weight: 400;
 }
 .admin_container--dashboard-iframe-today-order .today-order-table-container tr:nth-child(2n) {
-  background-color: #EDFBFF;
+  background-color: #FFF4F4;
 }
 .admin_container--dashboard-iframe-today-order .today-order-table-container table {
   border-collapse: collapse;
@@ -1305,7 +1305,7 @@ button:hover {
   color: #FF4747;
 }
 .admin_container--dashboard-iframe-today-order .today-order-table-container .edit-table-process span {
-  font-size: 16px;
+  font-size: 20px;
 }
 .admin_container--dashboard-iframe-today-order .today-order-table-container .table-completed {
   display: flex;
