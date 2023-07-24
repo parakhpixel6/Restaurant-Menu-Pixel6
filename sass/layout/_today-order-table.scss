@@ -61,7 +61,7 @@
         }
 
         thead tr th{
-            border-bottom: 1px solid $blue;
+            border-bottom: 2px solid #FFF4F4;
             padding-bottom: 20px;
             font-size: 16px;
             font-weight: 400;
@@ -74,7 +74,7 @@
         }
 
         tr:nth-child(2n) {
-            background-color: $light-blue;
+            background-color: #FFF4F4;
         }
 
         table {
@@ -109,7 +109,7 @@
             color: $active-link-color;
 
             & span {
-                font-size: 16px;
+                font-size: 20px;
             }
         }
 
