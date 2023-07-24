@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
 
 </head>
@@ -19,26 +22,10 @@
             <div>
                 <p class="header-title">Customers</p>
             </div>
-            <!-- <div class="d-flex g-24">
-                <div class="d-flex stats g-8">
-                    <img src="../../assets/images/illustrations/walk-stats.svg" alt="">
-                    <div class="">
-                        <p class="stat-value">25</p>
-                        <p class="stat-text">Total Visits</p>
-                    </div>
-                </div>
-                <div class="d-flex stats g-8">
-                    <img src="../../assets/images/illustrations/customers-stats.svg" alt="">
-                    <div class="stat-secondary">
-                        <p class="stat-value">11</p>
-                        <p class="stat-text">Total Customers</p>
-                    </div>
-                </div>
-            </div> -->
+            <div>
+                <button class="btn-wrap btn-secondary past-order-view-btn">Export Report</button>
+            </div>
         </div>
-        <!-- <div class="container-wrap header center" >
-            <input type="search" class="search-tab out-none" placeholder="Search">
-        </div> -->
         <div class="container-wrap-past">
             <div class="form-row g-16">
                 <div class="form-col-2 d-flex report-stat-container sale-rpt-rs-bg ">
@@ -46,25 +33,25 @@
                         <img src="../../assets/images/icons/order-stat.svg" alt="">
                     </div>
                     <div>
-                        <p class="rpt-value sale-rpt-value">150</p>
-                        <p class="rpt-text sale-rpt-value-name">Total Orders</p>
+                        <p class="rpt-value sale-rpt-value">180</p>
+                        <p class="rpt-text sale-rpt-value-name">Total Customer Visits</p>
                     </div>
                 </div>
-                <div class="form-col-2 d-flex report-stat-container stat-secondary sale-rpt-bg" >
-                    <div >
+                <div class="form-col-2 d-flex report-stat-container stat-secondary sale-rpt-bg">
+                    <div>
                         <img src="../../assets/images/icons/sale-stat.svg" alt="">
                     </div>
                     <div>
-                        <p class="rpt-value sale-rpt-rs-value">1,23,053</p>
+                        <p class="rpt-value sale-rpt-rs-value">2,00,053</p>
                         <p class="rpt-text sale-rpt-rs-value-name">Total Gross Value</p>
                     </div>
                 </div>
             </div>
-            <div class="form-row">
-                <p class="sub-title">Customers Report</p>
+            <div class="form-row-cust">
+                <!-- <p class="sub-title">Customers Report</p> -->
                 <div class="d-flex center g-16">
                     <p class="nowrap text-small-lightgrey">11 Jun 2023 - 11 Jun 2023</p>
-                    <select class="sale-select-day out-none past-order-view-btn" name="" id="" >
+                    <select class="sale-select-day out-none past-order-view-btn" name="" id="">
                         <option value="">Yesterday</option>
                         <option value="">Last Week</option>
                         <option value="">Last Month</option>
@@ -72,17 +59,14 @@
                     </select>
                 </div>
             </div>
-            <div class="form-row">
+            <!-- <div class="form-row">
                 <img src="../../assets/images/img/Charts/Sales-chart.png" alt="">
-            </div>
+            </div> -->
             <table class="custom-table past-order-table">
                 <thead>
-                    <tr >
-                        <td>Customer Name<img
-                            class="past-order-datefilter-img"
-                            src="../../assets/images/icons/sort.svg"
-                            alt="datefilter"
-                          /></td>
+                    <tr>
+                        <td>Customer Name<img class="past-order-datefilter-img" src="../../assets/images/icons/sort.svg"
+                                alt="datefilter" /></td>
                         <td>Contact No.</td>
                         <td>Email ID</td>
                         <td>Total Visits</td>
@@ -96,4 +80,5 @@
     </div>
     <script src="./customer.js"></script>
 </body>
-</html> 
+
+</html>
