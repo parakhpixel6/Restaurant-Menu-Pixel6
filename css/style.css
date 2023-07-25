@@ -112,6 +112,18 @@ li {
   color: #14809e;
 }
 
+.pad-0-4 {
+  padding: 0px 4px;
+}
+
+.bg-clr-dg {
+  background-color: #dddddd;
+}
+
+.br-8 {
+  border-radius: 8px;
+}
+
 .center {
   justify-content: center;
   align-items: center;
@@ -1527,7 +1539,20 @@ button:hover {
   flex-direction: column;
   gap: 16px;
 }
+.table-selected .table-details-wrap .other-details-wrap .staff-id > p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+}
+.table-selected .table-details-wrap .other-details-wrap .staff-idCard p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
 .table-selected .table-details-wrap .other-details-wrap .cus-details-wrap {
+  height: fit-content;
   background-color: #fff;
   border-radius: 12px;
 }
@@ -2129,6 +2154,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   height: 2px;
   -webkit-appearance: none;
+  appearance: none;
   pointer-events: none;
   background: none;
   outline: none;
