@@ -36,7 +36,7 @@ staffData.forEach((item) => {
         <td>${item.workingSince}</td>
         <td>
         <a onclick="addStaffFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-        <a ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
+        <a onclick="window.location.href='../../manage_staff/staff_detail.html'" ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
         </td>
     </tr>
     `
@@ -52,7 +52,7 @@ exStaffData.forEach((item) => {
         <td>${item.workingFrom}</td>
         <td>${item.workingto}</td>
         <td>
-        <a ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
+        <a onclick="window.location.href='../../manage_staff/staff_detail.html'" ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
         </td>
     </tr>
     `
