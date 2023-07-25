@@ -52,7 +52,7 @@ foodData.forEach((item) => {
         <td class="item-descp">${item.ItemDescription}</td>
         <td>${item.category}</td>
         <td>${item.price}</td>
-        <td>
+        <td class="">
         <a onclick="editOrDeleteFoodItemFun('edit')"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
         <a onclick="window.location.href='../../manage_food/food_item/food_item_detail.html'"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
         </td>
