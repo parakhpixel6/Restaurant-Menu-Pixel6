@@ -328,12 +328,6 @@ button:hover {
   padding-left: 16px;
 }
 
-.icon-g {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
 .text-small-lightgrey {
   font-size: 12px;
   line-height: 16px;
@@ -345,7 +339,10 @@ button:hover {
   border-collapse: collapse;
 }
 .custom-table td {
-  padding: 16px;
+  padding: 12px 16px;
+}
+.custom-table td.item-descp {
+  width: 380px;
 }
 .custom-table thead td {
   color: #ff4747;
