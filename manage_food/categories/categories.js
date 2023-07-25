@@ -20,7 +20,7 @@ cateogryData.forEach((item) => {
     <tr>
         <td>${item.cateogryName}</td>
         <td><img src="${item.icon}" alt=""></td>
-        <td>${item.categoryDescription}</td>
+        <td class="item-descp">${item.categoryDescription}</td>
         <td>${item.noOfItems}</td>
         <td><div>
         <a onclick="addCategoriesFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>

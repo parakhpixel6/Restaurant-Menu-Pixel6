@@ -283,7 +283,11 @@ button:hover{
   border-collapse: collapse;
   // text-wrap: nowrap;
   td {
-    padding: 16px;
+    padding: 12px 16px;
+
+    &.item-descp {
+      width: 380px;
+    }
   }
   thead {
     td {

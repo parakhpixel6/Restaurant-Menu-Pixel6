@@ -49,11 +49,12 @@ foodData.forEach((item) => {
     <tr>
         <td><img src="${item.Image}" alt=""></td>
         <td>${item.ItemName}</td>
-        <td>${item.ItemDescription}</td>
+        <td class="item-descp">${item.ItemDescription}</td>
         <td>${item.category}</td>
         <td>${item.price}</td>
         <td>
         <a onclick="editOrDeleteFoodItemFun('edit')"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+        <a onclick="window.location.href='../../manage_food/food_item/food_item_detail.html'"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
         </td>
     </tr>
     `
