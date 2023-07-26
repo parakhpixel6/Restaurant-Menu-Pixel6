@@ -54,6 +54,10 @@ li {
   padding: 16px 0px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .green-clr-yes {
   color: #54BA54;
 }
@@ -179,6 +183,10 @@ li {
 
 .g-8 {
   gap: 8px;
+}
+
+.g-4 {
+  gap: 4px;
 }
 
 .g-12 {
@@ -1592,6 +1600,49 @@ button:hover {
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: center;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-img img {
+  height: 100%;
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-name {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #111;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-des {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #111;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-contact {
+  justify-content: center;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-contact p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #111;
+  text-transform: none;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-contact .staff-detail-cell {
+  font-size: 13px;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-contact span {
+  font-size: 20px;
+  color: #888888;
 }
 .table-selected .table-details-wrap .order-details-wrap {
   align-self: flex-start;

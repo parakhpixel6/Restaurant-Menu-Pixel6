@@ -36,7 +36,7 @@ tableData.forEach((item) => {
         <td>${item.assignedStaff}</td>
         <td>${item.assignedDevice}</td>
         <td>${item.status}</td>
-        <td class="d-flex g-8 center">
+        <td class="d-flex g-8">
         <a onclick="addTableFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
         <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
         </td>
@@ -53,7 +53,7 @@ deviceData.forEach((item) => {
         <td>${item.type}</td>
         <td>${item.maappedTo}</td>
         <td>${item.status}</td>
-        <td class="d-flex g-8 center">
+        <td class="d-flex g-8">
         <a onclick="addDeviceFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
         <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
 </td>
