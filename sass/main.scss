@@ -48,6 +48,9 @@ padding-right: 10px
 .margin-left-15{
   margin-left: 15px;
 }
+.margin-right-12{
+  margin-right: 12px;
+}
 .transform-checkbox {
   transform:  scale(1.2);
 }
@@ -161,6 +164,15 @@ padding-right: 10px
 
 .pointer{
   cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  border: 1px solid #ff4949;
+  color: #ff4949;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 .btn-wrap {
@@ -347,7 +359,7 @@ label {
 
 .input-box {
   border-bottom: 1px solid #555555;
-  padding: 0px 0px 0px 16px;
+  padding: 0px 0px 10px 16px;
 }
 
 .input-with-btn {
