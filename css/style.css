@@ -50,6 +50,10 @@ li {
   gap: 36px;
 }
 
+.g-110 {
+  gap: 110px;
+}
+
 .pad-16-0 {
   padding: 16px 0px;
 }
@@ -171,6 +175,14 @@ li {
 
 .mar-b-12 {
   margin-bottom: 12px;
+}
+
+.mar-t-12 {
+  margin-top: 12px;
+}
+
+.mar-t-8 {
+  margin-top: 8px;
 }
 
 .mar-0 {
@@ -431,7 +443,7 @@ label {
 
 .input-box {
   border-bottom: 1px solid #555555;
-  padding: 0px 0px 10px 16px;
+  padding: 10px 0px 10px 16px;
 }
 
 .input-with-btn {
@@ -487,7 +499,7 @@ button:hover {
   padding: 12px 16px;
 }
 .custom-table td.item-descp {
-  width: 365px;
+  width: 360px;
 }
 .custom-table thead td {
   color: #ff4747;
@@ -1669,6 +1681,33 @@ button:hover {
 .table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-contact span {
   font-size: 20px;
   color: #888888;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-officeInfo {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #111;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-officeInfo p:first-child {
+  color: #444;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-address {
+  gap: 51px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #111;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-address p:first-child {
+  color: #444;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-address .staff-detail-local {
+  width: 235px;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-address .staff-detail-permanent {
+  width: 235px;
 }
 .table-selected .table-details-wrap .order-details-wrap {
   align-self: flex-start;
