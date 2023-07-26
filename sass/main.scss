@@ -53,7 +53,15 @@
 }
 .a-align-c{
   align-items: center;
+  align-items: flex-start;
+
 }
+
+.a-align-s {
+  align-items: flex-start;
+}
+
+
 .content-frame {
   height: 100%;
 }
@@ -87,6 +95,10 @@
 .center {
   justify-content: center;
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .mar-b-16 {
@@ -586,6 +598,12 @@ button:hover{
     }
     .order-details-container {
       width: 100%;
+
+      & .staff-details {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+      }
     }
     .order-details-wrap {
       align-self: flex-start;
