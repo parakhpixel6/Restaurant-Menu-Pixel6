@@ -280,6 +280,7 @@ font-weight: 400;
 line-height: 24px; 
 }
 .header {
+  height: 75px;
   display: flex;
   justify-content: space-between;
 }
@@ -395,7 +396,7 @@ gap: 10px;
     padding: 12px 16px;
 
     &.item-descp {
-      width: 380px;
+      width: 365px;
     }
   }
   thead {
