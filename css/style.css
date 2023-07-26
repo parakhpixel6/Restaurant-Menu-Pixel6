@@ -2510,7 +2510,7 @@ input:checked + .slider:before {
 }
 
 .diatry-attributes {
-  width: 314px;
+  width: 300px;
   height: 346px;
   flex-shrink: 0;
 }
@@ -2531,7 +2531,7 @@ input:checked + .slider:before {
 }
 
 .special-attribute-container {
-  width: 314px;
+  width: 300px;
   height: 109px;
   flex-shrink: 0;
 }
