@@ -20,6 +20,9 @@
   padding: 16px 0px;
 }
 
+.green-clr-yes{
+  color: #54BA54;
+}
 .pad-top-8 {
   padding-top: 8px;
 }
@@ -34,6 +37,9 @@
 }
 .padding-16{
   padding: 16px;
+}
+.padding-r-10{
+padding-right: 10px
 }
 .transform-checkbox {
   transform:  scale(1.2);
@@ -215,19 +221,62 @@ width:445px
  align-items: center;
 }
 
+.line-h-2{
+line-height: 3;
+}
+.hei-wid{
+  width: 300px;
+   height: 257px;
+}
+
 .justify-start {
   justify-content: start;
 }
-
+.margin-right-13{
+  margin-right: 13px;
+}
 .disp-none {
   display: none !important;
 }
+.h-w{
+  height: 80px; width: 80px;
+}
+.food-dtl-att{
+  width: 300px;
+  height: 257px;
+}
 
+.food-m-10{
+  display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.food-measurement-info-piece{
+  color: var(--red-black, #111);
+text-align: center;
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+.food-measurement-info-qty{
+color: var(--red-dark-grey, #444);
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+}
 .header {
   display: flex;
   justify-content: space-between;
 }
-
+.food-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .form-row {
   display: flex;
   justify-content: space-between;
@@ -254,6 +303,23 @@ width:445px
   width: 100%;
   font-size: 16px;
   line-height: 24px;
+}
+.food-item-info-visible{
+color:#278827;
+text-align: right;
+font-family: Nunito;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; 
+}
+.food-item-info-dtl{
+  color: var(--red-black, #111);
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
 }
 
 label {
@@ -299,7 +365,11 @@ button:hover{
 .label-padding {
   padding-left: 16px;
 }
-
+.icon-g{
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
 .text-small-lightgrey {
   font-size: 12px;
   line-height: 16px;
@@ -861,7 +931,7 @@ line-height: 16px; /* 133.333% */
   outline: none;
     position: relative;
     border: none;
-    border-bottom: 2px solid #8888;
+    border-bottom: .5px solid #8888;
     padding: 4px;
 }
 .padding-4{
@@ -1443,7 +1513,7 @@ input:checked + .slider:before {
   line-height: 24px;
 }
 .image-gallery-container {
-  width: 628px;
+  width: 630px;
   height: 364px;
   flex-shrink: 0;
 }
