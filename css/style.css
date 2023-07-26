@@ -197,6 +197,10 @@ li {
   text-align: right;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .pointer {
   cursor: pointer;
 }
