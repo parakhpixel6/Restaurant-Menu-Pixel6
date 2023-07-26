@@ -73,6 +73,9 @@ padding-right: 10px
 }
 
 
+.justify-between {
+  justify-content: space-between;
+}
 .content-frame {
   height: 100%;
 }
@@ -541,6 +544,8 @@ gap: 10px;
         font-weight: 700;
     }
 }
+
+
 
 .pie-wrapper {
   height: 150px;
