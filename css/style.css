@@ -102,6 +102,11 @@ li {
 
 .a-align-c {
   align-items: center;
+  align-items: flex-start;
+}
+
+.a-align-s {
+  align-items: flex-start;
 }
 
 .content-frame {
@@ -139,6 +144,10 @@ li {
 .center {
   justify-content: center;
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .mar-b-16 {
@@ -1579,6 +1588,11 @@ button:hover {
 }
 .table-selected .table-details-wrap .order-details-container {
   width: 100%;
+}
+.table-selected .table-details-wrap .order-details-container .staff-details {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
 }
 .table-selected .table-details-wrap .order-details-wrap {
   align-self: flex-start;
