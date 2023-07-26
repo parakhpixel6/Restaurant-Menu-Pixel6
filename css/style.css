@@ -2222,7 +2222,7 @@ tr:nth-child(odd) {
 }
 
 .past-order-search-block {
-  padding: 4px, 8px, 4px, 8px;
+  padding: 0px 16px 0px 16px;
   color: #ff4747;
   display: flex;
   justify-content: space-between;
