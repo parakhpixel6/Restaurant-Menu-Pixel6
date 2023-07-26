@@ -1637,6 +1637,9 @@ button:hover {
   color: #111;
   text-transform: none;
 }
+.table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-contact .staff-detail-cell {
+  font-size: 13px;
+}
 .table-selected .table-details-wrap .order-details-container .staff-details .staff-detail-contact span {
   font-size: 20px;
   color: #888888;
