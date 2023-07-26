@@ -343,6 +343,7 @@ li {
 }
 
 .header {
+  height: 75px;
   display: flex;
   justify-content: space-between;
 }
@@ -465,7 +466,7 @@ button:hover {
   padding: 12px 16px;
 }
 .custom-table td.item-descp {
-  width: 380px;
+  width: 365px;
 }
 .custom-table thead td {
   color: #ff4747;
