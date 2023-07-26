@@ -16,6 +16,10 @@
   gap: 36px;
 }
 
+.g-110{
+  gap: 110px;
+}
+
 .pad-16-0 {
   padding: 16px 0px;
 }
@@ -124,6 +128,14 @@ padding-right: 10px
 
 .mar-b-12 {
   margin-bottom: 12px;
+}
+
+.mar-t-12 {
+  margin-top: 12px;
+}
+
+.mar-t-8 {
+  margin-top: 8px;
 }
 
 .mar-0 {
@@ -359,7 +371,7 @@ label {
 
 .input-box {
   border-bottom: 1px solid #555555;
-  padding: 0px 0px 10px 16px;
+  padding: 10px 0px 10px 16px;
 }
 
 .input-with-btn {
@@ -414,7 +426,7 @@ gap: 10px;
     padding: 12px 16px;
 
     &.item-descp {
-      width: 365px;
+      width: 360px;
     }
   }
   thead {
@@ -754,6 +766,40 @@ gap: 10px;
             font-size: 20px;
             color: #888888;
           }
+        }
+
+        & .staff-detail-officeInfo {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+          color: #111;
+
+          & p:first-child {
+            color: #444;
+          }
+
+        }
+
+        & .staff-detail-address {
+          gap: 51px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+          color: #111;
+
+          & p:first-child {
+            color: #444;
+          }
+
+          & .staff-detail-local {
+            width: 235px;
+          }
+          & .staff-detail-permanent {
+            width: 235px;
+          }
+
         }
       }
     }
