@@ -15,35 +15,40 @@ navigationSubMenuLinks.forEach(subMenuLink => {
 // Get all sidebar--navigations-submenu elements
 const subMenus = document.querySelectorAll('.sidebar--navigations-submenu');
 
-// ... (existing code)
-
 // Add click event listener to each submenu
 subMenus.forEach(subMenu => {
   const link = subMenu.querySelector('.sidebar--navigations-link');
   const subSubMenu = subMenu.querySelector('.sidebar--navigations-submenu-link');
-  const subsubMenuActive = subMenu.querySelector('.sidebar--navigations-subsubmenu');
+  const subSubMenuLinks = subSubMenu.querySelectorAll('.sidebar--navigations-subsubmenu');
 
-  // Variable to store the firstChildSubSubMenu
-  let firstChildSubSubMenu = subMenu.querySelector('.sidebar--navigations-subsubmenu .sidebar--navigations-submenu-link');
+  // Loop through the subsubmenu links and add a click event listener
+  subSubMenuLinks.forEach(subMenuLink => {
+    subMenuLink.addEventListener('click', function() {
+      // Remove the "active" class from all other subsubmenu links
+      subSubMenuLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      // Add the "active" class to the clicked subsubmenu link
+      this.classList.add('active');
+    });
+  });
 
   // Toggle active class and display on click
   link.addEventListener('click', () => {
     const isActive = subMenu.classList.contains('active');
 
     subMenus.forEach(otherSubMenu => {
-      if (otherSubMenu !== subMenu) {
+      if (otherSubMenu !== subMenu && subSubMenu.style.display === 'none') {
         const otherSubSubMenu = otherSubMenu.querySelector('.sidebar--navigations-submenu-link');
-        const otherSubsubMenuActive = otherSubMenu.querySelector('.sidebar--navigations-subsubmenu');
+        const otherSubSubMenuLinks = otherSubMenu.querySelectorAll('.sidebar--navigations-subsubmenu');
 
         otherSubMenu.classList.remove('active');
         otherSubSubMenu.style.display = 'none';
-        otherSubSubMenu.classList.remove('active');
-        otherSubsubMenuActive.classList.remove('active');
 
         // Remove active class from all child subsubmenu links
-        const childSubSubMenus = otherSubMenu.querySelectorAll('.sidebar--navigations-subsubmenu .sidebar--navigations-submenu-link');
-        childSubSubMenus.forEach(childSubSubMenu => {
-          childSubSubMenu.classList.remove('active');
+        otherSubSubMenuLinks.forEach(link => {
+          link.classList.remove('active');
         });
       }
     });
@@ -52,19 +57,12 @@ subMenus.forEach(subMenu => {
 
     if (subMenu.classList.contains('active')) {
       subSubMenu.style.display = 'block';
-      subsubMenuActive.classList.add('active');
-
-      // Add active class to the first child subsubmenu link if it is not active
-      if (firstChildSubSubMenu && !firstChildSubSubMenu.classList.contains('active')) {
-        firstChildSubSubMenu.classList.add('active');
-      }
     } else {
       subSubMenu.style.display = 'none';
-      subSubMenu.classList.remove('active');
-      subsubMenuActive.classList.remove('active');
     }
   });
 });
+
 
 
 // ... (existing code)
@@ -85,7 +83,7 @@ navigationLinks.forEach(link => {
     });
     this.classList.add('active');
 
-    // Check if the link has a parent with class .sidebar--navigations-submenu
+    // // Check if the link has a parent with class .sidebar--navigations-submenu
     const submenuParent = this.closest('.sidebar--navigations-submenu');
     if (!submenuParent || !submenuParent.classList.contains('active')) {
         const subMenus = document.querySelectorAll('.sidebar--navigations-submenu');
@@ -98,7 +96,7 @@ navigationLinks.forEach(link => {
             subSubMenu.classList.remove('active');
             subsubMenuActive.classList.remove('active');
 
-            // Remove active class from child links
+            // // Remove active class from child links
             const childLinks = subMenu.querySelectorAll('.sidebar--navigations-link');
             childLinks.forEach(childLink => {
                 childLink.classList.remove('active');
@@ -119,6 +117,7 @@ navigationLinks.forEach(link => {
     }
   });
 });
+
 
 
 // PIE CHART
