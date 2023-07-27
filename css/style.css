@@ -3009,7 +3009,7 @@ tr:nth-child(odd) {
 
 .manage-set-rest-main {
   width: 142px;
-  height: 312px;
+  height: 340px;
   flex-shrink: 0;
   border-radius: 12px;
   background: var(--red-white, #FFF);
