@@ -78,6 +78,14 @@ li {
   padding-bottom: 15px;
 }
 
+.h-100 {
+  height: 100%;
+}
+
+.h-100 {
+  width: 100%;
+}
+
 .font-s-16 {
   font-size: 16px;
 }
@@ -330,6 +338,10 @@ input[type=file]::file-selector-button {
 
 .justify-start {
   justify-content: start;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
 }
 
 .margin-right-13 {
@@ -2183,6 +2195,297 @@ button:hover {
     }
   }
 }
+.table-selected .table-details-wrap .order-details-wrap .reviews-section {
+  max-width: 550px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .review-navs {
+  height: 5%;
+  margin: 0px auto;
+  gap: 0px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .review-navs p {
+  height: 29px;
+  width: 56px;
+  border-bottom: 2 solid #ddd;
+  font-size: 14px;
+  font-family: Pacifico;
+  font-weight: 400;
+  background-image: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-bottom: 2px solid #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .review-navs .review-nav {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0px;
+  height: 29px;
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .review-navs .review-nav a {
+  width: 144px;
+  padding-bottom: 6px;
+  text-align: center;
+  color: #222222;
+  font-family: Nunito, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .review-navs .review-nav a.active {
+  border-bottom: 2px solid #FF4747;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container {
+  flex-shrink: 0;
+  height: 76%;
+  gap: 32px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container {
+  overflow-x: auto;
+  width: 300%;
+  height: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container::-webkit-scrollbar {
+  display: none;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food p {
+  color: #222222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 24px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container {
+  height: 88%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container::-webkit-scrollbar {
+  display: none;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review:last-child {
+  border-bottom: none;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review-img {
+  height: 50px;
+  min-width: 50px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  margin: 0px;
+  border-radius: 6px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review-img img {
+  height: 100%;
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review-content {
+  max-width: 240px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review-content p {
+  color: #222222;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review-content .review-food-description {
+  font-size: 12px;
+  color: #555;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review .food-rating {
+  margin: auto 0px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-food .food-review-container .food-review .food-rating .star-container {
+  height: 36px;
+  width: 36px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service p {
+  color: #222222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 24px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container {
+  height: 88%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container::-webkit-scrollbar {
+  display: none;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review-img {
+  height: 50px;
+  min-width: 50px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  margin: 0px;
+  border-radius: 6px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review-img img {
+  height: 100%;
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review-content {
+  max-width: 270px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review-content p {
+  color: #222222;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review-content .review-service-description {
+  font-size: 12px;
+  color: #555;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review .service-rating {
+  margin: auto 0px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-service .services-review-container .service-review .service-rating .star-container {
+  height: 36px;
+  width: 36px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience p {
+  color: #222222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-transform: none;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience label p {
+  font-size: 15px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-top: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea {
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
+  height: 120px;
+  padding: 14px 14px 0px 14px;
+  font-size: 15px;
+  line-height: inherit;
+  color: #222222;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent #AAAAAA #AAAAAA;
+  border-radius: 12px;
+  -webkit-text-fill-color: currentColor;
+  background-color: transparent;
+  caret-color: #222222;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea:not(:focus):placeholder-shown {
+  border-top-color: #AAAAAA;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea + label {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: 4.5px;
+  left: 0;
+  font-size: 14px;
+  line-height: 8px;
+  color: #222222;
+  cursor: text;
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea:not(:focus):placeholder-shown + label {
+  font-size: 14px;
+  line-height: 54px;
+  color: #222222;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea + label::before,
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea + label::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  height: 48px;
+  min-width: 10px;
+  margin-top: 2.25px;
+  font-size: 14px;
+  border-top: solid 1px #AAAAAA;
+  pointer-events: none;
+  box-shadow: inset 0 1px transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea + label::before {
+  margin-right: 4px;
+  border-left: solid 1px transparent;
+  border-radius: 12px 0;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea + label::after {
+  flex-grow: 1;
+  margin-left: 4px;
+  border-right: solid 1px transparent;
+  border-radius: 0 12px;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea:not(:focus):placeholder-shown + label::before, .table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea:not(:focus):placeholder-shown + label::after {
+  border-top-color: transparent;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined ~ label:hover > textarea {
+  border-color: transparent #222222 #222222;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined label:hover > textarea + label::before, .table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined label:hover > textarea + label::after {
+  border-top-color: #222222;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined label:hover > textarea:not(:focus):placeholder-shown {
+  border-color: #222222;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea:focus {
+  border-color: transparent #222222 #222222;
+  outline: none;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea:focus + label {
+  color: #222222;
+}
+.table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea:focus + label::before, .table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea:focus + label::after {
+  border-top-color: #222222 !important;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea,
+    .table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea + label,
+    .table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea + label::before,
+    .table-selected .table-details-wrap .order-details-wrap .reviews-section .reviews-container .review-container .review-experience .textfield-outlined > textarea + label::after {
+      transition-duration: 0.1s;
+    }
+  }
+}
 .table-selected .table-details-wrap .other-details-wrap {
   display: flex;
   flex-direction: column;
@@ -2622,6 +2925,16 @@ tr:nth-child(odd) {
   color: #afaaaa;
 }
 
+.hr-past-order-bill {
+  width: 298px;
+  float: right;
+  height: 1px;
+  top: 594px;
+  left: 574px;
+  justify-content: flex-end;
+  color: #afaaaa;
+}
+
 .grey-clr {
   color: #555555;
   font-family: "Nunito";
@@ -2728,9 +3041,15 @@ tr:nth-child(odd) {
 .past-order-man-detail {
   font-family: "Nunito";
   font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 16px;
   color: #888888;
+}
+
+.past-order-review-detail {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 16px;
+  color: #CBA703;
 }
 
 .past-order-man {
