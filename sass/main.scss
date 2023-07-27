@@ -199,6 +199,33 @@ input[type="file"]::file-selector-button {
   padding: 4px;
 }
 
+.notify-dropdown {
+  height: 40px;
+  width: 150px;
+  margin-left: auto;
+  background-color: #fff;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+
+  & p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FF4747;
+  }
+
+  & .top-bell-icon {
+    font-size: 22px;
+    color: #FF4747;
+  }
+
+  & .top-dd-icon {
+    font-size: 25px;
+    color: #111;
+  }
+}
+
 .btn-wrap {
   padding: 4px 8px;
   background: #ff4949;
@@ -471,6 +498,8 @@ gap: 10px;
   gap: 16px;
 }
 
+
+
 .admin_container {
   width: 100%;
   max-width: 1242px;
@@ -485,7 +514,7 @@ gap: 10px;
     background-color: transparent;
     height: 100%;
     width: 80%;
-    padding: 24px;
+    padding: 0px 24px 24px 24px;
     display: flex;
     flex-direction: column;
     gap: 16px;
