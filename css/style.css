@@ -1754,6 +1754,435 @@ button:hover {
 .table-selected .table-details-wrap .order-details-wrap .text-right {
   padding: 16px 0;
 }
+.table-selected .table-details-wrap .order-details-wrap .my-bill {
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-recipet {
+  overflow: hidden;
+  height: 82%;
+  width: 100%;
+  padding: 0px 8px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details {
+  height: 82%;
+  overflow: hidden;
+  overflow-y: auto;
+  margin: 8px auto;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details::-webkit-scrollbar {
+  display: none;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container {
+  height: fit-content;
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .restaurant-details {
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .restaurant-details .restaurant-logo-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .restaurant-details .restaurant-logo-img img {
+  height: 100%;
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .restaurant-details .restaurant-address {
+  text-align: center;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .restaurant-details .restaurant-address h1 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: #222;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .restaurant-details .restaurant-address .address {
+  font-size: 14px;
+  color: #888888;
+  font-style: normal;
+  font-weight: 400;
+  width: 340px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .restaurant-details .restaurant-address .gst {
+  font-size: 14px;
+  color: #555;
+  font-style: normal;
+  font-weight: 400;
+  width: 170px;
+  margin-top: -2px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .customer-details {
+  width: 100%;
+  padding: 8px 0px;
+  border-bottom: 1px solid #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .customer-details .customer-name, .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .customer-details .customer-gst {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .customer-details .customer-name p span, .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .customer-details .customer-gst p span {
+  font-size: 15px;
+  color: #555;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .customer-details .customer-name span:nth-child(2), .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .customer-details .customer-gst span:nth-child(2) {
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .customer-details .customer-name p, .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .customer-details .customer-gst p {
+  color: #888888;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .item-details {
+  padding: 6px 0px 0px 0px;
+  border-bottom: 1px solid #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .item-details th {
+  text-align: left;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: #222;
+  padding: 0px 0px 8px 0px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .item-details td {
+  font-size: 14px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 400;
+  color: #555;
+  padding: 0px 0px 6px 0px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .item-details .table-quantity th {
+  text-align: right;
+  padding: 0px 0px 8px 35px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .item-details .table-quantity td {
+  text-align: right;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .subTotal-details {
+  padding: 8px 0px;
+  text-transform: none;
+  border-bottom: 1px solid #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .subTotal-details .subTotal {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .subTotal-details .applied-coupons {
+  color: #555;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .subTotal-details .applied-coupons a,
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .subTotal-details .applied-coupons span {
+  color: #FF4747;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .discount-details {
+  padding: 8px 0px;
+  text-transform: none;
+  border-bottom: 1px solid #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .discount-details .discount-price {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .discount-details .service-tip,
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .discount-details .charges {
+  color: #555;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .totalAmount-details {
+  padding: 8px 0px;
+  text-transform: none;
+  border-bottom: 1px solid #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .totalAmount-details .totalAmount-price {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .totalAmount-details .sgst,
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .totalAmount-details .cgst {
+  color: #555;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .netBill-details {
+  padding: 8px 0px;
+  text-transform: none;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .netBill-details .netBillAmount-price {
+  color: #222;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details {
+  display: none;
+  transition: 0.3s ease-in-out;
+  padding-top: 12px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupons-bar {
+  height: 30px;
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupons-bar-icon {
+  border-radius: 6px;
+  border-right: 2px dashed #fff;
+  width: 10%;
+  height: 100%;
+  background: rgb(112, 168, 175);
+  background: linear-gradient(90deg, rgba(112, 168, 175, 0.8659838936) 43%, rgb(99, 152, 185) 100%);
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupons-bar-close {
+  border-radius: 6px;
+  padding: 0px 16px;
+  width: 90%;
+  height: 100%;
+  background: rgb(112, 168, 175);
+  background: linear-gradient(90deg, rgba(112, 168, 175, 0.8659838936) 43%, rgb(99, 152, 185) 100%);
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupons-bar-close p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupons-bar-close p span {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 200;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons {
+  padding: 16px 0px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon {
+  height: 122px;
+  width: 108px;
+  background-image: url("../assets/customer-svg/svg/Subtract.svg");
+  background-position: center;
+  background-size: cover;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon .coupon-name {
+  padding: 4px 32px;
+  border-bottom: 1px dashed #fff;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon .coupon-name p {
+  color: #222;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon .coupon-description {
+  padding: 0px 8px;
+  height: 42px;
+  width: 94px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon .coupon-description p {
+  color: #222;
+  text-align: center;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon .coupon-btn .applied {
+  padding: 3px 6px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  background: rgb(255, 102, 102);
+  background: linear-gradient(90deg, rgb(255, 102, 102) 40%, rgb(255, 150, 136) 100%);
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon .coupon-btn .applied p {
+  padding: 0px;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon .coupon-btn button {
+  padding: 2px 6px;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 1px solid #FF4747;
+  color: #FF4747;
+  background-color: transparent;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon .coupon-btn button p {
+  padding: 0px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .all-coupons .grab-coupon .coupon-btn p {
+  padding: 3px 6px;
+  text-align: center;
+  font-size: 12px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #FF4747;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .orApply {
+  height: 18px;
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .orApply .linebefore {
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .orApply p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .orApply .lineafter {
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form {
+  padding: 12px 0px;
+  width: 100%;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form button {
+  padding: 3px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  color: #AAAAAA;
+  width: 175px;
+  height: 30px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form button span {
+  font-size: 24px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form button p {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined {
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  padding: 7px 14px;
+  font-size: 16px;
+  line-height: inherit;
+  color: #222;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent #AAAAAA #AAAAAA;
+  border-radius: 12px;
+  -webkit-text-fill-color: currentColor;
+  background-color: transparent;
+  caret-color: #222;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input:not(:focus):placeholder-shown {
+  border-top-color: #AAAAAA;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input + label {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: -1.975px;
+  left: 0;
+  font-size: 14px;
+  line-height: 8px;
+  color: #222;
+  cursor: text;
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input:not(:focus):placeholder-shown + label {
+  font-size: 16px;
+  line-height: 54px;
+  color: #222;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input + label::before,
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input + label::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  height: 48px;
+  min-width: 10px;
+  margin-top: 2.25px;
+  font-size: 14px;
+  border-top: solid 1px #AAAAAA;
+  pointer-events: none;
+  box-shadow: inset 0 1px transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input + label::before {
+  margin-right: 4px;
+  border-left: solid 1px transparent;
+  border-radius: 12px 0;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input + label::after {
+  flex-grow: 1;
+  margin-left: 4px;
+  border-right: solid 1px transparent;
+  border-radius: 0 12px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input:not(:focus):placeholder-shown + label::before, .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input:not(:focus):placeholder-shown + label::after {
+  border-top-color: transparent;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined ~ label:hover > input {
+  border-color: transparent #222 #222;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined label:hover > input + label::before, .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined label:hover > input + label::after {
+  border-top-color: #222;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined label:hover > input:not(:focus):placeholder-shown {
+  border-color: #222;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input:focus {
+  border-color: transparent #222 #222;
+  outline: none;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input:focus + label {
+  color: #222;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input:focus + label::before, .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input:focus + label::after {
+  border-top-color: #222 !important;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input,
+    .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input + label,
+    .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input + label::before,
+    .table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupon-form .textfield-outlined > input + label::after {
+      transition-duration: 0.1s;
+    }
+  }
+}
 .table-selected .table-details-wrap .other-details-wrap {
   display: flex;
   flex-direction: column;
