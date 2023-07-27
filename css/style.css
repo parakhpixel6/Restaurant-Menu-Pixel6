@@ -252,8 +252,9 @@ input[type=file]::file-selector-button {
 
 .notify-dropdown {
   height: 40px;
-  width: 150px;
+  width: fit-content;
   margin-left: auto;
+  padding: 0px 8px;
   background-color: #fff;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
@@ -263,15 +264,15 @@ input[type=file]::file-selector-button {
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  color: #FF4747;
+  color: #9e9e9e;
 }
 .notify-dropdown .top-bell-icon {
   font-size: 22px;
-  color: #FF4747;
+  color: #9e9e9e;
 }
 .notify-dropdown .top-dd-icon {
   font-size: 25px;
-  color: #111;
+  color: #9e9e9e;
 }
 
 .btn-wrap {
