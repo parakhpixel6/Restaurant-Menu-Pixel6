@@ -1500,6 +1500,10 @@ gap: 10px;
                             padding-bottom: 12px;
                             border-bottom: 1px solid #ddd;
 
+                            &:last-child {
+                              border-bottom: none;
+                            }
+
                             &-img {
                                 height: 50px;
                                 min-width: 50px;
@@ -2209,6 +2213,15 @@ border: none;
   size: 14px;
 }
 .hr-past-order {
+  width: 298px;
+  float: right;
+  height: 1px;
+  top: 594px;
+  left: 574px;
+  justify-content: flex-end;
+  color: #afaaaa;
+}
+.hr-past-order-bill {
   width: 298px;
   float: right;
   height: 1px;
