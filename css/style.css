@@ -132,6 +132,10 @@ li {
   align-items: flex-start;
 }
 
+.a-align-e {
+  align-items: flex-end;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -1763,8 +1767,12 @@ button:hover {
 .table-selected .table-details-wrap .order-details-wrap .bill-amt span {
   margin-left: 12px;
 }
-.table-selected .table-details-wrap .order-details-wrap .text-right {
+.table-selected .table-details-wrap .order-details-wrap.text-right {
   padding: 16px 0;
+}
+.table-selected .table-details-wrap .order-details-wrap.text-right:last-child {
+  padding-top: 0px;
+  padding-bottom: 16px;
 }
 .table-selected .table-details-wrap .order-details-wrap .my-bill {
   height: 100%;
