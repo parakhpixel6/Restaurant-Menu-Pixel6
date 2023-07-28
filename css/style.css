@@ -66,6 +66,10 @@ li {
   color: #54BA54;
 }
 
+.red {
+  color: #FF4747;
+}
+
 .pad-top-8 {
   padding-top: 8px;
 }
@@ -589,6 +593,9 @@ button:hover {
   flex-direction: column;
   gap: 16px;
 }
+.dashboard-container .breadcrumbs > p:last-child {
+  color: red;
+}
 
 .admin_container {
   width: 100%;
@@ -761,7 +768,7 @@ button:hover {
   border-color: #D3F5FF;
 }
 .circle.engaged .status-icon {
-  background: url("../assets/images/icons/timer.png") center center no-repeat;
+  background: url("../assets/images/illustrations/hour-loader.gif") center center no-repeat;
 }
 .circle.engaged .table_no {
   color: #14809E;
@@ -2852,6 +2859,10 @@ tr:nth-child(odd) {
 
 .padding-t-30 {
   padding-top: 30px;
+}
+
+.padding-b-30 {
+  padding-bottom: 30px;
 }
 
 .gross-bill-past-order {
