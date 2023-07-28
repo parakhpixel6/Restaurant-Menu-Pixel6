@@ -94,6 +94,10 @@ li {
   padding: 16px;
 }
 
+.padding-10-0 {
+  padding: 10px 0px 10px 16px;
+}
+
 .padding-r-10 {
   padding-right: 10px;
 }
@@ -416,6 +420,22 @@ input[type=file]::file-selector-button {
   line-height: 24px;
 }
 
+.food-form-input-box-drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.food-form-input-box-dropvalue {
+  color: var(--red-black, #111);
+  font-family: "Nunito";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .header {
   height: 75px;
   display: flex;
@@ -487,6 +507,10 @@ label {
   padding: 10px 0px 10px 16px;
 }
 
+.input-box-managestaff {
+  border-bottom: 1px solid #555555;
+}
+
 .input-with-btn {
   display: flex;
   justify-content: space-between;
@@ -501,9 +525,11 @@ label {
 
 select {
   width: 100%;
-  font-size: 16px;
   line-height: 24px;
   border: none;
+}
+select option {
+  font-size: 16px;
 }
 
 button:hover {
