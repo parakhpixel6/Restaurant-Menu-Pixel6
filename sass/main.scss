@@ -31,6 +31,10 @@
 .green-clr-yes{
   color: #54BA54;
 }
+
+.red {
+  color: #FF4747;
+}
 .pad-top-8 {
   padding-top: 8px;
 }
@@ -525,8 +529,10 @@ gap: 10px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
+  .breadcrumbs > p:last-child{
+      color: red;
+    }
+  }
 
 
 .admin_container {
@@ -599,7 +605,7 @@ gap: 10px;
         background-color: #B3D9E2;
         border-color: #D3F5FF;
         .status-icon{
-            background: url('../assets/images/icons/timer.png') center center no-repeat ;
+            background: url('../assets/images/illustrations/hour-loader.gif') center center no-repeat ;
         }
         .table_no{
             color: #14809E;
@@ -2788,6 +2794,7 @@ background: var(--red-white, #FFF);
       font-size: 16px !important;
       line-height: 24px !important;
     }
+  
   }
 
 

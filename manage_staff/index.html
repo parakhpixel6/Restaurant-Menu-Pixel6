@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -29,7 +26,7 @@
             <div class="d-flex flex-column a-align-c">
                 <span class="delete-item-pop-content delete-popup-btn-content">Are you sure you want to delete it</span>
                 <div class="mar-b-16">
-                    <input type="radio" name="" value="Yes, I`m sure"/>
+                    <input type="radio" name="" value="Yes, I`m sure" />
                     <label>Yes, I'm sure</label>
                 </div>
                 <button onclick="unPopIt()" class="btn-wrap past-order-view-btn"><img src="../assets/images/img/Trash-Bin-Minimalistic.svg" alt=""> Delete</button>
@@ -38,14 +35,22 @@
     </div>
 
     <div class="dashboard-container">
-        <div class="cursor-pointer notify-dropdown d-flex center g-12">
-            <span class="top-bell-icon material-symbols-rounded">
-                notifications_active
-            </span>
-            <p>0 Notifications</p>
-            <span class="top-dd-icon material-symbols-rounded">
-                expand_more
-            </span>
+        <div class="d-flex">
+            <div class="breadcrumbs a-align-c d-flex">
+                <p>My Dashboard </p>
+                <p><span>&nbsp; ></span> Manage Staff </p>
+                <p class="add-staff disp-none"><span>&nbsp; ></span> Add New Staff </p>
+                <p class="ex-staff disp-none"><span>&nbsp; ></span> Ex Staff </p>
+            </div>
+            <div class="cursor-pointer notify-dropdown d-flex center g-12">
+                <span class="top-bell-icon material-symbols-rounded">
+                    notifications_active
+                </span>
+                <p>0 Notifications</p>
+                <span class="top-dd-icon material-symbols-rounded">
+                    expand_more
+                </span>
+            </div>
         </div>
         <div class="header center container-wrap">
             <div class="header-title d-flex center g-24">
@@ -59,10 +64,10 @@
             <div class="d-flex g-48 addManageStaff  center">
                 <div class=" d-flex start g-16">
                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="58" viewBox="0 0 42 58" fill="none">
-                        <ellipse cx="16.8956" cy="19.3681" rx="7.36829" ry="7.36808" stroke="#FFCAFD" stroke-width="3.5"/>
-                        <path d="M27.9453 24.8939C30.9974 24.8939 33.4715 22.4198 33.4715 19.3679C33.4715 16.3159 30.9974 13.8418 27.9453 13.8418" stroke="#FFCAFD" stroke-width="3.5" stroke-linecap="round"/>
-                        <ellipse cx="16.8945" cy="39.6318" rx="12.8945" ry="7.36808" stroke="#FFCAFD" stroke-width="3.5"/>
-                        <path d="M33.4766 34.1055C36.708 34.8141 39.0028 36.6087 39.0028 38.7105C39.0028 40.6066 37.1354 42.2526 34.3976 43.0769" stroke="#FFCAFD" stroke-width="3.5" stroke-linecap="round"/>
+                        <ellipse cx="16.8956" cy="19.3681" rx="7.36829" ry="7.36808" stroke="#FFCAFD" stroke-width="3.5" />
+                        <path d="M27.9453 24.8939C30.9974 24.8939 33.4715 22.4198 33.4715 19.3679C33.4715 16.3159 30.9974 13.8418 27.9453 13.8418" stroke="#FFCAFD" stroke-width="3.5" stroke-linecap="round" />
+                        <ellipse cx="16.8945" cy="39.6318" rx="12.8945" ry="7.36808" stroke="#FFCAFD" stroke-width="3.5" />
+                        <path d="M33.4766 34.1055C36.708 34.8141 39.0028 36.6087 39.0028 38.7105C39.0028 40.6066 37.1354 42.2526 34.3976 43.0769" stroke="#FFCAFD" stroke-width="3.5" stroke-linecap="round" />
                     </svg>
                     <div class="text-center">
                         <p class="food-h-num">17</p>
@@ -71,8 +76,10 @@
                 </div>
                 <div class="d-flex start g-16">
                     <svg xmlns="http://www.w3.org/2000/svg" width="39" height="58" viewBox="0 0 39 58" fill="none">
-                        <path d="M31.75 39H33.5V39L31.75 39ZM7.25 33.0219H9C9 32.3263 8.58805 31.6968 7.95065 31.4183L7.25 33.0219ZM31.75 33.0219L31.0493 31.4183C30.4119 31.6968 30 32.3263 30 33.0219H31.75ZM25.625 19.75C25.625 20.7165 26.4085 21.5 27.375 21.5C28.3415 21.5 29.125 20.7165 29.125 19.75H25.625ZM9.875 19.75C9.875 20.7165 10.6585 21.5 11.625 21.5C12.5915 21.5 13.375 20.7165 13.375 19.75H9.875ZM10.75 14.5C4.95101 14.5 0.25 19.201 0.25 25H3.75C3.75 21.134 6.88401 18 10.75 18V14.5ZM28.25 18C32.116 18 35.25 21.134 35.25 25H38.75C38.75 19.201 34.049 14.5 28.25 14.5V18ZM24.75 44.25H14.25V47.75H24.75V44.25ZM14.25 44.25C12.5506 44.25 11.4521 44.2463 10.6427 44.1375C9.88369 44.0354 9.64578 43.8707 9.51256 43.7374L7.03769 46.2123C7.9296 47.1042 9.02921 47.452 10.1764 47.6063C11.2732 47.7537 12.6496 47.75 14.25 47.75V44.25ZM5.5 39C5.5 40.6004 5.49628 41.9768 5.64375 43.0736C5.79798 44.2208 6.14578 45.3204 7.03769 46.2123L9.51256 43.7374C9.37935 43.6042 9.21459 43.3663 9.11254 42.6073C9.00372 41.7979 9 40.6994 9 39H5.5ZM30 39C30 40.6994 29.9963 41.7979 29.8875 42.6073C29.7854 43.3663 29.6207 43.6042 29.4874 43.7374L31.9623 46.2123C32.8542 45.3204 33.202 44.2208 33.3563 43.0736C33.5037 41.9768 33.5 40.6004 33.5 39H30ZM24.75 47.75C26.3504 47.75 27.7268 47.7537 28.8236 47.6063C29.9708 47.452 31.0704 47.1042 31.9623 46.2123L29.4874 43.7374C29.3542 43.8707 29.1163 44.0354 28.3573 44.1375C27.5479 44.2463 26.4494 44.25 24.75 44.25V47.75ZM10.75 18C11.1025 18 11.4478 18.0259 11.7845 18.0757L12.2963 14.6133C11.7907 14.5386 11.2743 14.5 10.75 14.5V18ZM19.5 9.25C15.2635 9.25 11.6705 11.986 10.3831 15.7825L13.6977 16.9065C14.5181 14.4872 16.8085 12.75 19.5 12.75V9.25ZM10.3831 15.7825C10.0532 16.7553 9.875 17.7962 9.875 18.875H13.375C13.375 18.1834 13.4889 17.5221 13.6977 16.9065L10.3831 15.7825ZM28.25 14.5C27.7257 14.5 27.2093 14.5386 26.7037 14.6133L27.2155 18.0757C27.5522 18.0259 27.8975 18 28.25 18V14.5ZM19.5 12.75C22.1915 12.75 24.4819 14.4872 25.3023 16.9065L28.6169 15.7825C27.3295 11.986 23.7365 9.25 19.5 9.25V12.75ZM25.3023 16.9065C25.5111 17.5221 25.625 18.1834 25.625 18.875H29.125C29.125 17.7962 28.9468 16.7553 28.6169 15.7825L25.3023 16.9065ZM9 39V33.0219H5.5V39H9ZM7.95065 31.4183C5.47472 30.3365 3.75 27.8677 3.75 25H0.25C0.25 29.3084 2.84461 33.0069 6.54935 34.6255L7.95065 31.4183ZM30 33.0219L30 39L33.5 39L33.5 33.0219L30 33.0219ZM35.25 25C35.25 27.8677 33.5253 30.3365 31.0493 31.4183L32.4506 34.6255C36.1554 33.0069 38.75 29.3084 38.75 25H35.25ZM25.625 18.875V19.75H29.125V18.875H25.625ZM9.875 18.875V19.75H13.375V18.875H9.875Z" fill="#B3D9E2"/>
-                        <path d="M14.25 39H24.75" stroke="#B3D9E2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path
+                            d="M31.75 39H33.5V39L31.75 39ZM7.25 33.0219H9C9 32.3263 8.58805 31.6968 7.95065 31.4183L7.25 33.0219ZM31.75 33.0219L31.0493 31.4183C30.4119 31.6968 30 32.3263 30 33.0219H31.75ZM25.625 19.75C25.625 20.7165 26.4085 21.5 27.375 21.5C28.3415 21.5 29.125 20.7165 29.125 19.75H25.625ZM9.875 19.75C9.875 20.7165 10.6585 21.5 11.625 21.5C12.5915 21.5 13.375 20.7165 13.375 19.75H9.875ZM10.75 14.5C4.95101 14.5 0.25 19.201 0.25 25H3.75C3.75 21.134 6.88401 18 10.75 18V14.5ZM28.25 18C32.116 18 35.25 21.134 35.25 25H38.75C38.75 19.201 34.049 14.5 28.25 14.5V18ZM24.75 44.25H14.25V47.75H24.75V44.25ZM14.25 44.25C12.5506 44.25 11.4521 44.2463 10.6427 44.1375C9.88369 44.0354 9.64578 43.8707 9.51256 43.7374L7.03769 46.2123C7.9296 47.1042 9.02921 47.452 10.1764 47.6063C11.2732 47.7537 12.6496 47.75 14.25 47.75V44.25ZM5.5 39C5.5 40.6004 5.49628 41.9768 5.64375 43.0736C5.79798 44.2208 6.14578 45.3204 7.03769 46.2123L9.51256 43.7374C9.37935 43.6042 9.21459 43.3663 9.11254 42.6073C9.00372 41.7979 9 40.6994 9 39H5.5ZM30 39C30 40.6994 29.9963 41.7979 29.8875 42.6073C29.7854 43.3663 29.6207 43.6042 29.4874 43.7374L31.9623 46.2123C32.8542 45.3204 33.202 44.2208 33.3563 43.0736C33.5037 41.9768 33.5 40.6004 33.5 39H30ZM24.75 47.75C26.3504 47.75 27.7268 47.7537 28.8236 47.6063C29.9708 47.452 31.0704 47.1042 31.9623 46.2123L29.4874 43.7374C29.3542 43.8707 29.1163 44.0354 28.3573 44.1375C27.5479 44.2463 26.4494 44.25 24.75 44.25V47.75ZM10.75 18C11.1025 18 11.4478 18.0259 11.7845 18.0757L12.2963 14.6133C11.7907 14.5386 11.2743 14.5 10.75 14.5V18ZM19.5 9.25C15.2635 9.25 11.6705 11.986 10.3831 15.7825L13.6977 16.9065C14.5181 14.4872 16.8085 12.75 19.5 12.75V9.25ZM10.3831 15.7825C10.0532 16.7553 9.875 17.7962 9.875 18.875H13.375C13.375 18.1834 13.4889 17.5221 13.6977 16.9065L10.3831 15.7825ZM28.25 14.5C27.7257 14.5 27.2093 14.5386 26.7037 14.6133L27.2155 18.0757C27.5522 18.0259 27.8975 18 28.25 18V14.5ZM19.5 12.75C22.1915 12.75 24.4819 14.4872 25.3023 16.9065L28.6169 15.7825C27.3295 11.986 23.7365 9.25 19.5 9.25V12.75ZM25.3023 16.9065C25.5111 17.5221 25.625 18.1834 25.625 18.875H29.125C29.125 17.7962 28.9468 16.7553 28.6169 15.7825L25.3023 16.9065ZM9 39V33.0219H5.5V39H9ZM7.95065 31.4183C5.47472 30.3365 3.75 27.8677 3.75 25H0.25C0.25 29.3084 2.84461 33.0069 6.54935 34.6255L7.95065 31.4183ZM30 33.0219L30 39L33.5 39L33.5 33.0219L30 33.0219ZM35.25 25C35.25 27.8677 33.5253 30.3365 31.0493 31.4183L32.4506 34.6255C36.1554 33.0069 38.75 29.3084 38.75 25H35.25ZM25.625 18.875V19.75H29.125V18.875H25.625ZM9.875 18.875V19.75H13.375V18.875H9.875Z"
+                            fill="#B3D9E2" />
+                        <path d="M14.25 39H24.75" stroke="#B3D9E2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <div class="text-center">
                         <p class="food-h-num1">03</p>
@@ -85,7 +92,7 @@
             <div class="container-wrap header center">
                 <input type="search" class="search-tab out-none" placeholder="Search">
                 <div class="d-flex g-16">
-                    <button class="past-order-view-btn staff-disable-btn g-16" onclick="exStaff()" >Show Ex Staff</button>
+                    <button class="past-order-view-btn staff-disable-btn g-16" onclick="exStaff()">Show Ex Staff</button>
                     <button class="btn-wrap past-order-view-btn hover" onclick="addStaffFun()">Add New </button>
                 </div>
             </div>
@@ -187,10 +194,10 @@
 
                 <div class="form-col-2 input-box-managestaff">
                     <label for="joiningDate">Joining Date</label><br>
-                    <div class="" >
-                        <input  id="joiningDate" type="text" class="input-field out-none" placeholder="dd/mm/yyyy">
+                    <div class="">
+                        <input id="joiningDate" type="text" class="input-field out-none" placeholder="dd/mm/yyyy">
                         <span class="past-order-input-valspam"><img src="../assets/images/img/Calendar.svg" alt=""></span>
-                      </div>                
+                    </div>
                 </div>
 
             </div>
@@ -222,11 +229,11 @@
                             <span class="slider round"></span>
                          </label></span>
                       </div>                 -->
-                      <label for="role">Access to functionality</label><br>
-                      <select class="out-none" name="" id="role">
-                          <option value="">Active</option>
-                          <option value="">Inactive</option>
-                      </select>
+                    <label for="role">Access to functionality</label><br>
+                    <select class="out-none" name="" id="role">
+                        <option value="">Active</option>
+                        <option value="">Inactive</option>
+                    </select>
                 </div>
             </div>
             <div class="d-flex past-order-cust-review">
@@ -234,13 +241,13 @@
                     <input class="manage-staff-user-chk" for="user" type="checkbox">
                     <label class="manage-staff-user-lb" id="user">Send Invitation to User</label>
                 </div>
-            <div class="text-right past-order-view-btn">
-                <button class="past-order-view-btn margin-right-12 staff-disable-btn" onclick="popIt()">
-                    Disable Staff</button>
-                <button class="btn-wrap past-order-view-btn" onclick="addStaffFun()">
-                    Add New Staff</button>
+                <div class="text-right past-order-view-btn">
+                    <button class="past-order-view-btn margin-right-12 staff-disable-btn" onclick="popIt()">
+                        Disable Staff</button>
+                    <button class="btn-wrap past-order-view-btn" onclick="addStaffFun()">
+                        Add New Staff</button>
+                </div>
             </div>
-        </div>
             <!-- </form> -->
         </div>
         <script src="../js/delete-popup.js"></script>

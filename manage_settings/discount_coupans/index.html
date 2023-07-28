@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
 
 </head>
@@ -33,20 +30,27 @@
                     <input type="radio" name="" value="Yes, I`m sure" />
                     <label>Yes, I'm sure</label>
                 </div>
-                <button onclick="unPopIt()" class="btn-wrap past-order-view-btn"><img
-                        src="../../assets/images/img/Trash-Bin-Minimalistic.svg" alt=""> Delete</button>
+                <button onclick="unPopIt()" class="btn-wrap past-order-view-btn"><img src="../../assets/images/img/Trash-Bin-Minimalistic.svg" alt=""> Delete</button>
             </div>
         </div>
     </div>
     <div class="dashboard-container">
-        <div class="cursor-pointer notify-dropdown d-flex center g-12">
-            <span class="top-bell-icon material-symbols-rounded">
-                notifications_active
-            </span>
-            <p>0 Notifications</p>
-            <span class="top-dd-icon material-symbols-rounded">
-                expand_more
-            </span>
+        <div class="d-flex">
+            <div class="breadcrumbs a-align-c d-flex">
+                <p>My Dashboard </p>
+                <p><span>&nbsp; ></span> Manage Settings </p>
+                <p><span>&nbsp; ></span> Discount Coupons </p>
+                <p class="add-coupon disp-none"><span>&nbsp; ></span> Add New </p>
+            </div>
+            <div class="cursor-pointer notify-dropdown d-flex center g-12">
+                <span class="top-bell-icon material-symbols-rounded">
+                    notifications_active
+                </span>
+                <p>0 Notifications</p>
+                <span class="top-dd-icon material-symbols-rounded">
+                    expand_more
+                </span>
+            </div>
         </div>
         <div class="header center container-wrap">
             <div class="header-title d-flex center g-24">
@@ -87,6 +91,12 @@
         </div>
         <div class="container-wrap add-coupon disp-none" id="add-new-coupon">
             <!-- <form action=""> -->
+            <!-- <div class="breadcrumbs a-align-c d-flex">
+                <p>My Dashboard </p>
+                <p><span>&nbsp; ></span> Manage Settings </p>
+                <p><span>&nbsp; ></span> Discount Coupons </p>
+                
+            </div> -->
             <div class="d-flex form-row">
                 <div class="form-col-2 input-box">
                     <label for="couponCode">Coupon Code</label><br>

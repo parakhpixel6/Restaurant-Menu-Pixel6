@@ -15,16 +15,23 @@
 
 <body>
     <div class="report-dash dashboard-container">
-        <div class="cursor-pointer notify-dropdown d-flex center g-12">
-            <span class="top-bell-icon material-symbols-rounded">
-                notifications_active
-            </span>
-            <p>0 Notifications</p>
-            <span class="top-dd-icon material-symbols-rounded">
-                expand_more
-            </span>
+        <div class="d-flex">
+            <div class="breadcrumbs a-align-c d-flex">
+                <p>My Dashboard </p>
+                <p><span>&nbsp; ></span> Manage Reports </p>
+                <p><span>&nbsp; ></span> Sales Report </p>
+            </div>
+            <div class="cursor-pointer notify-dropdown d-flex center g-12">
+                <span class="top-bell-icon material-symbols-rounded">
+                    notifications_active
+                </span>
+                <p>0 Notifications</p>
+                <span class="top-dd-icon material-symbols-rounded">
+                    expand_more
+                </span>
+            </div>
         </div>
-        <div class="header center container-wrap">  
+        <div class="header center container-wrap">
             <div class="header-title">
                 <p>Sales Report</p>
             </div>
@@ -45,8 +52,8 @@
                         <p class="rpt-text sale-rpt-value-name">Total Orders</p>
                     </div>
                 </div>
-                <div class="form-col-2 d-flex report-stat-container stat-secondary sale-rpt-bg" >
-                    <div >
+                <div class="form-col-2 d-flex report-stat-container stat-secondary sale-rpt-bg">
+                    <div>
                         <img src="../../assets/images/icons/sale-stat.svg" alt="">
                     </div>
                     <div>
@@ -59,7 +66,7 @@
                 <p class="sub-title">Sales Report</p>
                 <div class="d-flex center g-16">
                     <p class="nowrap text-small-lightgrey">11 Jun 2023 - 11 Jun 2023</p>
-                    <select class="sale-select-day out-none past-order-view-btn" name="" id="" >
+                    <select class="sale-select-day out-none past-order-view-btn" name="" id="">
                         <option value="">Yesterday</option>
                         <option value="">Last Week</option>
                         <option value="">Last Month</option>
@@ -72,7 +79,7 @@
             </div>
             <div>
                 <table class="custom-table">
-                    <thead >
+                    <thead>
                         <tr>
                             <th>Start Hour</th>
                             <th>No. of Orders</th>
