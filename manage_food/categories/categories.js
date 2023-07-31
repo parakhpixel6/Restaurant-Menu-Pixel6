@@ -95,7 +95,6 @@ cateogryData.forEach((item) => {
     </tr>
     `
 })
-
 categoriesTable.innerHTML = result;
 console.log(addCategoriesQuery);
 
