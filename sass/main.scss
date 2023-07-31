@@ -432,7 +432,6 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 150% */
 }
-
 label {
   font-size: 12px;
   line-height: 16px;
@@ -445,6 +444,16 @@ label {
 .input-box-managestaff {
   border-bottom: 1px solid #555555;
   // padding: 10px 0px 10px 16px;
+}
+.sortbutton{
+  color: var(--red-dark-red, #FF4747);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  background: none;
+  border: none;
 }
 
 .input-with-btn {

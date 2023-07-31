@@ -10,6 +10,32 @@ let cateogryData = [
     {cateogryName:"Brunch Dishes", icon:"../../assets/images/icons/food-categories/brunch-dishes.svg", categoryDescription:"Drinks served with or without alcohol, such as coffee or cocktails.", noOfItems:"22 items"},
     {cateogryName:"Appetizers", icon:"../../assets/images/icons/food-categories/appetizers.svg", categoryDescription:"Dishes made with various types of seafood, such as shrimp or salmon.", noOfItems:"11 items"}
 ]
+function shortName(){
+    var aftersort = cateogryData.sort(function(a,b){
+          return a.cateogryName.localeCompare(b.cateogryName);
+        });
+    let categoriesTable = document.querySelector("#categoriesTable");
+    // let addCategoriesQuery = document.querySelectorAll(".add-category")
+    let result = ""
+    
+    aftersort.forEach((item) => {
+        result += `
+        <tr>
+            <td>${item.cateogryName}</td>
+            <td><img src="${item.icon}" alt=""></td>
+            <td class="item-descp">${item.categoryDescription}</td>
+            <td>${item.noOfItems}</td>
+            <td><div>
+            <a onclick="addCategoriesFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+            </div></td>
+        </tr>
+        `
+    })
+    
+    categoriesTable.innerHTML = result;
+    
+}
+
 
 let categoriesTable = document.querySelector("#categoriesTable");
 let addCategoriesQuery = document.querySelectorAll(".add-category")
@@ -31,6 +57,7 @@ cateogryData.forEach((item) => {
 
 categoriesTable.innerHTML = result;
 console.log(addCategoriesQuery);
+
 function addCategoriesFun() {
     addCategoriesQuery.forEach((item) => {
         item.classList.toggle("disp-none");

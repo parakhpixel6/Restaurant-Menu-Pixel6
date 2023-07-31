@@ -11,7 +11,28 @@ let cusData = [
     {customerName:"Jitesh Rajput", contactNo:"9923589452", emailID:"jitesh001@gmail.com", visits:"01", sales:"₹6230.00"},
     {customerName:"Rasika Gandhi ", contactNo:"8925684597", emailID:"gandhirasika04@gmail.com", visits:"06", sales:"₹12595.00"}
 ]
+function shortName(){
+var aftersort = cusData.sort(function(a,b){
+      return a.customerName.localeCompare(b.customerName);
+    });
+    let customerEntry = document.querySelector("#customerEntry");
+let result = ""
 
+aftersort.forEach((item) => {
+    console.log(item);
+    result += `
+    <tr class="custom-table past-order-table">
+        <td>${item.customerName}</td>
+        <td>${item.contactNo}</td>
+        <td>${item.emailID}</td>
+        <td>${item.visits}</td>
+        <td>${item.sales}</td>
+    </tr>
+    `
+})
+customerEntry.innerHTML = result;
+
+}
 let customerEntry = document.querySelector("#customerEntry");
 let result = ""
 
