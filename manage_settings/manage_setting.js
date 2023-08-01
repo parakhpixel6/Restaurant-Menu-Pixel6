@@ -19,6 +19,44 @@ let calenderData = [
 ]
 
 var isAccName = true;
+function shortstatus(){
+    var aftersort;
+    if (isAccName) {
+        aftersort = calenderData.sort(function (a, b) {
+            return a.status.localeCompare(b.status);
+        });
+        isAccName = !isAccName
+    } else {
+        aftersort = calenderData.sort(function (a, b) {
+            return b.status.localeCompare(a.status);
+        });
+        isAccName = !isAccName
+    }
+    let  calender = "";
+    calenderData.forEach((item) => {
+        calender += `
+        <tr>
+            <td>${item.date}</td>
+            <td>${item.day}</td>
+            <td>${item.openTime}</td>
+            <td>${item.closeTime}</td>
+            <td>${item.status}</td>
+            <td>
+            <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+            </td>
+        </tr>
+        `
+    })
+    
+    if (discountCouponTable != null) {
+        discountCouponTable.innerHTML = result;
+    }
+    else if (calenderTable != null) {
+        calenderTable.innerHTML = calender;
+    }
+}
+
+var isAccName = true;
 function shortName(){
     var aftersort;
     if (isAccName) {
