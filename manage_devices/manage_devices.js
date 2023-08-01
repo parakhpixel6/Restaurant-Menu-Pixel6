@@ -25,6 +25,7 @@ let devicesTable = document.querySelector("#devicesTable");
 let tablesInfoTable = document.querySelector("#tablesInfoTable");
 let addDeviceQuery = document.querySelectorAll(".add-device");
 let addTableQuery = document.querySelectorAll(".add-table");
+let colorClass = document.querySelector(".path");
 let result = "",
     tableInfoResult = "";
 
@@ -72,10 +73,12 @@ function addDeviceFun() {
     addDeviceQuery.forEach((item) => {
         item.classList.toggle("disp-none");
     })
+    colorClass.classList.toggle("red");
 }
 
 function addTableFun() {
     addTableQuery.forEach((item) => {
         item.classList.toggle("disp-none")
     })
+    colorClass.classList.toggle("red");
 }

@@ -21,6 +21,7 @@ let tables = [
 
 console.log(tables);
 let table = document.getElementById("table-info");
+let activeTab = document.querySelectorAll(".table-status");
 showTable(tables);
 
 function showTable(tableData) {
@@ -58,4 +59,6 @@ function statusCategory(category) {
         });
         showTable(tablesResult);
     }
+    activeTab.forEach((tab) => tab.classList.remove("active"))
+    document.getElementById(category).classList.add("active");
 }

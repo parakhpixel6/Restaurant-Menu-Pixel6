@@ -79,7 +79,8 @@ function shortName() {
 
 // default table
 let categoriesTable = document.querySelector("#categoriesTable");
-let addCategoriesQuery = document.querySelectorAll(".add-category")
+let addCategoriesQuery = document.querySelectorAll(".add-category");
+let colorClass = document.querySelector(".path");
 let result = ""
 
 cateogryData.forEach((item) => {
@@ -102,4 +103,5 @@ function addCategoriesFun() {
     addCategoriesQuery.forEach((item) => {
         item.classList.toggle("disp-none");
     })
+    colorClass.classList.toggle("red")
 }

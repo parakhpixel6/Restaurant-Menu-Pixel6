@@ -20,7 +20,8 @@ let calenderData = [
 
 let discountCouponTable = document.querySelector("#discountCouponTable");
 let calenderTable = document.querySelector("#calenderTable");
-let addCouponquery = document.querySelectorAll(".add-coupon")
+let addCouponquery = document.querySelectorAll(".add-coupon");
+let colorClass = document.querySelector(".path");
 let result = "",
     calender = "";
 
@@ -68,5 +69,7 @@ function addCouponFun() {
     addCouponquery.forEach((item) => {
         item.classList.toggle("disp-none");
     })
+    console.log(colorClass);
+    colorClass.classList.toggle("red")
 }
 

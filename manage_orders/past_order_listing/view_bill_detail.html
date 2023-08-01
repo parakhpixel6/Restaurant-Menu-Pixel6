@@ -7,11 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Nunito:wght@400;600&family=Pacifico&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../css/style.css" />
 </head>
 
@@ -23,18 +20,27 @@
   </div> -->
   <div class="d-flex flex-column table-selected">
     <div class="d-flex past-order-main center table-details-wrap content-s-b">
-      <div class="cursor-pointer notify-dropdown d-flex center g-12">
-        <span class="top-bell-icon material-symbols-rounded">
+      <div class="d-flex" style="width: 100%;">
+        <div class="breadcrumbs a-align-c d-flex">
+          <p onclick="window.location.href='../../dashboard-index'">My Dashboard </p>
+          <p onclick="window.location.href='./past_order_list.html'"><span>&nbsp; ></span> Manage Orders </p>
+          <p onclick="window.location.href='./past_order_list.html'"><span>&nbsp; ></span> Past Orders </p>
+          <p class="red "><span>&nbsp; ></span> A11D14 </p>
+        </div>
+
+        <div class="cursor-pointer notify-dropdown d-flex center g-12">
+          <span class="top-bell-icon material-symbols-rounded">
             notifications_active
-        </span>
-        <p>0 Notifications</p>
-        <span class="top-dd-icon material-symbols-rounded">
+          </span>
+          <p>0 Notifications</p>
+          <span class="top-dd-icon material-symbols-rounded">
             expand_more
-        </span>
-    </div>
+          </span>
+        </div>
+      </div>
       <div class="header container-wrap">
         <div class="d-flex center g-16">
-            <p class="header-title"> Orders No. #A11D14</p>
+          <p class="header-title"> Orders No. #A11D14</p>
         </div>
         <div class="d-flex center g-16">
           <div class="d-flex g-8 past-order-top-heading">
@@ -54,128 +60,118 @@
         <div class="order-details-wrap container-wrap">
           <div class="my-bill d-flex justify-between center flex-column">
             <div class="my-bill-recipet">
-                <div class="my-bill-details">
-                    <div class="my-bill-details-container">
-                        <div class="restaurant-details d-flex  flex-column center g-8">
-                            <div
-                                class="restaurant-logo-img d-flex justify-center center">
-                                <img src="../../assets/images/img/company-logo.png"
-                                    alt="logo">
-                            </div>
-                            <div
-                                class="restaurant-address d-flex  flex-column center g-8">
-                                <h1>Pride Restaurant</h1>
-                                <p class="text-center address">1/12, Sai Crystal Complex, New DP Road,
-                                    Vishal Nagar, Pimple Nilakh, Pimpri-Chinchwad,
-                                    Maharashtra 411027</p>
-                                <p class="gst">GST: 23AABFH6030L1ZN</p>
-                            </div>
-                        </div>
-                        <div
-                            class="customer-details d-flex  justify-center flex-column g-6">
-                            <div
-                                class="customer-name w-100 d-flex center justify-between">
-                                <p class="d-flex justify-center center g-4">Customer:
-                                    <span>Naresh Kadeem</span> 
-                                </p>
-                                <p>Bill no: <span>GT705</span></p>
-                            </div>
-                            <div
-                                class="customer-gst w-100 d-flex center justify-between">
-                                <p class="d-flex justify-center center g-4">GST:
-                                    <span>N/A</span> 
-                                </p>
-                                <p>Date: <span>18/07/2023</span></p>
-                            </div>
-                        </div>
-                        <div class="item-details d-flex justify-between center">
-                            <table>
-                                <tr>
-                                    <th>Item Description</th>
-                                </tr>
-                                <tr>
-                                    <td>Classic American Breakfast</td>
-                                </tr>
-                                <tr>
-                                    <td>Belgian Waffles</td>
-                                </tr>
-                                <tr>
-                                    <td>French Toast</td>
-                                </tr>
-                            </table>
-                            <table class="table-quantity">
-                                <tr>
-                                    <th>Qty</th>
-                                    <th>Rate</th>
-                                    <th>Total</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>219</td>
-                                    <td>189</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>189</td>
-                                    <td>378</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>189</td>
-                                    <td>567</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="subTotal-details d-flex flex-column g-8">
-                            <div class="subTotal d-flex justify-between center">
-                                <p>Sub-total</p>
-                                <p>1164.00</p>
-                            </div>
-                            <div
-                                class="applied-coupons d-flex justify-between center">
-                                <p>GET10 - 10% off coupon applied</p>
-                                <p><span>-116.00</span></p>
-                            </div>
-                        </div>
-                        <div class="discount-details d-flex flex-column g-8">
-                            <div
-                                class="discount-price d-flex justify-between center">
-                                <p>Discounted Price</p>
-                                <p>1048.00</p>
-                            </div>
-                            <div class="service-tip d-flex justify-between center">
-                                <p>Service Tip</p>
-                                <p>100.00</p>
-                            </div>
-                            <div class="charges d-flex justify-between center">
-                                <p>Restaurant charges</p>
-                                <p>20.00</p>
-                            </div>
-                        </div>
-                        <div class="totalAmount-details d-flex flex-column g-8">
-                            <div
-                                class="totalAmount-price d-flex justify-between center">
-                                <p>Total Amount</p>
-                                <p>1168.00</p>
-                            </div>
-                            <div class="sgst d-flex justify-between center">
-                                <p>SGST@2.5</p>
-                                <p>77.00</p>
-                            </div>
-                            <div class="cgst d-flex justify-between center">
-                                <p>CGST@2.5</p>
-                                <p>77.00</p>
-                            </div>
-                        </div>
-                        <div class="netBill-details d-flex flex-column g-8">
-                            <div
-                                class="netBillAmount-price d-flex justify-between center">
-                                <p>Net Bill Amount</p>
-                                <p>1322.00</p>
-                            </div>
-                        </div>
+              <div class="my-bill-details">
+                <div class="my-bill-details-container">
+                  <div class="restaurant-details d-flex  flex-column center g-8">
+                    <div class="restaurant-logo-img d-flex justify-center center">
+                      <img src="../../assets/images/img/company-logo.png" alt="logo">
                     </div>
+                    <div class="restaurant-address d-flex  flex-column center g-8">
+                      <h1>Pride Restaurant</h1>
+                      <p class="text-center address">1/12, Sai Crystal Complex, New DP Road,
+                        Vishal Nagar, Pimple Nilakh, Pimpri-Chinchwad,
+                        Maharashtra 411027</p>
+                      <p class="gst">GST: 23AABFH6030L1ZN</p>
+                    </div>
+                  </div>
+                  <div class="customer-details d-flex  justify-center flex-column g-6">
+                    <div class="customer-name w-100 d-flex center justify-between">
+                      <p class="d-flex justify-center center g-4">Customer:
+                        <span>Naresh Kadeem</span>
+                      </p>
+                      <p>Bill no: <span>GT705</span></p>
+                    </div>
+                    <div class="customer-gst w-100 d-flex center justify-between">
+                      <p class="d-flex justify-center center g-4">GST:
+                        <span>N/A</span>
+                      </p>
+                      <p>Date: <span>18/07/2023</span></p>
+                    </div>
+                  </div>
+                  <div class="item-details d-flex justify-between center">
+                    <table>
+                      <tr>
+                        <th>Item Description</th>
+                      </tr>
+                      <tr>
+                        <td>Classic American Breakfast</td>
+                      </tr>
+                      <tr>
+                        <td>Belgian Waffles</td>
+                      </tr>
+                      <tr>
+                        <td>French Toast</td>
+                      </tr>
+                    </table>
+                    <table class="table-quantity">
+                      <tr>
+                        <th>Qty</th>
+                        <th>Rate</th>
+                        <th>Total</th>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>219</td>
+                        <td>189</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>189</td>
+                        <td>378</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>189</td>
+                        <td>567</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="subTotal-details d-flex flex-column g-8">
+                    <div class="subTotal d-flex justify-between center">
+                      <p>Sub-total</p>
+                      <p>1164.00</p>
+                    </div>
+                    <div class="applied-coupons d-flex justify-between center">
+                      <p>GET10 - 10% off coupon applied</p>
+                      <p><span>-116.00</span></p>
+                    </div>
+                  </div>
+                  <div class="discount-details d-flex flex-column g-8">
+                    <div class="discount-price d-flex justify-between center">
+                      <p>Discounted Price</p>
+                      <p>1048.00</p>
+                    </div>
+                    <div class="service-tip d-flex justify-between center">
+                      <p>Service Tip</p>
+                      <p>100.00</p>
+                    </div>
+                    <div class="charges d-flex justify-between center">
+                      <p>Restaurant charges</p>
+                      <p>20.00</p>
+                    </div>
+                  </div>
+                  <div class="totalAmount-details d-flex flex-column g-8">
+                    <div class="totalAmount-price d-flex justify-between center">
+                      <p>Total Amount</p>
+                      <p>1168.00</p>
+                    </div>
+                    <div class="sgst d-flex justify-between center">
+                      <p>SGST@2.5</p>
+                      <p>77.00</p>
+                    </div>
+                    <div class="cgst d-flex justify-between center">
+                      <p>CGST@2.5</p>
+                      <p>77.00</p>
+                    </div>
+                  </div>
+                  <div class="netBill-details d-flex flex-column g-8">
+                    <div class="netBillAmount-price d-flex justify-between center">
+                      <p>Net Bill Amount</p>
+                      <p>1322.00</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -212,7 +208,7 @@
               <p class="past-order-man-detail past-order-man">Date: 10/05/2023</p>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
     <!--  customer start -->
@@ -296,5 +292,6 @@
     </div>  -->
     <!-- customer end -->
     <!-- <script src="../../past_order.js"></script> -->
-  </body>
+</body>
+
 </html>

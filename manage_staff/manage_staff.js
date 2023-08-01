@@ -21,6 +21,7 @@ const addStaffQuery = document.querySelectorAll(".add-staff");
 const exStaffQuery = document.querySelectorAll(".ex-staff");
 const addStaffId = document.querySelectorAll("#add-staff");
 const addManageStaff = document.querySelector('.addManageStaff');
+let colorClass = document.querySelectorAll(".path");
 
 let isAccName = true, isAccRole = true, isAccReportingTo= true;
 
@@ -133,6 +134,9 @@ function addStaffFun() {
         addManageStaff.classList.add('disp-none');
     })
     // addStaffId.classList.toggle("disp-none");
+    colorClass.forEach((item) => {
+        item.classList.toggle("red");
+    })
 }
 
 function exStaff() {    
@@ -148,5 +152,8 @@ function exStaff() {
     exStaffQuery.forEach((item) => {
         item.classList.toggle("disp-none");
     })
+    colorClass.forEach((item) => {
+        item.classList.toggle("red");
+    })
 }
-
+{/* <script src="../../manage_food/food_item/items.js"></script> */}
