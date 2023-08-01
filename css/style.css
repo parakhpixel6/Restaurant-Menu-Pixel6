@@ -58,7 +58,7 @@ li {
   padding: 16px 0px;
 }
 
-.cursor-pointer {
+.cursor-pointer, .breadcrumbs p {
   cursor: pointer;
 }
 
@@ -532,6 +532,10 @@ label {
 }
 .input-with-btn .btn-wrap {
   margin: 8px;
+}
+
+.font-bold {
+  font-weight: bold;
 }
 
 .text-area {
@@ -1643,6 +1647,8 @@ button:hover {
 }
 .table-status.red.active {
   border-color: #FF9898;
+  background-color: #FF4747;
+  color: #fff;
 }
 
 .table-status.grey {
@@ -1650,6 +1656,8 @@ button:hover {
 }
 .table-status.grey.active {
   border-color: #888888;
+  background-color: #888888;
+  color: #FFF;
 }
 
 .table-status.blue {
@@ -1657,6 +1665,8 @@ button:hover {
 }
 .table-status.blue.active {
   border-color: #14809E;
+  background-color: #14809E;
+  color: #FFF;
 }
 
 .table-status.green {
@@ -1664,6 +1674,8 @@ button:hover {
 }
 .table-status.green.active {
   border-color: #54BA54;
+  background-color: #54BA54;
+  color: #FFF;
 }
 
 .running-orders-dash {
