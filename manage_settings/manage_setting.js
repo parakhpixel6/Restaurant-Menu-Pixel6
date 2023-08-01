@@ -18,6 +18,47 @@ let calenderData = [
     {date:"26/05/2023", day:"Sunday", openTime:"11:00 AM", closeTime:"01:00 PM", status:"Open"},
 ]
 
+var isAccName = true;
+function shortName(){
+    var aftersort;
+    if (isAccName) {
+        aftersort = couponData.sort(function (a, b) {
+            return a.status.localeCompare(b.status);
+        });
+        isAccName = !isAccName
+    } else {
+        aftersort = couponData.sort(function (a, b) {
+            return b.status.localeCompare(a.status);
+        });
+        isAccName = !isAccName
+    }
+    let result = "";
+    couponData.forEach((item) => {
+        result += `
+        <tr>
+            <td>${item.couponCode}</td>
+            <td>${item.description}</td>
+            <td>${item.discount}</td>
+            <td>${item.validFrom}</td>
+            <td>${item.validTill}</td>
+            <td>${item.applicableOn}</td>
+            <td>${item.status}</td>
+            <td>
+            <a onclick="addCouponFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+            <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
+            </td>
+        </tr>
+        `
+    })
+    if (discountCouponTable != null) {
+        discountCouponTable.innerHTML = result;
+    }
+    else if (calenderTable != null) {
+        calenderTable.innerHTML = calender;
+    }
+    
+}
+
 let discountCouponTable = document.querySelector("#discountCouponTable");
 let calenderTable = document.querySelector("#calenderTable");
 let addCouponquery = document.querySelectorAll(".add-coupon");

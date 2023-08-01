@@ -1,16 +1,71 @@
-// function myFunction1() {
-//     document.querySelector(".running-orders-dash").classList.toggle("disp-none");
-//     document.querySelector(".table-selected").classList.toggle("disp-none");
-// }
+let pastorderData = [
+  {date:"11/05/2023", orderno:"O11B57", tableno:"01",customername:"Karan Jadhav", ordervalue:"₹1525.00", paymentmode:"N/A"},
+  {date:"09/05/2023", orderno:"O11G75", tableno:"10",customername:"Rajendra Verma", ordervalue:"₹256.00", paymentmode:"Net Banking"},
+  {date:"11/04/2023", orderno:"O10G12", tableno:"15",customername:"Jaydeep Sivakumar", ordervalue:"₹6230.00", paymentmode:"N/A"},
+  {date:"11/05/2023", orderno:"O11Q01", tableno:"09",customername:"Ekta Tiwari", ordervalue:"₹12595.00", paymentmode:"UPI/ E-wallet"},
+  {date:"12/12/2022", orderno:"O11E04", tableno:"21",customername:"Naresh Chavan", ordervalue:"₹892.00", paymentmode:"Credit/Debit Card"},
+  {date:"25/05/2023", orderno:"O10E19", tableno:"25",customername:"Ajay Rathod", ordervalue:"₹3899.00", paymentmode:"Cash"},
+  {date:"11/05/2023", orderno:"O10E05", tableno:"04",customername:"Nikhil Wadhawan", ordervalue:"₹2000.00", paymentmode:"UPI/ E-wallet"},
+  {date:"11/06/2023", orderno:"O11E04", tableno:"18",customername:"Jitesh Rajput", ordervalue:"₹2689.00", paymentmode:"Cash"},
+  {date:"20/05/2023", orderno:"O11G75", tableno:"06",customername:"Rasika Gandhi ", ordervalue:"₹16850.00", paymentmode:"UPI/ E-wallet"}
+]
+// name sort
+var isAccName = true;
+function shortName(){
+    if (isAccName) {
+       pastorderData.sort(function (a, b) {
+            return a.customername.localeCompare(b.customername);
+        });
+        isAccName = !isAccName
+    } else {
+       pastorderData.sort(function (a, b) {
+            return b.customername.localeCompare(a.customername);
+        });
+        isAccName = !isAccName
+    }
+    let orderEntry = document.querySelector("#orderEntry")
+    let result = ""
+    pastorderData.forEach((item) => {
+      console.log(item);
+      result += `
+      <tr class="custom-table past-order-table">
+          <td>${item.date}</td>
+          <td>${item.orderno}</td>
+          <td>${item.tableno}</td>
+          <td>${item.customername}</td>
+          <td>${item.ordervalue}</td>
+          <td>${item.paymentmode}</td>
+          <td><button class="past-order-view-btn staff-disable-btn" onclick="window.location.href='../../manage_orders/past_order_listing/past_order_detail.html'">View</button></td>
+      </tr>
+      `
+    })
+    orderEntry.innerHTML = result;
+}
 
+let orderEntry = document.querySelector("#orderEntry");
+let result = ""
+
+pastorderData.forEach((item) => {
+  console.log(item);
+  result += `
+  <tr class="custom-table past-order-table">
+      <td>${item.date}</td>
+      <td>${item.orderno}</td>
+      <td>${item.tableno}</td>
+      <td>${item.customername}</td>
+      <td>${item.ordervalue}</td>
+      <td>${item.paymentmode}</td>
+      <td><button class="past-order-view-btn staff-disable-btn" onclick="window.location.href='../../manage_orders/past_order_listing/past_order_detail.html'">View</button></td>
+  </tr>
+  `
+})
+orderEntry.innerHTML = result;
 
 function togglePastOrderFilterDivFun() {
   document.querySelectorAll(".past-order-filter-div").forEach((item) => {
     item.classList.toggle("disp-none");
   })
 }
-
-
 //My Review Nav
 const reviewNav = document.querySelector('.review-nav');
 const links = reviewNav.getElementsByTagName('a');
