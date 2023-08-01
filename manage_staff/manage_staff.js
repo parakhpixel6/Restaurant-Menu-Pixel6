@@ -43,7 +43,7 @@ staffData.forEach((item) => {
        <a onclick="addStaffFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
        <a onclick="window.location.href='./../manage_staff/staff_detail.html'" ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
        </td>` : `<td>
-       <a onclick="addStaffFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+       <a onclick="window.location.href='./../manage_staff/staff_detail.html'" ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
         </td>`}
        
    </tr>
