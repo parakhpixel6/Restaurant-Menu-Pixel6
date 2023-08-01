@@ -1856,9 +1856,24 @@ button:hover {
   padding-bottom: 16px;
 }
 .table-selected .table-details-wrap .order-details-wrap .my-bill {
+  position: relative;
   height: 100%;
   width: 100%;
   border-radius: 24px;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill .print-bill {
+  position: absolute;
+  right: 0%;
+  text-align: center;
+  margin-left: auto;
+  height: 40px;
+  width: 45px;
+  font-size: 11px;
+  line-height: 13px;
+  color: orangered;
+}
+.table-selected .table-details-wrap .order-details-wrap .my-bill .print-bill span {
+  font-weight: 300;
 }
 .table-selected .table-details-wrap .order-details-wrap .my-bill-recipet {
   overflow: hidden;
