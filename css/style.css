@@ -1659,9 +1659,9 @@ button:hover {
 .table-status {
   font-size: 14px;
   line-height: 21px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid #DDDDDD;
-  padding: 4px 12px;
+  padding: 10px 15px;
 }
 
 .table-status-inpro {
