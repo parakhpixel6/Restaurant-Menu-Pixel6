@@ -62,3 +62,7 @@ function statusCategory(category) {
     activeTab.forEach((tab) => tab.classList.remove("active"))
     document.getElementById(category).classList.add("active");
 }
+
+
+
+// //Dropdown Notification 

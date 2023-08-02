@@ -1,5 +1,4 @@
 
-"use strict"
 
 let deviceData = [
     { deviceId: "D001", deviceName: "Samsung Tab A3", serialNumber: "A1B2C3D4", type: "Android Tablet", maappedTo: "T01", status: "Enabled" },
@@ -27,7 +26,7 @@ let addDeviceQuery = document.querySelectorAll(".add-device");
 let addTableQuery = document.querySelectorAll(".add-table");
 let colorClass = document.querySelector(".path");
 let result = "",
-tableInfoResult = "";
+    tableInfoResult = "";
 
 let isAccName = true;
 function shortName() {
@@ -70,17 +69,17 @@ function shortName() {
 var isAccItems = true;
 function numbersort() {
     if (isAccItems) {
-       tableData.sort(function (a, b) {
+        tableData.sort(function (a, b) {
             return b.capacity.localeCompare(a.capacity);
         });
         isAccItems = !isAccItems
     } else {
-       tableData.sort(function (a, b) {
+        tableData.sort(function (a, b) {
             return a.capacity.localeCompare(b.capacity);
         });
         isAccItems = !isAccItems
     }
-   let tableInfoResult = "";
+    let tableInfoResult = "";
     tableData.forEach((item) => {
         tableInfoResult += `
         <tr>
@@ -157,5 +156,9 @@ function addTableFun() {
     })
     colorClass.classList.toggle("red");
 }
+
+
+
+
 
 

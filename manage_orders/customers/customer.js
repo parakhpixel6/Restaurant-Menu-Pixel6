@@ -29,3 +29,5 @@ cusData.forEach((item) => {
 })
 
 customerEntry.innerHTML = result;
+
+

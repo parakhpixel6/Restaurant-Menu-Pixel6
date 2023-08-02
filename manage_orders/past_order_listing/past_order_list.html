@@ -21,14 +21,21 @@
       <span>Manage orders ></span>
       <span>Past Orders</span>
     </div> -->
-  <div class="cursor-pointer notify-dropdown d-flex center g-12">
-    <span class="top-bell-icon material-symbols-rounded">
-      notifications_active
-    </span>
-    <p>0 Notifications</p>
-    <span class="top-dd-icon material-symbols-rounded">
-      expand_more
-    </span>
+  <div class="d-flex pos-relative h-40p">
+    <div class="cursor-pointer center notify-dropdown d-flex flex-column g-8">
+      <div class="notify-count d-flex center g-12">
+          <span class="top-bell-icon material-symbols-rounded">
+              notifications_active
+          </span>
+          <p>0 Notifications</p>
+          <span class="top-dd-icon material-symbols-rounded">
+              expand_more
+          </span>
+      </div>
+      <div class="notify-comment">
+          <p>You don't have any notifications</p>
+      </div>
+  </div>
   </div>
   <div class="header container-wrap">
     <div class="d-flex center">
@@ -161,6 +168,7 @@
 
   <script src="../../manage_orders/past_order_listing/past_order.js"></script>
   <script src="../../js/range-slider.js"></script>
+  <script src="../../js/main.js"></script>
 </body>
 
 </html>

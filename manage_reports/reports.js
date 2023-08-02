@@ -98,3 +98,5 @@ else if (tipTable != null) {
 else if (foodTable != null) {
     foodTable.innerHTML = foodResult;
 }
+
+

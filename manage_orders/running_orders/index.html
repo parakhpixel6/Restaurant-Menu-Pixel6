@@ -72,20 +72,25 @@
         </div>
     </div>
     <div class="d-flex flex-column running-orders-dash">
-        <div class="d-flex">
+        <div class="d-flex  pos-relative h-40p">
             <div class="breadcrumbs a-align-c d-flex">
                 <p onclick="window.location.href='../../dashboard-index'">My Dashboard </p>
                 <p onclick="window.location.href='./'"><span>&nbsp; ></span> Manage Orders </p>
                 <p onclick="window.location.href='./'" class="red"><span>&nbsp; ></span> Running Orders </p>
             </div>
-            <div class="cursor-pointer notify-dropdown d-flex center g-12">
-                <span class="top-bell-icon material-symbols-rounded">
-                    notifications_active
-                </span>
-                <p>0 Notifications</p>
-                <span class="top-dd-icon material-symbols-rounded">
-                    expand_more
-                </span>
+            <div class="cursor-pointer center notify-dropdown d-flex flex-column g-8">
+                <div class="notify-count d-flex center g-12">
+                    <span class="top-bell-icon material-symbols-rounded">
+                        notifications_active
+                    </span>
+                    <p>0 Notifications</p>
+                    <span class="top-dd-icon material-symbols-rounded">
+                        expand_more
+                    </span>
+                </div>
+                <div class="notify-comment">
+                    <p>You don't have any notifications</p>
+                </div>
             </div>
         </div>
         <div class="header center container-wrap">
@@ -260,6 +265,7 @@
     </div>
     <script src="./running_orders.js"></script>
     <script src="../../js/delete-popup.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>

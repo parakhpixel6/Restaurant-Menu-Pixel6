@@ -182,6 +182,29 @@ dropdownLinks.forEach((dropdownLink) => {
 });
 
 
+//Dropdown Notification 
+
+let ddNotifiCount = document.querySelectorAll('.notify-count');
+let ddNotification = document.querySelector('.notify-dropdown');
+
+ddNotifiCount.forEach((notifyCount) => {
+  notifyCount
+  .addEventListener('click', function() {
+    if(document.querySelector('.notify-comment').style.display === "none") {
+  
+      ddNotification.style.boxShadow = "-10px 16px 25px 0px #DDDDDD";
+      document.querySelector('.notify-comment').style.display = "block";
+    } else {
+      ddNotification.style.boxShadow = "none";
+      document.querySelector('.notify-comment').style.display = "none";
+    }
+  });
+});
+
+
+// box-shadow: -10px 16px 25px 0px #DDDDDD;
+//   -webkit-box-shadow: -10px 16px 25px 0px #DDDDDD;
+
 
 
 

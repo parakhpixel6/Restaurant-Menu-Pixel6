@@ -69,19 +69,20 @@ function togglePastOrderFilterDivFun() {
 
  
 //My Review Nav
-const reviewNav = document.querySelector('.review-nav');
-const links = reviewNav.getElementsByTagName('a');
+// const reviewNav = document.querySelector('.review-nav');
+// const links = reviewNav.getElementsByTagName('a');
 
-reviewNav.addEventListener('click', function (event) {
+// reviewNav.addEventListener('click', function (event) {
 
-  // Check if the clicked element is an <a> tag
-  if (event.target.tagName === 'A') {
-    // Remove active class from all links
-    for (var i = 0; i < links.length; i++) {
-      links[i].classList.remove('active');
-    }
+//   // Check if the clicked element is an <a> tag
+//   if (event.target.tagName === 'A') {
+//     // Remove active class from all links
+//     for (var i = 0; i < links.length; i++) {
+//       links[i].classList.remove('active');
+//     }
 
-    // Add active class to the clicked link
-    event.target.classList.add('active');
-  }
-});
+//     // Add active class to the clicked link
+//     event.target.classList.add('active');
+//   }
+// });
+

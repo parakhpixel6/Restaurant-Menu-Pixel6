@@ -36,21 +36,26 @@
     </div>
 
     <div class="dashboard-container">
-        <div class="d-flex">
+        <div class="d-flex  pos-relative h-40p">
             <div class="breadcrumbs a-align-c d-flex">
                 <p onclick="window.location.href='../../dashboard-index'">My Dashboard </p>
                 <p onclick="window.location.href='./'"><span>&nbsp; ></span> Manage Devices </p>
                 <p onclick="window.location.href='./'" class="red path"><span>&nbsp; ></span> Smart Devices </p>
                 <p class="add-device disp-none"><span>&nbsp; ></span> Add New Device </p>
             </div>
-            <div class="cursor-pointer notify-dropdown d-flex center g-12">
-                <span class="top-bell-icon material-symbols-rounded">
-                    notifications_active
-                </span>
-                <p>0 Notifications</p>
-                <span class="top-dd-icon material-symbols-rounded">
-                    expand_more
-                </span>
+            <div class="cursor-pointer center notify-dropdown d-flex flex-column g-8">
+                <div class="notify-count d-flex center g-12">
+                    <span class="top-bell-icon material-symbols-rounded">
+                        notifications_active
+                    </span>
+                    <p>0 Notifications</p>
+                    <span class="top-dd-icon material-symbols-rounded">
+                        expand_more
+                    </span>
+                </div>
+                <div class="notify-comment">
+                    <p>You don't have any notifications</p>
+                </div>
             </div>
         </div>
         <div class="header center container-wrap">
