@@ -413,6 +413,8 @@ line-height: 24px;
 }
 .out-none{
   outline: none;
+}
+.border-none{
   border: none;
 }
 .input-field {
@@ -531,7 +533,7 @@ gap: 10px;
 .custom-table {
   width: 100%;
   border-collapse: collapse;
-  // text-wrap: nowrap;
+  
   td {
     padding: 12px 16px;
 
