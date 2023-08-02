@@ -481,6 +481,9 @@ input[type=file]::file-selector-button {
 
 .out-none {
   outline: none;
+}
+
+.border-none {
   border: none;
 }
 
