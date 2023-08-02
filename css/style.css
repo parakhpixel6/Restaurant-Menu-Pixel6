@@ -82,6 +82,10 @@ li {
   padding-bottom: 15px;
 }
 
+.padding-b-10 {
+  padding-bottom: 10px;
+}
+
 .h-100 {
   height: 100%;
 }
@@ -245,6 +249,10 @@ li {
   text-align: center;
 }
 
+.clr-blk {
+  color: #111;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -284,12 +292,12 @@ input[type=file]::file-selector-button {
 }
 
 .btn-wrap {
-  padding: 4px 8px;
+  padding: 10px 15px;
   background: #ff4949;
   color: #FFFFFF;
   font-size: 14px;
   line-height: 21px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: none;
   display: inline-flex;
   align-items: center;
@@ -297,12 +305,12 @@ input[type=file]::file-selector-button {
 }
 
 .done-update-btn {
-  padding: 4px 8px;
+  padding: 10px 15px;
   background: #ff4949;
   color: #FFFFFF;
   font-size: 14px;
   line-height: 21px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: none;
   display: inline-flex;
   align-items: center;
@@ -482,6 +490,11 @@ input[type=file]::file-selector-button {
   line-height: 24px;
 }
 
+.textarea-field {
+  padding: 16px;
+  font-size: 16px;
+}
+
 .food-item-info-visible {
   color: #278827;
   text-align: right;
@@ -526,6 +539,17 @@ label {
   border: none;
 }
 
+.discount-tbl-heading {
+  color: black;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  background: none;
+  border: none;
+}
+
 .input-with-btn {
   display: flex;
   justify-content: space-between;
@@ -539,10 +563,15 @@ label {
 }
 
 .text-area {
-  border-radius: 12px;
+  border-radius: 8px;
+}
+
+.margine-t-7 {
+  margin-top: -7px;
 }
 
 select {
+  font-size: 16px;
   width: 100%;
   line-height: 24px;
   border: none;
@@ -2079,7 +2108,7 @@ button:hover {
   font-weight: 400;
   color: #fff;
 }
-.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupons-bar-close p span {
+.table-selected .table-details-wrap .order-details-wrap .my-bill-details-container .coupons-details .coupons-bar-close p clr {
   cursor: pointer;
   font-size: 18px;
   font-weight: 200;
@@ -2544,10 +2573,10 @@ button:hover {
 
 .staff-disable-btn {
   display: inline-flex;
-  padding: 4px 8px;
+  padding: 10px 15px;
   align-items: center;
   gap: 4px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid var(--red-red, #FF9898);
   color: var(--red-dark-red, #FF4747);
   text-align: right;
@@ -2561,10 +2590,10 @@ button:hover {
 
 .img-file-btn {
   display: inline-flex;
-  padding: 4px 8px;
+  padding: 10px 15px;
   align-items: center;
   gap: 4px;
-  border-radius: 8px;
+  border-radius: 5px;
   text-align: right;
   font-family: Nunito;
   font-size: 14px;
@@ -3384,6 +3413,14 @@ input:checked + .slider:before {
 .food-form-input-box {
   display: flex;
   height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.general-form-input-box {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
