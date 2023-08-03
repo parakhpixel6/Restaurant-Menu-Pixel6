@@ -10,16 +10,31 @@ let cateogryData = [
     { cateogryName: "Brunch Dishes", icon: "../../assets/images/icons/food-categories/brunch-dishes.svg", categoryDescription: "Drinks served with or without alcohol, such as coffee or cocktails.", noOfItems: "22 items" },
     { cateogryName: "Appetizers", icon: "../../assets/images/icons/food-categories/appetizers.svg", categoryDescription: "Dishes made with various types of seafood, such as shrimp or salmon.", noOfItems: "11 items" }
 ]
+// Name Short
+let downArrow=document.getElementById('down-arrow');  
+let upArrow=document.getElementById('up-arrow');  
 // Number Short
+let upItem=document.getElementById('upItem');  
+let downItem=document.getElementById('downItem');  
 var isAccItems = true;
 function numbersort() {
     var aftersort;
     if (isAccItems) {
+        upItem.classList.remove('disp-none');
+        downItem.classList.add('disp-none');
+        upArrow.classList.add('disp-none');
+        downArrow.classList.add('disp-none');
+
         aftersort = cateogryData.sort(function (a, b) {
             return b.noOfItems.localeCompare(a.noOfItems);
         });
         isAccItems = !isAccItems
     } else {
+        upItem.classList.add('disp-none');
+        downItem.classList.remove('disp-none');
+        upArrow.classList.add('disp-none');
+        downArrow.classList.add('disp-none');
+
         aftersort = cateogryData.sort(function (a, b) {
             return a.noOfItems.localeCompare(b.noOfItems);
         });
@@ -43,16 +58,30 @@ function numbersort() {
     })
     categoriesTable.innerHTML = result;
 }
+
 // Name Short
 var isAccName = true;
 function shortName() {
+
     var aftersort;
     if (isAccName) {
+        downArrow.classList.remove('disp-none');
+        upArrow.classList.add('disp-none');
+      
+        upItem.classList.add('disp-none');
+        downItem.classList.add('disp-none');
+
         aftersort = cateogryData.sort(function (a, b) {
             return a.cateogryName.localeCompare(b.cateogryName);
         });
         isAccName = !isAccName
     } else {
+        downArrow.classList.add('disp-none');
+        upArrow.classList.remove('disp-none');
+        upItem.classList.add('disp-none');
+        downItem.classList.add('disp-none');
+      
+
         aftersort = cateogryData.sort(function (a, b) {
             return b.cateogryName.localeCompare(a.cateogryName);
         });

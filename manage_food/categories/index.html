@@ -72,12 +72,16 @@
                     <tr>
                         <th class="past-order-table-heading">
                             <a class="sortbutton" href="#" onclick="shortName()">Category
-                                <img class="past-order-datefilter-img" src="../../assets/images/icons/sort.svg" alt="datefilter"></a>
+                                <img id="up-arrow" class="past-order-datefilter-img" src="../../assets/images/icons/sort.svg" alt="datefilter">
+                                <img  id="down-arrow" class="past-order-datefilter-img disp-none" src="../../assets\images\img\down-arrow.png"  alt="datefilter">
+                            </a>
                             <!-- <button class="sortbutton" type="button" onclick="shortName()"></button> -->
                         </th>
                         <th>Icon</th>
                         <th>Category Description</th>
-                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="numbersort()">No. of Items</a></th>
+                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="numbersort()">No. of Items
+                            <img id="upItem" class="past-order-datefilter-img disp-none" src="../../assets/images/icons/sort.svg" alt="datefilter">
+                            <img  id="downItem" class="past-order-datefilter-img disp-none" src="../../assets\images\img\down-arrow.png"  alt="datefilter"></a></th>
                         <th>Option</th>
                     </tr>
                 </thead>
@@ -98,6 +102,7 @@
                     </div>
                     <div class="past-order-input-valspam text-right">
                         <input type="file" class=" d-flex manage-order-id img-file-btn past-order-view-btn margin-left-30 padding-t-30 out-none">
+                
                     </div>
                 </div>
             </div>
