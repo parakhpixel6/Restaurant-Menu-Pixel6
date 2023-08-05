@@ -147,14 +147,14 @@ function addDeviceFun() {
     addDeviceQuery.forEach((item) => {
         item.classList.toggle("disp-none");
     })
-    colorClass.classList.toggle("red");
+    colorClass.classList.toggle("black");
 }
 
 function addTableFun() {
     addTableQuery.forEach((item) => {
         item.classList.toggle("disp-none")
     })
-    colorClass.classList.toggle("red");
+    colorClass.classList.toggle("black");
 }
 
 

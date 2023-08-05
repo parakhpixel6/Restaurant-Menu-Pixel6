@@ -135,7 +135,7 @@ function addStaffFun() {
     })
     // addStaffId.classList.toggle("disp-none");
     colorClass.forEach((item) => {
-        item.classList.toggle("red");
+        item.classList.toggle("black");
     })
 }
 
@@ -153,7 +153,7 @@ function exStaff() {
         item.classList.toggle("disp-none");
     })
     colorClass.forEach((item) => {
-        item.classList.toggle("red");
+        item.classList.toggle("black");
     })
 }
 {/* <script src="../../manage_food/food_item/items.js"></script> */}

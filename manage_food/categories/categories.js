@@ -132,7 +132,7 @@ function addCategoriesFun() {
     addCategoriesQuery.forEach((item) => {
         item.classList.toggle("disp-none");
     })
-    colorClass.classList.toggle("red")
+    colorClass.classList.toggle("black")
 }
 
 

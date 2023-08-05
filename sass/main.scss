@@ -32,8 +32,8 @@
   color: #54BA54;
 }
 
-.red {
-  color: #FF4747;
+.black {
+  color: #444444 !important;
 }
 .pad-top-8 {
   padding-top: 8px;
@@ -592,9 +592,14 @@ gap: 10px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  
   .breadcrumbs > p:last-child{
-      color: red;
+      color: #444444 !important;
     }
+  }
+
+  .breadcrumbs p {
+    color: #FF4747;
   }
 
 

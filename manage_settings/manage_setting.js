@@ -149,7 +149,7 @@ function addCouponFun() {
         item.classList.toggle("disp-none");
     })
     console.log(colorClass);
-    colorClass.classList.toggle("red")
+    colorClass.classList.toggle("black")
 }
 
 
