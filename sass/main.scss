@@ -19,6 +19,9 @@
 .g-110{
   gap: 110px;
 }
+.margine-b-5{
+  margin-bottom: 5px;
+}
 
 //up down sorting icons start
 .up-arrow {
@@ -2034,6 +2037,15 @@ line-height: 16px; /* 133.333% */
     border: none;
     border-bottom: .5px solid #8888;
     padding: 4px;
+}
+.input-value-font{
+  color: var(--red-black, #111);
+/* title 16px reg */
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
 }
 .padding-4{
   padding: 4px;
