@@ -54,6 +54,18 @@ li {
   gap: 110px;
 }
 
+.up-arrow {
+  background-image: url("../assets/images/icons/sort.svg");
+  height: 30px;
+  width: 30px;
+}
+
+.down-arrow {
+  background-image: url("../assets/images/img/down-arrow.png");
+  height: 30px;
+  width: 30px;
+}
+
 .pad-16-0 {
   padding: 16px 0px;
 }
@@ -66,8 +78,8 @@ li {
   color: #54BA54;
 }
 
-.red {
-  color: #FF4747;
+.black {
+  color: #444444 !important;
 }
 
 .pad-top-8 {
@@ -663,7 +675,11 @@ button:hover {
   gap: 16px;
 }
 .dashboard-container .breadcrumbs > p:last-child {
-  color: red;
+  color: #444444 !important;
+}
+
+.breadcrumbs p {
+  color: #FF4747;
 }
 
 .admin_container {
