@@ -20,6 +20,19 @@
   gap: 110px;
 }
 
+//up down sorting icons start
+.up-arrow {
+  background-image: url("../assets/images/icons/sort.svg");
+  height: 30px;
+  width: 30px;
+}
+.down-arrow {
+  background-image: url("../assets/images/img/down-arrow.png");
+  height: 30px;
+  width: 30px;
+}
+//up down sorting icons end
+
 .pad-16-0 {
   padding: 16px 0px;
 }

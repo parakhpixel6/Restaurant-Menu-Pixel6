@@ -10,40 +10,12 @@ let cateogryData = [
     { cateogryName: "Brunch Dishes", icon: "../../assets/images/icons/food-categories/brunch-dishes.svg", categoryDescription: "Drinks served with or without alcohol, such as coffee or cocktails.", noOfItems: "22 items" },
     { cateogryName: "Appetizers", icon: "../../assets/images/icons/food-categories/appetizers.svg", categoryDescription: "Dishes made with various types of seafood, such as shrimp or salmon.", noOfItems: "11 items" }
 ]
-// Name Short
-let downArrow=document.getElementById('down-arrow');  
-let upArrow=document.getElementById('up-arrow');  
-// Number Short
-let upItem=document.getElementById('upItem');  
-let downItem=document.getElementById('downItem');  
-var isAccItems = true;
-function numbersort() {
-    var aftersort;
-    if (isAccItems) {
-        upItem.classList.remove('disp-none');
-        downItem.classList.add('disp-none');
-        upArrow.classList.add('disp-none');
-        downArrow.classList.add('disp-none');
 
-        aftersort = cateogryData.sort(function (a, b) {
-            return b.noOfItems.localeCompare(a.noOfItems);
-        });
-        isAccItems = !isAccItems
-    } else {
-        upItem.classList.add('disp-none');
-        downItem.classList.remove('disp-none');
-        upArrow.classList.add('disp-none');
-        downArrow.classList.add('disp-none');
-
-        aftersort = cateogryData.sort(function (a, b) {
-            return a.noOfItems.localeCompare(b.noOfItems);
-        });
-        isAccItems = !isAccItems
-    }
+function showCategoryTable() {
     let categoriesTable = document.querySelector("#categoriesTable");
     let result = ""
 
-    aftersort.forEach((item) => {
+    cateogryData.forEach((item) => {
         result += `
           <tr>
               <td>${item.cateogryName}</td>
@@ -59,74 +31,28 @@ function numbersort() {
     categoriesTable.innerHTML = result;
 }
 
+var isAsceNoOfItems = true;
+function numbersort(e) {
+    const { data, asce }  = showHideSortIcon(e, isAsceNoOfItems, cateogryData, "noOfItems")
+    cateogryData = data
+    isAsceNoOfItems = asce
+    showCategoryTable()    
+}
+
 // Name Short
-var isAccName = true;
-function shortName() {
-
-    var aftersort;
-    if (isAccName) {
-        downArrow.classList.remove('disp-none');
-        upArrow.classList.add('disp-none');
-      
-        upItem.classList.add('disp-none');
-        downItem.classList.add('disp-none');
-
-        aftersort = cateogryData.sort(function (a, b) {
-            return a.cateogryName.localeCompare(b.cateogryName);
-        });
-        isAccName = !isAccName
-    } else {
-        downArrow.classList.add('disp-none');
-        upArrow.classList.remove('disp-none');
-        upItem.classList.add('disp-none');
-        downItem.classList.add('disp-none');
-      
-
-        aftersort = cateogryData.sort(function (a, b) {
-            return b.cateogryName.localeCompare(a.cateogryName);
-        });
-        isAccName = !isAccName
-    }
-    let categoriesTable = document.querySelector("#categoriesTable");
-    let result = ""
-
-    aftersort.forEach((item) => {
-        result += `
-        <tr>
-            <td>${item.cateogryName}</td>
-            <td><img src="${item.icon}" alt=""></td>
-            <td class="item-descp">${item.categoryDescription}</td>
-            <td>${item.noOfItems}</td>
-            <td><div>
-            <a onclick="addCategoriesFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-            </div></td>
-        </tr>
-        `
-    })
-    categoriesTable.innerHTML = result;
+var isAsceCategoryName = true;
+function shortName(e) {
+    const { data, asce }  = showHideSortIcon(e, isAsceCategoryName, cateogryData, "cateogryName")
+    cateogryData = data
+    isAsceCategoryName = asce
+    showCategoryTable()    
 }
 
 // default table
-let categoriesTable = document.querySelector("#categoriesTable");
 let addCategoriesQuery = document.querySelectorAll(".add-category");
 let colorClass = document.querySelector(".path");
-let result = ""
 
-cateogryData.forEach((item) => {
-    result += `
-    <tr>
-        <td>${item.cateogryName}</td>
-        <td><img src="${item.icon}" alt=""></td>
-        <td class="item-descp">${item.categoryDescription}</td>
-        <td>${item.noOfItems}</td>
-        <td><div>
-        <a onclick="addCategoriesFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-        </div></td>
-    </tr>
-    `
-})
-categoriesTable.innerHTML = result;
-console.log(addCategoriesQuery);
+showCategoryTable()    
 
 function addCategoriesFun() {
     addCategoriesQuery.forEach((item) => {
@@ -134,9 +60,6 @@ function addCategoriesFun() {
     })
     colorClass.classList.toggle("black")
 }
-
-
-
 
 //Dropdown Notification 
 

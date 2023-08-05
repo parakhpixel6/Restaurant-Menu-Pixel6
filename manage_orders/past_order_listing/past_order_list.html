@@ -153,15 +153,29 @@
       <table class="custom-table past-order-table">
         <thead>
           <tr>
-            <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick=""> Date</a>
+            <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortName(event)"> Date
+              <div class="up-arrow"></div>
+              <div class="down-arrow disp-none"></div>
+            </a>
             </th>
-            <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="">Order No.</a></th>
+            <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortOrderNumber(event)">Order No.
+              <div class="up-arrow disp-none"></div>
+              <div class="down-arrow disp-none"></div>
+            </a></th>
             <th>Table No.</th>
-            <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="shortName()">Customer Name<img
-                  class="past-order-datefilter-img" src="../../assets/images/icons/sort.svg" alt="datefilter" /></a>
+            <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortName(event)">Customer name
+              <div class="up-arrow disp-none"></div>
+              <div class="down-arrow disp-none"></div>
+            </a>
             </th>
-            <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="">Order Value</a></th>
-            <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="">Payment Mode</a></th>
+            <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortName(event)">Order Value
+              <div class="up-arrow disp-none"></div>
+              <div class="down-arrow disp-none"></div>
+            </a></th>
+            <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortName(event)">Payment Mode
+              <div class="up-arrow disp-none"></div>
+              <div class="down-arrow disp-none"></div>
+            </a></th>
             <th>Option</th>
           </tr>
         </thead>
@@ -174,6 +188,7 @@
 
   <script src="../../manage_orders/past_order_listing/past_order.js"></script>
   <script src="../../js/range-slider.js"></script>
+  <script src="../../js/up-down-sort.js"></script>
   <script src="../../js/main.js"></script>
 </body>
 

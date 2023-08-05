@@ -9,57 +9,44 @@ let pastorderData = [
   {date:"11/06/2023", orderno:"O11E04", tableno:"18",customername:"Jitesh Rajput", ordervalue:"₹2689.00", paymentmode:"Cash"},
   {date:"20/05/2023", orderno:"O11G75", tableno:"06",customername:"Rasika Gandhi ", ordervalue:"₹16850.00", paymentmode:"UPI/ E-wallet"}
 ]
+
+function showPastOrderTable() {
+  let orderEntry = document.querySelector("#orderEntry")
+  let result = ""
+  pastorderData.forEach((item) => {
+    console.log(item);
+    result += `
+    <tr class="custom-table past-order-table">
+        <td>${item.date}</td>
+        <td>${item.orderno}</td>
+        <td>${item.tableno}</td>
+        <td>${item.customername}</td>
+        <td>${item.ordervalue}</td>
+        <td>${item.paymentmode}</td>
+        <td><button class="past-order-view-btn staff-disable-btn" onclick="window.location.href='../../manage_orders/past_order_listing/past_order_detail.html'">View</button></td>
+    </tr>
+    `
+  })
+  orderEntry.innerHTML = result;
+}
 // name sort
-var isAccName = true;
-function shortName(){
-    if (isAccName) {
-       pastorderData.sort(function (a, b) {
-            return a.customername.localeCompare(b.customername);
-        });
-        isAccName = !isAccName
-    } else {
-       pastorderData.sort(function (a, b) {
-            return b.customername.localeCompare(a.customername);
-        });
-        isAccName = !isAccName
-    }
-    let orderEntry = document.querySelector("#orderEntry")
-    let result = ""
-    pastorderData.forEach((item) => {
-      console.log(item);
-      result += `
-      <tr class="custom-table past-order-table">
-          <td>${item.date}</td>
-          <td>${item.orderno}</td>
-          <td>${item.tableno}</td>
-          <td>${item.customername}</td>
-          <td>${item.ordervalue}</td>
-          <td>${item.paymentmode}</td>
-          <td><button class="past-order-view-btn staff-disable-btn" onclick="window.location.href='../../manage_orders/past_order_listing/past_order_detail.html'">View</button></td>
-      </tr>
-      `
-    })
-    orderEntry.innerHTML = result;
+var isAsceCustName = true;
+function sortName(e){
+    const { data, asce } = showHideSortIcon(e, isAsceCustName, pastorderData, "customername")
+    pastorderData = data
+    isAsceCustName = asce
+    showPastOrderTable()
 }
 
-let orderEntry = document.querySelector("#orderEntry");
-let result = ""
+var isAsceOrderNumber = true;
+function sortOrderNumber(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceOrderNumber, pastorderData, "orderno")
+  pastorderData = data
+  isAsceOrderNumber = asce
+  showPastOrderTable()
+}
 
-pastorderData.forEach((item) => {
-  console.log(item);
-  result += `
-  <tr class="custom-table past-order-table">
-      <td>${item.date}</td>
-      <td>${item.orderno}</td>
-      <td>${item.tableno}</td>
-      <td>${item.customername}</td>
-      <td>${item.ordervalue}</td>
-      <td>${item.paymentmode}</td>
-      <td><button class="past-order-view-btn staff-disable-btn" onclick="window.location.href='../../manage_orders/past_order_listing/past_order_detail.html'">View</button></td>
-  </tr>
-  `
-})
-orderEntry.innerHTML = result;
+showPastOrderTable()
 
 function togglePastOrderFilterDivFun() {
   document.querySelectorAll(".past-order-filter-div").forEach((item) => {
