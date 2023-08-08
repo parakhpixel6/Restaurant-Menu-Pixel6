@@ -529,8 +529,21 @@ label {
   background: none;
   border: none;
 }
+.nonsortbutton{
+  color: var(--red-dark-red, #000000);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  background: none;
+  border: none;
+}
+.visible-hidden{
+  visibility: hidden;
+}
 .discount-tbl-heading{
-  color:black;
+  color:#000000;
   font-family: Nunito;
   font-size: 16px;
   font-style: normal;

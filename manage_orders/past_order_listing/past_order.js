@@ -14,7 +14,7 @@ function showPastOrderTable() {
   let orderEntry = document.querySelector("#orderEntry")
   let result = ""
   pastorderData.forEach((item) => {
-    console.log(item);
+    // console.log(item);
     result += `
     <tr class="custom-table past-order-table">
         <td>${item.date}</td>
@@ -30,20 +30,44 @@ function showPastOrderTable() {
   orderEntry.innerHTML = result;
 }
 // name sort
+var isAsceOrderDate = true;
+function sortOrderDate(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceOrderDate, pastorderData, "date");
+  pastorderData = data;
+  isAsceOrderDate = asce;
+  showPastOrderTable();
+}
+
 var isAsceCustName = true;
 function sortName(e){
-    const { data, asce } = showHideSortIcon(e, isAsceCustName, pastorderData, "customername")
-    pastorderData = data
-    isAsceCustName = asce
-    showPastOrderTable()
+    const { data, asce } = showHideSortIcon(e, isAsceCustName, pastorderData, "customername");
+    pastorderData = data;
+    isAsceCustName = asce;
+    showPastOrderTable();
 }
 
 var isAsceOrderNumber = true;
 function sortOrderNumber(e){
-  const { data, asce }  = showHideSortIcon(e, isAsceOrderNumber, pastorderData, "orderno")
-  pastorderData = data
-  isAsceOrderNumber = asce
-  showPastOrderTable()
+  const { data, asce }  = showHideSortIcon(e, isAsceOrderNumber, pastorderData, "orderno");
+  pastorderData = data;
+  isAsceOrderNumber = asce;
+  showPastOrderTable();
+}
+
+var isAsceOrderValue = true;
+function sortOrderValue(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceOrderValue, pastorderData, "ordervalue");
+  pastorderData = data;
+  isAsceOrderValue = asce;
+  showPastOrderTable();
+}
+
+var isAsceOrderPaymentmode = true;
+function sortOrderPaymentmode(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceOrderPaymentmode, pastorderData, "paymentmode");
+  pastorderData = data;
+  isAsceOrderPaymentmode = asce;
+  showPastOrderTable();
 }
 
 showPastOrderTable()

@@ -73,11 +73,13 @@
     <div class="d-flex past-orders-textfeild past-order-filter-div disp-none justify-between ">
       <div>
         <input class="past-order-input-val input-value-font" type="text" placeholder="From Date" value="11/05/2023">
-        <span class="past-order-input-valspam input-value-font"><img class="mar-t-8" src="../../assets/images/img/Calendar.svg" alt=""></span>
+        <span class="past-order-input-valspam input-value-font"><img class="mar-t-8"
+            src="../../assets/images/img/Calendar.svg" alt=""></span>
       </div>
       <div>
         <input class="past-order-input-val input-value-font" type="text" placeholder="To date" value="">
-        <span class="past-order-input-valspam input-value-font"><img class="mar-t-8" src="../../assets/images/img/Calendar.svg" alt=""></span>
+        <span class="past-order-input-valspam input-value-font"><img class="mar-t-8"
+            src="../../assets/images/img/Calendar.svg" alt=""></span>
       </div>
       <div>
         <select class="past-order-view-btn out-none food-item-dropDown padding-4">
@@ -138,18 +140,47 @@
   <div class="container-wrap-main">
     <div class="container-wrap-past">
 
-      <table class="custom-table past-order-table">
+      <!-- <table class="custom-table past-order-table">
         <thead>
           <tr>
             <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick=""> Date</a>
             </th>
             <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="">Order No.</a></th>
             <th>Table No.</th>
-            <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="shortName()">Customer Name<img class="past-order-datefilter-img"
-              src="../../assets/images/icons/sort.svg" alt="datefilter" /></a></th>
+            <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="shortName()">Customer Name<img
+                  class="past-order-datefilter-img" src="../../assets/images/icons/sort.svg" alt="datefilter" /></a>
+            </th>
             <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="">Order Value</a></th>
             <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="">Payment Mode</a></th>
             <th>Option</th>
+          </tr>
+        </thead>
+        <tbody id="orderEntry">
+        </tbody>
+      </table> -->
+      <table class="custom-table past-order-table">
+        <thead>
+          <tr>
+            <th class="past-order-table-heading">
+              <a class="sortbutton d-flex" href="#" onclick="sortOrderDate(event)"> Date
+              <span class="up-arrow"></span>
+            </a>
+            </th>
+            <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortOrderNumber(event)">Order No.
+              <span class="up-arrow visible-hidden"></span>
+            </a></th>
+            <th class="nonsortbutton d-flex">Table No.</th>
+            <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortName(event)">Customer name
+              <span class="up-arrow visible-hidden"></span>
+            </a>
+            </th>
+            <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortOrderValue(event)">Order Value
+              <span class="up-arrow visible-hidden"></span>
+            </a></th>
+            <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortOrderPaymentmode(event)">Payment Mode
+              <span class="up-arrow visible-hidden"></span>
+            </a></th>
+            <th class="nonsortbutton d-flex">Option</th>
           </tr>
         </thead>
         <tbody id="orderEntry">
@@ -161,6 +192,9 @@
 
   <script src="../../manage_orders/past_order_listing/past_order.js"></script>
   <script src="../../js/range-slider.js"></script>
+  <script src="../../js/up-down-sort.js"></script>
+  <script src="../../js/main.js"></script>
+
 </body>
 
 </html>

@@ -48,6 +48,8 @@ function shortName(e) {
     showCategoryTable()    
 }
 
+
+
 // default table
 let addCategoriesQuery = document.querySelectorAll(".add-category");
 let colorClass = document.querySelector(".path");
