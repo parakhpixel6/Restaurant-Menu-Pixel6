@@ -225,8 +225,16 @@ li {
   margin-bottom: 16px;
 }
 
+.width-285 {
+  width: 285px;
+}
+
 .mar-b-12 {
   margin-bottom: 12px;
+}
+
+.margin-b-16 {
+  margin-bottom: 16px;
 }
 
 .mar-t-12 {
