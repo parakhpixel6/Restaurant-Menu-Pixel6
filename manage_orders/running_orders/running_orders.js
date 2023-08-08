@@ -28,7 +28,7 @@ function showTable(tableData) {
     let result = "";
     tableData.forEach((item) => {
         result += `
-    <div class="cursor-pointer" onclick="${item.status === "occupied" ? "myFunction()" : ""}">
+    <div class="${item.status === "occupied" ? "cursor-pointer" : ""}" onclick="${item.status === "occupied" ? "myFunction()" : ""}">
         <div class ="circle text-center ${item.status}">
             <p class="table_no">${item.tableNo}</p>
             <div class="status-text-container"><div class ="status-icon text-center"></div>${item.statusText}</div>
