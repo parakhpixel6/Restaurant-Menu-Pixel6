@@ -39,99 +39,91 @@ let foodData = [
     {Image:"../../assets/images/img/fooditem/food-item5.png", ItemName:"Freshly squeezed Orange Juice", ItemDescription:"A glass of freshly squeezed orange juice, full of vitamin C.", category:"Beverages" ,price:"130"},
     {Image:"../../assets/images/img/fooditem/food-item6.png", ItemName:"Breakfast Burrito", ItemDescription:"Chorizo, black peppers, onions, chili and cheese wrapped in a flour tortilla.", category:"Breakfast" ,price:"210"},
 ]
-var isAccName = true;
-function shortName(){
-    var aftersort;
-    if (isAccName) {
-        aftersort = foodData.sort(function (a, b) {
-            return a.ItemName.localeCompare(b.ItemName);
-        });
-        isAccName = !isAccName
-    } else {
-        aftersort = foodData.sort(function (a, b) {
-            return b.ItemName.localeCompare(a.ItemName);
-        });
-        isAccName = !isAccName
-    }
-
+function showFoodDataTable(){
     let foodTable = document.querySelector("#foodTable");
-    let resultfood = ""
 
-foodData.forEach((item) => {
-    resultfood += `
-    <tr>
-        <td><img src="${item.Image}" alt=""></td>
-        <td>${item.ItemName}</td>
-        <td class="item-descp">${item.ItemDescription}</td>
-        <td>${item.category}</td>
-        <td>${item.price}</td>
-        <td class="">
-        <a onclick="editOrDeleteFoodItemFun('edit')"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-        <a onclick="window.location.href='../../manage_food/food_item/food_item_detail.html'"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
-        </td>
-    </tr>
-    `
-})
-foodTable.innerHTML = resultfood;
+let resultfood = ""
+    foodData.forEach((item) => {
+        resultfood += `
+        <tr>
+            <td><img src="${item.Image}" alt=""></td>
+            <td>${item.ItemName}</td>
+            <td class="item-descp">${item.ItemDescription}</td>
+            <td>${item.category}</td>
+            <td>${item.price}</td>
+            <td class="">
+            <a onclick="editOrDeleteFoodItemFun('edit')"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+            <a onclick="window.location.href='../../manage_food/food_item/food_item_detail.html'"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
+            </td>
+        </tr>
+        `
+    })
+    foodTable.innerHTML = resultfood;
+    
+}
+
+var isAsceItemName = true;
+function sortItemName(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceItemName, foodData, "ItemName");
+  foodData = data;
+  isAsceItemName = asce;
+  showFoodDataTable();
+}
+var isAsceCategory = true;
+function sortCategory(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceCategory, foodData, "category");
+  foodData = data;
+  isAsceCategory = asce;
+  showFoodDataTable();
+}
+var isAscePrice = true;
+function sortPrice(e){
+  const { data, asce }  = showHideSortIcon(e, isAscePrice, foodData, "price");
+  foodData = data;
+  isAscePrice = asce;
+  showFoodDataTable();
 }
 
 // Number Short
-var isAccItems = true;
-function numbersort() {
-    var aftersort;
-    if (isAccItems) {
-        aftersort = foodData.sort(function (a, b) {
-            return b.price.localeCompare(a.price);
-        });
-        isAccItems = !isAccItems
-    } else {
-        aftersort = foodData.sort(function (a, b) {
-            return a.price.localeCompare(b.price);
-        });
-        isAccItems = !isAccItems
-    }
+// var isAccItems = true;
+// function numbersort() {
+//     var aftersort;
+//     if (isAccItems) {
+//         aftersort = foodData.sort(function (a, b) {
+//             return b.price.localeCompare(a.price);
+//         });
+//         isAccItems = !isAccItems
+//     } else {
+//         aftersort = foodData.sort(function (a, b) {
+//             return a.price.localeCompare(b.price);
+//         });
+//         isAccItems = !isAccItems
+//     }
 
-    let foodTable = document.querySelector("#foodTable");
-    let resultfood = ""
+//     let foodTable = document.querySelector("#foodTable");
+//     let resultfood = ""
 
-foodData.forEach((item) => {
-    resultfood += `
-    <tr>
-        <td><img src="${item.Image}" alt=""></td>
-        <td>${item.ItemName}</td>
-        <td class="item-descp">${item.ItemDescription}</td>
-        <td>${item.category}</td>
-        <td>${item.price}</td>
-        <td class="">
-        <a onclick="editOrDeleteFoodItemFun('edit')"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-        <a onclick="window.location.href='../../manage_food/food_item/food_item_detail.html'"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
-        </td>
-    </tr>
-    `
-})
-foodTable.innerHTML = resultfood;
-}
+// foodData.forEach((item) => {
+//     resultfood += `
+//     <tr>
+//         <td><img src="${item.Image}" alt=""></td>
+//         <td>${item.ItemName}</td>
+//         <td class="item-descp">${item.ItemDescription}</td>
+//         <td>${item.category}</td>
+//         <td>${item.price}</td>
+//         <td class="">
+//         <a onclick="editOrDeleteFoodItemFun('edit')"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+//         <a onclick="window.location.href='../../manage_food/food_item/food_item_detail.html'"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
+//         </td>
+//     </tr>
+//     `
+// })
+// foodTable.innerHTML = resultfood;
+// }
 
-let foodTable = document.querySelector("#foodTable");
-let addFoodQuery = document.querySelectorAll(".add-category")
-let resultfood = ""
+showFoodDataTable();
 
-foodData.forEach((item) => {
-    resultfood += `
-    <tr>
-        <td><img src="${item.Image}" alt=""></td>
-        <td>${item.ItemName}</td>
-        <td class="item-descp">${item.ItemDescription}</td>
-        <td>${item.category}</td>
-        <td>${item.price}</td>
-        <td class="">
-        <a onclick="editOrDeleteFoodItemFun('edit')"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-        <a onclick="window.location.href='../../manage_food/food_item/food_item_detail.html'"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
-        </td>
-    </tr>
-    `
-})
-
+let addFoodQuery = document.querySelectorAll(".add-category");
 function editOrDeleteFoodItemFun(operation = 'delete') {
     window.location.href = '../../manage_food/food_item/edit_item.html?operation='+operation
 }
@@ -148,8 +140,6 @@ function addCategoriesFun() {
         item.classList.toggle("disp-none");
     })
 }
-
-
 
 //Dropdown Notification 
 
