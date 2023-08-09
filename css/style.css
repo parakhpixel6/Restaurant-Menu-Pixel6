@@ -78,6 +78,12 @@ li {
   width: 20px;
 }
 
+.neutral-arrow {
+  background-image: url("../assets/images/img/neutral.png");
+  height: 30px;
+  width: 20px;
+}
+
 .pad-16-0 {
   padding: 16px 0px;
 }
