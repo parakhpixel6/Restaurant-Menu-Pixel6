@@ -112,16 +112,22 @@
             <table class="custom-table container-wrap">
                 <thead>
                     <tr>
-                        <th>Device ID</th>
-                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="">Device Name</a></th>
-                        <th>Serial Number</th>
-                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="shortName()">
-                            Type
-                            <img class="past-order-datefilter-img" src="../../assets/images/icons/sort.svg" alt="datefilter"></a>
+                        <th class="nonsortbutton">Device ID</th>
+                        <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortDeviceName(event)">Device Name
+                            <span class="up-arrow"></span>
+                        </a></th>
+                        <th class="nonsortbutton">Serial Number</th>
+                        <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortType(event)">Type
+                            <span class="up-arrow neutral-arrow"></span>
+                            <!-- <img class="past-order-datefilter-img" src="../../assets/images/icons/sort.svg" alt="datefilter"> -->
+                        </a>
                         </th>
-                        <th>Mapped To</th>
-                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="">Status</a></th>
-                        <th>Option</th>
+                        <th class="nonsortbutton">Mapped To</th>
+                        <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortDeviceStatus(event)">Status
+                            <span class="up-arrow neutral-arrow"></span>    
+                        </a>        
+                    </th>
+                        <th class="nonsortbutton">Option</th>
                     </tr>
                 </thead>
                 <tbody id="devicesTable">
@@ -175,6 +181,7 @@
     <script src="../../manage_food/food_item/edit-items.js"></script>
     <script src="../manage_devices.js"></script>
     <script src="../../js/delete-popup.js"></script>
+    <script src="../../js/up-down-sort.js"></script>
 </body>
 
 </html>

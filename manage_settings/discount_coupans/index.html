@@ -79,14 +79,17 @@
                 <table class="container-wrap custom-table">
                     <thead >
                         <tr>
-                            <td ><span class="clr-blk">Coupon Code</span></td>
-                            <td><span class="clr-blk">Description</span></td>
-                            <td><span class="clr-blk">Discount</span></td>
-                            <td><span class="clr-blk">Valid From</span></td>
-                            <td><span class="clr-blk">Valid Till</span></td>
-                            <td><span class="clr-blk">Applicable On</span></td>
-                            <td><a class="sortbutton" href="#" onclick="shortName()">Status</a></td>
-                            <td><span class="clr-blk">Options</span></td>
+                            <th class="nonsortbutton">Coupon Code</td>
+                            <th class="nonsortbutton">Description</th>
+                            <th class="nonsortbutton">Discount</th>
+                            <th class="nonsortbutton">Valid From</th>
+                            <th class="nonsortbutton">Valid Till</th>
+                            <th class="nonsortbutton">Applicable On</th>
+                            <th class="nonsortbutton"><a class="sortbutton d-flex" href="#" onclick="sortCouponDataStatus(event)">Status
+                                <span class="up-arrow"></span>
+                            </a>
+                        </th>
+                            <th class="nonsortbutton">Options</th>
                         </tr>
                     </thead>
                     <tbody id="discountCouponTable">
@@ -165,7 +168,7 @@
     <script src="../manage_setting.js"></script>
     <script src="../../js/delete-popup.js"></script>
     <script src="../../js/main.js"></script>
-
+    <script src="../../js/up-down-sort.js"></script>
 </body>
 
 </html>

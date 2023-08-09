@@ -17,59 +17,38 @@ let calenderData = [
     {date:"25/05/2023", day:"Saturday", openTime:"11:00 AM", closeTime:"01:00 PM", status:"Open"},
     {date:"26/05/2023", day:"Sunday", openTime:"11:00 AM", closeTime:"01:00 PM", status:"Open"},
 ]
+let addCouponquery = document.querySelectorAll(".add-coupon");
+let colorClass = document.querySelector(".path");
+let result = "", calender = "";
 
-var isAccName = true;
-function shortstatus(){
-    var aftersort;
-    if (isAccName) {
-        aftersort = calenderData.sort(function (a, b) {
-            return a.status.localeCompare(b.status);
-        });
-        isAccName = !isAccName
-    } else {
-        aftersort = calenderData.sort(function (a, b) {
-            return b.status.localeCompare(a.status);
-        });
-        isAccName = !isAccName
-    }
-    let  calender = "";
-    calenderData.forEach((item) => {
-        calender += `
-        <tr>
-            <td>${item.date}</td>
-            <td>${item.day}</td>
-            <td>${item.openTime}</td>
-            <td>${item.closeTime}</td>
-            <td>${item.status}</td>
-            <td>
-            <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-            </td>
-        </tr>
-        `
-    })
-    
-    if (discountCouponTable != null) {
-        discountCouponTable.innerHTML = result;
-    }
-    else if (calenderTable != null) {
-        calenderTable.innerHTML = calender;
-    }
+function showCalenderDataTable()
+{
+let calenderTable = document.querySelector("#calenderTable");
+let  calender = "";
+calenderData.forEach((item) => {
+    calender += `
+    <tr>
+        <td>${item.date}</td>
+        <td>${item.day}</td>
+        <td>${item.openTime}</td>
+        <td>${item.closeTime}</td>
+        <td>${item.status}</td>
+        <td>
+        <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+        </td>
+    </tr>
+    `
+})
+// if (discountCouponTable != null) {
+//     discountCouponTable.innerHTML = result;
+// }
+ if (calenderTable != null) {
+    calenderTable.innerHTML = calender;
+}
 }
 
-var isAccName = true;
-function shortName(){
-    var aftersort;
-    if (isAccName) {
-        aftersort = couponData.sort(function (a, b) {
-            return a.status.localeCompare(b.status);
-        });
-        isAccName = !isAccName
-    } else {
-        aftersort = couponData.sort(function (a, b) {
-            return b.status.localeCompare(a.status);
-        });
-        isAccName = !isAccName
-    }
+function showCouponDataTable(){
+    let discountCouponTable = document.querySelector("#discountCouponTable");
     let result = "";
     couponData.forEach((item) => {
         result += `
@@ -91,58 +70,29 @@ function shortName(){
     if (discountCouponTable != null) {
         discountCouponTable.innerHTML = result;
     }
-    else if (calenderTable != null) {
-        calenderTable.innerHTML = calender;
-    }
-    
+    // else if (calenderTable != null) {
+    //     calenderTable.innerHTML = calender;
+    // }
+
+}
+var isAsceCalenderStatus = true;
+function sortCalenderStatus(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceCalenderStatus, calenderData, "status");
+  calenderData = data;
+  isAsceCalenderStatus = asce;
+  showCalenderDataTable();
 }
 
-let discountCouponTable = document.querySelector("#discountCouponTable");
-let calenderTable = document.querySelector("#calenderTable");
-let addCouponquery = document.querySelectorAll(".add-coupon");
-let colorClass = document.querySelector(".path");
-let result = "",
-    calender = "";
-
-couponData.forEach((item) => {
-    result += `
-    <tr>
-        <td>${item.couponCode}</td>
-        <td>${item.description}</td>
-        <td>${item.discount}</td>
-        <td>${item.validFrom}</td>
-        <td>${item.validTill}</td>
-        <td>${item.applicableOn}</td>
-        <td>${item.status}</td>
-        <td>
-        <a onclick="addCouponFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-        <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
-        </td>
-    </tr>
-    `
-})
-
-calenderData.forEach((item) => {
-    calender += `
-    <tr>
-        <td>${item.date}</td>
-        <td>${item.day}</td>
-        <td>${item.openTime}</td>
-        <td>${item.closeTime}</td>
-        <td>${item.status}</td>
-        <td>
-        <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-        </td>
-    </tr>
-    `
-})
-
-if (discountCouponTable != null) {
-    discountCouponTable.innerHTML = result;
+var isAsceCouponStatus = true;
+function sortCouponDataStatus(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceCouponStatus, couponData, "status");
+  couponData = data;
+  isAsceCouponStatus = asce;
+  showCouponDataTable();
 }
-else if (calenderTable != null) {
-    calenderTable.innerHTML = calender;
-}
+
+showCouponDataTable();
+showCalenderDataTable();
 
 function addCouponFun() {
     addCouponquery.forEach((item) => {
@@ -151,9 +101,6 @@ function addCouponFun() {
     console.log(colorClass);
     colorClass.classList.toggle("black")
 }
-
-
-
 
 //Dropdown Notification 
 

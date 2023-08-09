@@ -157,12 +157,15 @@
             <table class="container-wrap custom-table" >
                 <thead>
                     <tr >
-                        <td><span class="clr-blk">Date</span></td>
-                        <td><span class="clr-blk">Day</span></td>
-                        <td><span class="clr-blk">Day</span></td>
-                        <td><span class="clr-blk">Close Time</span></td>
-                        <td><a class="sortbutton" href="#" onclick="shortstatus()">Status</a></td>
-                        <td><span class="clr-blk">Option</span></td>
+                        <td><span class="nonsortbutton">Date</span></td>
+                        <td><span class="nonsortbutton">Day</span></td>
+                        <td><span class="nonsortbutton">Day</span></td>
+                        <td><span class="nonsortbutton">Close Time</span></td>
+                        <td><a class="sortbutton d-flex" href="#" onclick="sortCalenderStatus(event)">Status
+                            <span class="up-arrow"></span>
+                        </a>
+                        </td>
+                        <td><span class="nonsortbutton">Option</span></td>
                     </tr>
                 </thead>
                 <tbody id="calenderTable">
@@ -213,6 +216,7 @@
     <script src="../../js/delete-popup.js"></script>
     <script src="../manage_setting.js"></script>
     <script src="../../js/main.js"></script>
+    <script src="../../js/up-down-sort.js"></script>
 </body>
 
 </html>

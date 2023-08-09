@@ -25,60 +25,36 @@ let tablesInfoTable = document.querySelector("#tablesInfoTable");
 let addDeviceQuery = document.querySelectorAll(".add-device");
 let addTableQuery = document.querySelectorAll(".add-table");
 let colorClass = document.querySelector(".path");
-let result = "",
-    tableInfoResult = "";
+let result = "", tableInfoResult = "";
 
-let isAccName = true;
-function shortName() {
-    if (isAccName) {
-        deviceData.sort(function (a, b) {
-            return a.type.localeCompare(b.type);
-        });
-        isAccName = !isAccName
-    } else {
-        deviceData.sort(function (a, b) {
-            return b.type.localeCompare(a.type);
-        });
-        isAccName = !isAccName
-    }
-    result = "";
+
+function showDeviceDataTable(){ 
+    result = ""
     deviceData.forEach((item) => {
-        result += `
-        <tr>
-            <td>${item.deviceId}</td>
-            <td>${item.deviceName}</td>
-            <td>${item.serialNumber}</td>
-            <td>${item.type}</td>
-            <td>${item.maappedTo}</td>
-            <td>${item.status}</td>
-            <td class="d-flex g-8">
-            <a onclick="addDeviceFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-            <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
-    </td>
-        </tr>
-        `
-    })
-    if (devicesTable != null) {
-        devicesTable.innerHTML = result;
-    }
-    else if (tablesInfoTable != null) {
-        tablesInfoTable.innerHTML = tableInfoResult;
-    }
+    result += `
+    <tr>
+        <td>${item.deviceId}</td>
+        <td>${item.deviceName}</td>
+        <td>${item.serialNumber}</td>
+        <td>${item.type}</td>
+        <td>${item.maappedTo}</td>
+        <td>${item.status}</td>
+        <td class="d-flex g-8">
+        <a onclick="addDeviceFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+        <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
+</td>
+    </tr>
+    `
+})
+if (devicesTable != null) {
+    devicesTable.innerHTML = result;
 }
-// number sort
-var isAccItems = true;
-function numbersort() {
-    if (isAccItems) {
-        tableData.sort(function (a, b) {
-            return b.capacity.localeCompare(a.capacity);
-        });
-        isAccItems = !isAccItems
-    } else {
-        tableData.sort(function (a, b) {
-            return a.capacity.localeCompare(b.capacity);
-        });
-        isAccItems = !isAccItems
-    }
+// else if (tablesInfoTable != null) {
+//     tablesInfoTable.innerHTML = tableInfoResult;
+// }
+}
+
+function showTableDataTable(){
     let tableInfoResult = "";
     tableData.forEach((item) => {
         tableInfoResult += `
@@ -95,53 +71,73 @@ function numbersort() {
         </tr>
         `
     })
-    if (devicesTable != null) {
-        devicesTable.innerHTML = result;
-    }
-    else if (tablesInfoTable != null) {
+    // if (devicesTable != null) {
+    //     devicesTable.innerHTML = result;
+    // }
+     if (tablesInfoTable != null) {
         tablesInfoTable.innerHTML = tableInfoResult;
     }
 }
 
-tableData.forEach((item) => {
-    tableInfoResult += `
-    <tr>
-        <td>${item.tableId}</td>
-        <td>${item.capacity}</td>
-        <td>${item.assignedStaff}</td>
-        <td>${item.assignedDevice}</td>
-        <td>${item.status}</td>
-        <td class="d-flex g-8">
-        <a onclick="addTableFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-        <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
-        </td>
-    </tr>
-    `
-})
-
-deviceData.forEach((item) => {
-    result += `
-    <tr>
-        <td>${item.deviceId}</td>
-        <td>${item.deviceName}</td>
-        <td>${item.serialNumber}</td>
-        <td>${item.type}</td>
-        <td>${item.maappedTo}</td>
-        <td>${item.status}</td>
-        <td class="d-flex g-8">
-        <a onclick="addDeviceFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-        <a onclick="popIt()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">Delete</span></a>
-</td>
-    </tr>
-    `
-})
-
-if (devicesTable != null) {
-    devicesTable.innerHTML = result;
+var isAsceDeviceName = true;
+function sortDeviceName(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceDeviceName, deviceData, "deviceName");
+  deviceData = data;
+  isAsceDeviceName = asce;
+  showDeviceDataTable();
 }
-else if (tablesInfoTable != null) {
-    tablesInfoTable.innerHTML = tableInfoResult;
+var isAsceType = true;
+function sortType(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceType, deviceData, "type");
+  deviceData = data;
+  isAsceType = asce;
+  showDeviceDataTable();
 }
+var isAsceDeviceStatus = true;
+function sortDeviceStatus(e){
+  const { data, asce }  = showHideSortIcon(e,isAsceDeviceStatus, deviceData, "status");
+  deviceData = data;
+  isAsceDeviceStatus = asce;
+  showDeviceDataTable();
+}
+var isAsceTableId = true;
+function sortTableId(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceTableId, tableData, "tableId");
+  tableData = data;
+  isAsceTableId = asce;
+  showTableDataTable();
+}
+var isAsceCapacity = true;
+function sortCapacity(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceCapacity, tableData, "capacity");
+  tableData = data;
+  isAsceCapacity = asce;
+  showTableDataTable();
+}
+var isAsceTableId = true;
+function sortTableId(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceTableId, tableData, "tableId");
+  tableData = data;
+  isAsceTableId = asce;
+  showTableDataTable();
+}
+var isAsceAssignedDevice = true;
+function sortAssignedDevice(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceAssignedDevice, tableData, "assignedDevice");
+  tableData = data;
+  isAsceAssignedDevice = asce;
+  showTableDataTable();
+}
+var isAsceStatus = true;
+function sortStatus(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceStatus, tableData, "status");
+  tableData = data;
+  isAsceStatus = asce;
+  showTableDataTable();
+}
+
+showTableDataTable();
+showDeviceDataTable();
 
 function addDeviceFun() {
     addDeviceQuery.forEach((item) => {
@@ -156,9 +152,3 @@ function addTableFun() {
     })
     colorClass.classList.toggle("black");
 }
-
-
-
-
-
-

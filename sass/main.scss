@@ -40,6 +40,11 @@
   height: 30px;
   width: 20px;
 }
+.neutral-arrow {
+  background-image:url("../assets/images/img/neutral.png");
+  height: 30px;
+  width: 20px;
+}
 //up down sorting icons end
 
 .pad-16-0 {
@@ -542,6 +547,7 @@ label {
 .visible-hidden{
   visibility: hidden;
 }
+
 .discount-tbl-heading{
   color:#000000;
   font-family: Nunito;
