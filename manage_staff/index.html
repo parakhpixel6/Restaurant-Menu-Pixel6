@@ -106,16 +106,26 @@
             <table class="custom-table  container-wrap" id="add-staff">
                 <thead>
                     <tr>
-                        <th class="past-order-table-heading">Staff ID</th>
-                        <th>Image</th>
-                        <th class="past-order-table-heading">
-                            <a class="sortbutton" href="#" onclick="shortName('staff')">Staff Name
-                            <img class="past-order-datefilter-img" src="../assets/images/icons/sort.svg" alt="datefilter"></a>
+                        <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortStaffId(event)">Staff ID
+                            <span class="up-arrow "></span>
+                            </a>
                         </th>
-                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="shortRole('staff')">Role</a></th>
-                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="shortReportingTo('staff')">Reporting to</a></th>
-                        <th>Working Since</th>
-                        <th>Options</th>
+                        <th class="nonsortbutton">Image</th>
+                        <th class="past-order-table-heading">
+                            <a class="sortbutton d-flex" href="#" onclick="sortStaffName(event)">Staff Name
+                                <span class="up-arrow  neutral-arrow"></span>
+                        </a>
+                        </th>
+                        <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortStaffRole(event)">Role
+                            <span class="up-arrow  neutral-arrow"></span>
+                        </a>
+                    </th>
+                        <th class="past-order-table-heading"><a class="sortbutton d-flex" href="#" onclick="sortReportingTo(event)">Reporting to
+                            <span class="up-arrow  neutral-arrow"></span>
+                        </a>
+                    </th>
+                        <th class="nonsortbutton">Working Since</th>
+                        <th class="nonsortbutton">Options</th>
                     </tr>
                 </thead>
                 <tbody id="staffInfoTable">
@@ -124,16 +134,29 @@
             <table class="custom-table ex-staff disp-none container-wrap">
                 <thead>
                     <tr>
-                        <th class="past-order-table-heading">Staff ID</th>
-                        <th>Image</th>
-                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="shortName('exstaff')">Staff Name
-                            <img class="past-order-datefilter-img" src="../assets/images/icons/sort.svg" alt="datefilter"></a>
-                       
+                        <th class="past-order-table-heading">
+                            <a class="sortbutton d-flex" href="#" onclick="sortExStaffId(event)">Staff ID
+                                <span class="up-arrow"></span>
+                            </a>    
                         </th>
-                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="shortRole('exstaff')">Role</a></th>
-                        <th class="past-order-table-heading"><a class="sortbutton" href="#" onclick="shortReportingTo('exstaff')">Working From</a></th>
-                        <th>Working Since</th>
-                        <th>Options</th>
+                        <th class="nonsortbutton">Image</th>
+                        <th class="past-order-table-heading">
+                            <a class="sortbutton d-flex" href="#" onclick="sortExStaffName(event)">Staff Name
+                                <span class="up-arrow  neutral-arrow"></span>
+                        </a>
+                        </th>
+                        <th class="past-order-table-heading">
+                            <a class="sortbutton d-flex" href="#" onclick="sortExStaffRole(event)">Role
+                                <span class="up-arrow  neutral-arrow"></span>
+                            </a>
+                        </th>
+                        <th class="past-order-table-heading">
+                            <a class="sortbutton d-flex" href="#" onclick="sortExStaffWorkingFrom(event)">Working From
+                                <span class="up-arrow  neutral-arrow"></span>
+                            </a>
+                        </th>
+                        <th class="nonsortbutton">Working To</th>
+                        <th class="nonsortbutton">Options</th>
                     </tr>
                 </thead>
                 <tbody id="exStaffInfoTable">
@@ -258,6 +281,7 @@
         <script src="../js/delete-popup.js"></script>
         <script src="./manage_staff.js"></script>
         <script src="../../js/main.js"></script>
+        <script src="../js/up-down-sort.js"></script>
 </body>
 
 </html>

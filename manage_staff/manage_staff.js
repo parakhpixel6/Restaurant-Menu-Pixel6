@@ -15,118 +15,127 @@ let exStaffData = [
     {staffId:"S004", image:"../assets/images/img/staff/server.png", staffName:"Naresh 111 Chavan", role:"Server", workingFrom:"Jaydeep Sivakumar", workingto:"02 Jun 2020"}
 ];
 
-const staffInfoTable = document.querySelector("#staffInfoTable");
-const exStaffInfoTable = document.querySelector("#exStaffInfoTable");
-const addStaffQuery = document.querySelectorAll(".add-staff");
-const exStaffQuery = document.querySelectorAll(".ex-staff");
-const addStaffId = document.querySelectorAll("#add-staff");
-const addManageStaff = document.querySelector('.addManageStaff');
+let staffInfoTable = document.querySelector("#staffInfoTable");
+let exStaffInfoTable = document.querySelector("#exStaffInfoTable");
+let addStaffQuery = document.querySelectorAll(".add-staff");
+let exStaffQuery = document.querySelectorAll(".ex-staff");
+let addStaffId = document.querySelectorAll("#add-staff");
+let addManageStaff = document.querySelector('.addManageStaff');
 let colorClass = document.querySelectorAll(".path");
 
-let isAccName = true, isAccRole = true, isAccReportingTo= true;
-
-function display(staffData, isStaff='staff'){ 
-    
+let staffInfoResult = "", exStaffInfoResult = "";
+function showStaffDataTable(){
     let staffInfoResult = ""
-staffData.forEach((item) => {
- staffInfoResult += `
-   <tr>
-       <td>${item.staffId}</td>
-       <td><img src="${item.image}" alt=""></td>
-       <td>${item.staffName}</td>
-       <td>${item.role}</td>
-
-       <td>${isStaff =='staff' ? item.reportingTo : item.workingFrom}</td>
-       <td>${isStaff =='staff'? item.workingSince : item.workingto}</td>
-       
-       ${isStaff =='staff'? `<td>
-       <a onclick="addStaffFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
-       <a onclick="window.location.href='./../manage_staff/staff_detail.html'" ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
-       </td>` : `<td>
-       <a onclick="window.location.href='./../manage_staff/staff_detail.html'" ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
-        </td>`}
-       
-   </tr>
-   `});
-   return staffInfoResult;
+    staffData.forEach((item) => {
+        staffInfoResult += `
+        <tr>
+            <td>${item.staffId}</td>
+            <td><img src="${item.image}" alt=""></td>
+            <td>${item.staffName}</td>
+            <td>${item.role}</td>
+            <td>${item.reportingTo}</td>
+            <td>${item.workingSince}</td>
+            <td>
+            <a onclick="addStaffFun()"><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">edit</span></a>
+            <a onclick="window.location.href='./../manage_staff/staff_detail.html'" ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
+            </td>
+        </tr>
+        `
+    })
+    if (staffInfoTable != null) {
+        staffInfoTable.innerHTML = staffInfoResult;
+    }
 }
 
-staffInfoTable.innerHTML='';
-staffInfoTable.innerHTML =display(staffData);
-
-// Name Sort
-function shortName(isStaff) {
-    staffData=  isStaff=='staff' ? staffData: exStaffData;
-  
-   if (isAccName) {
-     staffData.sort(function (a, b) {
-           return a.staffName.localeCompare(b.staffName);
-       });
-       isAccName = !isAccName
-   } else {
-     staffData.sort(function (a, b) {
-           return b.staffName.localeCompare(a.staffName);
-       });
-       isAccName = !isAccName
-   }
-
-   if( isStaff=='staff'){
-    staffInfoTable.innerHTML='';
-    staffInfoTable.innerHTML =display(staffData);
-   }else{
-    exStaffInfoTable.innerHTML='';
-    exStaffInfoTable.innerHTML =display(exStaffData,'exStaff');
-   }
+function showExStaffDataTable(){
+    let exStaffInfoTable = document.querySelector("#exStaffInfoTable");
+    // let exStaffInfoResult = "";
+    exStaffData.forEach((item) => {
+        exStaffInfoResult += `
+        <tr>
+            <td>${item.staffId}</td>
+            <td><img src="${item.image}" alt=""></td>
+            <td>${item.staffName}</td>
+            <td>${item.role}</td>
+            <td>${item.workingFrom}</td>
+            <td>${item.workingto}</td>
+            <td>
+            <a onclick="window.location.href='./../manage_staff/staff_detail.html'" ><span class="material-symbols-rounded sidebar--navigations-link-icon past-order-view-btn clr-red">info</span></a>
+            </td>
+        </tr>
+        `
+    })
+    if (exStaffInfoTable != null) {
+        exStaffInfoTable.innerHTML = exStaffInfoResult;
+    }
 }
 
-// Sort Role
-function shortRole(isStaff) {
-    staffData=  isStaff=='staff' ? staffData: exStaffData;
-
-   if (isAccRole) {
-        staffData.sort(function (a, b) {
-           return a.role.localeCompare(b.role);
-       });
-       isAccRole = !isAccRole
-   } else {
-       staffData.sort(function (a, b) {
-           return b.role.localeCompare(a.role);
-       });
-       isAccRole = !isAccRole
-   }
-   if( isStaff=='staff'){
-    staffInfoTable.innerHTML='';
-    staffInfoTable.innerHTML =display(staffData);
-   }else{
-    exStaffInfoTable.innerHTML='';
-    exStaffInfoTable.innerHTML =display(exStaffData,'exStaff');
-   }
-  
+var isAsceStaffId = true;
+function sortStaffId(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceStaffId, staffData, "staffId");
+  staffData = data;
+  isAsceStaffId = asce;
+  showStaffDataTable();
 }
-// sort reportingTo
-// function shortReportingTo(isStaff) {
-//     staffData=  isStaff=='staff' ? staffData: exStaffData;
-   
-//    if (isAccRole) {
-//         staffData.sort(function (a, b) {
-//            return `${a}.${ isStaff=='staff' ? reportingTo: workingFrom}`.localeCompare(`${b}.${ isStaff=='staff' ? reportingTo: workingFrom}`);
-//        });
-//        isAccRole = !isAccRole
-//    } else {
-//        staffData.sort(function (a, b) {
-//            return b.reportingTo.localeCompare(a.reportingTo);
-//        });
-//        isAccRole = !isAccRole
-//    }
-//    if( isStaff=='staff'){
-//     staffInfoTable.innerHTML='';
-//     staffInfoTable.innerHTML =display(staffData);
-//    }else{
-//     exStaffInfoTable.innerHTML='';
-//     exStaffInfoTable.innerHTML =display(exStaffData,'exStaff');
-//    }
-  
-// }
+var isAsceStaffName = true;
+function sortStaffName(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceStaffName, staffData, "staffName");
+  staffData = data;
+  isAsceStaffName = asce;
+  showStaffDataTable();
+}
+var isAsceStaffRole = true;
+function sortStaffRole(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceStaffRole, staffData, "role");
+  staffData = data;
+  isAsceStaffRole = asce;
+  showStaffDataTable();
+}
+var isAsceReportingTo = true;
+function sortReportingTo(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceReportingTo, staffData, "reportingTo");
+  staffData = data;
+  isAsceReportingTo = asce;
+  showStaffDataTable();
+}
+var isAsceExStaffId = true;
+function sortExStaffId(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceExStaffId, exStaffData, "staffId");
+  exStaffData = data;
+  isAsceExStaffId = asce;
+  showExStaffDataTable();
+}
+var isAsceExStaffName = true;
+function sortExStaffName(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceExStaffName, exStaffData, "staffName");
+  exStaffData = data;
+  isAsceExStaffName = asce;
+  showExStaffDataTable();
+}
+var isAsceExStaffRole = true;
+function sortExStaffRole(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceExStaffRole, exStaffData, "role");
+  exStaffData = data;
+  isAsceExStaffRole = asce;
+  showExStaffDataTable();
+}
+var isAsceExStaffWorkingFrom = true;
+function sortExStaffWorkingFrom(e){
+  const { data, asce }  = showHideSortIcon(e, isAsceExStaffWorkingFrom, exStaffData, "workingFrom");
+  exStaffData = data;
+  isAsceExStaffWorkingFrom = asce;
+  showExStaffDataTable();
+}
+showStaffDataTable();
+showExStaffDataTable();
+
+
+
+
+
+
+
+
 
 function addStaffFun() {
     addStaffQuery.forEach((item) => {
@@ -140,11 +149,11 @@ function addStaffFun() {
 }
 
 function exStaff() {    
-    isAccName = true;
-    isAccRole = true;
-    isAccReportingTo= true;
-   exStaffInfoTable.innerHTML=''
-   let exStaffInfoResult=  display(exStaffData,'exStaff');
+    // isAccName = true;
+    // isAccRole = true;
+    // isAccReportingTo= true;
+//    exStaffInfoTable.innerHTML=''
+//    let exStaffInfoResult=  display(exStaffData,'exStaff');
 
     addStaffId[0].classList.toggle("disp-none");
     exStaffInfoTable.innerHTML = exStaffInfoResult;
