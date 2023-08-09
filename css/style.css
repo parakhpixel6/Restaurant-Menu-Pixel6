@@ -245,6 +245,10 @@ li {
   margin-top: 8px;
 }
 
+.mar-t-5 {
+  margin-top: 5px;
+}
+
 .mar-0 {
   margin: 0px !important;
 }
@@ -578,7 +582,7 @@ label {
 
 .input-box {
   border-bottom: 1px solid #555555;
-  padding: 10px 0px 10px 16px;
+  padding: 4px 0px 4px 16px;
 }
 
 .input-box-managestaff {
@@ -601,8 +605,23 @@ label {
   border: none;
 }
 
+.nonsortbutton {
+  color: var(--red-dark-red, #000000);
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  background: none;
+  border: none;
+}
+
+.visible-hidden {
+  visibility: hidden;
+}
+
 .discount-tbl-heading {
-  color: black;
+  color: #000000;
   font-family: Nunito;
   font-size: 16px;
   font-style: normal;
@@ -1961,8 +1980,6 @@ button:hover {
   right: 0%;
   text-align: center;
   margin-left: auto;
-  height: 40px;
-  width: 45px;
   font-size: 11px;
   line-height: 13px;
   color: orangered;
