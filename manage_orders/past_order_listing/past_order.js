@@ -31,10 +31,6 @@ function showPastOrderTable() {
 }
 
 
-
-
-
-
 // name sort
 var isAsceOrderDate = true;
 function sortOrderDate(e){

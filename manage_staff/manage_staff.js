@@ -9,10 +9,10 @@ let staffData = [
 ]
 
 let exStaffData = [
-    {staffId:"S001", image:"../assets/images/img/staff/admin.png", staffName:"Rajendra 111 Singh", role:"Admin", workingFrom:"N/A", workingto:"21 Jun 2020"},
-    {staffId:"S002", image:"../assets/images/img/staff/manager.png", staffName:"Jaydeep 1111 Sivakumar", role:"Manager", workingFrom:"Ajay Rathod", workingto:"28 May 2021"},
-    {staffId:"S003", image:"../assets/images/img/staff/captain.png", staffName:"Ekta 111 Tiwari", role:"Captain", workingFrom:"Jaydeep Sivakumar", workingto:"14 May 2021"},
-    {staffId:"S004", image:"../assets/images/img/staff/server.png", staffName:"Naresh 111 Chavan", role:"Server", workingFrom:"Jaydeep Sivakumar", workingto:"02 Jun 2020"}
+    {staffId:"S001", image:"../assets/images/img/staff/admin.png", staffName:"Rajendra Singh", role:"Admin", workingFrom:"N/A", workingto:"21 Jun 2020"},
+    {staffId:"S002", image:"../assets/images/img/staff/manager.png", staffName:"Jaydeep Sivakumar", role:"Manager", workingFrom:"Ajay Rathod", workingto:"28 May 2021"},
+    {staffId:"S003", image:"../assets/images/img/staff/captain.png", staffName:"Ekta Tiwari", role:"Captain", workingFrom:"Jaydeep Sivakumar", workingto:"14 May 2021"},
+    {staffId:"S004", image:"../assets/images/img/staff/server.png", staffName:"Naresh Chavan", role:"Server", workingFrom:"Jaydeep Sivakumar", workingto:"02 Jun 2020"}
 ];
 
 let staffInfoTable = document.querySelector("#staffInfoTable");
@@ -48,8 +48,8 @@ function showStaffDataTable(){
 }
 
 function showExStaffDataTable(){
-    let exStaffInfoTable = document.querySelector("#exStaffInfoTable");
-    // let exStaffInfoResult = "";
+    // let exStaffInfoTable = document.querySelector("#exStaffInfoTable");
+    let exStaffInfoResult = "";
     exStaffData.forEach((item) => {
         exStaffInfoResult += `
         <tr>
@@ -131,12 +131,6 @@ showExStaffDataTable();
 
 
 
-
-
-
-
-
-
 function addStaffFun() {
     addStaffQuery.forEach((item) => {
         item.classList.toggle("disp-none");
@@ -154,13 +148,13 @@ function exStaff() {
     // isAccReportingTo= true;
 //    exStaffInfoTable.innerHTML=''
 //    let exStaffInfoResult=  display(exStaffData,'exStaff');
-
+  exStaffQuery.forEach((item) => {
+    item.classList.toggle("disp-none");
     addStaffId[0].classList.toggle("disp-none");
-    exStaffInfoTable.innerHTML = exStaffInfoResult;
+    })  
+    
+    // exStaffInfoTable.innerHTML = exStaffInfoResult;
 
-    exStaffQuery.forEach((item) => {
-        item.classList.toggle("disp-none");
-    })
     colorClass.forEach((item) => {
         item.classList.toggle("black");
     })
