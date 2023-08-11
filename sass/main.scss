@@ -25,10 +25,13 @@
 .margine-left-35{
   margin-left: 35px;
 }
+.margin-left-20{
+  margin-left: 20px;
+}
+
 .padding-t-28{
   padding-top: 28px;
 }
-
 //up down sorting icons start
 .up-arrow {
   background-image:url("../assets/images/icons/sort.svg");
@@ -337,7 +340,7 @@ font-weight: 600;
 line-height: 30px; /* 150% */
 }
 .general-sett-ip{
-height: 50px; 
+height: 40px; 
 width:445px
 }
 .general-sett-btn-p{
@@ -615,7 +618,7 @@ gap: 10px;
   border-collapse: collapse;
   
   td {
-    padding: 12px 16px;
+    padding: 12px 14px;
 
     &.item-descp {
       width: 360px;
