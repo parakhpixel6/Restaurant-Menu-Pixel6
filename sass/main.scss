@@ -306,7 +306,7 @@ input[type="file"]::file-selector-button {
 }
 
 .btn-wrap {
-  padding: 10px 12px;
+  padding: 10px 20px;
   background: #ff4949;
   // background: linear-gradient(90deg, #FF6666 0%, #FF9688 100%);
   color: $widget-white;
@@ -319,7 +319,7 @@ input[type="file"]::file-selector-button {
   gap: 4px;
 }
 .done-update-btn {
-  padding: 10px 12px;
+  padding: 10px 20px;
   background: #ff4949;
   color: $widget-white;
   font-size: 14px;
@@ -1937,7 +1937,7 @@ gap: 10px;
 }
 .staff-disable-btn{
 display: inline-flex;
-padding: 10px 12px;
+padding: 10px 20px;
 align-items: center;
 gap: 4px;
 border-radius: 5px;
@@ -1953,7 +1953,7 @@ background-color: transparent;
 }
 .img-file-btn{
   display: inline-flex;
-  padding: 10px 12px;
+  padding: 10px 20px;
   align-items: center;
   gap: 4px;
   border-radius: 5px;

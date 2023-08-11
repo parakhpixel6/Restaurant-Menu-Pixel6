@@ -2,18 +2,18 @@
 "use strict"
 
 let salesData = [
-    {startHour:"11 am", noOfOrders:"35", sales:"₹2,542", taxes:"₹127", grossValue:"₹2414"},
-    {startHour:"12 pm", noOfOrders:"42", sales:"₹8,060", taxes:"₹392", grossValue:"₹7657"},
-    {startHour:"01 pm", noOfOrders:"35", sales:"₹7,570", taxes:"₹360", grossValue:"₹7191"},
-    {startHour:"02 pm", noOfOrders:"43", sales:"₹4,280", taxes:"₹214", grossValue:"₹4066"},
-    {startHour:"03 pm", noOfOrders:"21", sales:"₹9,530", taxes:"₹470", grossValue:"₹9050"},
-    {startHour:"04 pm", noOfOrders:"27", sales:"₹4,280", taxes:"₹214", grossValue:"₹4066"},
-    {startHour:"05 pm", noOfOrders:"28", sales:"₹2,542", taxes:"₹127", grossValue:"₹2414"},
-    {startHour:"06 pm", noOfOrders:"17", sales:"₹8,060", taxes:"₹392", grossValue:"₹7657"},
-    {startHour:"07 pm", noOfOrders:"16", sales:"₹7,570", taxes:"₹360", grossValue:"₹7191"},
-    {startHour:"08 pm", noOfOrders:"25", sales:"₹4,280", taxes:"₹214", grossValue:"₹4066"},
-    {startHour:"09 pm", noOfOrders:"33", sales:"₹9,530", taxes:"₹470", grossValue:"₹9050"},
-    {startHour:"10 pm", noOfOrders:"38", sales:"₹4,280", taxes:"₹214", grossValue:"₹4066"},
+    {startHour:"11:00 AM", noOfOrders:"35", sales:"₹2,542", taxes:"₹127", grossValue:"₹2414"},
+    {startHour:"12:00 PM", noOfOrders:"42", sales:"₹8,060", taxes:"₹392", grossValue:"₹7657"},
+    {startHour:"01:00 PM", noOfOrders:"35", sales:"₹7,570", taxes:"₹360", grossValue:"₹7191"},
+    {startHour:"02:00 PM", noOfOrders:"43", sales:"₹4,280", taxes:"₹214", grossValue:"₹4066"},
+    {startHour:"03:00 PM", noOfOrders:"21", sales:"₹9,530", taxes:"₹470", grossValue:"₹9050"},
+    {startHour:"04:00 PM", noOfOrders:"27", sales:"₹4,280", taxes:"₹214", grossValue:"₹4066"},
+    {startHour:"05:00 PM", noOfOrders:"28", sales:"₹2,542", taxes:"₹127", grossValue:"₹2414"},
+    {startHour:"06:00 PM", noOfOrders:"17", sales:"₹8,060", taxes:"₹392", grossValue:"₹7657"},
+    {startHour:"07:00 PM", noOfOrders:"16", sales:"₹7,570", taxes:"₹360", grossValue:"₹7191"},
+    {startHour:"08:00 PM", noOfOrders:"25", sales:"₹4,280", taxes:"₹214", grossValue:"₹4066"},
+    {startHour:"09:00 PM", noOfOrders:"33", sales:"₹9,530", taxes:"₹470", grossValue:"₹9050"},
+    {startHour:"10:00 PM", noOfOrders:"38", sales:"₹4,280", taxes:"₹214", grossValue:"₹4066"},
 ]
 
 let tipData = [
