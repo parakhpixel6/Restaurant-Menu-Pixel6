@@ -359,7 +359,7 @@ input[type=file]::file-selector-button {
 }
 
 .btn-wrap {
-  padding: 10px 12px;
+  padding: 10px 20px;
   background: #ff4949;
   color: #FFFFFF;
   font-size: 14px;
@@ -372,7 +372,7 @@ input[type=file]::file-selector-button {
 }
 
 .done-update-btn {
-  padding: 10px 12px;
+  padding: 10px 20px;
   background: #ff4949;
   color: #FFFFFF;
   font-size: 14px;
@@ -2666,7 +2666,7 @@ button:hover {
 
 .staff-disable-btn {
   display: inline-flex;
-  padding: 10px 12px;
+  padding: 10px 20px;
   align-items: center;
   gap: 4px;
   border-radius: 5px;
@@ -2683,7 +2683,7 @@ button:hover {
 
 .img-file-btn {
   display: inline-flex;
-  padding: 10px 12px;
+  padding: 10px 20px;
   align-items: center;
   gap: 4px;
   border-radius: 5px;
