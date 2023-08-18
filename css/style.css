@@ -46,6 +46,10 @@ li {
   gap: 30px;
 }
 
+.g-64 {
+  gap: 64px;
+}
+
 .g-36 {
   gap: 36px;
 }
@@ -66,6 +70,10 @@ li {
   margin-left: 20px;
 }
 
+.margin-b-30 {
+  margin-bottom: 30px;
+}
+
 .padding-t-28 {
   padding-top: 28px;
 }
@@ -83,7 +91,7 @@ li {
 }
 
 .neutral-arrow {
-  background-image: url("../assets/images/img/neutral.png");
+  background-image: url("../assets/images/img/neutral1.png");
   height: 30px;
   width: 20px;
 }
@@ -158,6 +166,10 @@ li {
 
 .transform-checkbox {
   transform: scale(1.2);
+}
+
+.width-410 {
+  width: 410px;
 }
 
 .container-wrap {
@@ -359,7 +371,7 @@ input[type=file]::file-selector-button {
 }
 
 .btn-wrap {
-  padding: 10px 20px;
+  padding: 12px 20px;
   background: #ff4949;
   color: #FFFFFF;
   font-size: 14px;
@@ -372,7 +384,7 @@ input[type=file]::file-selector-button {
 }
 
 .done-update-btn {
-  padding: 10px 20px;
+  padding: 12px 20px;
   background: #ff4949;
   color: #FFFFFF;
   font-size: 14px;
@@ -3524,6 +3536,59 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: flex-start;
   flex: 1 0 0;
+}
+
+.login-form-title {
+  color: var(--red-black, #222);
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.login-input-val {
+  outline: none;
+  position: relative;
+  border: none;
+  border-bottom: 0.5px solid rgba(136, 136, 136, 0.5333333333);
+  padding: 4px;
+}
+
+.login-btn {
+  color: var(--red-white, #FFF);
+  text-align: right;
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.login-form-row {
+  display: flex;
+  margin-bottom: 24px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.login-margin-r-222 {
+  margin-right: 222px;
+}
+
+.login-show-icon {
+  position: absolute;
+  margin-left: -26px;
+  margin-top: 5px;
+}
+
+.forgget-pass {
+  color: var(--red-dark-red, #FF4747);
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .food-text-area {
