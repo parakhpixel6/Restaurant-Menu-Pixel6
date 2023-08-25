@@ -988,7 +988,25 @@ button:hover {
 .pie-wrapper .pie .half-circle.occupied {
   border: 6px solid #54BA54;
 }
+.pie-wrapper .pie .half-circle.loader {
+  animation: loader 2s linear infinite;
+}
+.pie-wrapper .pie .half-circle.circle-50 {
+  clip: rect(0, 150px, 75px, 0);
+}
+.pie-wrapper .pie .half-circle.circle-75 {
+  clip: rect(0, 75px, 75px, 0);
+  transform: rotate(180deg);
+}
 
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes growDown {
   0% {
     transform: scaleY(0);
@@ -3714,6 +3732,35 @@ input:checked + .slider:before {
   flex-shrink: 0;
   border-radius: 12px;
   background: var(--red-white, #FFF);
+}
+
+.bank-acc-setup-rdo {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--red-white, #54BA54);
+}
+
+.bank-acc-setup-lb {
+  color: #000;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.bank-ifsc-branch {
+  position: absolute;
+  margin-top: 60px;
+  padding-left: 15px;
+  color: var(--red-dark-green, #278827);
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .customers-dash {
