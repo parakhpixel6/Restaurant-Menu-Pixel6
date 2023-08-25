@@ -812,7 +812,27 @@ gap: 10px;
       &.occupied{
         border: 6px solid #54BA54;
       }
+      &.loader{
+        animation: loader 2s linear infinite;
+      }
+      &.circle-50{
+        clip: rect(0, 150px, 75px, 0);
+        
+      }
+      &.circle-75{
+        clip: rect(0, 75px, 75px, 0);
+        transform: rotate(180deg);
+      }
     }
+  }
+}
+
+@keyframes loader {
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
   }
 }
 
