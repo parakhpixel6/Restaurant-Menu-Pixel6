@@ -25,13 +25,19 @@
                     <span class="top-bell-icon material-symbols-rounded">
                         notifications_active
                     </span>
-                    <p>0 Notifications</p>
+                    <p>1 Notifications</p>
                     <span class="top-dd-icon material-symbols-rounded">
                         expand_more
                     </span>
                 </div>
                 <div class="notify-comment">
-                    <p>You don't have any notifications</p>
+                    <li class="notification-row-message active">
+                        <!-- <p class="notification-row-message-time">12:40 pm</p> -->
+                        <p class="notification-row-message-text border-b-dash" style="color: #000000;">Order number #E04A01 has requested to settle the bill in Cash. Please accept the request. 
+                            <a class="cursor-pointer" onclick="window.location.href='../../manage_orders/past_order_listing/past_order_detail.html'" style="color: #FF4747;">
+                                View </a>
+                        </p>
+                    </li>
                 </div>
             </div>
         </div>
@@ -266,7 +272,7 @@
             <div class="admin_container--dashboard-iframe-details-notifications">
                 <li class="notification-row-header">
                     <p class="notification-row-header-heading">notification</p>
-                    <p class="notification-row-header-unread">0 unread</p>
+                    <p class="notification-row-header-unread">1 unread</p>
                 </li>
                 <ul class="notification-row">
                     <li class="notification-row-message active">
@@ -519,6 +525,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/date-time.js"></script>
+    <!-- <script src="../manage_orders/running_orders/running_orders.js"></script> -->
 </body>
 
 </html>
