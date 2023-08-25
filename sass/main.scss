@@ -6,7 +6,6 @@
 }
 .disp-none{
   display: none;
-
 }
 .g-30{
   gap: 30px;
@@ -2920,6 +2919,35 @@ flex-shrink: 0;
 border-radius: 12px;
 background: var(--red-white, #FFF);
 }
+// bank-account start
+.bank-acc-setup-rdo{
+width: 18px;
+height: 18px;
+flex-shrink: 0;
+border-radius: 12px;
+background: var(--red-white, #54BA54);
+}
+.bank-acc-setup-lb{
+color: #000;
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+  }
+.bank-ifsc-branch{
+position: absolute;
+margin-top: 60px;
+padding-left: 15px;
+color: var(--red-dark-green, #278827);
+font-family: Nunito;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; 
+} 
+    
+// bank-account end
 .customers-dash {
   display: flex;
   flex-direction: column;
