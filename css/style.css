@@ -172,6 +172,10 @@ li {
   width: 410px;
 }
 
+.border-b-dash {
+  border-bottom: 1px dashed #dddddd;
+}
+
 .container-wrap {
   padding: 16px;
   background-color: #FFFFFF;
@@ -335,7 +339,7 @@ input[type=file]::file-selector-button {
 .notify-dropdown {
   position: absolute;
   right: 0;
-  width: 210px;
+  width: 310px;
   height: fit-content;
   margin-left: auto;
   padding: 8px;
@@ -348,11 +352,11 @@ input[type=file]::file-selector-button {
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  color: #9e9e9e;
+  color: #FF4747;
 }
 .notify-dropdown .top-bell-icon {
   font-size: 22px;
-  color: #9e9e9e;
+  color: #FF4747;
 }
 .notify-dropdown .top-dd-icon {
   font-size: 25px;
@@ -362,9 +366,9 @@ input[type=file]::file-selector-button {
   display: none;
 }
 .notify-dropdown .notify-comment p {
-  text-align: center;
+  text-align: left;
   font-size: 14px;
-  padding: 16px;
+  padding: 8px;
   font-weight: 300;
   text-transform: none;
   border-top: 1px dashed #dddddd;
