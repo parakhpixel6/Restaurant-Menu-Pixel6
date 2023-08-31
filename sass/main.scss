@@ -277,6 +277,9 @@ input[type="file"]::file-selector-button {
   // width: fit-content;
   height: fit-content;
   // height: 200px;
+  
+  z-index: 9;
+
   margin-left: auto;
   // box-shadow: -10px 16px 25px 0px #DDDDDD;
   // -webkit-box-shadow: -10px 16px 25px 0px #DDDDDD;
